@@ -17,72 +17,57 @@ function trace(step) {
 }
 
 function binarySearch(list, item) {
-  let outerContext = trace({
+  trace({
     type: 'enter',
     line: 0,
     context: { list, item },
   });
 
   let low = 0;
-  outerContext = trace({
+  trace({
     type: 'assign',
     line: 1,
-    context: {
-      ...outerContext,
-      low,
-    },
+    context: { list, item, low },
   });
 
   let high = list.length - 1;
-  outerContext = trace({
+  trace({
     type: 'assign',
     line: 2,
-    context: {
-      ...outerContext,
-      high,
-    }
+    context: { list, item, low, high },
   });
 
-  // TODO: Keep this context inside while block, but udpate low/high in the
-  // outer context
-  let innerContext = { ...outerContext };
   while (trace({
     type: 'compare',
     line: 4,
-    context: innerContext,
+    context: { list, item, low, high },
     compared: ['low', 'high'],
   }) && low <= high) {
     const mid = Math.round((low + high) / 2);
-    innerContext = trace({
+    trace({
       type: 'assign',
       line: 5,
-      context: {
-        ...innerContext,
-        mid,
-      },
+      context: { list, item, low, high, mid },
     });
 
     const guess = list[mid];
-    innerContext = trace({
+    trace({
       type: 'assign',
       line: 6,
-      context: {
-        ...innerContext,
-        guess,
-      },
+      context: { list, item, low, high, mid, guess },
     });
 
     trace({
       type: 'compare',
       line: 8,
-      context: innerContext,
+      context: { list, item, low, high, mid, guess },
       compared: ['guess', 'item'],
     });
     if (guess === item) {
       trace({
         type: 'return',
         line: 9,
-        context: innerContext,
+        context: { list, item, low, high, mid, guess },
         returnValue: mid,
       });
       return mid;
@@ -91,28 +76,22 @@ function binarySearch(list, item) {
     trace({
       type: 'compare',
       line: 11,
-      context: innerContext,
+      context: { list, item, low, high, mid, guess },
       compared: ['guess', 'item'],
     });
     if (guess > item) {
       high = mid - 1;
-      innerContext = trace({
+      trace({
         type: 'assign',
         line: 12,
-        context: {
-          ...innerContext,
-          high,
-        }
+        context: { list, item, low, high, mid, guess },
       });
     } else {
       low = mid + 1;
-      innerContext = trace({
+      trace({
         type: 'assign',
         line: 14,
-        context: {
-          ...innerContext,
-          low,
-        }
+        context: { list, item, low, high, mid, guess },
       });
     }
   }
@@ -120,7 +99,7 @@ function binarySearch(list, item) {
   trace({
     type: 'return',
     line: 18,
-    context: outerContext,
+    context: { list, item, low, high },
     returnValue: null,
   });
   return null;
@@ -141,7 +120,7 @@ const fnDef =
   let high = list.length - 1;
 
   while (low <= high) {
-    const mid = Math.round(low + high);
+    const mid = Math.round((low + high) / 2);
     const guess = list[mid];
 
     if (guess === item) {
