@@ -78,6 +78,15 @@ export default function ({ types: t }) {
         context: this.bindings,
         returnValue: path.node.argument,
       }));
+    },
+    'WhileStatement|IfStatement'(path) {
+      const testPath = path.get('test');
+      testPath.replaceWith(
+        t.logicalExpression('||', createTraceCall({
+          line: getPathLine(testPath),
+          context: this.bindings,
+        }), testPath.node)
+      );
     }
   };
 
