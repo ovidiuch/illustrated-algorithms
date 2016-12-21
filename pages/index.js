@@ -1,54 +1,7 @@
 import React from 'react';
 import binarySearch from '../algorithms/binary-search';
-
-function SourceCode({
-  def,
-  line,
-}) {
-  return (
-    <pre>
-      <ol>
-        {def.split('\n').map((fnLine, i) =>
-          <li
-            key={i}
-            style={{ backgroundColor: i === line - 1 ? 'yellow' : 'white' }}
-          >
-            {fnLine}
-          </li>
-        )}
-      </ol>
-    </pre>
-  );
-}
-
-SourceCode.propTypes = {
-  def: React.PropTypes.string.isRequired,
-  line: React.PropTypes.number.isRequired,
-};
-
-function Preview({
-  context,
-  changedKeys,
-}) {
-  return (
-    <pre style={{ backgroundColor: 'lightgray' }}>
-      {Object.keys(context).map(key =>
-        <div key={key}>
-          <span
-            style={{ fontWeight: changedKeys.indexOf(key) === -1 ? 'normal' : 'bold'}}
-          >
-            {key} = {JSON.stringify(context[key])}
-          </span>
-        </div>
-      )}
-    </pre>
-  );
-}
-
-Preview.propTypes = {
-  context: React.PropTypes.object.isRequired,
-  changedKeys: React.PropTypes.array.isRequired,
-};
+import SourceCode from '../components/source-code';
+import Preview from '../components/preview';
 
 class App extends React.Component {
   static async getInitialProps() {
