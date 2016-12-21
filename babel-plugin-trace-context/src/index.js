@@ -132,7 +132,7 @@ export default function ({ types: t }) {
           buildTemplate({
             ALGORITHM_NAME: t.identifier(fnPath.node.id.name),
             ALGORITHM_BODY: fnPath.node,
-            ALGORITHM_CODE: t.stringLiteral(path.hub.file.code),
+            ALGORITHM_CODE: t.stringLiteral(path.hub.file.code.replace(/^export default /, '')),
           })
         );
 
