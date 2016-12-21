@@ -3,7 +3,7 @@ import binarySearch from './algorithms/binary-search';
 const items = [
   'bear', 'cat', 'cow', 'dog', 'fox', 'pig', 'rat',
 ];
-const steps = binarySearch(items, 'fox');
+const { steps } = binarySearch(items, 'fox');
 
 const React = require('react');
 const ReactDOM = require('react-dom');

@@ -14,9 +14,14 @@ function __trace(step) {
   });
 }
 
-module.exports = function __exportSteps(...args) {
-  ALGORITHM(...args);
-  return __steps;
+ALGORITHM_BODY
+
+module.exports = function (...args) {
+  const returnValue = ALGORITHM_NAME(...args);
+  return {
+    steps: __steps,
+    returnValue: returnValue,
+  };
 }`, {
   plugins: ['objectRestSpread']
 });
@@ -91,15 +96,18 @@ export default function ({ types: t }) {
   };
 
   return {
-    // We assume only one fn per algorithm!
     visitor: {
-      FunctionDeclaration(path) {
-        // Ignore trace template and Babel helpers
-        if (path.node.id.name.indexOf('_') === 0) {
-          return;
-        }
+      ExportDefaultDeclaration(path) {
+        const fnPath = path.get('declaration');
 
-        const bodyPath = path.get('body');
+        path.replaceWithMultiple(
+          buildTemplate({
+            ALGORITHM_NAME: t.identifier(fnPath.node.id.name),
+            ALGORITHM_BODY: fnPath.node,
+          })
+        );
+
+        const bodyPath = fnPath.get('body');
         const params = Object.keys(bodyPath.scope.getAllBindingsOfKind('param'));
         bodyPath.unshiftContainer('body', createTraceCall({
           line: getPathLine(bodyPath),
@@ -107,11 +115,7 @@ export default function ({ types: t }) {
           incrementCallCount: true,
         }));
 
-        path.insertBefore(buildTemplate({
-          ALGORITHM: t.identifier(path.node.id.name),
-        }));
-
-        path.traverse(innerVisitor, { bindings: params });
+        fnPath.traverse(innerVisitor, { bindings: params });
       }
     },
   };
