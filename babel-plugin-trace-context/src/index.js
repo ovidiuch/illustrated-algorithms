@@ -28,6 +28,10 @@ module.exports = function (...args) {
 });
 
 export default function ({ types: t }) {
+  function isNewlyCreatedPath(path) {
+    return !path.node.loc;
+  }
+
   function getPathLine(path) {
     return path.node.loc.start.line;
   }
@@ -62,6 +66,10 @@ export default function ({ types: t }) {
 
   const innerVisitor = {
     VariableDeclaration(path) {
+      if (isNewlyCreatedPath(path)) {
+        return;
+      }
+
       this.bindings.push(
         ...path.node.declarations.map(d => d.id.name)
           .filter(d => this.bindings.indexOf(d) === -1)
@@ -73,19 +81,38 @@ export default function ({ types: t }) {
       }));
     },
     AssignmentExpression(path) {
+      if (isNewlyCreatedPath(path)) {
+        return;
+      }
+
       path.insertAfter(createTraceCall({
         line: getPathLine(path),
         context: this.bindings,
       }));
     },
     ReturnStatement(path) {
-      path.insertBefore(createTraceCall({
-        line: getPathLine(path),
-        context: this.bindings,
-        returnValue: path.node.argument,
-      }));
+      if (isNewlyCreatedPath(path)) {
+        return;
+      }
+
+      const returnValId = path.scope.generateUidIdentifier('uid');
+      path.replaceWithMultiple([
+        t.variableDeclaration('const', [
+          t.variableDeclarator(returnValId, path.node.argument)
+        ]),
+        createTraceCall({
+          line: getPathLine(path),
+          context: this.bindings,
+          returnValue: returnValId,
+        }),
+        t.returnStatement(returnValId)
+      ]);
     },
     'WhileStatement|IfStatement'(path) {
+      if (isNewlyCreatedPath(path)) {
+        return;
+      }
+
       const testPath = path.get('test');
       testPath.replaceWith(
         t.logicalExpression('||', createTraceCall({
