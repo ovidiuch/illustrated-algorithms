@@ -3,32 +3,10 @@ import binarySearch from './algorithms/binary-search';
 const items = [
   'bear', 'cat', 'cow', 'dog', 'fox', 'pig', 'rat',
 ];
-const { steps } = binarySearch(items, 'fox');
+const { steps, code } = binarySearch(items, 'fox');
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-
-const fnDef =
-`function binarySearch(list, item) {
-  let low = 0;
-  let high = list.length - 1;
-
-  while (low <= high) {
-    const mid = Math.round((low + high) / 2);
-    const guess = list[mid];
-
-    if (guess === item) {
-      return mid;
-    }
-    if (guess > item) {
-      high = mid - 1;
-    } else {
-      low = mid + 1;
-    }
-  }
-
-  return null;
-}`;
 
 function SourceCode({
   def,
@@ -93,7 +71,7 @@ class App extends React.Component {
           <button disabled={stepIndex >= steps.length - 1} onClick={onNext}>forward</button>
         </div>
         <SourceCode
-          def={fnDef}
+          def={code}
           line={line}
         />
         <Preview

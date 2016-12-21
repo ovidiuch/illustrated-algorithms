@@ -21,6 +21,7 @@ module.exports = function (...args) {
   return {
     steps: __steps,
     returnValue: returnValue,
+    code: ALGORITHM_CODE,
   };
 }`, {
   plugins: ['objectRestSpread']
@@ -104,6 +105,7 @@ export default function ({ types: t }) {
           buildTemplate({
             ALGORITHM_NAME: t.identifier(fnPath.node.id.name),
             ALGORITHM_BODY: fnPath.node,
+            ALGORITHM_CODE: t.stringLiteral(path.hub.file.code),
           })
         );
 
