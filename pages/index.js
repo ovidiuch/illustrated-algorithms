@@ -1,12 +1,5 @@
-import binarySearch from './algorithms/binary-search';
-
-const items = [
-  'bear', 'cat', 'cow', 'dog', 'fox', 'pig', 'rat',
-];
-const { steps, code } = binarySearch(items, 'fox');
-
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import binarySearch from '../algorithms/binary-search';
 
 function SourceCode({
   def,
@@ -58,8 +51,40 @@ Preview.propTypes = {
 };
 
 class App extends React.Component {
+  static async getInitialProps() {
+    const items = [
+      'bear', 'cat', 'cow', 'dog', 'fox', 'pig', 'rat',
+    ];
+    return binarySearch(items, 'fox');
+  }
+
+  constructor(props) {
+    super(props);
+
+    this.handlePrev = this.handlePrev.bind(this);
+    this.handleNext = this.handleNext.bind(this);
+
+    this.state = {
+      stepIndex: 0,
+    };
+  }
+
+  handlePrev() {
+    this.setState({
+      stepIndex: this.state.stepIndex - 1,
+    });
+  }
+
+  handleNext() {
+    this.setState({
+      stepIndex: this.state.stepIndex + 1,
+    });
+  }
+
   render() {
-    const { steps, stepIndex, onPrev, onNext } = this.props;
+    const { steps, code } = this.props;
+    const { stepIndex } = this.state;
+
     const { line, context, returnValue } = steps[stepIndex];
     const prevStep = steps[stepIndex - 1];
     const prevContext = prevStep ? prevStep.context : {};
@@ -67,8 +92,8 @@ class App extends React.Component {
     return (
       <div>
         <div>
-          <button disabled={stepIndex <= 0} onClick={onPrev}>back</button>
-          <button disabled={stepIndex >= steps.length - 1} onClick={onNext}>forward</button>
+          <button disabled={stepIndex <= 0} onClick={this.handlePrev}>back</button>
+          <button disabled={stepIndex >= steps.length - 1} onClick={this.handleNext}>forward</button>
         </div>
         <SourceCode
           def={code}
@@ -91,28 +116,7 @@ class App extends React.Component {
 
 App.propTypes = {
   steps: React.PropTypes.array.isRequired,
-  stepIndex: React.PropTypes.number.isRequired,
-  onPrev: React.PropTypes.func.isRequired,
-  onNext: React.PropTypes.func.isRequired,
+  code: React.PropTypes.string.isRequired,
 };
 
-/* global document */
-const container = document.body.appendChild(document.createElement('div'));
-let currentStep = 0;
-
-function render(stepIndex) {
-  ReactDOM.render((
-    <App
-      steps={steps}
-      stepIndex={stepIndex}
-      onPrev={() => {
-        render(currentStep -= 1);
-      }}
-      onNext={() => {
-        render(currentStep += 1);
-      }}
-    />
-  ), container);
-}
-
-render(currentStep);
+export default App;

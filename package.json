@@ -8,20 +8,17 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "eslint-config-xo-react": "^0.10.0",
     "eslint-plugin-react": "^6.8.0",
-    "html-webpack-plugin": "^2.24.1",
-    "webpack": "^1.14.0",
     "xo": "^0.17.1"
   },
   "scripts": {
     "build:babel-plugin": "babel babel-plugin-trace-context/src -d babel-plugin-trace-context/lib",
     "test": "xo",
-    "start": "webpack-dev-server --inline --hot"
+    "start": "npm run build:babel-plugin && next"
   },
   "xo": {
     "space": true,
@@ -33,7 +30,10 @@
     "rules": {
       "comma-dangle": 0,
       "object-curly-spacing": 0,
-      "react/jsx-closing-bracket-location": [1, "tag-aligned"],
+      "react/jsx-closing-bracket-location": [
+        1,
+        "tag-aligned"
+      ],
       "react/jsx-no-bind": 0
     },
     "overrides": [
@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "babel-template": "^6.16.0",
+    "next": "^1.2.3",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }
