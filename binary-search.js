@@ -1,103 +1,9 @@
-const steps = [];
-let callCount = 0;
-
-function trace(step) {
-  const { type, context } = step;
-
-  if (type === 'enter') {
-    callCount++;
-  }
-
-  steps.push({
-    callCount,
-    ...step,
-  });
-
-  return context;
-}
-
-function binarySearch(list, item) {
-  trace({
-    type: 'enter',
-    line: 0,
-    context: { list, item },
-  });
-
-  let low = 0;
-  trace({
-    line: 1,
-    context: { list, item, low },
-  });
-
-  let high = list.length - 1;
-  trace({
-    line: 2,
-    context: { list, item, low, high },
-  });
-
-  while (trace({
-    line: 4,
-    context: { list, item, low, high },
-  }) && low <= high) {
-    const mid = Math.round((low + high) / 2);
-    trace({
-      line: 5,
-      context: { list, item, low, high, mid },
-    });
-
-    const guess = list[mid];
-    trace({
-      line: 6,
-      context: { list, item, low, high, mid, guess },
-    });
-
-    trace({
-      line: 8,
-      context: { list, item, low, high, mid, guess },
-    });
-    if (guess === item) {
-      trace({
-        type: 'return',
-        line: 9,
-        context: { list, item, low, high, mid, guess },
-        returnValue: mid,
-      });
-      return mid;
-    }
-
-    trace({
-      line: 11,
-      context: { list, item, low, high, mid, guess },
-    });
-    if (guess > item) {
-      high = mid - 1;
-      trace({
-        line: 12,
-        context: { list, item, low, high, mid, guess },
-      });
-    } else {
-      low = mid + 1;
-      trace({
-        line: 14,
-        context: { list, item, low, high, mid, guess },
-      });
-    }
-  }
-
-  trace({
-    type: 'return',
-    line: 18,
-    context: { list, item, low, high },
-    returnValue: null,
-  });
-  return null;
-}
+import binarySearch from './algorithms/binary-search';
 
 const items = [
   'bear', 'cat', 'cow', 'dog', 'fox', 'pig', 'rat',
 ];
-
-binarySearch(items, 'fox');
+const steps = binarySearch(items, 'fox');
 
 const React = require('react');
 const ReactDOM = require('react-dom');
@@ -134,7 +40,7 @@ function SourceCode({
         {def.split('\n').map((fnLine, i) =>
           <li
             key={i}
-            style={{ backgroundColor: i === line ? 'yellow' : 'white' }}
+            style={{ backgroundColor: i === line - 1 ? 'yellow' : 'white' }}
           >
             {fnLine}
           </li>
@@ -176,7 +82,7 @@ Preview.propTypes = {
 class App extends React.Component {
   render() {
     const { steps, stepIndex, onPrev, onNext } = this.props;
-    const { type, line, context, returnValue } = steps[stepIndex];
+    const { line, context, returnValue } = steps[stepIndex];
     const prevStep = steps[stepIndex - 1];
     const prevContext = prevStep ? prevStep.context : {};
 
@@ -195,7 +101,7 @@ class App extends React.Component {
           changedKeys={Object.keys(context).filter(key => context[key] !== prevContext[key])}
           returnValue={returnValue}
         />
-        {type === 'return' && (
+        {returnValue !== undefined && (
           <pre style={{ backgroundColor: 'gray', color: 'white' }}>
             Return: {JSON.stringify(returnValue)}
           </pre>
