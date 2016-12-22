@@ -2,25 +2,26 @@ import React from 'react';
 
 export default function SourceCode({
   def,
-  line,
+  start,
+  end,
 }) {
   return (
     <pre>
-      <ol>
-        {def.split('\n').map((fnLine, i) =>
-          <li
-            key={i}
-            style={{ backgroundColor: i === line - 1 ? 'yellow' : 'white' }}
-          >
-            {fnLine}
-          </li>
-        )}
-      </ol>
+      <span>
+        {def.slice(0, start)}
+      </span>
+      <span style={{ backgroundColor: 'yellow' }}>
+        {def.slice(start, end)}
+      </span>
+      <span>
+        {def.slice(end)}
+      </span>
     </pre>
   );
 }
 
 SourceCode.propTypes = {
   def: React.PropTypes.string.isRequired,
-  line: React.PropTypes.number.isRequired,
+  start: React.PropTypes.number.isRequired,
+  end: React.PropTypes.number.isRequired,
 };
