@@ -100,7 +100,7 @@ class Quicksort extends React.Component {
     while (currStep) {
       prevStep = this.getPrevStep(currStepIndex);
 
-      stackEntries.unshift(
+      stackEntries.push(
         <StackEntry
           key={currStepIndex}
           code={code}
