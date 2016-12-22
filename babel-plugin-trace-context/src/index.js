@@ -64,17 +64,20 @@ export default function ({ types: t }) {
   function createTraceCall({
     start,
     end,
-    context,
     enterCall,
     leaveCall,
     returnValue,
   }) {
     const stepProps = [
-      t.objectProperty(t.identifier('start'), t.numericLiteral(start)),
-      t.objectProperty(t.identifier('end'), t.numericLiteral(end)),
-      t.objectProperty(t.identifier('context'), t.objectExpression(context.map(name =>
-        t.objectProperty(t.identifier(name), t.identifier(name))
-      ))),
+      t.objectProperty(t.identifier('start'), t.numericLiteral(start - this.fnOffset)),
+      t.objectProperty(t.identifier('end'), t.numericLiteral(end - this.fnOffset)),
+      t.objectProperty(
+        t.identifier('context'),
+          t.objectExpression(this.bindings.map(name =>
+            t.objectProperty(t.identifier(name), t.identifier(name))
+          )
+        )
+      ),
     ];
     if (returnValue !== undefined) {
       stepProps.push(t.objectProperty(t.identifier('returnValue'), returnValue));
@@ -97,6 +100,26 @@ export default function ({ types: t }) {
 
   const innerVisitor = {
     /**
+     * Prepend trace call(enter) BEFORE anything in the main function's body.
+     * Highlight contains function signature "fn(args)".
+     */
+    BlockStatement(path) {
+      const parentPath = path.parentPath;
+      const parentNode = parentPath.node;
+      if (!parentNode.id || parentNode.id.name !== this.fnName) {
+        return;
+      }
+
+      const start = parentPath.get('id').node.start;
+      const end = parentNode.params[parentNode.params.length - 1].end + 1;
+      path.unshiftContainer('body', createTraceCall.call(this, {
+        start,
+        end,
+        enterCall: true,
+      }));
+    },
+
+    /**
      * Append trace call() AFTER var declaration. Highlight contains entire
      * declaration.
      *
@@ -115,24 +138,24 @@ export default function ({ types: t }) {
       );
 
       const { start, end } = path.node;
-      path.insertAfter(createTraceCall({
+      path.insertAfter(createTraceCall.call(this, {
         start,
         end,
-        context: this.bindings,
       }));
     },
+
     /**
      * Append trace call() AFTER assignment expressions. Highlight contains
      * entire expression. Context includes new values.
      */
     AssignmentExpression(path) {
       const { start, end } = path.node;
-      path.insertAfter(createTraceCall({
+      path.insertAfter(createTraceCall.call(this, {
         start,
         end,
-        context: this.bindings,
       }));
     },
+
     /**
      * Replace test expressions with IIFE containing trace() call BEFORE
      * test value has been computed. Highlight contains test expression only.
@@ -144,10 +167,9 @@ export default function ({ types: t }) {
         t.callExpression(
           t.arrowFunctionExpression([],
             t.blockStatement([
-              createTraceCall({
+              createTraceCall.call(this, {
                 start,
                 end,
-                context: this.bindings,
               }),
               t.returnStatement(testPath.node)
             ])
@@ -155,6 +177,7 @@ export default function ({ types: t }) {
         [])
       );
     },
+
     /**
      * Replace call expressions with IIFE containing trace() call BEFORE
      * return value has been computed. Highlight contains call expression only.
@@ -175,10 +198,9 @@ export default function ({ types: t }) {
         t.callExpression(
           t.arrowFunctionExpression([],
             t.blockStatement([
-              createTraceCall({
+              createTraceCall.call(this, {
                 start,
                 end,
-                context: this.bindings,
               }),
               t.returnStatement(path.node)
             ])
@@ -186,6 +208,7 @@ export default function ({ types: t }) {
         [])
       );
     },
+
     /**
      * Replace return calls with IIFE containing trace(leave) call AFTER return
      * value has been computed, before it is returned. Highlight contains
@@ -207,10 +230,9 @@ export default function ({ types: t }) {
               t.variableDeclaration('const', [
                 t.variableDeclarator(returnValId, argumentPath.node)
               ]),
-              createTraceCall({
+              createTraceCall.call(this, {
                 start,
                 end,
-                context: this.bindings,
                 leaveCall: true,
                 returnValue: returnValId,
               }),
@@ -227,32 +249,26 @@ export default function ({ types: t }) {
       ExportDefaultDeclaration(path) {
         const fnPath = path.get('declaration');
         const fnName = fnPath.node.id.name;
+        const { start, end } = fnPath.node;
 
         path.replaceWithMultiple(
           buildTemplate({
             ALGORITHM_NAME: t.identifier(fnName),
             ALGORITHM_BODY: fnPath.node,
-            // TODO: Remove "export default" wrapper and other functions.
-            // Remember to offset start/end pairs
-            ALGORITHM_CODE: t.stringLiteral(path.hub.file.code),
+            ALGORITHM_CODE: t.stringLiteral(
+              path.hub.file.code.slice(start, end)
+            ),
           })
         );
 
         const bodyPath = fnPath.get('body');
         const params = Object.keys(bodyPath.scope.getAllBindingsOfKind('param'));
-        const start = fnPath.get('id').node.start;
-        const end = fnPath.node.params[fnPath.node.params.length - 1].end + 1;
-        bodyPath.unshiftContainer('body', createTraceCall({
-          start,
-          end,
-          context: params,
-          enterCall: true,
-        }));
 
         fnPath.traverse(innerVisitor, {
           fnName,
           bindings: params,
           processedCallExpressions: [],
+          fnOffset: start,
         });
       }
     },
