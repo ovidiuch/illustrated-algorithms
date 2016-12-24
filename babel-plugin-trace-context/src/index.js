@@ -59,6 +59,8 @@ module.exports = function (...args) {
   plugins: ['objectRestSpread']
 });
 
+const MUTATOR_METHODS = ['push', 'shift'];
+
 export default function ({ types: t }) {
   function isNewlyCreatedPath(path) {
     return !path.node.loc;
@@ -208,35 +210,63 @@ export default function ({ types: t }) {
       );
     },
 
-    /**
-     * Replace call expressions with IIFE containing trace() call BEFORE
-     * return value has been computed. Highlight contains call expression only.
-     */
     CallExpression(path) {
-      if (
-        path.node.callee.name !== this.fnName ||
-        // This prevents an infinite loop
-        this.processedCallExpressions.indexOf(path.node) !== -1
-      ) {
+      // This prevents an infinite loop
+      if (this.processedCallExpressions.indexOf(path.node) !== -1) {
         return;
       }
 
       this.processedCallExpressions.push(path.node);
 
-      const { start, end } = path.node;
-      path.replaceWith(
-        t.callExpression(
-          t.arrowFunctionExpression([],
-            t.blockStatement([
-              createTraceCall({
-                bindings: getBindingsForScope(path.scope, this.bindings),
-                ...getOffsettedRange(start, end, this.fnOffset),
-              }),
-              t.returnStatement(path.node)
-            ])
-          ),
-        [])
-      );
+      const { node } = path;
+      const { start, end } = node;
+      const bindings = getBindingsForScope(path.scope, this.bindings);
+      const traceCall = createTraceCall({
+        bindings,
+        ...getOffsettedRange(start, end, this.fnOffset),
+      });
+
+      /**
+       * Replace recursive call expressions with IIFE containing trace() call
+       * BEFORE return value has been computed.
+       */
+      if (node.callee.name === this.fnName) {
+        path.replaceWith(
+          t.callExpression(
+            t.arrowFunctionExpression([],
+              t.blockStatement([
+                traceCall,
+                t.returnStatement(node)
+              ])
+            ),
+          [])
+        );
+      }
+
+      /**
+       * Replace mutative call expressions with IIFE containing trace() call
+       * AFTER object has been mutated.
+       */
+      if (
+        node.callee.type === 'MemberExpression' &&
+        bindings.indexOf(node.callee.object.name) !== -1 &&
+        MUTATOR_METHODS.indexOf(node.callee.property.name) !== -1
+      ) {
+        const returnValId = path.scope.generateUidIdentifier('uid');
+        path.replaceWith(
+          t.callExpression(
+            t.arrowFunctionExpression([],
+              t.blockStatement([
+                t.variableDeclaration('const', [
+                  t.variableDeclarator(returnValId, node)
+                ]),
+                traceCall,
+                t.returnStatement(returnValId)
+              ])
+            ),
+          [])
+        );
+      }
     },
 
     /**
