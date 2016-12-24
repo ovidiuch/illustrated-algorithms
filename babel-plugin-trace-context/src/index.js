@@ -1,6 +1,9 @@
 import template from 'babel-template';
 
-const buildTemplate = template(`let __steps;
+const buildTemplate = template(`
+const cloneDeep = require('lodash.clonedeep');
+
+let __steps;
 let __parentStepId;
 let __lastStepId;
 
@@ -61,7 +64,30 @@ export default function ({ types: t }) {
     return !path.node.loc;
   }
 
+  function getOffsettedRange(start, end, offset) {
+    return {
+      start: start - offset,
+      end: end - offset,
+    };
+  }
+
+  function getBindingsForScope(scope, allBindings) {
+    const bindings = [];
+    let currScope = scope;
+
+    while (currScope) {
+      const scopeBindings = allBindings[currScope.uid];
+      if (scopeBindings) {
+        bindings.unshift(...scopeBindings);
+      }
+      currScope = currScope.parent;
+    }
+
+    return bindings;
+  }
+
   function createTraceCall({
+    bindings,
     start,
     end,
     enterCall,
@@ -69,14 +95,16 @@ export default function ({ types: t }) {
     returnValue,
   }) {
     const stepProps = [
-      t.objectProperty(t.identifier('start'), t.numericLiteral(start - this.fnOffset)),
-      t.objectProperty(t.identifier('end'), t.numericLiteral(end - this.fnOffset)),
+      t.objectProperty(t.identifier('start'), t.numericLiteral(start)),
+      t.objectProperty(t.identifier('end'), t.numericLiteral(end)),
       t.objectProperty(
         t.identifier('context'),
-          t.objectExpression(this.bindings.map(name =>
-            t.objectProperty(t.identifier(name), t.identifier(name))
-          )
-        )
+        t.objectExpression(bindings.map(name =>
+          t.objectProperty(t.identifier(name), t.callExpression(
+            t.identifier('cloneDeep'),
+            [t.identifier(name)],
+          ))
+        ))
       ),
     ];
     if (returnValue !== undefined) {
@@ -112,9 +140,9 @@ export default function ({ types: t }) {
 
       const start = parentPath.get('id').node.start;
       const end = parentNode.params[parentNode.params.length - 1].end + 1;
-      path.unshiftContainer('body', createTraceCall.call(this, {
-        start,
-        end,
+      path.unshiftContainer('body', createTraceCall({
+        bindings: getBindingsForScope(path.scope, this.bindings),
+        ...getOffsettedRange(start, end, this.fnOffset),
         enterCall: true,
       }));
     },
@@ -132,15 +160,17 @@ export default function ({ types: t }) {
         return;
       }
 
-      this.bindings.push(
-        ...path.node.declarations.map(d => d.id.name)
-          .filter(d => this.bindings.indexOf(d) === -1)
-      );
+      const scopeId = path.scope.uid;
+      let scopeBindings = this.bindings[scopeId];
+      if (!scopeBindings) {
+        scopeBindings = this.bindings[scopeId] = [];
+      }
+      scopeBindings.push(...path.node.declarations.map(d => d.id.name));
 
       const { start, end } = path.node;
-      path.insertAfter(createTraceCall.call(this, {
-        start,
-        end,
+      path.insertAfter(createTraceCall({
+        bindings: getBindingsForScope(path.scope, this.bindings),
+        ...getOffsettedRange(start, end, this.fnOffset),
       }));
     },
 
@@ -150,9 +180,9 @@ export default function ({ types: t }) {
      */
     AssignmentExpression(path) {
       const { start, end } = path.node;
-      path.insertAfter(createTraceCall.call(this, {
-        start,
-        end,
+      path.insertAfter(createTraceCall({
+        bindings: getBindingsForScope(path.scope, this.bindings),
+        ...getOffsettedRange(start, end, this.fnOffset),
       }));
     },
 
@@ -167,9 +197,9 @@ export default function ({ types: t }) {
         t.callExpression(
           t.arrowFunctionExpression([],
             t.blockStatement([
-              createTraceCall.call(this, {
-                start,
-                end,
+              createTraceCall({
+                bindings: getBindingsForScope(path.scope, this.bindings),
+                ...getOffsettedRange(start, end, this.fnOffset),
               }),
               t.returnStatement(testPath.node)
             ])
@@ -198,9 +228,9 @@ export default function ({ types: t }) {
         t.callExpression(
           t.arrowFunctionExpression([],
             t.blockStatement([
-              createTraceCall.call(this, {
-                start,
-                end,
+              createTraceCall({
+                bindings: getBindingsForScope(path.scope, this.bindings),
+                ...getOffsettedRange(start, end, this.fnOffset),
               }),
               t.returnStatement(path.node)
             ])
@@ -223,6 +253,7 @@ export default function ({ types: t }) {
       const returnValId = path.scope.generateUidIdentifier('uid');
       const argumentPath = path.get('argument');
       const { start, end } = path.node;
+
       argumentPath.replaceWith(
         t.callExpression(
           t.arrowFunctionExpression([],
@@ -230,9 +261,9 @@ export default function ({ types: t }) {
               t.variableDeclaration('const', [
                 t.variableDeclarator(returnValId, argumentPath.node)
               ]),
-              createTraceCall.call(this, {
-                start,
-                end,
+              createTraceCall({
+                bindings: getBindingsForScope(path.scope, this.bindings),
+                ...getOffsettedRange(start, end, this.fnOffset),
                 leaveCall: true,
                 returnValue: returnValId,
               }),
@@ -266,7 +297,7 @@ export default function ({ types: t }) {
 
         fnPath.traverse(innerVisitor, {
           fnName,
-          bindings: params,
+          bindings: { [fnPath.scope.uid]: params },
           processedCallExpressions: [],
           fnOffset: start,
         });
