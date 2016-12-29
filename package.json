@@ -18,7 +18,7 @@
   "scripts": {
     "build:babel-plugin": "babel babel-plugin-trace-context/src -d babel-plugin-trace-context/lib",
     "test": "xo",
-    "start": "npm run build:babel-plugin && next"
+    "dev": "npm run build:babel-plugin && next"
   },
   "xo": {
     "space": true,
@@ -49,7 +49,7 @@
     "babel-template": "^6.16.0",
     "lodash.clonedeep": "^4.5.0",
     "lodash.isequal": "^4.4.0",
-    "next": "^1.2.3",
+    "next": "^2.0.0-beta.5",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }
