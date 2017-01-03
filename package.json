@@ -18,7 +18,7 @@
     "xo": "^0.17.1"
   },
   "scripts": {
-    "build:babel-plugin": "babel babel-plugin-trace-context/src -d babel-plugin-trace-context/lib",
+    "build:babel-plugin": "babel babel-plugin-trace-context/src -d babel-plugin-trace-context/lib && rm -rf node_modules/.cache/babel-loader/*",
     "test": "xo",
     "cosmos": "cosmos --config cosmos/cosmos.config.js",
     "dev": "npm run build:babel-plugin && next"

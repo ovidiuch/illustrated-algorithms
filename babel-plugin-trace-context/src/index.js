@@ -89,12 +89,13 @@ export default function ({ types: t }) {
   }
 
   function createTraceCall({
-    bindings,
     start,
     end,
+    bindings,
+    compared,
+    returnValue,
     enterCall,
     leaveCall,
-    returnValue,
   }) {
     const stepProps = [
       t.objectProperty(t.identifier('start'), t.numericLiteral(start)),
@@ -109,6 +110,12 @@ export default function ({ types: t }) {
         ))
       ),
     ];
+    if (compared !== undefined) {
+      stepProps.push(t.objectProperty(
+        t.identifier('compared'),
+        t.arrayExpression(compared.map(s => t.stringLiteral(s)))
+      ));
+    }
     if (returnValue !== undefined) {
       stepProps.push(t.objectProperty(t.identifier('returnValue'), returnValue));
     }
@@ -194,7 +201,12 @@ export default function ({ types: t }) {
      */
     'WhileStatement|IfStatement'(path) {
       const testPath = path.get('test');
-      const { start, end } = testPath.node;
+      const { start, end, left, right, type } = testPath.node;
+      const { code } = path.hub.file;
+      const compared = type === 'BinaryExpression' ? [
+        code.slice(left.start, left.end),
+        code.slice(right.start, right.end),
+      ] : [code.slice(start, end)];
       testPath.replaceWith(
         t.callExpression(
           t.arrowFunctionExpression([],
@@ -202,6 +214,7 @@ export default function ({ types: t }) {
               createTraceCall({
                 bindings: getBindingsForScope(path.scope, this.bindings),
                 ...getOffsettedRange(start, end, this.fnOffset),
+                compared,
               }),
               t.returnStatement(testPath.node)
             ])
