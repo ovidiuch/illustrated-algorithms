@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 export default {
   module: {
     loaders: [{
-      loader: 'babel-loader',
+      loader: 'babel',
       exclude: /node_modules/,
       test: /\.jsx?$/,
     }]
