@@ -6,6 +6,7 @@
     "url": "git+https://github.com/skidding/illustrated-algorithms.git"
   },
   "devDependencies": {
+    "@skidding/babel-plugin-inline-react-svg": "^0.2.1",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",

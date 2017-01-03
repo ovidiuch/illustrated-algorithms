@@ -1,3 +1,4 @@
 {
   "presets": ["next/babel"],
+  "plugins": ["@skidding/babel-plugin-inline-react-svg"]
 }
