@@ -8,33 +8,32 @@ export default function SourceCode({
   let lineStart = 0;
   return (
     <pre>
-      <ol>
-        {def.split('\n').map((fnLine, i) => {
-          const lineLen = fnLine.length;
-          const lineEnd = lineStart + lineLen;
-          const isRangeInLine = start < lineEnd && end > lineStart;
-          const relStart = start - lineStart;
-          const relEnd = end - lineStart;
-          lineStart += lineLen + 1; // account for newlines removed
+      {def.split('\n').map((fnLine, i) => {
+        const lineLen = fnLine.length;
+        const lineEnd = lineStart + lineLen;
+        const isRangeInLine = start < lineEnd && end > lineStart;
+        const relStart = start - lineStart;
+        const relEnd = end - lineStart;
+        lineStart += lineLen + 1; // account for newlines removed
 
-          return (
-            <li
-              key={i}
-              style={{ backgroundColor: isRangeInLine ? 'rgba(255, 255, 0, 0.4)' : 'transparent' }}
+        return (
+          <div
+            key={i}
+            style={{ backgroundColor: isRangeInLine ? 'rgba(255, 255, 255, 0.4)' : 'transparent' }}
             >
-              {isRangeInLine ? (
-                <span>
-                  <span>{fnLine.slice(0, relStart)}</span>
-                  <span style={{ backgroundColor: 'lightblue' }}>
-                    {fnLine.slice(relStart, relEnd)}
-                  </span>
-                  <span>{fnLine.slice(relEnd)}</span>
+            <span style={{ opacity: 0.5 }}>{`${i}. `}</span>
+            {isRangeInLine ? (
+              <span>
+                <span>{fnLine.slice(0, relStart)}</span>
+                <span style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
+                  {fnLine.slice(relStart, relEnd)}
                 </span>
-              ) : fnLine}
-            </li>
-          );
-        })}
-      </ol>
+                <span>{fnLine.slice(relEnd)}</span>
+              </span>
+            ) : fnLine}
+          </div>
+        );
+      })}
     </pre>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import isEqual from 'lodash.isequal';
 import quicksort from '../algorithms/quicksort';
+import Layout from '../components/layout';
 import SourceCode from '../components/source-code';
 import Preview from '../components/preview';
 
@@ -16,12 +17,12 @@ class StackEntry extends React.Component {
           def={code}
           start={start}
           end={end}
-        />
+          />
         <Preview
           context={context}
           changedKeys={Object.keys(context).filter(key => !isEqual(context[key], prevContext[key]))}
           returnValue={returnValue}
-        />
+          />
         {returnValue !== undefined && (
           <pre style={{ backgroundColor: 'gray', color: 'white' }}>
             Return: {JSON.stringify(returnValue)}
@@ -89,7 +90,7 @@ class Quicksort extends React.Component {
   }
 
   render() {
-    const { steps, code } = this.props;
+    const { steps, code, url } = this.props;
     const { stepIndex } = this.state;
 
     const stackEntries = [];
@@ -106,7 +107,7 @@ class Quicksort extends React.Component {
           code={code}
           currStep={currStep}
           prevStep={prevStep}
-        />
+          />
       );
 
       currStepIndex = currStep.parentStepId;
@@ -114,13 +115,13 @@ class Quicksort extends React.Component {
     }
 
     return (
-      <div>
+      <Layout color="#CCFF90" pathname={url.pathname}>
         <div>
           <button disabled={stepIndex <= 0} onClick={this.handlePrev}>back</button>
           <button disabled={stepIndex >= steps.length - 1} onClick={this.handleNext}>forward</button>
         </div>
         {stackEntries}
-      </div>
+      </Layout>
     );
   }
 }
@@ -128,6 +129,7 @@ class Quicksort extends React.Component {
 Quicksort.propTypes = {
   steps: React.PropTypes.array.isRequired,
   code: React.PropTypes.string.isRequired,
+  url: React.PropTypes.object.isRequired,
 };
 
 export default Quicksort;

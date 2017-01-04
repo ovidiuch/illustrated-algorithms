@@ -1,6 +1,7 @@
 import React from 'react';
 import isEqual from 'lodash.isequal';
 import bfs from '../algorithms/bfs';
+import Layout from '../components/layout';
 import SourceCode from '../components/source-code';
 import Preview from '../components/preview';
 
@@ -44,7 +45,7 @@ class BinarySearch extends React.Component {
   }
 
   render() {
-    const { steps, code } = this.props;
+    const { steps, code, url } = this.props;
     const { stepIndex } = this.state;
 
     const { line, start, end, context, returnValue } = steps[stepIndex];
@@ -52,7 +53,7 @@ class BinarySearch extends React.Component {
     const prevContext = prevStep ? prevStep.context : {};
 
     return (
-      <div>
+      <Layout color="#80D8FF" pathname={url.pathname}>
         <div>
           <button disabled={stepIndex <= 0} onClick={this.handlePrev}>back</button>
           <button disabled={stepIndex >= steps.length - 1} onClick={this.handleNext}>forward</button>
@@ -62,18 +63,18 @@ class BinarySearch extends React.Component {
           line={line}
           start={start}
           end={end}
-        />
+          />
         <Preview
           context={context}
           changedKeys={Object.keys(context).filter(key => !isEqual(context[key], prevContext[key]))}
           returnValue={returnValue}
-        />
+          />
         {returnValue !== undefined && (
           <pre style={{ backgroundColor: 'gray', color: 'white' }}>
             Return: {JSON.stringify(returnValue)}
           </pre>
         )}
-      </div>
+      </Layout>
     );
   }
 }
@@ -81,6 +82,7 @@ class BinarySearch extends React.Component {
 BinarySearch.propTypes = {
   steps: React.PropTypes.array.isRequired,
   code: React.PropTypes.string.isRequired,
+  url: React.PropTypes.object.isRequired,
 };
 
 export default BinarySearch;
