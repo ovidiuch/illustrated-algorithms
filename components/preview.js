@@ -1,17 +1,17 @@
 import React from 'react';
 
 export default function Preview({
-  context,
+  bindings,
   changedKeys,
 }) {
   return (
     <pre style={{ backgroundColor: 'lightgray' }}>
-      {Object.keys(context).map(key =>
+      {Object.keys(bindings).map(key =>
         <div key={key}>
           <span
             style={{ fontWeight: changedKeys.indexOf(key) === -1 ? 'normal' : 'bold'}}
-          >
-            {key} = {JSON.stringify(context[key])}
+            >
+            {key} = {JSON.stringify(bindings[key])}
           </span>
         </div>
       )}
@@ -20,6 +20,6 @@ export default function Preview({
 }
 
 Preview.propTypes = {
-  context: React.PropTypes.object.isRequired,
+  bindings: React.PropTypes.object.isRequired,
   changedKeys: React.PropTypes.array.isRequired,
 };

@@ -1,30 +1,29 @@
 import React from 'react';
-import {
-  getBubbleSize,
-} from '../utils/binary-search';
 import Value from './value';
 
 const NumberVar = ({
   value,
   label,
   inverted,
+  width,
 }) => (
   <div
     className={inverted && 'inverted'}
     style={{
-      width: getBubbleSize(0.5),
+      width,
     }}
     >
     <Value
       value={value}
       inverted={inverted}
+      width={0.8 * width}
       />
     <div
       className="label"
       style={{
-        height: getBubbleSize(0.3),
-        fontSize: getBubbleSize(0.2),
-        lineHeight: `${getBubbleSize(0.3)}px`,
+        height: 0.6 * width,
+        fontSize: 0.4 * width,
+        lineHeight: `${0.6 * width}px`,
       }}
       >
       {label}
@@ -42,10 +41,12 @@ NumberVar.propTypes = {
   value: React.PropTypes.number.isRequired,
   label: React.PropTypes.string.isRequired,
   inverted: React.PropTypes.bool,
+  width: React.PropTypes.number,
 };
 
 NumberVar.defaultProps = {
   inverted: false,
+  width: 30,
 };
 
 export default NumberVar;

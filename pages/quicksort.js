@@ -8,8 +8,8 @@ import Preview from '../components/preview';
 class StackEntry extends React.Component {
   render() {
     const { code, currStep, prevStep } = this.props;
-    const { start, end, context, returnValue } = currStep;
-    const prevContext = prevStep ? prevStep.context : {};
+    const { start, end, bindings, returnValue } = currStep;
+    const prevBindings = prevStep ? prevStep.bindings : {};
 
     return (
       <div>
@@ -19,8 +19,8 @@ class StackEntry extends React.Component {
           end={end}
           />
         <Preview
-          context={context}
-          changedKeys={Object.keys(context).filter(key => !isEqual(context[key], prevContext[key]))}
+          bindings={bindings}
+          changedKeys={Object.keys(bindings).filter(key => !isEqual(bindings[key], prevBindings[key]))}
           returnValue={returnValue}
           />
         {returnValue !== undefined && (

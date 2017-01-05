@@ -34,6 +34,12 @@ export default function SourceCode({
           </div>
         );
       })}
+      <style jsx>{`
+        pre {
+          margin: 0;
+          padding: 0;
+        }
+      `}</style>
     </pre>
   );
 }

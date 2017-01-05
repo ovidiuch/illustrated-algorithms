@@ -1,20 +1,18 @@
 import React from 'react';
-import {
-  getBubbleSize,
-} from '../utils/binary-search';
 
 const Value = ({
   value,
   inverted,
+  width,
 }) => (
   <div
     className={`value ${inverted && 'inverted'}`}
     style={{
-      width: getBubbleSize(0.4),
-      height: getBubbleSize(0.4),
-      borderRadius: getBubbleSize(0.1),
-      fontSize: getBubbleSize(0.25),
-      lineHeight: `${getBubbleSize(0.4)}px`,
+      width,
+      height: width,
+      borderRadius: 0.25 * width,
+      fontSize: 0.6 * width,
+      lineHeight: `${width}px`,
     }}
     >
     {value}
@@ -40,10 +38,12 @@ Value.propTypes = {
     React.PropTypes.string,
   ]).isRequired,
   inverted: React.PropTypes.bool,
+  width: React.PropTypes.number,
 };
 
 Value.defaultProps = {
   inverted: false,
+  width: 24,
 };
 
 export default Value;

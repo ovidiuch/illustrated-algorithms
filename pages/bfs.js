@@ -48,9 +48,9 @@ class BinarySearch extends React.Component {
     const { steps, code, url } = this.props;
     const { stepIndex } = this.state;
 
-    const { line, start, end, context, returnValue } = steps[stepIndex];
+    const { line, start, end, bindings, returnValue } = steps[stepIndex];
     const prevStep = steps[stepIndex - 1];
-    const prevContext = prevStep ? prevStep.context : {};
+    const prevBindings = prevStep ? prevStep.bindings : {};
 
     return (
       <Layout color="#80D8FF" pathname={url.pathname}>
@@ -65,8 +65,8 @@ class BinarySearch extends React.Component {
           end={end}
           />
         <Preview
-          context={context}
-          changedKeys={Object.keys(context).filter(key => !isEqual(context[key], prevContext[key]))}
+          bindings={bindings}
+          changedKeys={Object.keys(bindings).filter(key => !isEqual(bindings[key], prevBindings[key]))}
           returnValue={returnValue}
           />
         {returnValue !== undefined && (
