@@ -101,7 +101,7 @@ export default function ({ types: t }) {
       t.objectProperty(t.identifier('start'), t.numericLiteral(start)),
       t.objectProperty(t.identifier('end'), t.numericLiteral(end)),
       t.objectProperty(
-        t.identifier('context'),
+        t.identifier('bindings'),
         t.objectExpression(bindings.map(name =>
           t.objectProperty(t.identifier(name), t.callExpression(
             t.identifier('cloneDeep'),
@@ -160,7 +160,7 @@ export default function ({ types: t }) {
      * Append trace call() AFTER var declaration. Highlight contains entire
      * declaration.
      *
-     * Created vars are pushed to visitor state to be included in context of
+     * Created vars are pushed to visitor state to be included in bindings of
      * this and future trace() calls
      */
     VariableDeclaration(path) {
@@ -185,7 +185,7 @@ export default function ({ types: t }) {
 
     /**
      * Append trace call() AFTER assignment expressions. Highlight contains
-     * entire expression. Context includes new values.
+     * entire expression. Bindings include new values.
      */
     AssignmentExpression(path) {
       const { start, end } = path.node;
