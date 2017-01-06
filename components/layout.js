@@ -4,7 +4,14 @@ import React from 'react';
 import Head from 'next/head';
 import Menu from '../components/menu';
 
-const getWindowWidth = () => window.innerWidth;
+const getWindowWidth = () => ({
+  width: window.innerWidth,
+  height: window.innerHeight,
+});
+
+const IPHONE6_LANDSCAPE_WIDTH = 667;
+const HEADER_HEIGHT = 18;
+const FOOTER_HEIGHT = 18;
 
 class Layout extends React.Component {
   constructor(props) {
@@ -14,7 +21,9 @@ class Layout extends React.Component {
 
     this.state = {
       renderedOnClient: false,
-      width: 320,
+      // iPhone 6 portrait resolution
+      width: 375,
+      height: 667,
     };
   }
 
@@ -23,7 +32,7 @@ class Layout extends React.Component {
 
     this.setState({
       renderedOnClient: true,
-      width: getWindowWidth(),
+      ...getWindowWidth(),
     });
   }
 
@@ -32,14 +41,24 @@ class Layout extends React.Component {
   }
 
   handleResize() {
-    this.setState({ width: getWindowWidth() });
+    this.setState(getWindowWidth());
   }
 
   getChildContext() {
-    const { width } = this.state;
+    const { width, height } = this.state;
+
+    const headerHeight = HEADER_HEIGHT;
+    const footerHeight = FOOTER_HEIGHT;
+    const minSides = IPHONE6_LANDSCAPE_WIDTH;
+    const visibleHeight = height - headerHeight - footerHeight;
+
     return {
-      // iPad mini landscape is 1024
-      sideWidth: width >= 800 ? width / 2 : width,
+      layout: {
+        headerHeight,
+        footerHeight,
+        sideWidth: width >= minSides ? Math.floor(width / 2) : width,
+        visibleHeight,
+      }
     };
   }
 
@@ -56,6 +75,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Head>
+          <meta name="viewport" content="initial-scale=1, width=device-width"/>
           <style>{`
             body {
               margin: 0;
@@ -67,7 +87,9 @@ class Layout extends React.Component {
           `}</style>
         </Head>
         <div className="content" style={{ opacity: renderedOnClient ? 1 : 0 }}>
-          <Menu pathname={pathname}/>
+          <div className="header" style={{ height: HEADER_HEIGHT }}>
+            <Menu pathname={pathname}/>
+          </div>
           {children}
           <style jsx>{`
             .content {
@@ -90,7 +112,12 @@ Layout.propTypes = {
 };
 
 Layout.childContextTypes = {
-  sideWidth: React.PropTypes.number,
+  layout: React.PropTypes.shape({
+    headerHeight: React.PropTypes.number,
+    footerHeight: React.PropTypes.number,
+    sideWidth: React.PropTypes.number,
+    visibleHeight: React.PropTypes.number,
+  }),
 };
 
 export default Layout;

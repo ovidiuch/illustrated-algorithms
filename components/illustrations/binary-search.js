@@ -11,13 +11,16 @@ const ofSameValue = (val, others) => others.filter(i => i === val).length;
 
 const getBubbleSize = (sideWidth, c = 1) => c * (sideWidth - 20) / 6;
 
-function List({ step }, { sideWidth }) {
+function List({ step }, { layout }) {
   const { bindings } = step;
   const {
     list,
     low,
     high,
   } = bindings;
+  const {
+    sideWidth,
+  } = layout;
 
   return (
     <div
@@ -59,13 +62,16 @@ function List({ step }, { sideWidth }) {
   );
 }
 
-function Low({ step }, { sideWidth }) {
+function Low({ step }, { layout }) {
   const { bindings } = step;
   const {
     low,
     mid,
     high,
   } = bindings;
+  const {
+    sideWidth,
+  } = layout;
 
   if (low === undefined) {
     return null;
@@ -90,13 +96,16 @@ function Low({ step }, { sideWidth }) {
   );
 }
 
-function High({ step }, { sideWidth }) {
+function High({ step }, { layout }) {
   const { bindings } = step;
   const {
     low,
     mid,
     high,
   } = bindings;
+  const {
+    sideWidth,
+  } = layout;
 
   if (high === undefined) {
     return null;
@@ -121,13 +130,16 @@ function High({ step }, { sideWidth }) {
   );
 }
 
-function Mid({ step }, { sideWidth }) {
+function Mid({ step }, { layout }) {
   const { bindings } = step;
   const {
     low,
     mid,
     high,
   } = bindings;
+  const {
+    sideWidth,
+  } = layout;
 
   if (mid === undefined) {
     return null;
@@ -153,7 +165,7 @@ function Mid({ step }, { sideWidth }) {
   );
 }
 
-function Guess({ step }, { sideWidth }) {
+function Guess({ step }, { layout }) {
   const { bindings } = step;
   const {
     list,
@@ -161,6 +173,9 @@ function Guess({ step }, { sideWidth }) {
     mid,
     guess,
   } = bindings;
+  const {
+    sideWidth,
+  } = layout;
 
   const left =
     guess ?
@@ -180,13 +195,16 @@ function Guess({ step }, { sideWidth }) {
   );
 }
 
-function Comparison({ step }, { sideWidth }) {
+function Comparison({ step }, { layout }) {
   const { bindings, compared, returnValue } = step;
   const {
     item,
     mid,
     guess,
   } = bindings;
+  const {
+    sideWidth,
+  } = layout;
 
   if (!guess || (!compared && returnValue === undefined)) {
     return null;
@@ -214,7 +232,11 @@ function Comparison({ step }, { sideWidth }) {
   );
 }
 
-export default function BinarySearch(props, { sideWidth }) {
+export default function BinarySearch(props, { layout }) {
+  const {
+    sideWidth,
+  } = layout;
+
   return (
     <div
       className="binary-search"
@@ -256,5 +278,5 @@ High.contextTypes =
 Guess.contextTypes =
 Comparison.contextTypes =
 BinarySearch.contextTypes = {
-  sideWidth: React.PropTypes.number,
+  layout: React.PropTypes.object,
 };

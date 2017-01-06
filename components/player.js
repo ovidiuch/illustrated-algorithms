@@ -34,34 +34,40 @@ class Player extends React.Component {
     const {
       stepIndex
     } = this.state;
+    const {
+      footerHeight,
+      sideWidth,
+    } = this.context.layout;
+
     const step = steps[stepIndex];
     const { start, end } = step;
 
     return (
       <div>
         <div>
-          <div className="content">
-            <div className="side">
-              {React.createElement(illustration, { step })}
-            </div>
-            <div className="side">
-              <SourceCode
-                def={code}
-                start={start}
-                end={end}
-                />
+          <div className="content" style={{ paddingBottom: footerHeight }}>
+            <div className="stack-entry">
+              <div className="illustration" style={{ width: sideWidth }}>
+                {React.createElement(illustration, { step })}
+              </div>
+              <div className="code" style={{ width: sideWidth }}>
+                <SourceCode
+                  def={code}
+                  start={start}
+                  end={end}
+                  />
+              </div>
             </div>
           </div>
-          <div className="footer">
+          <div className="footer" style={{ height: footerHeight }}>
             <button disabled={stepIndex <= 0} onClick={this.handlePrev}>back</button>
             <button disabled={stepIndex >= steps.length - 1} onClick={this.handleNext}>forward</button>
           </div>
           <style jsx>{`
-            .content {
-              padding-bottom: 20px;
-              overflow: hidden;
-            }
-            .side {
+            .content {}
+            .stack-entry {}
+            .illustration,
+            .code {
               float: left;
             }
             .footer {
@@ -82,6 +88,10 @@ Player.propTypes = {
   steps: React.PropTypes.array.isRequired,
   code: React.PropTypes.string.isRequired,
   illustration: React.PropTypes.func.isRequired,
+};
+
+Player.contextTypes = {
+  layout: React.PropTypes.object,
 };
 
 export default Player;
