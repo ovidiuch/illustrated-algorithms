@@ -1,28 +1,81 @@
 import React from 'react';
 import SourceCode from '../components/source-code';
 
+const FPS = 60;
+const DELAY_TIME = 1;
+const TRANSITION_TIME = 0.5;
+
+const getFramesPerTime = time => FPS * time;
+
+const FRAMES_PER_TRANSITION = getFramesPerTime(TRANSITION_TIME);
+const FRAMES_PER_DELAY = getFramesPerTime(DELAY_TIME);
+const FRAMES_PER_POS = FRAMES_PER_TRANSITION + FRAMES_PER_DELAY;
+
+const getMaxPos = steps =>
+  (steps * FRAMES_PER_TRANSITION) +
+  ((steps - 1) * FRAMES_PER_DELAY);
+
 class Player extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handlePrev = this.handlePrev.bind(this);
-    this.handleNext = this.handleNext.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+    this.handleScrollStart = this.handleScrollStart.bind(this);
+    this.handleScrollStop = this.handleScrollStop.bind(this);
 
     this.state = {
-      stepIndex: 0,
+      pos: 0,
+      isScrolling: false,
     };
   }
 
-  handlePrev() {
+  componentDidMount() {
+    this.startInterval();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
+
+  handleScroll(e) {
     this.setState({
-      stepIndex: this.state.stepIndex - 1,
+      pos: Number(e.currentTarget.value),
     });
   }
 
-  handleNext() {
+  handleScrollStart() {
     this.setState({
-      stepIndex: this.state.stepIndex + 1,
+      isScrolling: true,
     });
+  }
+
+  handleScrollStop() {
+    this.setState({
+      isScrolling: false,
+    });
+  }
+
+  startInterval() {
+    const {
+      steps,
+    } = this.props;
+    const maxPos = getMaxPos(steps.length);
+
+    // TODO: Use rAF
+    this.intervalId = setInterval(() => {
+      const {
+        pos,
+        isScrolling,
+      } = this.state;
+
+      if (!isScrolling && pos < maxPos) {
+        const newPos = pos + 1;
+
+        this.setState({
+          pos: newPos,
+        });
+      }
+    }, 1000 / FPS);
   }
 
   render() {
@@ -32,15 +85,20 @@ class Player extends React.Component {
       illustration,
     } = this.props;
     const {
-      stepIndex
+      pos
     } = this.state;
     const {
       footerHeight,
       sideWidth,
     } = this.context.layout;
 
-    const step = steps[stepIndex];
-    const { start, end } = step;
+    const maxPos = getMaxPos(steps.length);
+    const stepIndex = Math.floor(pos / FRAMES_PER_POS);
+    const stepProgress = Math.min(1, (pos - (stepIndex * FRAMES_PER_POS)) / FRAMES_PER_TRANSITION);
+
+    const nextStep = steps[stepIndex];
+    const prevStep = stepIndex > 0 ? steps[stepIndex - 1] : undefined;
+    const { start, end } = nextStep;
 
     return (
       <div>
@@ -48,7 +106,7 @@ class Player extends React.Component {
           <div className="content" style={{ paddingBottom: footerHeight }}>
             <div className="stack-entry">
               <div className="illustration" style={{ width: sideWidth }}>
-                {React.createElement(illustration, { step })}
+                {React.createElement(illustration, { prevStep, nextStep, stepProgress })}
               </div>
               <div className="code" style={{ width: sideWidth }}>
                 <SourceCode
@@ -60,12 +118,22 @@ class Player extends React.Component {
             </div>
           </div>
           <div className="footer" style={{ height: footerHeight }}>
-            <button disabled={stepIndex <= 0} onClick={this.handlePrev}>back</button>
-            <button disabled={stepIndex >= steps.length - 1} onClick={this.handleNext}>forward</button>
+            <input
+              type="range"
+              min="0"
+              max={maxPos}
+              className="slider"
+              value={pos}
+              onMouseDown={this.handleScrollStart}
+              onMouseUp={this.handleScrollStop}
+              onChange={this.handleScroll}
+              />
           </div>
           <style jsx>{`
             .content {}
-            .stack-entry {}
+            .stack-entry {
+              overflow: hidden;
+            }
             .illustration,
             .code {
               float: left;
@@ -76,6 +144,10 @@ class Player extends React.Component {
               left: 0;
               right: 0;
               height: 20px;
+            }
+            .slider {
+              width: 100%;
+              margin: 0;
             }
           `}</style>
         </div>

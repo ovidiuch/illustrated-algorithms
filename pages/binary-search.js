@@ -2,7 +2,7 @@ import React from 'react';
 import binarySearch from '../algorithms/binary-search';
 import Layout from '../components/layout';
 import Player from '../components/player';
-import BinarySearch from '../components/illustrations/binary-search';
+import BinarySearch from '../components/illustrations/binary-search/binary-search';
 
 class BinarySearchPage extends React.Component {
   static async getInitialProps() {
