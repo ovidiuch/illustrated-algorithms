@@ -1,21 +1,5 @@
 import React from 'react';
-import Bear from 'emojione/assets/svg/1f43b.svg';
-import Cat from 'emojione/assets/svg/1f431.svg';
-import Dog from 'emojione/assets/svg/1f436.svg';
-import Pig from 'emojione/assets/svg/1f437.svg';
-import Rat from 'emojione/assets/svg/1f400.svg';
-import Lion from 'emojione/assets/svg/1f981.svg';
-import Snail from 'emojione/assets/svg/1f40c.svg';
-
-const emojis = {
-  bear: Bear,
-  cat: Cat,
-  dog: Dog,
-  pig: Pig,
-  rat: Rat,
-  lion: Lion,
-  snail: Snail,
-};
+import EmojiIcon from './emoji-icon';
 
 const EmojiBlock = ({
   name,
@@ -49,7 +33,7 @@ const EmojiBlock = ({
           left: blockWidth * 0.1,
         }}
         >
-        {emojis[name] ? React.createElement(emojis[name]) : null}
+        <EmojiIcon name={name}/>
       </div>
       <div
         className="label"
