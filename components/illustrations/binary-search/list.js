@@ -1,15 +1,16 @@
 import React from 'react';
-import EmojiBubble from '../../emoji-bubble';
-import { transitionValues } from '../../../utils/transition';
+import EmojiBlock from '../shared/emoji-block';
 import {
-  getBubbleSize
-} from '../../../utils/binary-search';
+  transitionValue,
+} from '../../../utils/transition';
+import getWobbleRotation from '../../../utils/wobble';
 
-const getItemStyle = (index, step) => {
+const getItemGlow = (name, step) =>
+  step !== undefined && step.bindings.guess === name ? 0.5 : 0;
+
+const getItemOpacity = (index, step) => {
   if (step === undefined) {
-    return {
-      opacity: 0,
-    };
+    return 1;
   }
 
   const {
@@ -22,53 +23,58 @@ const getItemStyle = (index, step) => {
     (index >= low && index <= high)
   );
 
-  return {
-    opacity: isIncluded ? 1 : 0.4,
-  };
+  return isIncluded ? 1 : 0.2;
 };
 
 export default function List({ prevStep, nextStep, stepProgress }, { layout }) {
-  const { bindings } = nextStep;
+  const { bindings, compared } = nextStep;
   const {
     list,
+    mid,
   } = bindings;
-  const {
-    sideWidth,
-  } = layout;
 
   return (
     <div
       className="list"
       style={{
-        top: getBubbleSize(sideWidth, 0.7),
+        top: layout.getListTopPosition(),
       }}
       >
       {list.map((name, index) => {
+        const isGuess = compared && compared.indexOf('guess') !== -1 && index === mid;
+        const rotation = isGuess ? getWobbleRotation(stepProgress) : 0;
         return (
           <div
             key={name}
             className="item"
             style={{
-              left: getBubbleSize(sideWidth, index),
-              ...transitionValues(
-                getItemStyle(index, prevStep, layout),
-                getItemStyle(index, nextStep, layout),
+              left: layout.getListItemLeftPosition(index),
+              opacity: transitionValue(
+                getItemOpacity(index, prevStep),
+                getItemOpacity(index, nextStep),
                 stepProgress,
               ),
+              transform: `rotate(${rotation}deg)`,
+              zIndex: isGuess ? 1 : 0,
             }}
             >
-            <EmojiBubble name={name} width={getBubbleSize(sideWidth)}/>
+            <EmojiBlock
+              name={name}
+              glow={transitionValue(
+                getItemGlow(name, prevStep),
+                getItemGlow(name, nextStep),
+                stepProgress,
+              )}
+              />
           </div>
         );
       })}
       <style jsx>{`
         .list {
           position: absolute;
-          left: 0;
         }
         .item {
           position: absolute;
-          top: 0;
         }
       `}</style>
     </div>

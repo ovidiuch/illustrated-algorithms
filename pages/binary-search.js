@@ -3,19 +3,24 @@ import binarySearch from '../algorithms/binary-search';
 import Layout from '../components/layout';
 import Player from '../components/player';
 import BinarySearch from '../components/illustrations/binary-search/binary-search';
+import { BinarySearchLayoutCalc } from '../utils/layout-calc';
 
 class BinarySearchPage extends React.Component {
   static async getInitialProps() {
     const items = [
-      'bear', 'cat', 'lion', 'pig', 'rat', 'snail'
+      'bear', 'cat', 'dog', 'lion', 'rat', 'snail'
     ];
-    return binarySearch(items, 'rat');
+    return binarySearch(items, 'dog');
   }
 
   render() {
     const { steps, code, url } = this.props;
     return (
-      <Layout color="#FF8A80" pathname={url.pathname}>
+      <Layout
+        color="#FF8A80"
+        pathname={url.pathname}
+        LayoutCalc={BinarySearchLayoutCalc}
+        >
         <Player
           steps={steps}
           code={code}

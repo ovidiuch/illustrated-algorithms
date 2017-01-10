@@ -1,18 +1,12 @@
 import React from 'react';
 import {
-  ofSameValue,
-  onlyDefined,
-} from '../../../utils/values';
-import {
   transitionValues,
   getBindingValue,
 } from '../../../utils/transition';
-import {
-  getBubbleSize
-} from '../../../utils/binary-search';
-import NumberVar from '../../number-var';
+import getWobbleRotation from '../../../utils/wobble';
+import NumberVar from '../shared/number-var';
 
-const getStyle = (step, { sideWidth }) => {
+const getStyle = (step, layout) => {
   if (!step || step.bindings.low === undefined) {
     return {
       opacity: 0,
@@ -21,29 +15,16 @@ const getStyle = (step, { sideWidth }) => {
 
   const {
     low,
-    mid,
-    high,
   } = step.bindings;
-
-  const offsetAlongSiblings = {
-    0: getBubbleSize(sideWidth, 0.25),
-    1: 0,
-    2: -getBubbleSize(sideWidth, 0.25),
-  };
-  const occupyingSamePos = ofSameValue(low, onlyDefined([mid, high]));
-  const offset = offsetAlongSiblings[occupyingSamePos];
 
   return {
     opacity: 1,
-    left: getBubbleSize(sideWidth, low) + offset,
+    top: layout.getNumberVarTopPosition(0),
+    left: layout.getListItemLeftPosition(low),
   };
 };
 
 export default function Low({ prevStep, nextStep, stepProgress }, { layout }) {
-  const {
-    sideWidth,
-  } = layout;
-
   const low = getBindingValue(prevStep, nextStep, 'low');
   if (low === undefined) {
     return null;
@@ -55,12 +36,21 @@ export default function Low({ prevStep, nextStep, stepProgress }, { layout }) {
     stepProgress,
   );
 
+  const { compared } = nextStep;
+  const rotation =
+    compared && compared.indexOf('low') !== -1 ? getWobbleRotation(stepProgress) : 0;
+
   return (
-    <div style={{ position: 'absolute', ...currStyle }}>
+    <div
+      style={{
+        position: 'absolute',
+        ...currStyle,
+        transform: `rotate(${rotation}deg)`
+      }}
+      >
       <NumberVar
         value={low}
         label="low"
-        width={getBubbleSize(sideWidth, 0.5)}
         />
     </div>
   );

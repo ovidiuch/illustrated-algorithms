@@ -90,7 +90,7 @@ class Player extends React.Component {
     const {
       footerHeight,
       sideWidth,
-    } = this.context.layout;
+    } = this.context.layout.sizes;
 
     const maxPos = getMaxPos(steps.length);
     const stepIndex = Math.floor(pos / FRAMES_PER_POS);
@@ -143,7 +143,6 @@ class Player extends React.Component {
               bottom: 0;
               left: 0;
               right: 0;
-              height: 20px;
             }
             .slider {
               width: 100%;

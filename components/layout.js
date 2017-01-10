@@ -3,6 +3,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Menu from '../components/menu';
+import { LayoutCalc } from '../utils/layout-calc';
 
 const getWindowWidth = () => ({
   width: window.innerWidth,
@@ -45,6 +46,7 @@ class Layout extends React.Component {
   }
 
   getChildContext() {
+    const { LayoutCalc } = this.props;
     const { width, height } = this.state;
 
     const headerHeight = HEADER_HEIGHT;
@@ -53,12 +55,12 @@ class Layout extends React.Component {
     const visibleHeight = height - headerHeight - footerHeight;
 
     return {
-      layout: {
+      layout: new LayoutCalc({
         headerHeight,
         footerHeight,
         sideWidth: width >= minSides ? Math.floor(width / 2) : width,
         visibleHeight,
-      }
+      }),
     };
   }
 
@@ -82,7 +84,7 @@ class Layout extends React.Component {
               padding: 0;
               background: ${color};
               transition: background 0.5s;
-              font-family: sans-serif;
+              font-family: 'Helvetica Neue', Helvetica, sans-serif;
             }
           `}</style>
         </Head>
@@ -109,6 +111,11 @@ Layout.propTypes = {
     React.PropTypes.node
   ]),
   pathname: React.PropTypes.string,
+  LayoutCalc: React.PropTypes.func,
+};
+
+Layout.defaultProps = {
+  LayoutCalc,
 };
 
 Layout.childContextTypes = {

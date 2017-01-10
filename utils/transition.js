@@ -1,17 +1,19 @@
+export const transitionValue = (prev, next, progress) => {
+  const nextHasIt = next !== undefined;
+  const prevHasIt = prev !== undefined;
+  if (nextHasIt && prevHasIt) {
+    return prev + (progress * (next - prev));
+  }
+
+  return nextHasIt ? next : prev;
+};
+
 export const transitionValues = (prev, next, progress) => {
   const curr = {};
   const uniqueKeys = new Set(Object.keys(next).concat(Object.keys(prev)));
 
   uniqueKeys.forEach(key => {
-    const nextHasIt = next[key] !== undefined;
-    const prevHasIt = prev[key] !== undefined;
-    if (nextHasIt && prevHasIt) {
-      curr[key] = prev[key] + (progress * (next[key] - prev[key]));
-    } else if (nextHasIt) {
-      curr[key] = next[key];
-    } else {
-      curr[key] = prev[key];
-    }
+    curr[key] = transitionValue(prev[key], next[key], progress);
   });
 
   return curr;

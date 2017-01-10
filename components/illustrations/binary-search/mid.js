@@ -1,18 +1,11 @@
 import React from 'react';
 import {
-  ofSameValue,
-  onlyDefined,
-} from '../../../utils/values';
-import {
   transitionValues,
   getBindingValue,
 } from '../../../utils/transition';
-import {
-  getBubbleSize
-} from '../../../utils/binary-search';
-import NumberVar from '../../number-var';
+import NumberVar from '../shared/number-var';
 
-const getStyle = (step, { sideWidth }) => {
+const getStyle = (step, layout) => {
   if (!step || step.bindings.mid === undefined) {
     return {
       opacity: 0,
@@ -20,30 +13,17 @@ const getStyle = (step, { sideWidth }) => {
   }
 
   const {
-    low,
     mid,
-    high,
   } = step.bindings;
-
-  const offsetAlongSiblings = {
-    0: () => getBubbleSize(sideWidth, 0.25),
-    1: () => low === undefined ? getBubbleSize(sideWidth, 0.5) : 0,
-    2: () => getBubbleSize(sideWidth, 0.25),
-  };
-  const occupyingSamePos = ofSameValue(mid, onlyDefined([low, high]));
-  const offset = offsetAlongSiblings[occupyingSamePos]();
 
   return {
     opacity: 1,
-    left: getBubbleSize(sideWidth, mid) + offset,
+    left: layout.getListItemLeftPosition(mid),
+    top: layout.getNumberVarTopPosition(2),
   };
 };
 
 export default function Mid({ prevStep, nextStep, stepProgress }, { layout }) {
-  const {
-    sideWidth,
-  } = layout;
-
   const mid = getBindingValue(prevStep, nextStep, 'mid');
   if (mid === undefined) {
     return null;
@@ -61,7 +41,6 @@ export default function Mid({ prevStep, nextStep, stepProgress }, { layout }) {
         value={mid}
         label="mid"
         inverted
-        width={getBubbleSize(sideWidth, 0.5)}
         />
     </div>
   );
