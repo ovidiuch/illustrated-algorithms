@@ -1,36 +1,32 @@
 const { floor, round } = Math;
 
-// Frame of reference:
-// - screen width: 320px
-// - list of 6 blocks 52px each (48px inner width + 2px border), overlapping borders
-// - content has 302px (2px for last item's right border), so 18px left for spacing
-const PX_RATIOS = {
-  INNER_WIDTH: 302 / 320,
-  PADDING: 8 / 320,
-  BORDER_WIDTH: 2 / 320,
-  BLOCK_LABEL_FONT_SIZE: 10 / 320,
-  BLOCK_LABEL_HEIGHT: 18 / 320,
-  NUMBER_VAR_HEIGHT: 24 / 320,
-};
 const BLOCK_NUM = 6;
+// Frame of reference: 320px screen width
+const PADDING = 4 / 320;
+const BORDER_WIDTH = 1 / 320;
+const BLOCK_LABEL_FONT_SIZE = 10 / 320;
+const BLOCK_LABEL_HEIGHT = 16 / 320;
+const NUMBER_VAR_HEIGHT = 24 / 320;
 
 export default class LayoutCalc {
   constructor(initial) {
     Object.keys(initial).forEach(attr => {
       this[attr] = initial[attr];
     });
+    const { sideWidth } = this;
 
-    this.innerWidth = round(this.sideWidth * PX_RATIOS.INNER_WIDTH);
-    this.margin = round((this.sideWidth - this.innerWidth) / 2);
-    this.borderWidth = floor(this.sideWidth * PX_RATIOS.BORDER_WIDTH);
-    this.padding = round(this.sideWidth * PX_RATIOS.PADDING);
+    this.padding = round(sideWidth * PADDING);
+    this.borderWidth = round(sideWidth * BORDER_WIDTH);
 
-    this.blockWidth = floor((this.innerWidth - this.borderWidth) / BLOCK_NUM) + this.borderWidth;
-    this.blockLabelFontSize = floor(this.sideWidth * PX_RATIOS.BLOCK_LABEL_FONT_SIZE);
-    this.blockLabelHeight = floor(this.sideWidth * PX_RATIOS.BLOCK_LABEL_HEIGHT);
+    this.blockWidth = floor((312 / 320 / BLOCK_NUM) * sideWidth);
+    this.innerWidth = ((this.blockWidth - this.borderWidth) * BLOCK_NUM) + this.borderWidth;
+    this.margin = round((sideWidth - this.innerWidth) / 2);
+
+    this.blockLabelFontSize = floor(sideWidth * BLOCK_LABEL_FONT_SIZE);
+    this.blockLabelHeight = floor(sideWidth * BLOCK_LABEL_HEIGHT);
     this.blockHeight = this.blockWidth + this.blockLabelHeight;
 
     this.numberVarWidth = this.blockWidth;
-    this.numberVarHeight = floor(this.sideWidth * PX_RATIOS.NUMBER_VAR_HEIGHT);
+    this.numberVarHeight = floor(sideWidth * NUMBER_VAR_HEIGHT);
   }
 }
