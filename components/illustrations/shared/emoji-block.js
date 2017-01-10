@@ -23,23 +23,30 @@ const EmojiBlock = ({
 }, {
   layout
 }) => {
+  const {
+    borderWidth,
+    blockWidth,
+    blockHeight,
+    blockLabelFontSize,
+    blockLabelHeight,
+  } = layout;
   return (
     <div
       className="EmojiBlock"
       style={{
-        width: layout.getBlockWidth(),
-        height: layout.getBlockHeight(),
-        borderWidth: layout.getBorderWidth(),
+        width: blockWidth,
+        height: blockHeight,
+        borderWidth,
         background: `rgba(255, 255, 255, ${glow})`,
       }}
       >
       <div
         className="icon"
         style={{
-          width: layout.getBlockWidth() * 0.8,
-          height: layout.getBlockWidth() * 0.8,
-          top: layout.getBlockWidth() * 0.125,
-          left: layout.getBlockWidth() * 0.1,
+          width: blockWidth * 0.8,
+          height: blockWidth * 0.8,
+          top: blockWidth * 0.125,
+          left: blockWidth * 0.1,
         }}
         >
         {emojis[name] ? React.createElement(emojis[name]) : null}
@@ -47,9 +54,9 @@ const EmojiBlock = ({
       <div
         className="label"
         style={{
-          top: layout.getBlockWidth() - (layout.getBorderWidth() * 2),
-          fontSize: layout.getBlockLabelFontSize(),
-          lineHeight: `${layout.getBlockLabelHeight()}px`,
+          top: blockWidth - (borderWidth * 2),
+          fontSize: blockLabelFontSize,
+          lineHeight: `${blockLabelHeight}px`,
         }}
         >
         {name}

@@ -30,27 +30,28 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
     item,
     guess,
   } = bindings;
+  const {
+    blockLabelFontSize,
+    numberVarHeight,
+    comparisonTopPosition,
+    comparisonLeftPosition,
+  } = layout;
 
   const val = returnValue !== undefined || guess === item ? '=' : (
     guess > item ? '>' : '<'
   );
-
-  const top = layout.getComparisonTopPosition();
-  const left = layout.getComparisonLeftPosition();
-  const width = layout.getNumberVarHeight();
-  const height = width;
 
   // TODO: Get FiraCode-Light font into the codebase
   return (
     <div
       className="comparison"
       style={{
-        top,
-        left,
-        width,
-        height,
-        lineHeight: `${height}px`,
-        fontSize: layout.getBlockLabelFontSize() * 1.5,
+        top: comparisonTopPosition,
+        left: comparisonLeftPosition,
+        width: numberVarHeight,
+        height: numberVarHeight,
+        lineHeight: `${numberVarHeight}px`,
+        fontSize: blockLabelFontSize * 1.5,
         opacity: transitionValue(
           getOpacity(prevStep, layout),
           getOpacity(nextStep, layout),

@@ -90,7 +90,7 @@ class Player extends React.Component {
     const {
       footerHeight,
       sideWidth,
-    } = this.context.layout.sizes;
+    } = this.context.layout;
 
     const maxPos = getMaxPos(steps.length);
     const stepIndex = Math.floor(pos / FRAMES_PER_POS);

@@ -7,13 +7,18 @@ import Mid from './mid';
 import Comparison from './comparison';
 
 export default function BinarySearch(props, { layout }) {
+  const {
+    innerWidth,
+    height,
+    margin
+  } = layout;
   return (
     <div
       className="binary-search"
       style={{
-        width: layout.getInnerWidth(),
-        height: layout.getHeight(),
-        marginLeft: layout.getMargin(),
+        width: innerWidth,
+        height,
+        marginLeft: margin,
       }}
       >
       <Item {...props}/>

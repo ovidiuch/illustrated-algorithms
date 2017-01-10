@@ -7,9 +7,11 @@ export default function Item({ nextStep, stepProgress }, { layout }) {
   const {
     item,
   } = bindings;
+  const {
+    itemTopPosition,
+    itemLeftPosition,
+  } = layout;
 
-  const top = layout.getItemTopPosition();
-  const left = layout.getItemLeftPosition();
   const { compared } = nextStep;
   const rotation =
     compared && compared.indexOf('item') !== -1 ? getWobbleRotation(stepProgress) : 0;
@@ -18,8 +20,8 @@ export default function Item({ nextStep, stepProgress }, { layout }) {
     <div
       style={{
         position: 'absolute',
-        top,
-        left,
+        top: itemTopPosition,
+        left: itemLeftPosition,
         transform: `rotate(${rotation}deg)`,
       }}
       >

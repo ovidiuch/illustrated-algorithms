@@ -12,26 +12,29 @@ const NumberVar = ({
 }, {
   layout,
 }) => {
-  const width = layout.getNumberVarWidth();
-  const height = layout.getNumberVarHeight();
-  const valueWidth = round(width * PX_RATIOS.VALUE_PER_ITEM_WIDTH);
-  const labelWidth = width - valueWidth;
+  const {
+    blockLabelFontSize,
+    numberVarWidth,
+    numberVarHeight,
+  } = layout;
+  const valueWidth = round(numberVarWidth * PX_RATIOS.VALUE_PER_ITEM_WIDTH);
+  const labelWidth = numberVarWidth - valueWidth;
 
   return (
     <div
       className="number-var"
       style={{
-        width,
-        height,
+        width: numberVarWidth,
+        height: numberVarHeight,
       }}
       >
       <div
         className="label"
         style={{
           width: labelWidth,
-          height,
-          fontSize: layout.getBlockLabelFontSize(),
-          lineHeight: `${height}px`,
+          height: numberVarHeight,
+          fontSize: blockLabelFontSize,
+          lineHeight: `${numberVarHeight}px`,
         }}
         >
         {label}
@@ -40,9 +43,9 @@ const NumberVar = ({
         className="value"
         style={{
           width: valueWidth,
-          height,
-          fontSize: layout.getBlockLabelFontSize(),
-          lineHeight: `${height}px`,
+          height: numberVarHeight,
+          fontSize: blockLabelFontSize,
+          lineHeight: `${numberVarHeight}px`,
         }}
         >
         {value}

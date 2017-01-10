@@ -3,7 +3,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Menu from '../components/menu';
-import { LayoutCalc } from '../utils/layout-calc';
+import LayoutCalc from '../utils/layout/layout-calc';
 
 const getWindowWidth = () => ({
   width: window.innerWidth,

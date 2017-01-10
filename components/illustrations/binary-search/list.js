@@ -32,12 +32,15 @@ export default function List({ prevStep, nextStep, stepProgress }, { layout }) {
     list,
     mid,
   } = bindings;
+  const {
+    listTopPosition,
+  } = layout;
 
   return (
     <div
       className="list"
       style={{
-        top: layout.getListTopPosition(),
+        top: listTopPosition,
       }}
       >
       {list.map((name, index) => {
