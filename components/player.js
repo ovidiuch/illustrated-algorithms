@@ -1,4 +1,5 @@
 import React from 'react';
+import raf from 'raf';
 import SourceCode from '../components/source-code';
 
 const FPS = 60;
@@ -19,22 +20,23 @@ class Player extends React.Component {
   constructor(props) {
     super(props);
 
+    this.scheduleAnimation = this.scheduleAnimation.bind(this);
+    this.onFrame = this.onFrame.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.handleScrollStart = this.handleScrollStart.bind(this);
     this.handleScrollStop = this.handleScrollStop.bind(this);
 
     this.state = {
       pos: 0,
-      isScrolling: false,
     };
   }
 
   componentDidMount() {
-    this.startInterval();
+    this.scheduleAnimation();
   }
 
   componentWillUnmount() {
-    clearInterval(this.intervalId);
+    this.cancelAnimation();
   }
 
   handleScroll(e) {
@@ -44,38 +46,37 @@ class Player extends React.Component {
   }
 
   handleScrollStart() {
-    this.setState({
-      isScrolling: true,
-    });
+    this.cancelAnimation();
   }
 
   handleScrollStop() {
-    this.setState({
-      isScrolling: false,
-    });
+    this.scheduleAnimation();
   }
 
-  startInterval() {
+  scheduleAnimation() {
+    this.animationHandle = raf(this.onFrame);
+  }
+
+  cancelAnimation() {
+    raf.cancel(this.animationHandle);
+  }
+
+  onFrame() {
     const {
       steps,
     } = this.props;
     const maxPos = getMaxPos(steps.length);
+    const {
+      pos,
+    } = this.state;
 
-    // TODO: Use rAF
-    this.intervalId = setInterval(() => {
-      const {
-        pos,
-        isScrolling,
-      } = this.state;
+    if (pos < maxPos) {
+      const newPos = pos + 1;
 
-      if (!isScrolling && pos < maxPos) {
-        const newPos = pos + 1;
-
-        this.setState({
-          pos: newPos,
-        });
-      }
-    }, 1000 / FPS);
+      this.setState({
+        pos: newPos,
+      }, this.scheduleAnimation);
+    }
   }
 
   render() {
@@ -125,7 +126,9 @@ class Player extends React.Component {
               className="slider"
               value={pos}
               onMouseDown={this.handleScrollStart}
+              onTouchStart={this.handleScrollStart}
               onMouseUp={this.handleScrollStop}
+              onTouchEnd={this.handleScrollStop}
               onChange={this.handleScroll}
               />
           </div>

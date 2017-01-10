@@ -51,6 +51,7 @@
     "lodash.clonedeep": "^4.5.0",
     "lodash.isequal": "^4.4.0",
     "next": "^2.0.0-beta.11",
+    "raf": "^3.3.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }
