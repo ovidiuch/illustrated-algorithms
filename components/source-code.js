@@ -34,7 +34,7 @@ export default function SourceCode({
             key={i}
             style={{ backgroundColor: isRangeInLine ? 'rgba(255, 255, 255, 0.4)' : 'transparent' }}
             >
-            <span style={{ opacity: 0.5 }}>{`${i}. `}</span>
+            <span style={{ opacity: 0.5 }}>{i < 10 && ' '}{`${i}. `}</span>
             {isRangeInLine ? (
               <span>
                 <span>{fnLine.slice(0, relStart)}</span>
