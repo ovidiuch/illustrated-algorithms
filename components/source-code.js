@@ -1,5 +1,7 @@
 import React from 'react';
 
+const { min, max } = Math;
+
 export default function SourceCode({
   def,
   start,
@@ -23,8 +25,8 @@ export default function SourceCode({
         const lineLen = fnLine.length;
         const lineEnd = lineStart + lineLen;
         const isRangeInLine = start < lineEnd && end > lineStart;
-        const relStart = start - lineStart;
-        const relEnd = end - lineStart;
+        const relStart = max(0, start - lineStart);
+        const relEnd = min(end - lineStart, lineLen);
         lineStart += lineLen + 1; // account for newlines removed
 
         return (
