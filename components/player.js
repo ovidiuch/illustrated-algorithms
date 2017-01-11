@@ -71,7 +71,7 @@ class Player extends React.Component {
     } = this.state;
 
     if (pos < maxPos) {
-      const newPos = pos + 1;
+      const newPos = Math.min(maxPos - 1, pos + 1);
 
       this.setState({
         pos: newPos,
@@ -89,7 +89,9 @@ class Player extends React.Component {
       pos
     } = this.state;
     const {
+      landscape,
       footerHeight,
+      contentHeight,
       sideWidth,
     } = this.context.layout;
 
@@ -101,15 +103,30 @@ class Player extends React.Component {
     const prevStep = stepIndex > 0 ? steps[stepIndex - 1] : undefined;
     const { start, end } = nextStep;
 
+    // TODO: Move logic to separate StackEntry
+    const sideStyle = landscape ? {
+      position: 'absolute',
+      width: sideWidth,
+      // TODO: Construct height from max(illustrationHeight, codeHeight)
+      height: contentHeight,
+      lineHeight: `${contentHeight}px`,
+    } : {
+      width: sideWidth,
+    };
+    const illustrationSideStyle = sideStyle;
+    const codeSideStyle = landscape ? { ...sideStyle, left: sideWidth } : sideStyle;
+
     return (
       <div>
-        <div>
-          <div className="content" style={{ paddingBottom: footerHeight }}>
-            <div className="stack-entry">
-              <div className="illustration" style={{ width: sideWidth }}>
+        <div style={{ paddingBottom: footerHeight }}>
+          <div className="stack-entry">
+            <div className="side" style={illustrationSideStyle}>
+              <div className="side-inner">
                 {React.createElement(illustration, { prevStep, nextStep, stepProgress })}
               </div>
-              <div className="code" style={{ width: sideWidth }}>
+            </div>
+            <div className="side" style={codeSideStyle}>
+              <div className="side-inner">
                 <SourceCode
                   def={code}
                   start={start}
@@ -118,41 +135,45 @@ class Player extends React.Component {
               </div>
             </div>
           </div>
-          <div className="footer" style={{ height: footerHeight }}>
-            <input
-              type="range"
-              min="0"
-              max={maxPos}
-              className="slider"
-              value={pos}
-              onMouseDown={this.handleScrollStart}
-              onTouchStart={this.handleScrollStart}
-              onMouseUp={this.handleScrollStop}
-              onTouchEnd={this.handleScrollStop}
-              onChange={this.handleScroll}
-              />
-          </div>
-          <style jsx>{`
-            .content {}
-            .stack-entry {
-              overflow: hidden;
-            }
-            .illustration,
-            .code {
-              float: left;
-            }
-            .footer {
-              position: fixed;
-              bottom: 0;
-              left: 0;
-              right: 0;
-            }
-            .slider {
-              width: 100%;
-              margin: 0;
-            }
-          `}</style>
         </div>
+        <div className="footer" style={{ height: footerHeight }}>
+          <input
+            type="range"
+            min="0"
+            max={maxPos}
+            className="slider"
+            value={pos}
+            onMouseDown={this.handleScrollStart}
+            onTouchStart={this.handleScrollStart}
+            onMouseUp={this.handleScrollStop}
+            onTouchEnd={this.handleScrollStop}
+            onChange={this.handleScroll}
+            />
+        </div>
+        <style jsx>{`
+          .side {
+            text-align: center;
+          }
+          .side-inner {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            text-align: left;
+          }
+          .stack-entry {
+            overflow: hidden;
+          }
+          .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+          .slider {
+            width: 100%;
+            margin: 0;
+          }
+        `}</style>
       </div>
     );
   }

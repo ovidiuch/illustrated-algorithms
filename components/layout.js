@@ -5,14 +5,10 @@ import Head from 'next/head';
 import Menu from '../components/menu';
 import LayoutCalc from '../utils/layout/layout-calc';
 
-const getWindowWidth = () => ({
+const getWindowSize = () => ({
   width: window.innerWidth,
   height: window.innerHeight,
 });
-
-const IPHONE6_LANDSCAPE_WIDTH = 667;
-const HEADER_HEIGHT = 18;
-const FOOTER_HEIGHT = 18;
 
 class Layout extends React.Component {
   constructor(props) {
@@ -33,7 +29,7 @@ class Layout extends React.Component {
 
     this.setState({
       renderedOnClient: true,
-      ...getWindowWidth(),
+      ...getWindowSize(),
     });
   }
 
@@ -42,24 +38,17 @@ class Layout extends React.Component {
   }
 
   handleResize() {
-    this.setState(getWindowWidth());
+    this.setState(getWindowSize());
   }
 
   getChildContext() {
     const { LayoutCalc } = this.props;
     const { width, height } = this.state;
 
-    const headerHeight = HEADER_HEIGHT;
-    const footerHeight = FOOTER_HEIGHT;
-    const minSides = IPHONE6_LANDSCAPE_WIDTH;
-    const visibleHeight = height - headerHeight - footerHeight;
-
     return {
       layout: new LayoutCalc({
-        headerHeight,
-        footerHeight,
-        sideWidth: width >= minSides ? Math.floor(width / 2) : width,
-        visibleHeight,
+        width,
+        height,
       }),
     };
   }
@@ -77,7 +66,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Head>
-          <meta name="viewport" content="initial-scale=1, width=device-width"/>
+          <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
           <style>{`
             body {
               margin: 0;
@@ -89,9 +78,7 @@ class Layout extends React.Component {
           `}</style>
         </Head>
         <div className="content" style={{ opacity: renderedOnClient ? 1 : 0 }}>
-          <div className="header" style={{ height: HEADER_HEIGHT }}>
-            <Menu pathname={pathname}/>
-          </div>
+          <Menu pathname={pathname}/>
           {children}
           <style jsx>{`
             .content {
@@ -119,12 +106,7 @@ Layout.defaultProps = {
 };
 
 Layout.childContextTypes = {
-  layout: React.PropTypes.shape({
-    headerHeight: React.PropTypes.number,
-    footerHeight: React.PropTypes.number,
-    sideWidth: React.PropTypes.number,
-    visibleHeight: React.PropTypes.number,
-  }),
+  layout: React.PropTypes.object,
 };
 
 export default Layout;

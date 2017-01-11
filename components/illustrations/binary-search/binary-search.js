@@ -9,16 +9,15 @@ import Comparison from './comparison';
 export default function BinarySearch(props, { layout }) {
   const {
     innerWidth,
-    height,
-    margin
+    illustrationHeight,
   } = layout;
+
   return (
     <div
       className="binary-search"
       style={{
         width: innerWidth,
-        height,
-        marginLeft: margin,
+        height: illustrationHeight,
       }}
       >
       <Item {...props}/>

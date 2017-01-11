@@ -20,8 +20,8 @@ const renderLink = (href, currentPath) => (
   </span>
 );
 
-const Menu = ({ pathname }) => (
-  <div>
+const Menu = ({ pathname }, { layout }) => (
+  <div style={{ height: layout.headerHeight }}>
     {renderLink('/binary-search', pathname)}
     {renderLink('/quicksort', pathname)}
     {renderLink('/bfs', pathname)}
@@ -30,6 +30,10 @@ const Menu = ({ pathname }) => (
 
 Menu.propTypes = {
   pathname: React.PropTypes.string,
+};
+
+Menu.contextTypes = {
+  layout: React.PropTypes.object,
 };
 
 export default Menu;

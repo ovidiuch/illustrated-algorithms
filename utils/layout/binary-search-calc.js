@@ -11,7 +11,7 @@ export default class BinarySearchLayoutCalc extends LayoutCalc {
     this.itemTopPosition = this.comparisonTopPosition + this.numberVarHeight + this.padding;
     this.itemLeftPosition = this.centerPosition - (this.blockWidth / 2);
 
-    this.height = this.itemTopPosition + this.blockHeight + this.padding;
+    this.illustrationHeight = this.itemTopPosition + this.blockHeight + this.padding;
   }
 
   getNumberVarTopPosition(level) {
