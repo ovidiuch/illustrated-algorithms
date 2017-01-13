@@ -29,6 +29,7 @@ export default function BinarySearch(props, { layout }) {
       <style jsx>{`
         .binary-search {
           position: relative;
+          margin: 0 auto;
         }
       `}</style>
     </div>
