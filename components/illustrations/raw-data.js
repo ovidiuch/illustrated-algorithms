@@ -13,33 +13,53 @@ export default function RawData({
     padding,
     fontSize,
     lineHeight,
+    illustrationHeight,
   } = layout;
 
   return (
     <div
+      className="raw-data"
       style={{
+        height: illustrationHeight,
         padding,
         fontSize,
         lineHeight: `${lineHeight}px`,
       }}
       >
-      {Object.keys(bindings).map(key =>
-        <pre
-          key={key}
-          style={{ padding }}
-          >
-          {key} = {JSON.stringify(bindings[key])}
-        </pre>
-      )}
-      {returnValue !== undefined && (
-        <pre
-          className="return-value"
-          style={{ padding }}
-          >
-          {JSON.stringify(returnValue)}
-        </pre>
-      )}
+      <div
+        className="inner"
+        style={{
+          left: padding,
+          right: padding,
+        }}
+        >
+        {Object.keys(bindings).map(key =>
+          <pre
+            key={key}
+            style={{ padding }}
+            >
+            {key} = {JSON.stringify(bindings[key])}
+          </pre>
+        )}
+        {returnValue !== undefined && (
+          <pre
+            className="return-value"
+            style={{ padding }}
+            >
+            {JSON.stringify(returnValue)}
+          </pre>
+        )}
+      </div>
       <style jsx>{`
+        .raw-data {
+          position: relative;
+          box-sizing: border-box;
+        }
+        .inner {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
         pre {
           margin: 0;
           background: rgba(0, 0, 0, 0.5);
