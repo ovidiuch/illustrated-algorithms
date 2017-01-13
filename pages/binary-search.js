@@ -19,6 +19,7 @@ class BinarySearchPage extends React.Component {
       <Layout
         color="#FF8A80"
         pathname={url.pathname}
+        code={code}
         LayoutCalc={BinarySearchLayoutCalc}
         >
         <Player

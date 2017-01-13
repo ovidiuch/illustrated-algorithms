@@ -3,7 +3,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Menu from '../components/menu';
-import LayoutCalc from '../utils/layout/layout-calc';
 
 const getWindowSize = () => ({
   width: window.innerWidth,
@@ -42,13 +41,17 @@ class Layout extends React.Component {
   }
 
   getChildContext() {
-    const { LayoutCalc } = this.props;
+    const {
+      LayoutCalc,
+      code,
+    } = this.props;
     const { width, height } = this.state;
 
     return {
       layout: new LayoutCalc({
         width,
         height,
+        code,
       }),
     };
   }
@@ -67,6 +70,7 @@ class Layout extends React.Component {
       <div>
         <Head>
           <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+          <meta name="apple-mobile-web-app-capable" content="yes"/>
           <style>{`
             body {
               margin: 0;
@@ -92,17 +96,14 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-  color: React.PropTypes.string,
+  color: React.PropTypes.string.isRequired,
   children: React.PropTypes.oneOfType([
     React.PropTypes.arrayOf(React.PropTypes.node),
     React.PropTypes.node
-  ]),
-  pathname: React.PropTypes.string,
-  LayoutCalc: React.PropTypes.func,
-};
-
-Layout.defaultProps = {
-  LayoutCalc,
+  ]).isRequired,
+  pathname: React.PropTypes.string.isRequired,
+  code: React.PropTypes.string.isRequired,
+  LayoutCalc: React.PropTypes.func.isRequired,
 };
 
 Layout.childContextTypes = {

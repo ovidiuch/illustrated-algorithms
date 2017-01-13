@@ -1,0 +1,16 @@
+import LayoutCalc from './layout-calc';
+
+const { floor } = Math;
+
+// Values are relative to a base width of 320px
+const FONT_SIZE = 10;
+const LINE_HEIGHT = 12;
+
+export default class RawDataLayoutCalc extends LayoutCalc {
+  constructor(initial) {
+    super(initial);
+
+    this.fontSize = floor(this.getRelSize(FONT_SIZE));
+    this.lineHeight = floor(this.getRelSize(LINE_HEIGHT));
+  }
+}

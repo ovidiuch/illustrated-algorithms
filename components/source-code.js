@@ -12,6 +12,7 @@ export default function SourceCode({
   const {
     padding,
     codeFontSize,
+    codeLineHeight,
   } = layout;
   let lineStart = 0;
   return (
@@ -19,6 +20,7 @@ export default function SourceCode({
       style={{
         padding: `${padding}px 0`,
         fontSize: codeFontSize,
+        lineHeight: `${codeLineHeight}px`,
       }}
       >
       {def.split('\n').map((fnLine, i) => {
