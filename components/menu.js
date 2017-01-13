@@ -20,11 +20,17 @@ const renderLink = (href, currentPath) => (
   </span>
 );
 
-const Menu = ({ pathname }, { layout }) => (
-  <div style={{ height: layout.headerHeight }}>
+const Menu = ({ pathname }) => (
+  <div>
     {renderLink('/binary-search', pathname)}
     {renderLink('/quicksort', pathname)}
     {renderLink('/bfs', pathname)}
+    <style jsx>{`
+      .menu {
+        position: absolute;
+        z-index: 1;
+      }
+    `}</style>
   </div>
 );
 

@@ -9,6 +9,20 @@ const getWindowSize = () => ({
   height: window.innerHeight,
 });
 
+const createLayout = (props, state) => {
+  const {
+    LayoutCalc,
+    code,
+  } = props;
+  const { width, height } = state;
+
+  return new LayoutCalc({
+    width,
+    height,
+    code,
+  });
+};
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
@@ -21,6 +35,8 @@ class Layout extends React.Component {
       width: 375,
       height: 667,
     };
+
+    this.layout = createLayout(props, this.state);
   }
 
   componentDidMount() {
@@ -32,6 +48,10 @@ class Layout extends React.Component {
     });
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    this.layout = createLayout(nextProps, nextState);
+  }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize);
   }
@@ -41,18 +61,8 @@ class Layout extends React.Component {
   }
 
   getChildContext() {
-    const {
-      LayoutCalc,
-      code,
-    } = this.props;
-    const { width, height } = this.state;
-
     return {
-      layout: new LayoutCalc({
-        width,
-        height,
-        code,
-      }),
+      layout: this.layout,
     };
   }
 
@@ -81,12 +91,24 @@ class Layout extends React.Component {
             }
           `}</style>
         </Head>
-        <div className="content" style={{ opacity: renderedOnClient ? 1 : 0 }}>
-          <Menu pathname={pathname}/>
-          {children}
+        <div className="body" style={{ opacity: renderedOnClient ? 1 : 0 }}>
+          <div className="header">
+            <Menu pathname={pathname}/>
+          </div>
+          <div className="content">
+            {children}
+          </div>
           <style jsx>{`
-            .content {
+            .body {
               transition: opacity 0.5s;
+            }
+            .header {
+              position: absolute;
+              z-index: 2;
+            }
+            .content {
+              position: absolute;
+              z-index: 1;
             }
           `}</style>
         </div>
@@ -102,6 +124,7 @@ Layout.propTypes = {
     React.PropTypes.node
   ]).isRequired,
   pathname: React.PropTypes.string.isRequired,
+  /* eslint-disable react/no-unused-prop-types */
   code: React.PropTypes.string.isRequired,
   LayoutCalc: React.PropTypes.func.isRequired,
 };
