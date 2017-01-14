@@ -1,6 +1,8 @@
 import React from 'react';
 import EmojiIcon from './emoji-icon';
 
+const { round } = Math;
+
 const EmojiBlock = ({
   name,
   glow,
@@ -14,6 +16,8 @@ const EmojiBlock = ({
     blockLabelFontSize,
     blockLabelHeight,
   } = layout;
+  const iconSize = round(blockWidth * 0.8);
+
   return (
     <div
       className="EmojiBlock"
@@ -27,13 +31,13 @@ const EmojiBlock = ({
       <div
         className="icon"
         style={{
-          width: blockWidth * 0.8,
-          height: blockWidth * 0.8,
+          width: iconSize,
+          height: iconSize,
           top: blockWidth * 0.125,
           left: blockWidth * 0.1,
         }}
         >
-        <EmojiIcon name={name}/>
+        <EmojiIcon name={name} width={iconSize} height={iconSize}/>
       </div>
       <div
         className="label"

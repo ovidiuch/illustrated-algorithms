@@ -1,9 +1,7 @@
 import React from 'react';
 import binarySearch from '../algorithms/binary-search';
-import Layout from '../components/layout';
-import Player from '../components/player';
+import Page from '../components/page';
 import BinarySearch from '../components/illustrations/binary-search/binary-search';
-import BinarySearchLayoutCalc from '../utils/layout/binary-search-calc';
 
 class BinarySearchPage extends React.Component {
   static async getInitialProps() {
@@ -16,17 +14,13 @@ class BinarySearchPage extends React.Component {
   render() {
     const { steps, code, url } = this.props;
     return (
-      <Layout
+      <Page
         color="#FF8A80"
         pathname={url.pathname}
-        LayoutCalc={BinarySearchLayoutCalc}
-        >
-        <Player
-          steps={steps}
-          code={code}
-          illustration={BinarySearch}
-          />
-      </Layout>
+        steps={steps}
+        code={code}
+        illustration={BinarySearch}
+        />
     );
   }
 }

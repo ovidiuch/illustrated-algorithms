@@ -2,15 +2,29 @@
 
 import React from 'react';
 import Head from 'next/head';
-import Menu from '../components/menu';
-import LayoutCalc from '../utils/layout/layout-calc';
+import Menu from './menu';
+import Player from './player';
 
 const getWindowSize = () => ({
   width: window.innerWidth,
   height: window.innerHeight,
 });
 
-class Layout extends React.Component {
+const createLayout = (props, state) => {
+  const {
+    illustration,
+    code,
+  } = props;
+  const { width, height } = state;
+
+  return new illustration.Layout({
+    width,
+    height,
+    code,
+  });
+};
+
+class Page extends React.Component {
   constructor(props) {
     super(props);
 
@@ -22,6 +36,8 @@ class Layout extends React.Component {
       width: 375,
       height: 667,
     };
+
+    this.layout = createLayout(props, this.state);
   }
 
   componentDidMount() {
@@ -33,6 +49,10 @@ class Layout extends React.Component {
     });
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    this.layout = createLayout(nextProps, nextState);
+  }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize);
   }
@@ -42,22 +62,18 @@ class Layout extends React.Component {
   }
 
   getChildContext() {
-    const { LayoutCalc } = this.props;
-    const { width, height } = this.state;
-
     return {
-      layout: new LayoutCalc({
-        width,
-        height,
-      }),
+      layout: this.layout,
     };
   }
 
   render() {
     const {
-      children,
       color,
       pathname,
+      steps,
+      code,
+      illustration,
     } = this.props;
     const {
       renderedOnClient,
@@ -67,6 +83,7 @@ class Layout extends React.Component {
       <div>
         <Head>
           <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+          <meta name="apple-mobile-web-app-capable" content="yes"/>
           <style>{`
             body {
               margin: 0;
@@ -77,12 +94,28 @@ class Layout extends React.Component {
             }
           `}</style>
         </Head>
-        <div className="content" style={{ opacity: renderedOnClient ? 1 : 0 }}>
-          <Menu pathname={pathname}/>
-          {children}
+        <div className="body" style={{ opacity: renderedOnClient ? 1 : 0 }}>
+          <div className="header">
+            <Menu pathname={pathname}/>
+          </div>
+          <div className="content">
+            <Player
+              steps={steps}
+              code={code}
+              illustration={illustration}
+              />
+          </div>
           <style jsx>{`
-            .content {
+            .body {
               transition: opacity 0.5s;
+            }
+            .header {
+              position: absolute;
+              z-index: 2;
+            }
+            .content {
+              position: absolute;
+              z-index: 1;
             }
           `}</style>
         </div>
@@ -91,22 +124,16 @@ class Layout extends React.Component {
   }
 }
 
-Layout.propTypes = {
-  color: React.PropTypes.string,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node
-  ]),
-  pathname: React.PropTypes.string,
-  LayoutCalc: React.PropTypes.func,
+Page.propTypes = {
+  color: React.PropTypes.string.isRequired,
+  pathname: React.PropTypes.string.isRequired,
+  steps: React.PropTypes.array.isRequired,
+  code: React.PropTypes.string.isRequired,
+  illustration: React.PropTypes.func.isRequired,
 };
 
-Layout.defaultProps = {
-  LayoutCalc,
-};
-
-Layout.childContextTypes = {
+Page.childContextTypes = {
   layout: React.PropTypes.object,
 };
 
-export default Layout;
+export default Page;

@@ -11,5 +11,9 @@ export default function quicksort(list) {
   const less = list.filter(i => i < pivot);
   const greater = list.filter(i => i > pivot);
 
-  return [...quicksort(less), pivot, ...quicksort(greater)];
+  return [
+    ...quicksort(less),
+    pivot,
+    ...quicksort(greater)
+  ];
 }
