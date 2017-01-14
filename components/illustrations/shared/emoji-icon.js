@@ -17,16 +17,12 @@ const emojis = {
   snail: Snail,
 };
 
-export default class EmojiIcon extends React.Component {
-  shouldComponentUpdate({ name }) {
-    return name !== this.props.name;
-  }
-
+export default class EmojiIcon extends React.PureComponent {
   render() {
-    const { name } = this.props;
+    const { name, width, height } = this.props;
     return (
       <div>
-        {emojis[name] ? React.createElement(emojis[name]) : null}
+        {emojis[name] ? React.createElement(emojis[name], { width, height }) : null}
       </div>
     );
   }
@@ -34,4 +30,6 @@ export default class EmojiIcon extends React.Component {
 
 EmojiIcon.propTypes = {
   name: React.PropTypes.string.isRequired,
+  width: React.PropTypes.number.isRequired,
+  height: React.PropTypes.number.isRequired,
 };
