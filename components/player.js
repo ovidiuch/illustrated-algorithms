@@ -119,7 +119,7 @@ class Player extends React.Component {
       pos,
     } = this.state;
 
-    if (pos < maxPos) {
+    if (pos < maxPos - 1) {
       const newPos = min(maxPos - 1, pos + 1);
 
       this.setState({
