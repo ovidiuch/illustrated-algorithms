@@ -9,7 +9,7 @@ const BORDER_WIDTH = 1;
 const CODE_FONT_SIZE = 10;
 const CODE_LINE_HEIGHT = 12;
 
-export default class LayoutCalc {
+export default class BaseLayout {
   constructor(initial) {
     Object.keys(initial).forEach(attr => {
       this[attr] = initial[attr];

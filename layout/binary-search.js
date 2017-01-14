@@ -1,4 +1,4 @@
-import LayoutCalc from './layout-calc';
+import BaseLayout from './base';
 
 const { floor, round } = Math;
 
@@ -10,7 +10,7 @@ const NUMBER_VAR_HEIGHT = 24;
 // TODO: Accept as input via constructor
 const BLOCK_NUM = 6;
 
-export default class BinarySearchLayoutCalc extends LayoutCalc {
+export default class BinarySearchLayout extends BaseLayout {
   constructor(initial) {
     super(initial);
 

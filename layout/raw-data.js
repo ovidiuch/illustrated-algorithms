@@ -1,4 +1,4 @@
-import LayoutCalc from './layout-calc';
+import BaseLayout from './base';
 
 const { floor } = Math;
 
@@ -6,7 +6,7 @@ const { floor } = Math;
 const FONT_SIZE = 10;
 const LINE_HEIGHT = 12;
 
-export default class RawDataLayoutCalc extends LayoutCalc {
+export default class RawDataLayout extends BaseLayout {
   constructor(initial) {
     super(initial);
 

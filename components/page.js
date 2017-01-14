@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Head from 'next/head';
-import Menu from '../components/menu';
+import Menu from './menu';
+import Player from './player';
 
 const getWindowSize = () => ({
   width: window.innerWidth,
@@ -11,19 +12,19 @@ const getWindowSize = () => ({
 
 const createLayout = (props, state) => {
   const {
-    LayoutCalc,
+    illustration,
     code,
   } = props;
   const { width, height } = state;
 
-  return new LayoutCalc({
+  return new illustration.Layout({
     width,
     height,
     code,
   });
 };
 
-class Layout extends React.Component {
+class Page extends React.Component {
   constructor(props) {
     super(props);
 
@@ -68,9 +69,11 @@ class Layout extends React.Component {
 
   render() {
     const {
-      children,
       color,
       pathname,
+      steps,
+      code,
+      illustration,
     } = this.props;
     const {
       renderedOnClient,
@@ -96,7 +99,11 @@ class Layout extends React.Component {
             <Menu pathname={pathname}/>
           </div>
           <div className="content">
-            {children}
+            <Player
+              steps={steps}
+              code={code}
+              illustration={illustration}
+              />
           </div>
           <style jsx>{`
             .body {
@@ -117,21 +124,16 @@ class Layout extends React.Component {
   }
 }
 
-Layout.propTypes = {
+Page.propTypes = {
   color: React.PropTypes.string.isRequired,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node
-  ]).isRequired,
   pathname: React.PropTypes.string.isRequired,
-  /* eslint-disable react/no-unused-prop-types */
-  // false positive
+  steps: React.PropTypes.array.isRequired,
   code: React.PropTypes.string.isRequired,
-  LayoutCalc: React.PropTypes.func.isRequired,
+  illustration: React.PropTypes.func.isRequired,
 };
 
-Layout.childContextTypes = {
+Page.childContextTypes = {
   layout: React.PropTypes.object,
 };
 
-export default Layout;
+export default Page;

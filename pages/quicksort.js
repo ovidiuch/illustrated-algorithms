@@ -1,9 +1,7 @@
 import React from 'react';
 import quicksort from '../algorithms/quicksort';
-import Layout from '../components/layout';
-import Player from '../components/player';
+import Page from '../components/page';
 import RawData from '../components/illustrations/raw-data';
-import RawDataLayoutCalc from '../utils/layout/raw-data-calc';
 
 class Quicksort extends React.Component {
   static async getInitialProps() {
@@ -16,18 +14,13 @@ class Quicksort extends React.Component {
   render() {
     const { steps, code, url } = this.props;
     return (
-      <Layout
+      <Page
         color="#CCFF90"
         pathname={url.pathname}
+        steps={steps}
         code={code}
-        LayoutCalc={RawDataLayoutCalc}
-        >
-        <Player
-          steps={steps}
-          code={code}
-          illustration={RawData}
-          />
-      </Layout>
+        illustration={RawData}
+        />
     );
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import RawDataLayout from '../../layout/raw-data';
 
 export default function RawData({
   nextStep,
@@ -82,3 +83,5 @@ RawData.propTypes = {
 RawData.contextTypes = {
   layout: React.PropTypes.object,
 };
+
+RawData.Layout = RawDataLayout;

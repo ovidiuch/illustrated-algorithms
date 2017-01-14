@@ -1,4 +1,5 @@
 import React from 'react';
+import BinarySearchLayout from '../../../layout/binary-search';
 import List from './list';
 import Item from './item';
 import Low from './low';
@@ -45,3 +46,5 @@ BinarySearch.propTypes = {
 BinarySearch.contextTypes = {
   layout: React.PropTypes.object,
 };
+
+BinarySearch.Layout = BinarySearchLayout;

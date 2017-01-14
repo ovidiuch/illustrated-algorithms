@@ -1,9 +1,7 @@
 import React from 'react';
 import bfs from '../algorithms/bfs';
-import Layout from '../components/layout';
-import Player from '../components/player';
+import Page from '../components/page';
 import RawData from '../components/illustrations/raw-data';
-import RawDataLayoutCalc from '../utils/layout/raw-data-calc';
 
 class Bfs extends React.Component {
   static async getInitialProps() {
@@ -24,18 +22,13 @@ class Bfs extends React.Component {
   render() {
     const { steps, code, url } = this.props;
     return (
-      <Layout
+      <Page
         color="#80D8FF"
         pathname={url.pathname}
+        steps={steps}
         code={code}
-        LayoutCalc={RawDataLayoutCalc}
-        >
-        <Player
-          steps={steps}
-          code={code}
-          illustration={RawData}
-          />
-      </Layout>
+        illustration={RawData}
+        />
     );
   }
 }
