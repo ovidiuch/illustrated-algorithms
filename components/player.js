@@ -206,7 +206,7 @@ class Player extends React.Component {
               opacity = getOpacityForStackDepth(i);
             }
 
-            // Tieing stack entry elements to their parnent step id will preserve
+            // Tieing stack entry elements to their parent step id will preserve
             // them when other entries are added to or removed from stack.
             const stackEntryKey = nextStep.parentStepId || 0;
 
