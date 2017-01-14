@@ -12,5 +12,8 @@ export default class RawDataLayoutCalc extends LayoutCalc {
 
     this.fontSize = floor(this.getRelSize(FONT_SIZE));
     this.lineHeight = floor(this.getRelSize(LINE_HEIGHT));
+
+    // Hardcoded to fit raw data from Bfs (Quicksort is smaller)
+    this.illustrationHeight = this.getRelSize(164);
   }
 }

@@ -125,6 +125,7 @@ Layout.propTypes = {
   ]).isRequired,
   pathname: React.PropTypes.string.isRequired,
   /* eslint-disable react/no-unused-prop-types */
+  // false positive
   code: React.PropTypes.string.isRequired,
   LayoutCalc: React.PropTypes.func.isRequired,
 };

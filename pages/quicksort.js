@@ -8,7 +8,7 @@ import RawDataLayoutCalc from '../utils/layout/raw-data-calc';
 class Quicksort extends React.Component {
   static async getInitialProps() {
     const items = [
-      'dog', 'cat', 'cow', 'fox', 'bear', 'pig', 'rat'
+      'dog', 'cat', 'snail', 'bear', 'pig', 'rat'
     ];
     return quicksort(items);
   }

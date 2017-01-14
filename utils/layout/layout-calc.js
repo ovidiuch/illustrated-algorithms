@@ -1,4 +1,4 @@
-const { floor, round } = Math;
+const { floor, round, max } = Math;
 
 const IPHONE6_LANDSCAPE_WIDTH = 667;
 
@@ -23,7 +23,7 @@ export default class LayoutCalc {
     // Header and footer have fixed sizes, same on all res
     this.headerHeight = 18;
     this.footerHeight = 18;
-    this.contentHeight = height - this.headerHeight - this.footerHeight;
+    this.availableContetHeight = height - this.headerHeight - this.footerHeight;
 
     this.landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width > height;
     this.sideWidth = this.landscape ? floor(width / 2) : width;
@@ -41,5 +41,25 @@ export default class LayoutCalc {
 
   getRelSize(baseValue) {
     return baseValue / FRAME_OF_REFERENCE * this.sideWidth;
+  }
+
+  getStackEntryHeight() {
+    const {
+      landscape,
+      illustrationHeight,
+      codeHeight,
+    } = this;
+
+    return landscape ? max(illustrationHeight, codeHeight) : illustrationHeight + codeHeight;
+  }
+
+  getContentHeight(stackLength) {
+    return this.getStackEntryHeight() * stackLength;
+  }
+
+  getContentTopOffset(stackLength) {
+    const contentHeight = this.getContentHeight(stackLength);
+
+    return max(0, round((this.availableContetHeight - contentHeight) / 2));
   }
 }

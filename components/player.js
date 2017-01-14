@@ -1,9 +1,14 @@
 import React from 'react';
 import raf from 'raf';
-import SourceCode from '../components/source-code';
+import {
+  transitionValue,
+} from '../utils/transition';
+import StackEntry from './stack-entry';
+
+const { floor, min } = Math;
 
 const FPS = 60;
-const DELAY_TIME = 1;
+const DELAY_TIME = 0.5;
 const TRANSITION_TIME = 0.5;
 
 const getFramesPerTime = time => FPS * time;
@@ -15,6 +20,51 @@ const FRAMES_PER_POS = FRAMES_PER_TRANSITION + FRAMES_PER_DELAY;
 const getMaxPos = steps =>
   (steps * FRAMES_PER_TRANSITION) +
   ((steps - 1) * FRAMES_PER_DELAY);
+
+const getPrevStepFromSameStackEntry = (steps, stepIndex) => {
+  if (stepIndex <= 0) {
+    return;
+  }
+
+  const nextStep = steps[stepIndex];
+  let prevStepIndex = stepIndex - 1;
+  let prevStep = steps[prevStepIndex];
+
+  while (prevStepIndex >= 0 && prevStep.parentStepId !== nextStep.parentStepId) {
+    prevStepIndex -= 1;
+    prevStep = steps[prevStepIndex];
+  }
+
+  return prevStep;
+};
+
+const getStackEntries = (steps, pos) => {
+  const entries = [];
+
+  let stepIndex = floor(pos / FRAMES_PER_POS);
+  let nextStep = steps[stepIndex];
+  const stepProgress = min(1, (pos - (stepIndex * FRAMES_PER_POS)) / FRAMES_PER_TRANSITION);
+
+  while (nextStep) {
+    const prevStep = getPrevStepFromSameStackEntry(steps, stepIndex);
+
+    entries.push([
+      prevStep,
+      nextStep,
+      entries.length > 0 ? 1 : stepProgress,
+    ]);
+
+    stepIndex = nextStep.parentStepId;
+    nextStep = steps[stepIndex];
+  }
+
+  return entries;
+};
+
+const SCALE_DIFF_PER_STACK_LEVEL = 0.1;
+const getScaleForStackDepth = level => {
+  return 1 - (level * SCALE_DIFF_PER_STACK_LEVEL);
+};
 
 class Player extends React.Component {
   constructor(props) {
@@ -50,7 +100,7 @@ class Player extends React.Component {
   }
 
   handleScrollStop() {
-    this.scheduleAnimation();
+    // this.scheduleAnimation();
   }
 
   scheduleAnimation() {
@@ -71,7 +121,7 @@ class Player extends React.Component {
     } = this.state;
 
     if (pos < maxPos) {
-      const newPos = Math.min(maxPos - 1, pos + 1);
+      const newPos = min(maxPos - 1, pos + 1);
 
       this.setState({
         pos: newPos,
@@ -89,58 +139,100 @@ class Player extends React.Component {
       pos
     } = this.state;
     const {
-      landscape,
+      layout
+    } = this.context;
+    const {
+      headerHeight,
       footerHeight,
-      contentHeight,
-      sideWidth,
-    } = this.context.layout;
+    } = layout;
 
-    const maxPos = getMaxPos(steps.length);
-    const stepIndex = Math.floor(pos / FRAMES_PER_POS);
-    const stepProgress = Math.min(1, (pos - (stepIndex * FRAMES_PER_POS)) / FRAMES_PER_TRANSITION);
+    const stackEntries = getStackEntries(steps, pos);
+    const stackEntryHeight = layout.getStackEntryHeight();
+    const contentHeight = layout.getContentHeight(stackEntries.length);
 
-    const nextStep = steps[stepIndex];
-    const prevStep = stepIndex > 0 ? steps[stepIndex - 1] : undefined;
-    const { start, end } = nextStep;
+    const topStackEntry = stackEntries[0];
+    const [prevStep, nextStep, stepProgress] = topStackEntry;
+    const isAddingToStack = stackEntries.length > 1 && !prevStep;
+    const isRemovingFromStack = stackEntries.length > 1 && nextStep.returnValue !== undefined;
 
-    // TODO: Move logic to separate StackEntry
-    const sideStyle = landscape ? {
-      position: 'absolute',
-      width: sideWidth,
-      // TODO: Construct height from max(illustrationHeight, codeHeight)
-      height: contentHeight,
-      lineHeight: `${contentHeight}px`,
-    } : {
-      width: sideWidth,
-    };
-    const illustrationSideStyle = sideStyle;
-    const codeSideStyle = landscape ? { ...sideStyle, left: sideWidth } : sideStyle;
+    let topOffset;
+    let topStackEntryOpacity;
+
+    if (isAddingToStack) {
+      topOffset = transitionValue(
+        layout.getContentTopOffset(stackEntries.length - 1) - stackEntryHeight,
+        layout.getContentTopOffset(stackEntries.length),
+        stepProgress
+      );
+      topStackEntryOpacity = transitionValue(0, 1, stepProgress);
+    } else if (isRemovingFromStack) {
+      topOffset = transitionValue(
+        layout.getContentTopOffset(stackEntries.length),
+        layout.getContentTopOffset(stackEntries.length - 1) - stackEntryHeight,
+        stepProgress
+      );
+      topStackEntryOpacity = transitionValue(1, 0, stepProgress);
+    } else {
+      topOffset = layout.getContentTopOffset(stackEntries.length);
+      topStackEntryOpacity = 1;
+    }
 
     return (
       <div>
-        <div style={{ paddingBottom: footerHeight }}>
-          <div className="stack-entry">
-            <div className="side" style={illustrationSideStyle}>
-              <div className="side-inner">
-                {React.createElement(illustration, { prevStep, nextStep, stepProgress })}
-              </div>
-            </div>
-            <div className="side" style={codeSideStyle}>
-              <div className="side-inner">
-                <SourceCode
-                  def={code}
-                  start={start}
-                  end={end}
+        <div
+          style={{
+            height: contentHeight,
+            padding: `${headerHeight}px 0 ${footerHeight}px 0`,
+            transform: `translate(0, ${topOffset}px)`,
+          }}
+          >
+          {stackEntries.map(([prevStep, nextStep], i) => {
+            const opacity = i === 0 ? topStackEntryOpacity : 1;
+            let scale = 1;
+
+            if (i !== 0) {
+              if (isAddingToStack) {
+                scale = transitionValue(
+                  getScaleForStackDepth(i - 1),
+                  getScaleForStackDepth(i),
+                  topStackEntry[2],
+                );
+              } else if (isRemovingFromStack) {
+                scale = transitionValue(
+                  getScaleForStackDepth(i),
+                  getScaleForStackDepth(i - 1),
+                  topStackEntry[2],
+                );
+              } else {
+                scale = getScaleForStackDepth(i);
+              }
+            }
+
+            return (
+              <div
+                key={i}
+                style={{
+                  height: stackEntryHeight,
+                  opacity,
+                  transform: `scale(${scale})`,
+                }}
+                >
+                <StackEntry
+                  illustration={illustration}
+                  code={code}
+                  prevStep={prevStep}
+                  nextStep={nextStep}
+                  stepProgress={stepProgress}
                   />
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
         <div className="footer" style={{ height: footerHeight }}>
           <input
             type="range"
             min="0"
-            max={maxPos}
+            max={getMaxPos(steps.length)}
             className="slider"
             value={pos}
             onMouseDown={this.handleScrollStart}
@@ -151,18 +243,6 @@ class Player extends React.Component {
             />
         </div>
         <style jsx>{`
-          .side {
-            text-align: center;
-          }
-          .side-inner {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: normal;
-            text-align: left;
-          }
-          .stack-entry {
-            overflow: hidden;
-          }
           .footer {
             position: fixed;
             bottom: 0;
