@@ -1,9 +1,10 @@
 import React, { createElement } from 'react';
 import SourceCode from './source-code';
+import PureLayoutComponent from './pure-layout-component';
 
 const { max, round } = Math;
 
-class StackEntry extends React.Component {
+class StackEntry extends PureLayoutComponent {
   render() {
     const {
       illustration,

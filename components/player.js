@@ -150,9 +150,9 @@ class Player extends React.Component {
     const contentHeight = layout.getContentHeight(stackEntries.length);
 
     const topStackEntry = stackEntries[0];
-    const [prevStep, nextStep, stepProgress] = topStackEntry;
-    const isAddingToStack = stackEntries.length > 1 && !prevStep;
-    const isRemovingFromStack = stackEntries.length > 1 && nextStep.returnValue !== undefined;
+    const [topPrevStep, topNextStep, topStepProgress] = topStackEntry;
+    const isAddingToStack = stackEntries.length > 1 && !topPrevStep;
+    const isRemovingFromStack = stackEntries.length > 1 && topNextStep.returnValue !== undefined;
 
     let topOffset;
     let topStackEntryOpacity;
@@ -161,16 +161,16 @@ class Player extends React.Component {
       topOffset = transitionValue(
         layout.getContentTopOffset(stackEntries.length - 1) - stackEntryHeight,
         layout.getContentTopOffset(stackEntries.length),
-        stepProgress
+        topStepProgress
       );
-      topStackEntryOpacity = transitionValue(0, 1, stepProgress);
+      topStackEntryOpacity = transitionValue(0, 1, topStepProgress);
     } else if (isRemovingFromStack) {
       topOffset = transitionValue(
         layout.getContentTopOffset(stackEntries.length),
         layout.getContentTopOffset(stackEntries.length - 1) - stackEntryHeight,
-        stepProgress
+        topStepProgress
       );
-      topStackEntryOpacity = transitionValue(1, 0, stepProgress);
+      topStackEntryOpacity = transitionValue(1, 0, topStepProgress);
     } else {
       topOffset = layout.getContentTopOffset(stackEntries.length);
       topStackEntryOpacity = 1;
@@ -185,7 +185,7 @@ class Player extends React.Component {
             transform: `translate(0, ${topOffset}px)`,
           }}
           >
-          {stackEntries.map(([prevStep, nextStep], i) => {
+          {stackEntries.map(([prevStep, nextStep, stepProgress], i) => {
             let opacity;
 
             if (i === 0) {
@@ -194,21 +194,25 @@ class Player extends React.Component {
               opacity = transitionValue(
                 getOpacityForStackDepth(i - 1),
                 getOpacityForStackDepth(i),
-                topStackEntry[2],
+                topStepProgress,
               );
             } else if (isRemovingFromStack) {
               opacity = transitionValue(
                 getOpacityForStackDepth(i),
                 getOpacityForStackDepth(i - 1),
-                topStackEntry[2],
+                topStepProgress,
               );
             } else {
               opacity = getOpacityForStackDepth(i);
             }
 
+            // Tieing stack entry elements to their parnent step id will preserve
+            // them when other entries are added to or removed from stack.
+            const stackEntryKey = nextStep.parentStepId || 0;
+
             return (
               <div
-                key={i}
+                key={stackEntryKey}
                 style={{
                   height: stackEntryHeight,
                   opacity,
