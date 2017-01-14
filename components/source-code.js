@@ -1,17 +1,9 @@
 import React from 'react';
+import PureLayoutComponent from './pure-layout-component';
 
 const { min, max } = Math;
 
-class SourceCode extends React.Component {
-  shouldComponentUpdate(nextProps, nextState, nextContext) {
-    return (
-      nextProps.def !== this.props.def ||
-      nextProps.start !== this.props.start ||
-      nextProps.end !== this.props.end ||
-      nextContext.layout !== this.context.layout
-    );
-  }
-
+class SourceCode extends PureLayoutComponent {
   render() {
     const {
       def,
