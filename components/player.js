@@ -61,9 +61,8 @@ const getStackEntries = (steps, pos) => {
   return entries;
 };
 
-const SCALE_DIFF_PER_STACK_LEVEL = 0.1;
-const getScaleForStackDepth = level => {
-  return 1 - (level * SCALE_DIFF_PER_STACK_LEVEL);
+const getOpacityForStackDepth = level => {
+  return level > 0 ? 0.5 : 1;
 };
 
 class Player extends React.Component {
@@ -187,25 +186,24 @@ class Player extends React.Component {
           }}
           >
           {stackEntries.map(([prevStep, nextStep], i) => {
-            const opacity = i === 0 ? topStackEntryOpacity : 1;
-            let scale = 1;
+            let opacity;
 
-            if (i !== 0) {
-              if (isAddingToStack) {
-                scale = transitionValue(
-                  getScaleForStackDepth(i - 1),
-                  getScaleForStackDepth(i),
-                  topStackEntry[2],
-                );
-              } else if (isRemovingFromStack) {
-                scale = transitionValue(
-                  getScaleForStackDepth(i),
-                  getScaleForStackDepth(i - 1),
-                  topStackEntry[2],
-                );
-              } else {
-                scale = getScaleForStackDepth(i);
-              }
+            if (i === 0) {
+              opacity = topStackEntryOpacity;
+            } else if (isAddingToStack) {
+              opacity = transitionValue(
+                getOpacityForStackDepth(i - 1),
+                getOpacityForStackDepth(i),
+                topStackEntry[2],
+              );
+            } else if (isRemovingFromStack) {
+              opacity = transitionValue(
+                getOpacityForStackDepth(i),
+                getOpacityForStackDepth(i - 1),
+                topStackEntry[2],
+              );
+            } else {
+              opacity = getOpacityForStackDepth(i);
             }
 
             return (
@@ -214,7 +212,6 @@ class Player extends React.Component {
                 style={{
                   height: stackEntryHeight,
                   opacity,
-                  transform: `scale(${scale})`,
                 }}
                 >
                 <StackEntry
