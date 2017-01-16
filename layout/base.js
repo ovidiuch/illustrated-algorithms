@@ -20,27 +20,28 @@ export default class BaseLayout {
       code,
     } = this;
 
-    // Header and footer have fixed sizes, same on all res
-    this.headerHeight = 18;
-    this.footerHeight = 18;
-    this.availableContetHeight = height - this.headerHeight - this.footerHeight;
-
     this.landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width > height;
     this.sideWidth = this.landscape ? floor(width / 2) : width;
 
-    this.padding = round(this.getRelSize(PADDING));
-    this.borderWidth = round(this.getRelSize(BORDER_WIDTH));
+    this.headerHeight = 18;
+    this.footerHeight = this.getRelSize(48, 2);
+    this.footerButtonIconSize = this.getRelSize(36, 2);
+    this.availableContentHeight = height - this.headerHeight - this.footerHeight;
 
-    this.codeFontSize = floor(this.getRelSize(CODE_FONT_SIZE));
-    this.codeLineHeight = floor(this.getRelSize(CODE_LINE_HEIGHT));
+    this.padding = this.getRelSize(PADDING, 2);
+    this.borderWidth = this.getRelSize(BORDER_WIDTH, 1);
+
+    this.codeFontSize = this.getRelSize(CODE_FONT_SIZE, 2);
+    this.codeLineHeight = this.getRelSize(CODE_LINE_HEIGHT, 2);
     this.codeHeight = (this.codeLineHeight * code.split('\n').length) + (this.padding * 2);
 
     // YO: Calculate this and override in subclasses
     this.illustrationHeight = 0;
   }
 
-  getRelSize(baseValue) {
-    return baseValue / FRAME_OF_REFERENCE * this.sideWidth;
+  getRelSize(baseValue, multiplierOf) {
+    const rawValue = baseValue / FRAME_OF_REFERENCE * this.sideWidth;
+    return multiplierOf === undefined ? rawValue : multiplierOf * round(rawValue / multiplierOf);
   }
 
   getStackEntryHeight() {
@@ -60,6 +61,6 @@ export default class BaseLayout {
   getContentTopOffset(stackLength) {
     const contentHeight = this.getContentHeight(stackLength);
 
-    return max(0, round((this.availableContetHeight - contentHeight) / 2));
+    return max(0, round((this.availableContentHeight - contentHeight) / 2));
   }
 }

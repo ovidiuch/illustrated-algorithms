@@ -66,6 +66,7 @@ class SourceCode extends PureLayoutComponent {
             background: rgba(255, 255, 255, 0.4);
           }
           .highlight {
+            display: inline-block;
             background: rgba(255, 255, 255, 0.8);
           }
           .line-num {

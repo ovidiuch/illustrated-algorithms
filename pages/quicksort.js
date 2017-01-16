@@ -15,7 +15,7 @@ class Quicksort extends React.Component {
     const { steps, code, url } = this.props;
     return (
       <Page
-        color="#CCFF90"
+        color="#FFD180"
         pathname={url.pathname}
         steps={steps}
         code={code}
