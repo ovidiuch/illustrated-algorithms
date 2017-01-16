@@ -6,7 +6,7 @@ import {
 import getWobbleRotation from '../../../utils/wobble';
 
 const getItemGlow = (name, step) =>
-  step !== undefined && step.bindings.guess === name ? 0.5 : 0;
+  step !== undefined && step.bindings.guess === name ? 0.4 : 0;
 
 const getItemOpacity = (index, step) => {
   if (step === undefined) {

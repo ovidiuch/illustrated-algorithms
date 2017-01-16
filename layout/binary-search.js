@@ -1,6 +1,6 @@
 import BaseLayout from './base';
 
-const { floor, round } = Math;
+const { floor } = Math;
 
 // Values are relative to a base width of 320px
 const BLOCK_LABEL_FONT_SIZE = 10;
@@ -16,14 +16,13 @@ export default class BinarySearchLayout extends BaseLayout {
 
     this.blockWidth = floor((this.sideWidth - (this.padding * 2)) / BLOCK_NUM);
     this.innerWidth = ((this.blockWidth - this.borderWidth) * BLOCK_NUM) + this.borderWidth;
-    this.margin = round((this.sideWidth - this.innerWidth) / 2);
 
-    this.blockLabelFontSize = floor(this.getRelSize(BLOCK_LABEL_FONT_SIZE));
-    this.blockLabelHeight = floor(this.getRelSize(BLOCK_LABEL_HEIGHT));
+    this.blockLabelFontSize = this.getRelSize(BLOCK_LABEL_FONT_SIZE, 2);
+    this.blockLabelHeight = this.getRelSize(BLOCK_LABEL_HEIGHT, 2);
     this.blockHeight = this.blockWidth + this.blockLabelHeight;
 
     this.numberVarWidth = this.blockWidth;
-    this.numberVarHeight = floor(this.getRelSize(NUMBER_VAR_HEIGHT));
+    this.numberVarHeight = this.getRelSize(NUMBER_VAR_HEIGHT, 2);
 
     this.listTopPosition = this.getNumberVarTopPosition(3);
     this.centerPosition = this.getListItemLeftPosition(3) + (this.borderWidth / 2);

@@ -1,9 +1,11 @@
 import React from 'react';
 import raf from 'raf';
+import hexToRgba from 'hex-rgba';
 import {
   transitionValue,
 } from '../utils/transition';
 import StackEntry from './stack-entry';
+import PlaybackControls from './playback-controls';
 
 const { floor, min } = Math;
 
@@ -19,7 +21,7 @@ const FRAMES_PER_POS = FRAMES_PER_TRANSITION + FRAMES_PER_DELAY;
 
 const getMaxPos = steps =>
   (steps * FRAMES_PER_TRANSITION) +
-  ((steps - 1) * FRAMES_PER_DELAY);
+  ((steps - 1) * FRAMES_PER_DELAY) - 1;
 
 const getPrevStepFromSameStackEntry = (steps, stepIndex) => {
   if (stepIndex <= 0) {
@@ -71,35 +73,36 @@ class Player extends React.Component {
 
     this.scheduleAnimation = this.scheduleAnimation.bind(this);
     this.onFrame = this.onFrame.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
-    this.handleScrollStart = this.handleScrollStart.bind(this);
-    this.handleScrollStop = this.handleScrollStop.bind(this);
+    this.handlePlay = this.handlePlay.bind(this);
+    this.handlePause = this.handlePause.bind(this);
+    this.handleScrollTo = this.handleScrollTo.bind(this);
 
     this.state = {
       pos: 0,
+      isPlaying: false,
     };
-  }
-
-  componentDidMount() {
-    this.scheduleAnimation();
   }
 
   componentWillUnmount() {
     this.cancelAnimation();
   }
 
-  handleScroll(e) {
+  handleScrollTo(pos) {
     this.setState({
-      pos: Number(e.currentTarget.value),
+      pos,
     });
   }
 
-  handleScrollStart() {
-    this.cancelAnimation();
+  handlePlay() {
+    this.setState({
+      isPlaying: true,
+    }, this.scheduleAnimation);
   }
 
-  handleScrollStop() {
-    // this.scheduleAnimation();
+  handlePause() {
+    this.setState({
+      isPlaying: false,
+    }, this.cancelAnimation);
   }
 
   scheduleAnimation() {
@@ -119,12 +122,16 @@ class Player extends React.Component {
       pos,
     } = this.state;
 
-    if (pos < maxPos - 1) {
-      const newPos = min(maxPos - 1, pos + 1);
+    if (pos < maxPos) {
+      const newPos = min(maxPos, pos + 1);
 
       this.setState({
         pos: newPos,
       }, this.scheduleAnimation);
+    } else {
+      this.setState({
+        isPlaying: false,
+      });
     }
   }
 
@@ -133,9 +140,11 @@ class Player extends React.Component {
       steps,
       code,
       illustration,
+      color,
     } = this.props;
     const {
-      pos
+      pos,
+      isPlaying,
     } = this.state;
     const {
       layout
@@ -229,18 +238,21 @@ class Player extends React.Component {
             );
           })}
         </div>
-        <div className="footer" style={{ height: footerHeight }}>
-          <input
-            type="range"
-            min="0"
-            max={getMaxPos(steps.length)}
-            className="slider"
-            value={pos}
-            onMouseDown={this.handleScrollStart}
-            onTouchStart={this.handleScrollStart}
-            onMouseUp={this.handleScrollStop}
-            onTouchEnd={this.handleScrollStop}
-            onChange={this.handleScroll}
+        <div
+          className="footer"
+          style={{
+            height: footerHeight,
+            backgroundColor: hexToRgba(color, 80),
+          }}
+          >
+          <PlaybackControls
+            color={color}
+            isPlaying={isPlaying}
+            pos={pos}
+            maxPos={getMaxPos(steps.length)}
+            onPlay={this.handlePlay}
+            onPause={this.handlePause}
+            onScrollTo={this.handleScrollTo}
             />
         </div>
         <style jsx>{`
@@ -249,10 +261,6 @@ class Player extends React.Component {
             bottom: 0;
             left: 0;
             right: 0;
-          }
-          .slider {
-            width: 100%;
-            margin: 0;
           }
         `}</style>
       </div>
@@ -264,6 +272,7 @@ Player.propTypes = {
   steps: React.PropTypes.array.isRequired,
   code: React.PropTypes.string.isRequired,
   illustration: React.PropTypes.func.isRequired,
+  color: React.PropTypes.string.isRequired,
 };
 
 Player.contextTypes = {

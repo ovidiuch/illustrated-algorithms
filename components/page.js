@@ -92,6 +92,14 @@ class Page extends React.Component {
               transition: background 0.5s;
               font-family: 'Helvetica Neue', Helvetica, sans-serif;
             }
+            .footer {
+              animation: slidein 1s;
+            }
+            @keyframes slidein {
+              0% { transform: translate(0, 100%); }
+              50% { transform: translate(0, 100%); }
+              100% { transform: translate(0, 0); }
+            }
           `}</style>
         </Head>
         <div className="body" style={{ opacity: renderedOnClient ? 1 : 0 }}>
@@ -103,6 +111,7 @@ class Page extends React.Component {
               steps={steps}
               code={code}
               illustration={illustration}
+              color={color}
               />
           </div>
           <style jsx>{`
