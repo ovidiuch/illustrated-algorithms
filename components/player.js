@@ -1,6 +1,5 @@
 import React from 'react';
 import raf from 'raf';
-import hexToRgba from 'hex-rgba';
 import {
   transitionValue,
 } from '../utils/transition';
@@ -262,11 +261,10 @@ class Player extends React.Component {
             className="footer"
             style={{
               height: footerHeight,
-              backgroundColor: hexToRgba(color, 90),
+              backgroundColor: color,
             }}
             >
             <PlaybackControls
-              color={color}
               isPlaying={isPlaying}
               pos={pos}
               maxPos={getMaxPos(steps.length)}

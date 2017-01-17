@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import RawDataLayout from '../../layout/raw-data';
 
 class RawData extends React.Component {
@@ -9,6 +10,7 @@ class RawData extends React.Component {
 
   render() {
     const {
+      prevStep,
       nextStep,
     } = this.props;
     const {
@@ -24,6 +26,7 @@ class RawData extends React.Component {
       lineHeight,
       illustrationHeight,
     } = layout;
+    const isFirstStep = !prevStep && !nextStep.parentStepId;
 
     return (
       <div
@@ -42,6 +45,22 @@ class RawData extends React.Component {
             right: padding,
           }}
           >
+          {isFirstStep ? (
+            <div
+              className="wip"
+              style={{
+                fontSize,
+                padding,
+                marginBottom: padding,
+              }}
+              >
+              <p>Work in progress: No visualisation, context displayed as JSON.</p>
+              <p>
+                <Link href="/binary-search"><a>See binary search</a></Link> for a complete example.{' '}
+                <a href="https://github.com/skidding/illustrated-algorithms#work-in-progress">Stay tuned for updates.</a>
+              </p>
+            </div>
+          ) : null}
           {Object.keys(bindings).map(key =>
             <pre
               key={key}
@@ -79,6 +98,20 @@ class RawData extends React.Component {
           .return-value {
             background: rgba(0, 0, 0, 0.8);
           }
+          .wip {
+            background: rgba(255, 255, 255, 0.4);
+          }
+          .wip p {
+            margin: 0;
+            margin-bottom: 1em;
+          }
+          .wip p:last-child {
+            margin-bottom: 0;
+          }
+          .wip a {
+            color: black;
+            white-space: nowrap;
+          }
         `}</style>
       </div>
     );
@@ -87,6 +120,7 @@ class RawData extends React.Component {
 
 RawData.propTypes = {
   nextStep: React.PropTypes.object.isRequired,
+  prevStep: React.PropTypes.object,
 };
 
 RawData.contextTypes = {
