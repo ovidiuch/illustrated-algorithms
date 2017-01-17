@@ -136,7 +136,7 @@ class Page extends React.Component {
 Page.propTypes = {
   color: React.PropTypes.string.isRequired,
   pathname: React.PropTypes.string.isRequired,
-  steps: React.PropTypes.array.isRequired,
+  steps: React.PropTypes.array,
   code: React.PropTypes.string.isRequired,
   illustration: React.PropTypes.func.isRequired,
 };

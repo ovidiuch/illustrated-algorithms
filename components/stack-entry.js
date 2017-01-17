@@ -12,8 +12,9 @@ class StackEntry extends PureLayoutComponent {
       prevStep,
       nextStep,
       stepProgress,
+      onGenerateSteps,
     } = this.props;
-    const { start, end } = nextStep;
+    const { highlight } = nextStep;
     const {
       layout
     } = this.context;
@@ -47,7 +48,8 @@ class StackEntry extends PureLayoutComponent {
           {createElement(illustration, {
             prevStep,
             nextStep,
-            stepProgress
+            stepProgress,
+            onGenerateSteps,
           })}
         </div>
         <div
@@ -56,8 +58,7 @@ class StackEntry extends PureLayoutComponent {
           >
           <SourceCode
             def={code}
-            start={start}
-            end={end}
+            highlight={highlight}
             />
         </div>
         <style jsx>{`
@@ -76,6 +77,7 @@ StackEntry.propTypes = {
   nextStep: React.PropTypes.object.isRequired,
   prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number,
+  onGenerateSteps: React.PropTypes.func.isRequired,
 };
 
 StackEntry.contextTypes = {

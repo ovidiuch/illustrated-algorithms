@@ -71,15 +71,16 @@ class Player extends React.Component {
   constructor(props) {
     super(props);
 
-    this.scheduleAnimation = this.scheduleAnimation.bind(this);
-    this.onFrame = this.onFrame.bind(this);
+    this.handleScrollTo = this.handleScrollTo.bind(this);
     this.handlePlay = this.handlePlay.bind(this);
     this.handlePause = this.handlePause.bind(this);
-    this.handleScrollTo = this.handleScrollTo.bind(this);
+    this.handleGenerateSteps = this.handleGenerateSteps.bind(this);
+    this.onFrame = this.onFrame.bind(this);
 
     this.state = {
       pos: 0,
       isPlaying: false,
+      steps: props.steps || [this.getIntroStep()],
     };
   }
 
@@ -105,7 +106,16 @@ class Player extends React.Component {
     }, this.cancelAnimation);
   }
 
+  handleGenerateSteps(steps) {
+    this.setState({
+      steps: [this.getIntroStep(), ...steps],
+      pos: 0,
+      isPlaying: true,
+    }, this.scheduleAnimation);
+  }
+
   scheduleAnimation() {
+    this.cancelAnimation();
     this.animationHandle = raf(this.onFrame);
   }
 
@@ -116,11 +126,9 @@ class Player extends React.Component {
   onFrame() {
     const {
       steps,
-    } = this.props;
-    const maxPos = getMaxPos(steps.length);
-    const {
       pos,
     } = this.state;
+    const maxPos = getMaxPos(steps.length);
 
     if (pos < maxPos) {
       const newPos = min(maxPos, pos + 1);
@@ -135,14 +143,23 @@ class Player extends React.Component {
     }
   }
 
+  getIntroStep() {
+    return {
+      intro: true,
+      bindings: {
+        ...this.props.illustration.initialData,
+      },
+    };
+  }
+
   render() {
     const {
-      steps,
-      code,
       illustration,
       color,
+      code,
     } = this.props;
     const {
+      steps,
       pos,
       isPlaying,
     } = this.state;
@@ -154,6 +171,7 @@ class Player extends React.Component {
       footerHeight,
     } = layout;
 
+    const isIntro = steps.length === 1;
     const stackEntries = getStackEntries(steps, pos);
     const stackEntryHeight = layout.getStackEntryHeight();
     const contentHeight = layout.getContentHeight(stackEntries.length);
@@ -233,28 +251,31 @@ class Player extends React.Component {
                   prevStep={prevStep}
                   nextStep={nextStep}
                   stepProgress={stepProgress}
+                  onGenerateSteps={this.handleGenerateSteps}
                   />
               </div>
             );
           })}
         </div>
-        <div
-          className="footer"
-          style={{
-            height: footerHeight,
-            backgroundColor: hexToRgba(color, 80),
-          }}
-          >
-          <PlaybackControls
-            color={color}
-            isPlaying={isPlaying}
-            pos={pos}
-            maxPos={getMaxPos(steps.length)}
-            onPlay={this.handlePlay}
-            onPause={this.handlePause}
-            onScrollTo={this.handleScrollTo}
-            />
-        </div>
+        {!isIntro && (
+          <div
+            className="footer"
+            style={{
+              height: footerHeight,
+              backgroundColor: hexToRgba(color, 80),
+            }}
+            >
+            <PlaybackControls
+              color={color}
+              isPlaying={isPlaying}
+              pos={pos}
+              maxPos={getMaxPos(steps.length)}
+              onPlay={this.handlePlay}
+              onPause={this.handlePause}
+              onScrollTo={this.handleScrollTo}
+              />
+          </div>
+        )}
         <style jsx>{`
           .footer {
             position: fixed;
@@ -269,8 +290,8 @@ class Player extends React.Component {
 }
 
 Player.propTypes = {
-  steps: React.PropTypes.array.isRequired,
   code: React.PropTypes.string.isRequired,
+  steps: React.PropTypes.array,
   illustration: React.PropTypes.func.isRequired,
   color: React.PropTypes.string.isRequired,
 };
