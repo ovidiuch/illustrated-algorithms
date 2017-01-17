@@ -74,7 +74,6 @@ class RawData extends React.Component {
             margin: 0;
             background: rgba(0, 0, 0, 0.5);
             color: white;
-            font-family: 'FiraCode-Light', monospace;
             white-space: pre-wrap;
           }
           .return-value {

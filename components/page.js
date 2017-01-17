@@ -92,6 +92,14 @@ class Page extends React.Component {
               transition: background 0.5s;
               font-family: 'Helvetica Neue', Helvetica, sans-serif;
             }
+            @font-face {
+              font-family: 'FiraCode-Light';
+              src: url('/static/FiraCode-Light.woff');
+            }
+            pre,
+            .code {
+              font-family: 'FiraCode-Light', monospace;
+            }
           `}</style>
         </Head>
         <div className="body" style={{ opacity: renderedOnClient ? 1 : 0 }}>

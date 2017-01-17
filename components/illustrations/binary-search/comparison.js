@@ -41,10 +41,9 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
     guess > item ? '>' : '<'
   );
 
-  // TODO: Get FiraCode-Light font into the codebase
   return (
     <div
-      className="comparison"
+      className="comparison code"
       style={{
         top: comparisonTopPosition,
         left: comparisonLeftPosition,
@@ -66,7 +65,6 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
           background: rgba(0, 0, 0, 0.5);
           border-radius: 50%;
           color: white;
-          font-family: 'FiraCode-Light', monospace;
           text-align: center;
         }
       `}</style>
