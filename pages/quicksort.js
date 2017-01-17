@@ -15,11 +15,11 @@ class Quicksort extends React.Component {
   }
 
   render() {
-    const { url, steps } = this.props;
+    const { steps } = this.props;
     return (
       <Page
         color="#FFD180"
-        pathname={url.pathname}
+        currentPath="/quicksort"
         code={quicksort.code}
         steps={steps}
         illustration={RawData}
@@ -29,7 +29,6 @@ class Quicksort extends React.Component {
 }
 
 Quicksort.propTypes = {
-  url: React.PropTypes.object.isRequired,
   steps: React.PropTypes.array.isRequired,
 };
 

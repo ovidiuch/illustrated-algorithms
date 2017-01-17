@@ -70,7 +70,7 @@ class Page extends React.Component {
   render() {
     const {
       color,
-      pathname,
+      currentPath,
       steps,
       code,
       illustration,
@@ -96,7 +96,7 @@ class Page extends React.Component {
         </Head>
         <div className="body" style={{ opacity: renderedOnClient ? 1 : 0 }}>
           <div className="header">
-            <Menu pathname={pathname}/>
+            <Menu currentPath={currentPath}/>
           </div>
           <div className="content">
             <Player
@@ -113,6 +113,7 @@ class Page extends React.Component {
             .header {
               position: absolute;
               z-index: 2;
+              width: 100%;
             }
             .content {
               position: absolute;
@@ -127,7 +128,7 @@ class Page extends React.Component {
 
 Page.propTypes = {
   color: React.PropTypes.string.isRequired,
-  pathname: React.PropTypes.string.isRequired,
+  currentPath: React.PropTypes.string.isRequired,
   steps: React.PropTypes.array,
   code: React.PropTypes.string.isRequired,
   illustration: React.PropTypes.func.isRequired,

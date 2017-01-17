@@ -34,13 +34,16 @@ const SvgButton = ({
       </svg>
       <style jsx>{`
         .button {
+          position: relative;
           cursor: pointer;
           background: rgba(255, 255, 255, 0.8);
           text-align: center;
         }
         svg {
-          display: inline-block;
-          vertical-align: middle;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           fill: rgba(0, 0, 0, 0.8);
         }
       `}</style>

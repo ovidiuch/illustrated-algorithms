@@ -23,10 +23,12 @@ export default class BaseLayout {
     this.landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width > height;
     this.sideWidth = this.landscape ? floor(width / 2) : width;
 
-    this.headerHeight = 18;
-    this.footerHeight = this.getRelSize(48, 2);
-    this.footerButtonIconSize = this.getRelSize(36, 2);
-    this.footerHintFontSize = this.getRelSize(18, 2);
+    this.headerHeight = this.getRelSize(32, 2);
+    this.headerLinkFontSize = this.getRelSize(12, 2);
+    this.headerLinkMargin = this.getRelSize(10);
+    this.footerHeight = this.getRelSize(40, 2);
+    this.footerButtonIconSize = this.getRelSize(32, 2);
+    this.footerHintFontSize = this.getRelSize(16, 2);
     this.availableContentHeight = height - this.headerHeight - this.footerHeight;
 
     this.padding = this.getRelSize(PADDING, 2);

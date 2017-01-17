@@ -22,11 +22,11 @@ class Bfs extends React.Component {
   }
 
   render() {
-    const { url, steps } = this.props;
+    const { steps } = this.props;
     return (
       <Page
         color="#80D8FF"
-        pathname={url.pathname}
+        currentPath="/bfs"
         code={bfs.code}
         steps={steps}
         illustration={RawData}
@@ -37,7 +37,6 @@ class Bfs extends React.Component {
 
 Bfs.propTypes = {
   steps: React.PropTypes.array.isRequired,
-  url: React.PropTypes.object.isRequired,
 };
 
 export default Bfs;
