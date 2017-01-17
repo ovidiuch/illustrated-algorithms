@@ -70,7 +70,7 @@ BinarySearch.Layout = BinarySearchLayout;
 
 BinarySearch.initialData = {
   list: [
-    'bear', 'cat', 'dog', 'lion', 'rat', 'snail'
+    'bear', 'cat', 'dog', 'lion', 'panda', 'snail'
   ]
 };
 

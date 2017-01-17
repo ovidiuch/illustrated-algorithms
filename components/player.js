@@ -262,7 +262,7 @@ class Player extends React.Component {
             className="footer"
             style={{
               height: footerHeight,
-              backgroundColor: hexToRgba(color, 80),
+              backgroundColor: hexToRgba(color, 90),
             }}
             >
             <PlaybackControls
