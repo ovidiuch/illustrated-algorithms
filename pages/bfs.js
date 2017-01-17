@@ -15,18 +15,20 @@ class Bfs extends React.Component {
       thom: [],
       jonny: [],
     };
-
-    return bfs(graph, 'you');
+    const { steps } = bfs(graph, 'you');
+    return {
+      steps,
+    };
   }
 
   render() {
-    const { steps, code, url } = this.props;
+    const { url, steps } = this.props;
     return (
       <Page
         color="#80D8FF"
         pathname={url.pathname}
+        code={bfs.code}
         steps={steps}
-        code={code}
         illustration={RawData}
         />
     );
@@ -35,7 +37,6 @@ class Bfs extends React.Component {
 
 Bfs.propTypes = {
   steps: React.PropTypes.array.isRequired,
-  code: React.PropTypes.string.isRequired,
   url: React.PropTypes.object.isRequired,
 };
 

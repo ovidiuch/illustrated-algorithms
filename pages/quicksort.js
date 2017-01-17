@@ -8,17 +8,20 @@ class Quicksort extends React.Component {
     const items = [
       'dog', 'cat', 'snail', 'bear', 'pig', 'rat'
     ];
-    return quicksort(items);
+    const { steps } = quicksort(items);
+    return {
+      steps,
+    };
   }
 
   render() {
-    const { steps, code, url } = this.props;
+    const { url, steps } = this.props;
     return (
       <Page
         color="#FFD180"
         pathname={url.pathname}
+        code={quicksort.code}
         steps={steps}
-        code={code}
         illustration={RawData}
         />
     );
@@ -26,9 +29,8 @@ class Quicksort extends React.Component {
 }
 
 Quicksort.propTypes = {
-  steps: React.PropTypes.array.isRequired,
-  code: React.PropTypes.string.isRequired,
   url: React.PropTypes.object.isRequired,
+  steps: React.PropTypes.array.isRequired,
 };
 
 export default Quicksort;

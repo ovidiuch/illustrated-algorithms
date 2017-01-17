@@ -26,6 +26,7 @@ export default class BaseLayout {
     this.headerHeight = 18;
     this.footerHeight = this.getRelSize(48, 2);
     this.footerButtonIconSize = this.getRelSize(36, 2);
+    this.footerHintFontSize = this.getRelSize(18, 2);
     this.availableContentHeight = height - this.headerHeight - this.footerHeight;
 
     this.padding = this.getRelSize(PADDING, 2);

@@ -44,7 +44,7 @@ function __trace({
 
 ALGORITHM_BODY
 
-module.exports = function (...args) {
+function __traceWrapper(...args) {
   __steps = [];
   __parentStepId = undefined;
   __lastStepId = undefined;
@@ -53,9 +53,13 @@ module.exports = function (...args) {
   return {
     steps: __steps,
     returnValue: returnValue,
-    code: ALGORITHM_CODE,
   };
-}`, {
+};
+
+__traceWrapper.code = ALGORITHM_CODE;
+
+module.exports = __traceWrapper;
+`, {
   plugins: ['objectRestSpread']
 });
 
@@ -98,8 +102,13 @@ export default function ({ types: t }) {
     leaveCall,
   }) {
     const stepProps = [
-      t.objectProperty(t.identifier('start'), t.numericLiteral(start)),
-      t.objectProperty(t.identifier('end'), t.numericLiteral(end)),
+      t.objectProperty(
+        t.identifier('highlight'),
+        t.objectExpression([
+          t.objectProperty(t.identifier('start'), t.numericLiteral(start)),
+          t.objectProperty(t.identifier('end'), t.numericLiteral(end)),
+        ]),
+      ),
       t.objectProperty(
         t.identifier('bindings'),
         t.objectExpression(bindings.map(name =>

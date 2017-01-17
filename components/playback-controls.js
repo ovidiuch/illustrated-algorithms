@@ -89,7 +89,6 @@ class PlaybackControls extends PureLayoutComponent {
 
   handleReplay() {
     this.props.onScrollTo(0);
-    this.props.onPlay();
   }
 
   addWindowHandlers() {
@@ -128,6 +127,7 @@ class PlaybackControls extends PureLayoutComponent {
     } = this.context;
     const {
       footerHeight,
+      footerHintFontSize,
     } = layout;
 
     return (
@@ -161,6 +161,15 @@ class PlaybackControls extends PureLayoutComponent {
             className="progress"
             style={{ width: `${(pos / maxPos) * 100}%` }}
             />
+          <div
+            className="slider-hint"
+            style={{
+              fontSize: footerHintFontSize,
+              lineHeight: `${footerHeight}px`,
+            }}
+            >
+            drag to rewind
+          </div>
         </div>
         <style jsx>{`
           .player-controls {
@@ -182,6 +191,18 @@ class PlaybackControls extends PureLayoutComponent {
             bottom: 0;
             left: 0;
             background: rgba(255, 255, 255, 0.4);
+          }
+          .slider-hint {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-weight: 300;
+            text-align: center;
+            opacity: 0.2;
+            user-select: none;
+            cursor: default;
           }
         `}</style>
       </div>

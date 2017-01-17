@@ -15,13 +15,11 @@
     "eslint-config-xo-react": "^0.10.0",
     "eslint-plugin-react": "^6.8.0",
     "html-webpack-plugin": "^2.24.1",
-    "react-cosmos-webpack": "^2.0.0-beta.3",
     "xo": "^0.17.1"
   },
   "scripts": {
     "build:babel-plugin": "babel babel-plugin-trace-context/src -d babel-plugin-trace-context/lib && rm -rf node_modules/.cache/babel-loader/*",
     "test": "xo",
-    "cosmos": "cosmos --config cosmos/cosmos.config.js",
     "dev": "next"
   },
   "xo": {
