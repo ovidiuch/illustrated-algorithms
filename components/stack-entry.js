@@ -64,6 +64,7 @@ class StackEntry extends PureLayoutComponent {
         <style jsx>{`
           .side {
             float: left;
+            text-align: center;
           }
         `}</style>
       </div>

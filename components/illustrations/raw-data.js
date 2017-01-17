@@ -63,6 +63,7 @@ class RawData extends React.Component {
           .raw-data {
             position: relative;
             box-sizing: border-box;
+            text-align: left;
           }
           .inner {
             position: absolute;

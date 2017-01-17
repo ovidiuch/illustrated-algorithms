@@ -89,9 +89,11 @@ class SourceCode extends PureLayoutComponent {
         })}
         <style jsx>{`
           pre {
+            display: inline-block;
             margin: 0;
             padding: 0;
             font-family: 'FiraCode-Light', monospace;
+            text-align: left;
           }
         `}</style>
       </pre>
