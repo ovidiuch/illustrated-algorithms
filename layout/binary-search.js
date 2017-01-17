@@ -7,7 +7,6 @@ const BLOCK_LABEL_FONT_SIZE = 10;
 const BLOCK_LABEL_HEIGHT = 16;
 const NUMBER_VAR_HEIGHT = 24;
 
-// TODO: Accept as input via constructor
 const BLOCK_NUM = 6;
 
 export default class BinarySearchLayout extends BaseLayout {

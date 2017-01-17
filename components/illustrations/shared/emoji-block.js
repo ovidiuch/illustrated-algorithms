@@ -20,7 +20,7 @@ const EmojiBlock = ({
 
   return (
     <div
-      className="EmojiBlock"
+      className="emoji-block"
       style={{
         width: blockWidth,
         height: blockHeight,
@@ -50,7 +50,7 @@ const EmojiBlock = ({
         {name}
       </div>
       <style jsx>{`
-        .EmojiBlock {
+        .emoji-block {
           position: relative;
           border-style: solid;
           border-color: #763D38;

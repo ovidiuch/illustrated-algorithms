@@ -89,7 +89,6 @@ class PlaybackControls extends PureLayoutComponent {
 
   handleReplay() {
     this.props.onScrollTo(0);
-    this.props.onPlay();
   }
 
   addWindowHandlers() {

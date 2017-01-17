@@ -1,25 +1,42 @@
 import React from 'react';
+import {
+  transitionValue,
+  getBindingValue,
+} from '../../../utils/transition';
 import EmojiBlock from '../shared/emoji-block';
 import getWobbleRotation from '../../../utils/wobble';
 
-export default function Item({ nextStep, stepProgress }, { layout }) {
-  const { bindings } = nextStep;
-  const {
-    item,
-  } = bindings;
+const getOpacity = step => step && step.bindings.item !== undefined ? 1 : 0;
+
+const BASE_ROTATION = -1.5;
+
+export default function Item({ prevStep, nextStep, stepProgress }, { layout }) {
+  const item = getBindingValue(prevStep, nextStep, 'item');
+  if (item === undefined) {
+    return null;
+  }
+
+  const opacity = transitionValue(
+    getOpacity(prevStep),
+    getOpacity(nextStep),
+    stepProgress,
+  );
+
   const {
     itemTopPosition,
     itemLeftPosition,
   } = layout;
 
   const { compared } = nextStep;
-  const rotation =
-    compared && compared.indexOf('item') !== -1 ? getWobbleRotation(stepProgress) : 0;
+  const rotation = BASE_ROTATION + (
+    compared && compared.indexOf('item') !== -1 ? getWobbleRotation(stepProgress) : 0
+  );
 
   return (
     <div
       style={{
         position: 'absolute',
+        opacity,
         top: itemTopPosition,
         left: itemLeftPosition,
         transform: `rotate(${rotation}deg)`,
@@ -32,6 +49,7 @@ export default function Item({ nextStep, stepProgress }, { layout }) {
 
 Item.propTypes = {
   nextStep: React.PropTypes.object.isRequired,
+  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 
