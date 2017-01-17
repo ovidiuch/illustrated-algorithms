@@ -1,3 +1,3 @@
 export default {
-  pathname: '/binary-search',
+  currentPath: '/binary-search',
 };

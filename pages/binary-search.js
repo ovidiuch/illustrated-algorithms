@@ -5,20 +5,15 @@ import BinarySearch from '../components/illustrations/binary-search/binary-searc
 
 class BinarySearchPage extends React.Component {
   render() {
-    const { url } = this.props;
     return (
       <Page
         color="#FF8A80"
-        pathname={url.pathname}
+        currentPath="/binary-search"
         code={binarySearch.code}
         illustration={BinarySearch}
         />
     );
   }
 }
-
-BinarySearchPage.propTypes = {
-  url: React.PropTypes.object.isRequired,
-};
 
 export default BinarySearchPage;

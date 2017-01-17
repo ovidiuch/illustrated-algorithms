@@ -32,11 +32,11 @@ export default class BinarySearchLayout extends BaseLayout {
     this.itemTopPosition = this.comparisonTopPosition + this.numberVarHeight + this.padding;
     this.itemLeftPosition = this.centerPosition - (this.blockWidth / 2);
 
-    this.illustrationHeight = this.itemTopPosition + this.blockHeight + this.padding;
+    this.illustrationHeight = this.itemTopPosition + this.blockHeight + (this.padding * 2);
   }
 
   getNumberVarTopPosition(level) {
-    return (this.numberVarHeight * level) + (this.padding * (level + 1));
+    return (this.numberVarHeight * level) + (this.padding * (level + 1)) + this.padding;
   }
 
   getListItemLeftPosition(itemIndex) {
