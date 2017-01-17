@@ -282,6 +282,12 @@ class Player extends React.Component {
             bottom: 0;
             left: 0;
             right: 0;
+            animation: slidein 1s;
+          }
+          @keyframes slidein {
+            0% { transform: translate(0, 100%); }
+            50% { transform: translate(0, 100%); }
+            100% { transform: translate(0, 0); }
           }
         `}</style>
       </div>
