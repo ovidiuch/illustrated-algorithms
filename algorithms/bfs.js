@@ -11,7 +11,7 @@ export default function bfs(graph, name) {
 
     if (searched.indexOf(person) === -1) {
       if (isSeller(person)) {
-        return true;
+        return person;
       }
 
       queue.push(...graph[person]);

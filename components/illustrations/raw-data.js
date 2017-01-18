@@ -54,14 +54,14 @@ class RawData extends React.Component {
                 marginBottom: padding,
               }}
               >
-              <p>Work in progress: No visualisation, context displayed as JSON.</p>
+              <p>Work in progress: No visualisation. Context displayed as JSON.</p>
               <p>
                 <Link href="/binary-search"><a>See binary search</a></Link> for a complete example.{' '}
                 <a href="https://github.com/skidding/illustrated-algorithms#work-in-progress">Stay tuned for updates.</a>
               </p>
             </div>
           ) : null}
-          {Object.keys(bindings).map(key =>
+          {Object.keys(bindings).filter(key => bindings[key] !== undefined).map(key =>
             <pre
               key={key}
               style={{ padding }}
