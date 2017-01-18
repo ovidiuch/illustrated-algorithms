@@ -1,1 +1,1 @@
-See [How to contribute.](#README.md#how-to-contribute)
+See [How to contribute.](README.md#how-to-contribute)

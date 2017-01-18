@@ -1,6 +1,8 @@
 # Illustrated Algorithms
 Algorithm → AST → CSS (3 x JavaScript)
 
+[![Binary search](binary-search.gif)](https://illustrated-algorithms-ommzftrylh.now.sh/)
+
 Inspired by [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms) and [python-execution-trace](https://github.com/mihneadb/python-execution-trace), this project aims to make common algorithms easier to grasp through interactive visualizations of their execution.
 
 Visual representations of local variables augment the control flow, alongside actual source code. You can fast forward and rewind the execution to closely observe how an algorithm works.
@@ -9,7 +11,7 @@ Visual representations of local variables augment the control flow, alongside ac
 
 - The same code that is displayed next to the illustration is also decorated using [Babel](babel-plugin-trace-execution/src/index.js) and executed to record the context at every step. Literally the same source file.
 - Going back and forth between function execution (and call stack when algorithm uses recursion) is effortless. So is pausing and resuming.
-- Visualizations are be easy to follow, fun to play with and simple enough to fit inside the screen of any modern phone.
+- Visualizations are easy to follow, fun to play with and simple enough to fit inside the screen of any modern phone.
 
 ## Work in progress
 
