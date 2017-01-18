@@ -9,7 +9,7 @@ Visual representations of local variables augment the control flow, alongside ac
 
 ## Principles
 
-- The same code that is displayed next to the illustration is also decorated using [Babel](babel-plugin-trace-execution/src/index.js) and executed to record the context at every step. Literally the same source file.
+- The same code that is displayed next to the illustration is also decorated using [babel-plugin-trace-execution](https://github.com/skidding/babel-plugin-trace-execution) and executed to record the context at every step. Literally the same source file.
 - Going back and forth between function execution (and call stack when algorithm uses recursion) is effortless. So is pausing and resuming.
 - Visualizations are easy to follow, fun to play with and simple enough to fit inside the screen of any modern phone.
 
@@ -28,7 +28,7 @@ This project uses [styled-jsx](https://github.com/zeit/styled-jsx), but takes th
 Consider the following actions if you want to advance this project:
 
 - Find and/or fix bugs
-- Add tests for the [Babel plugin](babel-plugin-trace-execution/src/index.js)
+- Add tests to [babel-plugin-trace-execution](https://github.com/skidding/babel-plugin-trace-execution)
 - Improve rendering perf (already decent, but not ideal due to [how styles are applied](#dynamic-styles))
 - Propose algorithms to add (that can fit in a func <=25 lines of ES6)
 - Create elegant illustrations (sketches/wireframes do) – **Hello graphic designers and people who draw!**

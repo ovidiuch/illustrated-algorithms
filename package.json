@@ -7,21 +7,16 @@
   },
   "devDependencies": {
     "@skidding/babel-plugin-inline-react-svg": "^0.2.1",
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.21.0",
-    "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
+    "babel-plugin-trace-execution": "^0.1.1",
     "eslint-config-xo-react": "^0.10.0",
     "eslint-plugin-react": "^6.8.0",
-    "html-webpack-plugin": "^2.24.1",
     "xo": "^0.17.1"
   },
   "scripts": {
-    "build:babel-plugin": "babel babel-plugin-trace-execution/src -d babel-plugin-trace-execution/lib && rm -rf node_modules/.cache/babel-loader/*",
+    "clear-babel-cache": "rm -rf node_modules/.cache/babel-loader/*",
     "test": "xo",
     "dev": "next",
-    "build": "npm run build:babel-plugin && next build",
+    "build": "next build",
     "start": "next start"
   },
   "xo": {
@@ -35,21 +30,10 @@
       "comma-dangle": 0,
       "object-curly-spacing": 0,
       "react/jsx-no-bind": 0
-    },
-    "overrides": [
-      {
-        "files": "algorithms/*.js",
-        "rules": {
-          "no-unused-vars": 0
-        }
-      }
-    ]
+    }
   },
   "dependencies": {
-    "babel-template": "^6.16.0",
     "emojione": "^2.2.7",
-    "lodash.clonedeep": "^4.5.0",
-    "lodash.isequal": "^4.4.0",
     "next": "2.0.0-beta.16",
     "raf": "^3.3.0",
     "react": "^15.4.2",
