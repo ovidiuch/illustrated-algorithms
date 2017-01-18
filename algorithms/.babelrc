@@ -1,6 +1,6 @@
 {
   "extends": "../.babelrc",
   "plugins": [
-    "../babel-plugin-trace-execution/lib/index"
+    "trace-execution"
   ]
 }
