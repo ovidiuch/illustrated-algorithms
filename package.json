@@ -20,7 +20,9 @@
   "scripts": {
     "build:babel-plugin": "babel babel-plugin-trace-execution/src -d babel-plugin-trace-execution/lib && rm -rf node_modules/.cache/babel-loader/*",
     "test": "xo",
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "xo": {
     "space": true,
