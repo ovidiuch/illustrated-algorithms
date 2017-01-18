@@ -9,6 +9,7 @@ import PlaybackControls from './playback-controls';
 const { floor, min } = Math;
 
 const FPS = 60;
+const TIME_PER_FRAME = 1000 / FPS;
 const DELAY_TIME = 0.5;
 const TRANSITION_TIME = 0.5;
 
@@ -115,6 +116,11 @@ class Player extends React.Component {
 
   scheduleAnimation() {
     this.cancelAnimation();
+    this.prevTime = Date.now();
+    this.requestFrame();
+  }
+
+  requestFrame() {
     this.animationHandle = raf(this.onFrame);
   }
 
@@ -123,6 +129,10 @@ class Player extends React.Component {
   }
 
   onFrame() {
+    const timeNow = Date.now();
+    const frames = (timeNow - this.prevTime) / TIME_PER_FRAME;
+    this.prevTime = timeNow;
+
     const {
       steps,
       pos,
@@ -130,11 +140,11 @@ class Player extends React.Component {
     const maxPos = getMaxPos(steps.length);
 
     if (pos < maxPos) {
-      const newPos = min(maxPos, pos + 1);
+      const newPos = min(maxPos, pos + frames);
 
       this.setState({
         pos: newPos,
-      }, this.scheduleAnimation);
+      }, this.requestFrame);
     } else {
       this.setState({
         isPlaying: false,
