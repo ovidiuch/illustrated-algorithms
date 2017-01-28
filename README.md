@@ -43,8 +43,6 @@ Before submitting a PR, make sure to:
 
 ```bash
 npm i
-# One time (and after you modify Babel plugin)
-npm run build:babel
 # Start Next.js server (localhost:3000)
 npm run dev
 ```
