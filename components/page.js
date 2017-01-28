@@ -1,4 +1,4 @@
-/* global window */
+/* global window, document */
 
 import React from 'react';
 import Head from 'next/head';
@@ -6,7 +6,7 @@ import Menu from './menu';
 import Player from './player';
 
 const getWindowSize = () => ({
-  width: window.innerWidth,
+  width: document.body.clientWidth,
   height: window.innerHeight,
 });
 
