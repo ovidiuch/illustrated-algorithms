@@ -37,6 +37,9 @@ class StackEntry extends PureLayoutComponent {
     if (landscape) {
       illustrationStyle.paddingTop = max(0, round((codeHeight - illustrationHeight) / 2));
       codeStyle.paddingTop = max(0, round((illustrationHeight - codeHeight) / 2));
+
+      illustrationStyle.display = 'table-cell';
+      codeStyle.display = 'table-cell';
     }
 
     return (
@@ -63,8 +66,8 @@ class StackEntry extends PureLayoutComponent {
         </div>
         <style jsx>{`
           .side {
-            float: left;
             text-align: center;
+            vertical-align: top;
           }
         `}</style>
       </div>
