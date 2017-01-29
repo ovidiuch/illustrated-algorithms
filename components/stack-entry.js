@@ -35,8 +35,17 @@ class StackEntry extends PureLayoutComponent {
     };
 
     if (landscape) {
-      illustrationStyle.paddingTop = max(0, round((codeHeight - illustrationHeight) / 2));
-      codeStyle.paddingTop = max(0, round((illustrationHeight - codeHeight) / 2));
+      Object.assign(illustrationStyle, {
+        display: 'table-cell',
+        paddingTop: max(0, round((codeHeight - illustrationHeight) / 2)),
+        verticalAlign: 'top'
+      });
+
+      Object.assign(codeStyle, {
+        display: 'table-cell',
+        paddingTop: max(0, round((illustrationHeight - codeHeight) / 2)),
+        verticalAlign: 'top'
+      });
     }
 
     return (
@@ -63,7 +72,6 @@ class StackEntry extends PureLayoutComponent {
         </div>
         <style jsx>{`
           .side {
-            float: left;
             text-align: center;
           }
         `}</style>
