@@ -1,7 +1,7 @@
 import React from 'react';
 import bfs from '../algorithms/bfs';
 import Page from '../components/page';
-import RawData from '../components/illustrations/raw-data';
+import RawData from '../components/ill/raw-data';
 
 class Bfs extends React.Component {
   static async getInitialProps() {

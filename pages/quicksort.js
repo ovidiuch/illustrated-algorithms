@@ -1,7 +1,7 @@
 import React from 'react';
 import quicksort from '../algorithms/quicksort';
 import Page from '../components/page';
-import RawData from '../components/illustrations/raw-data';
+import RawData from '../components/ill/raw-data';
 
 class Quicksort extends React.Component {
   static async getInitialProps() {

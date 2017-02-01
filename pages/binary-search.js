@@ -1,7 +1,7 @@
 import React from 'react';
 import binarySearch from '../algorithms/binary-search';
 import Page from '../components/page';
-import BinarySearch from '../components/illustrations/binary-search/binary-search';
+import BinarySearch from '../components/ill/binary-search/binary-search';
 
 class BinarySearchPage extends React.Component {
   render() {
