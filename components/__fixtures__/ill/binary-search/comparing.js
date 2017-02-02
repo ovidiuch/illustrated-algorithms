@@ -1,0 +1,25 @@
+export default {
+  prevStep: {
+    bindings: {
+      list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
+      item: 'panda',
+      low: 0,
+      mid: 3,
+      high: 5,
+      guess: 'lion',
+    },
+  },
+  nextStep: {
+    bindings: {
+      list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
+      item: 'panda',
+      low: 0,
+      mid: 3,
+      high: 5,
+      guess: 'lion',
+    },
+    compared: ['guess', 'item'],
+  },
+  stepProgress: 0.633,
+  onGenerateSteps: () => {},
+};
