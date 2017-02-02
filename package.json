@@ -10,14 +10,21 @@
     "babel-plugin-trace-execution": "^0.1.1",
     "eslint-config-xo-react": "^0.10.0",
     "eslint-plugin-react": "^6.8.0",
+    "jest": "^18.1.0",
+    "react-cosmos-context-proxy": "^2.0.0-beta.6",
+    "react-cosmos-telescope": "^2.0.0-beta.7",
+    "react-cosmos-webpack": "^2.0.0-beta.7",
+    "webpack": "^2.2.0",
     "xo": "^0.17.1"
   },
   "scripts": {
     "clear-babel-cache": "rm -rf node_modules/.cache/babel-loader/*",
-    "test": "xo",
+    "test:cosmos": "jest cosmos/cosmos.test.js",
+    "test": "xo && npm run test:cosmos",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cosmos": "cosmos --config cosmos/cosmos.config.js"
   },
   "xo": {
     "space": true,
