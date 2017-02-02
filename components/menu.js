@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import PureLayoutComponent from './pure-layout-component';
+import PureLayoutComponent from '../utils/pure-layout-component';
 
 const pathLabels = {
   '/binary-search': 'Binary search',
