@@ -1,6 +1,6 @@
 import React, { createElement } from 'react';
+import PureLayoutComponent from '../utils/pure-layout-component';
 import SourceCode from './source-code';
-import PureLayoutComponent from './pure-layout-component';
 
 const { max, round } = Math;
 

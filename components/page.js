@@ -13,14 +13,13 @@ const getWindowSize = () => ({
 const createLayout = (props, state) => {
   const {
     illustration,
-    code,
   } = props;
   const { width, height } = state;
 
   return new illustration.Layout({
     width,
     height,
-    code,
+    code: illustration.algorithm.code,
   });
 };
 
@@ -72,7 +71,6 @@ class Page extends React.Component {
       color,
       currentPath,
       steps,
-      code,
       illustration,
     } = this.props;
     const {
@@ -109,7 +107,7 @@ class Page extends React.Component {
           <div className="content">
             <Player
               steps={steps}
-              code={code}
+              code={illustration.algorithm.code}
               illustration={illustration}
               color={color}
               />
@@ -138,7 +136,6 @@ Page.propTypes = {
   color: React.PropTypes.string.isRequired,
   currentPath: React.PropTypes.string.isRequired,
   steps: React.PropTypes.array,
-  code: React.PropTypes.string.isRequired,
   illustration: React.PropTypes.func.isRequired,
 };
 

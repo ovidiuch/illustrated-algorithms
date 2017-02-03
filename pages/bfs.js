@@ -1,9 +1,9 @@
 import React from 'react';
 import bfs from '../algorithms/bfs';
 import Page from '../components/page';
-import RawData from '../components/illustrations/raw-data';
+import Bfs from '../components/ill/bfs';
 
-class Bfs extends React.Component {
+class BfsPage extends React.Component {
   static async getInitialProps() {
     const graph = {
       you: ['alice', 'bob', 'claire'],
@@ -27,16 +27,15 @@ class Bfs extends React.Component {
       <Page
         color="#80D8FF"
         currentPath="/bfs"
-        code={bfs.code}
         steps={steps}
-        illustration={RawData}
+        illustration={Bfs}
         />
     );
   }
 }
 
-Bfs.propTypes = {
+BfsPage.propTypes = {
   steps: React.PropTypes.array.isRequired,
 };
 
-export default Bfs;
+export default BfsPage;

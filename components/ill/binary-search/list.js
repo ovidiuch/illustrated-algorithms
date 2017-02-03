@@ -1,5 +1,5 @@
 import React from 'react';
-import PureLayoutComponent from '../../pure-layout-component';
+import PureLayoutComponent from '../../../utils/pure-layout-component';
 import EmojiBlock from '../shared/emoji-block';
 import {
   transitionValue,

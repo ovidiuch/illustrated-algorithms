@@ -1,7 +1,7 @@
 /* global window */
 
 import React from 'react';
-import PureLayoutComponent from './pure-layout-component';
+import PureLayoutComponent from '../utils/pure-layout-component';
 
 const { round, min, max } = Math;
 
