@@ -25,9 +25,14 @@ const EmojiBlock = ({
         width: blockWidth,
         height: blockHeight,
         borderWidth,
-        background: `rgba(255, 255, 255, ${glow})`,
       }}
       >
+      <div
+        className="glow"
+        style={{
+          background: `rgba(255, 255, 255, ${glow})`,
+        }}
+        />
       <div
         className="icon"
         style={{
@@ -53,8 +58,15 @@ const EmojiBlock = ({
         .emoji-block {
           position: relative;
           border-style: solid;
-          border-color: #763D38;
+          border-color: rgba(0, 0, 0, 0.5);
           box-sizing: border-box;
+        }
+        .glow {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
         }
         .icon {
           position: absolute;
