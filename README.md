@@ -45,4 +45,8 @@ Before submitting a PR, make sure to:
 npm i
 # Start Next.js server (localhost:3000)
 npm run dev
+# Run tests
+npm test
+# Start React Cosmos playground (localhost:8989)
+npm run cosmos
 ```
