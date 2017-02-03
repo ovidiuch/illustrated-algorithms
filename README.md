@@ -36,7 +36,7 @@ Consider the following actions if you want to advance this project:
 Before submitting a PR, make sure to:
 - Briefly describe the value of your contribution
 - Stay in line with the project's mission (i.e. to make algorithms easy, see above sections)
-- Test code syntax before committing it via `npm run test`
+- Test code before committing it via `npm run test`
 - Thoroughly test the visual experience you're creating (e.g. algorithms must fit nicely on the screen)
 
 ## Development

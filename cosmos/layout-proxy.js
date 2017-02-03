@@ -1,6 +1,4 @@
 import React from 'react';
-import binarySearch from '../algorithms/binary-search';
-import BinarySearchLayout from '../layout/binary-search';
 
 class LayoutProxy extends React.Component {
   render() {
@@ -8,16 +6,24 @@ class LayoutProxy extends React.Component {
       nextProxy,
       fixture,
     } = this.props;
+    const { _layoutFor } = fixture;
+
+    if (!_layoutFor) {
+      return React.createElement(nextProxy.value, {
+        ...this.props,
+        nextProxy: nextProxy.next(),
+      });
+    }
 
     return React.createElement(nextProxy.value, { ...this.props,
       nextProxy: nextProxy.next(),
       fixture: {
         ...fixture,
         context: {
-          layout: new BinarySearchLayout({
+          layout: new _layoutFor.Layout({
             width: 1200,
             height: 600,
-            code: binarySearch.code,
+            code: _layoutFor.algorithm.code,
           }),
         },
       }

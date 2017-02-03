@@ -1,8 +1,10 @@
-import binarySearch from '../../../../algorithms/binary-search';
 import BinarySearch from '../../../../components/ill/binary-search/binary-search';
 
+const { code } = BinarySearch.algorithm;
+
 export default {
-  code: binarySearch.code,
+  _layoutFor: BinarySearch,
+  code,
   illustration: BinarySearch,
   nextStep: {
     bindings: {

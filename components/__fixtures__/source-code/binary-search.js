@@ -1,5 +1,6 @@
-import binarySearch from '../../../algorithms/binary-search';
+import BinarySearch from '../../../components/ill/binary-search/binary-search';
 
 export default {
-  def: binarySearch.code,
+  _layoutFor: BinarySearch,
+  def: BinarySearch.algorithm.code,
 };

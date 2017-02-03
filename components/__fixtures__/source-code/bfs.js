@@ -1,5 +1,6 @@
-import bfs from '../../../algorithms/bfs';
+import Bfs from '../../../components/ill/bfs';
 
 export default {
-  def: bfs.code,
+  _layoutFor: Bfs,
+  def: Bfs.algorithm.code,
 };

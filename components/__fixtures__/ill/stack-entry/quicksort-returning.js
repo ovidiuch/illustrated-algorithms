@@ -1,9 +1,11 @@
-import quicksort from '../../../../algorithms/quicksort';
-import RawData from '../../../../components/ill/raw-data';
+import Quicksort from '../../../../components/ill/quicksort';
+
+const { code } = Quicksort.algorithm;
 
 export default {
-  code: quicksort.code,
-  illustration: RawData,
+  _layoutFor: Quicksort,
+  code,
+  illustration: Quicksort,
   prevStep: {
     parentStepId: 5,
     highlight: {

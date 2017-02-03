@@ -68,6 +68,8 @@ BinarySearch.contextTypes = {
 
 BinarySearch.Layout = BinarySearchLayout;
 
+BinarySearch.algorithm = binarySearch;
+
 BinarySearch.initialData = {
   list: [
     'bear', 'cat', 'dog', 'lion', 'panda', 'snail'

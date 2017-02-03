@@ -1,5 +1,6 @@
-import quicksort from '../../../algorithms/quicksort';
+import Quicksort from '../../../components/ill/quicksort';
 
 export default {
-  def: quicksort.code,
+  _layoutFor: Quicksort,
+  def: Quicksort.algorithm.code,
 };
