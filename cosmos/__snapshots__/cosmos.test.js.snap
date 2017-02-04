@@ -9524,8 +9524,8 @@ exports[`test page:bfs 1`] = `
         data-jsx={2559894650}
         style={
           Object {
-            "fontSize": NaN,
-            "lineHeight": "NaNpx",
+            "fontSize": 28,
+            "lineHeight": "76px",
           }
         }>
         <span
@@ -9533,7 +9533,7 @@ exports[`test page:bfs 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <a
@@ -9548,7 +9548,7 @@ exports[`test page:bfs 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <a
@@ -9563,7 +9563,7 @@ exports[`test page:bfs 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <span
@@ -9577,15 +9577,15 @@ exports[`test page:bfs 1`] = `
           href="https://github.com/skidding/illustrated-algorithms"
           style={
             Object {
-              "marginRight": NaN,
+              "marginRight": 24,
             }
           }>
           <svg
             data-jsx={2559894650}
             style={
               Object {
-                "height": NaN,
-                "width": NaN,
+                "height": 38,
+                "width": 38,
               }
             }
             viewBox="0 0 256 256">
@@ -9606,16 +9606,16 @@ exports[`test page:bfs 1`] = `
           data-jsx={4290871778}
           style={
             Object {
-              "height": NaN,
-              "padding": "NaNpx 0 NaNpx 0",
-              "transform": "translate(0, NaNpx)",
+              "height": 946,
+              "padding": "76px 0 96px 0",
+              "transform": "translate(0, 0px)",
             }
           }>
           <div
             data-jsx={4290871778}
             style={
               Object {
-                "height": NaN,
+                "height": 946,
                 "opacity": 1,
               }
             }>
@@ -9626,8 +9626,8 @@ exports[`test page:bfs 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": NaN,
-                    "width": undefined,
+                    "height": 394,
+                    "width": 768,
                   }
                 }>
                 <div
@@ -9635,10 +9635,10 @@ exports[`test page:bfs 1`] = `
                   data-jsx={485082250}
                   style={
                     Object {
-                      "fontSize": NaN,
-                      "height": NaN,
-                      "lineHeight": "NaNpx",
-                      "padding": NaN,
+                      "fontSize": 24,
+                      "height": 394,
+                      "lineHeight": "28px",
+                      "padding": 10,
                     }
                   }>
                   <div
@@ -9646,8 +9646,8 @@ exports[`test page:bfs 1`] = `
                     data-jsx={485082250}
                     style={
                       Object {
-                        "left": NaN,
-                        "right": NaN,
+                        "left": 10,
+                        "right": 10,
                       }
                     }>
                     <div
@@ -9655,9 +9655,9 @@ exports[`test page:bfs 1`] = `
                       data-jsx={485082250}
                       style={
                         Object {
-                          "fontSize": NaN,
-                          "marginBottom": NaN,
-                          "padding": NaN,
+                          "fontSize": 24,
+                          "marginBottom": 10,
+                          "padding": 10,
                         }
                       }>
                       <p
@@ -9685,7 +9685,7 @@ exports[`test page:bfs 1`] = `
                       data-jsx={485082250}
                       style={
                         Object {
-                          "padding": NaN,
+                          "padding": 10,
                         }
                       }>
                       graph
@@ -9696,7 +9696,7 @@ exports[`test page:bfs 1`] = `
                       data-jsx={485082250}
                       style={
                         Object {
-                          "padding": NaN,
+                          "padding": 10,
                         }
                       }>
                       name
@@ -9711,17 +9711,17 @@ exports[`test page:bfs 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": NaN,
-                    "width": undefined,
+                    "height": 552,
+                    "width": 768,
                   }
                 }>
                 <pre
                   data-jsx={345238448}
                   style={
                     Object {
-                      "fontSize": NaN,
-                      "lineHeight": "NaNpx",
-                      "padding": "NaNpx 0",
+                      "fontSize": 24,
+                      "lineHeight": "28px",
+                      "padding": "10px 0",
                     }
                   }>
                   <div
@@ -9914,7 +9914,7 @@ exports[`test page:bfs 1`] = `
           style={
             Object {
               "backgroundColor": "#80D8FF",
-              "height": NaN,
+              "height": 96,
             }
           }>
           <div
@@ -9926,16 +9926,16 @@ exports[`test page:bfs 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "height": NaN,
-                  "lineHeight": "NaNpx",
-                  "width": NaN,
+                  "height": 96,
+                  "lineHeight": "96px",
+                  "width": 96,
                 }
               }>
               <svg
                 data-jsx={4104513454}
-                height={NaN}
+                height={76}
                 viewBox="0 0 24 24"
-                width={NaN}>
+                width={76}>
                 <path
                   d="M8 5v14l11-7z"
                   data-jsx={4104513454} />
@@ -9948,7 +9948,7 @@ exports[`test page:bfs 1`] = `
               onTouchStart={[Function]}
               style={
                 Object {
-                  "left": NaN,
+                  "left": 96,
                 }
               }>
               <div
@@ -9964,8 +9964,8 @@ exports[`test page:bfs 1`] = `
                 data-jsx={3260177673}
                 style={
                   Object {
-                    "fontSize": NaN,
-                    "lineHeight": "NaNpx",
+                    "fontSize": 38,
+                    "lineHeight": "96px",
                   }
                 }>
                 drag to rewind
@@ -9997,8 +9997,8 @@ exports[`test page:binary-search 1`] = `
         data-jsx={2559894650}
         style={
           Object {
-            "fontSize": NaN,
-            "lineHeight": "NaNpx",
+            "fontSize": 28,
+            "lineHeight": "76px",
           }
         }>
         <span
@@ -10006,7 +10006,7 @@ exports[`test page:binary-search 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <span
@@ -10019,7 +10019,7 @@ exports[`test page:binary-search 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <a
@@ -10034,7 +10034,7 @@ exports[`test page:binary-search 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <a
@@ -10050,15 +10050,15 @@ exports[`test page:binary-search 1`] = `
           href="https://github.com/skidding/illustrated-algorithms"
           style={
             Object {
-              "marginRight": NaN,
+              "marginRight": 24,
             }
           }>
           <svg
             data-jsx={2559894650}
             style={
               Object {
-                "height": NaN,
-                "width": NaN,
+                "height": 38,
+                "width": 38,
               }
             }
             viewBox="0 0 256 256">
@@ -10079,16 +10079,16 @@ exports[`test page:binary-search 1`] = `
           data-jsx={4290871778}
           style={
             Object {
-              "height": NaN,
-              "padding": "NaNpx 0 NaNpx 0",
-              "transform": "translate(0, NaNpx)",
+              "height": 1226,
+              "padding": "76px 0 96px 0",
+              "transform": "translate(0, 0px)",
             }
           }>
           <div
             data-jsx={4290871778}
             style={
               Object {
-                "height": NaN,
+                "height": 1226,
                 "opacity": 1,
               }
             }>
@@ -10099,8 +10099,8 @@ exports[`test page:binary-search 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": NaN,
-                    "width": undefined,
+                    "height": 646,
+                    "width": 768,
                   }
                 }>
                 <div
@@ -10108,8 +10108,8 @@ exports[`test page:binary-search 1`] = `
                   data-jsx={3766609991}
                   style={
                     Object {
-                      "height": NaN,
-                      "width": NaN,
+                      "height": 646,
+                      "width": 734,
                     }
                   }>
                   <div
@@ -10124,8 +10124,8 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={1657365838}
                       style={
                         Object {
-                          "fontSize": NaN,
-                          "top": NaN,
+                          "fontSize": 58,
+                          "top": 38.76,
                         }
                       }>
                       Find the position of a value inside a sorted list
@@ -10134,8 +10134,8 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={1657365838}
                       style={
                         Object {
-                          "fontSize": NaN,
-                          "top": NaN,
+                          "fontSize": 44,
+                          "top": 400.52,
                         }
                       }>
                       press on one of the animals to begin
@@ -10146,7 +10146,7 @@ exports[`test page:binary-search 1`] = `
                     data-jsx={3910051856}
                     style={
                       Object {
-                        "top": NaN,
+                        "top": 224,
                       }
                     }>
                     <div
@@ -10154,7 +10154,7 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3910051856}
                       style={
                         Object {
-                          "left": NaN,
+                          "left": 0,
                           "opacity": 1,
                           "transform": "rotate(-0.9deg)",
                           "zIndex": 0,
@@ -10167,9 +10167,9 @@ exports[`test page:binary-search 1`] = `
                           data-jsx={1232486209}
                           style={
                             Object {
-                              "borderWidth": NaN,
-                              "height": NaN,
-                              "width": NaN,
+                              "borderWidth": 2,
+                              "height": 162,
+                              "width": 124,
                             }
                           }>
                           <div
@@ -10185,17 +10185,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "height": NaN,
-                                "left": NaN,
-                                "top": NaN,
-                                "width": NaN,
+                                "height": 99,
+                                "left": 12.4,
+                                "top": 15.5,
+                                "width": 99,
                               }
                             }>
                             <div>
                               <svg
-                                height={NaN}
+                                height={99}
                                 viewBox="0 0 64 64"
-                                width={NaN}
+                                width={99}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M60.6 10.4c0 4.6-3.9 8.4-8.7 8.4-4.8 0-8.7-3.8-8.7-8.4S47.1 2 51.9 2c4.8 0 8.7 3.8 8.7 8.4"
@@ -10239,9 +10239,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "fontSize": NaN,
-                                "lineHeight": "NaNpx",
-                                "top": NaN,
+                                "fontSize": 24,
+                                "lineHeight": "38px",
+                                "top": 120,
                               }
                             }>
                             bear
@@ -10254,7 +10254,7 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3910051856}
                       style={
                         Object {
-                          "left": NaN,
+                          "left": 122,
                           "opacity": 1,
                           "transform": "rotate(-0.4deg)",
                           "zIndex": 0,
@@ -10267,9 +10267,9 @@ exports[`test page:binary-search 1`] = `
                           data-jsx={1232486209}
                           style={
                             Object {
-                              "borderWidth": NaN,
-                              "height": NaN,
-                              "width": NaN,
+                              "borderWidth": 2,
+                              "height": 162,
+                              "width": 124,
                             }
                           }>
                           <div
@@ -10285,17 +10285,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "height": NaN,
-                                "left": NaN,
-                                "top": NaN,
-                                "width": NaN,
+                                "height": 99,
+                                "left": 12.4,
+                                "top": 15.5,
+                                "width": 99,
                               }
                             }>
                             <div>
                               <svg
-                                height={NaN}
+                                height={99}
                                 viewBox="0 0 64 64"
-                                width={NaN}
+                                width={99}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M4.5 2.2c-3.5 2.2-3.4 25.5.8 33l26.1-16c-4-7.1-23.6-19-26.9-17"
@@ -10354,9 +10354,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "fontSize": NaN,
-                                "lineHeight": "NaNpx",
-                                "top": NaN,
+                                "fontSize": 24,
+                                "lineHeight": "38px",
+                                "top": 120,
                               }
                             }>
                             cat
@@ -10369,7 +10369,7 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3910051856}
                       style={
                         Object {
-                          "left": NaN,
+                          "left": 244,
                           "opacity": 1,
                           "transform": "rotate(1.4deg)",
                           "zIndex": 0,
@@ -10382,9 +10382,9 @@ exports[`test page:binary-search 1`] = `
                           data-jsx={1232486209}
                           style={
                             Object {
-                              "borderWidth": NaN,
-                              "height": NaN,
-                              "width": NaN,
+                              "borderWidth": 2,
+                              "height": 162,
+                              "width": 124,
                             }
                           }>
                           <div
@@ -10400,17 +10400,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "height": NaN,
-                                "left": NaN,
-                                "top": NaN,
-                                "width": NaN,
+                                "height": 99,
+                                "left": 12.4,
+                                "top": 15.5,
+                                "width": 99,
                               }
                             }>
                             <div>
                               <svg
-                                height={NaN}
+                                height={99}
                                 viewBox="0 0 64 64"
-                                width={NaN}
+                                width={99}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M15.8 52.1C9 47.7 6.3 30.6 8.5 22.9c1.6-5.8 7.8-14.3 13.4-16.5 4.7-1.9 15.5-1.9 20.1 0 5.6 2.2 11.8 10.7 13.4 16.5 2.2 7.8.5 24.8-6.2 29.2-14.2 9.2-19.2 9.2-33.4 0"
@@ -10479,9 +10479,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "fontSize": NaN,
-                                "lineHeight": "NaNpx",
-                                "top": NaN,
+                                "fontSize": 24,
+                                "lineHeight": "38px",
+                                "top": 120,
                               }
                             }>
                             dog
@@ -10494,7 +10494,7 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3910051856}
                       style={
                         Object {
-                          "left": NaN,
+                          "left": 366,
                           "opacity": 1,
                           "transform": "rotate(0.5deg)",
                           "zIndex": 0,
@@ -10507,9 +10507,9 @@ exports[`test page:binary-search 1`] = `
                           data-jsx={1232486209}
                           style={
                             Object {
-                              "borderWidth": NaN,
-                              "height": NaN,
-                              "width": NaN,
+                              "borderWidth": 2,
+                              "height": 162,
+                              "width": 124,
                             }
                           }>
                           <div
@@ -10525,17 +10525,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "height": NaN,
-                                "left": NaN,
-                                "top": NaN,
-                                "width": NaN,
+                                "height": 99,
+                                "left": 12.4,
+                                "top": 15.5,
+                                "width": 99,
                               }
                             }>
                             <div>
                               <svg
-                                height={NaN}
+                                height={99}
                                 viewBox="0 0 64 64"
-                                width={NaN}
+                                width={99}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M58 21.2c3.9-2.6 4-6.4 4-6.4-3.9-.2-3.8-4.2-7.4-7.8-4.8-4.8-10.9-1.8-10.9-1.8.3-1.5-.5-2.4.1-3.2C35.6 2 32 5.5 32 5.5S28.4 2 20.2 2c.5.8-.2 1.7.1 3.2 0 0-6.2-3.1-10.9 1.8-3.6 3.7-3.5 7.7-7.4 7.8 0 0 .1 3.8 4 6.4 0 0-4.1 3.9-3.4 12.1 0 0 1.6-2 5.5-2.7-4.5 3.8-1.9 9.4-5.2 13.2 0 0 4.6 1 6.5-.3-.7 5.9 2.9 8.2 2.9 11.1 4.1-1.3 4.7-5.4 4.7-5.4 0 7.5 2.6 7.2 2.6 11.2 0 0 4.5-.7 6.4-4.5.7 3.5 4.3 3.9 6.2 6.1 1.9-2.2 5.4-2.6 6.2-6.1 1.9 3.7 6.4 4.5 6.4 4.5 0-4 2.6-3.7 2.6-11.2 0 0 .6 4 4.7 5.4 0-2.9 3.6-5.2 2.9-11.1 1.9 1.3 6.5.3 6.5.3-3.3-3.9-.7-9.5-5.2-13.2 3.8.8 5.5 2.7 5.5 2.7.3-8.3-3.8-12.1-3.8-12.1"
@@ -10588,9 +10588,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "fontSize": NaN,
-                                "lineHeight": "NaNpx",
-                                "top": NaN,
+                                "fontSize": 24,
+                                "lineHeight": "38px",
+                                "top": 120,
                               }
                             }>
                             lion
@@ -10603,7 +10603,7 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3910051856}
                       style={
                         Object {
-                          "left": NaN,
+                          "left": 488,
                           "opacity": 1,
                           "transform": "rotate(-1.35deg)",
                           "zIndex": 0,
@@ -10616,9 +10616,9 @@ exports[`test page:binary-search 1`] = `
                           data-jsx={1232486209}
                           style={
                             Object {
-                              "borderWidth": NaN,
-                              "height": NaN,
-                              "width": NaN,
+                              "borderWidth": 2,
+                              "height": 162,
+                              "width": 124,
                             }
                           }>
                           <div
@@ -10634,17 +10634,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "height": NaN,
-                                "left": NaN,
-                                "top": NaN,
-                                "width": NaN,
+                                "height": 99,
+                                "left": 12.4,
+                                "top": 15.5,
+                                "width": 99,
                               }
                             }>
                             <div>
                               <svg
-                                height={NaN}
+                                height={99}
                                 viewBox="0 0 64 64"
-                                width={NaN}
+                                width={99}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M62 14c0 6.6-5.4 12-12 12s-12-5.4-12-12S43.4 2 50 2s12 5.4 12 12"
@@ -10709,9 +10709,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "fontSize": NaN,
-                                "lineHeight": "NaNpx",
-                                "top": NaN,
+                                "fontSize": 24,
+                                "lineHeight": "38px",
+                                "top": 120,
                               }
                             }>
                             panda
@@ -10724,7 +10724,7 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3910051856}
                       style={
                         Object {
-                          "left": NaN,
+                          "left": 610,
                           "opacity": 1,
                           "transform": "rotate(1deg)",
                           "zIndex": 0,
@@ -10737,9 +10737,9 @@ exports[`test page:binary-search 1`] = `
                           data-jsx={1232486209}
                           style={
                             Object {
-                              "borderWidth": NaN,
-                              "height": NaN,
-                              "width": NaN,
+                              "borderWidth": 2,
+                              "height": 162,
+                              "width": 124,
                             }
                           }>
                           <div
@@ -10755,17 +10755,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "height": NaN,
-                                "left": NaN,
-                                "top": NaN,
-                                "width": NaN,
+                                "height": 99,
+                                "left": 12.4,
+                                "top": 15.5,
+                                "width": 99,
                               }
                             }>
                             <div>
                               <svg
-                                height={NaN}
+                                height={99}
                                 viewBox="0 0 64 64"
-                                width={NaN}
+                                width={99}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M29.6 42.8S24.9 22 16.5 22C1.4 22 1 49.8 11.2 59c3.1 2.8 16.1 2.8 43.5 0 2.9-.3 1.8-3.1-2.3-5-2.7-1.3-15.8-3.7-22.8-11.2"
@@ -10839,9 +10839,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1232486209}
                             style={
                               Object {
-                                "fontSize": NaN,
-                                "lineHeight": "NaNpx",
-                                "top": NaN,
+                                "fontSize": 24,
+                                "lineHeight": "38px",
+                                "top": 120,
                               }
                             }>
                             snail
@@ -10855,13 +10855,13 @@ exports[`test page:binary-search 1`] = `
                     data-jsx={790948768}
                     style={
                       Object {
-                        "fontSize": NaN,
-                        "height": NaN,
-                        "left": NaN,
-                        "lineHeight": "NaNpx",
+                        "fontSize": 36,
+                        "height": 58,
+                        "left": 338,
+                        "lineHeight": "58px",
                         "opacity": 0,
-                        "top": NaN,
-                        "width": NaN,
+                        "top": 396,
+                        "width": 58,
                       }
                     }>
                     =
@@ -10873,17 +10873,17 @@ exports[`test page:binary-search 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": NaN,
-                    "width": undefined,
+                    "height": 580,
+                    "width": 768,
                   }
                 }>
                 <pre
                   data-jsx={345238448}
                   style={
                     Object {
-                      "fontSize": NaN,
-                      "lineHeight": "NaNpx",
-                      "padding": "NaNpx 0",
+                      "fontSize": 24,
+                      "lineHeight": "28px",
+                      "padding": "10px 0",
                     }
                   }>
                   <div>
@@ -11085,8 +11085,8 @@ exports[`test page:quicksort 1`] = `
         data-jsx={2559894650}
         style={
           Object {
-            "fontSize": NaN,
-            "lineHeight": "NaNpx",
+            "fontSize": 28,
+            "lineHeight": "76px",
           }
         }>
         <span
@@ -11094,7 +11094,7 @@ exports[`test page:quicksort 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <a
@@ -11109,7 +11109,7 @@ exports[`test page:quicksort 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <span
@@ -11122,7 +11122,7 @@ exports[`test page:quicksort 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": NaN,
+              "marginLeft": 24,
             }
           }>
           <a
@@ -11138,15 +11138,15 @@ exports[`test page:quicksort 1`] = `
           href="https://github.com/skidding/illustrated-algorithms"
           style={
             Object {
-              "marginRight": NaN,
+              "marginRight": 24,
             }
           }>
           <svg
             data-jsx={2559894650}
             style={
               Object {
-                "height": NaN,
-                "width": NaN,
+                "height": 38,
+                "width": 38,
               }
             }
             viewBox="0 0 256 256">
@@ -11167,16 +11167,16 @@ exports[`test page:quicksort 1`] = `
           data-jsx={4290871778}
           style={
             Object {
-              "height": NaN,
-              "padding": "NaNpx 0 NaNpx 0",
-              "transform": "translate(0, NaNpx)",
+              "height": 794,
+              "padding": "76px 0 96px 0",
+              "transform": "translate(0, 0px)",
             }
           }>
           <div
             data-jsx={4290871778}
             style={
               Object {
-                "height": NaN,
+                "height": 794,
                 "opacity": 1,
               }
             }>
@@ -11187,8 +11187,8 @@ exports[`test page:quicksort 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": NaN,
-                    "width": undefined,
+                    "height": 354,
+                    "width": 768,
                   }
                 }>
                 <div
@@ -11196,8 +11196,8 @@ exports[`test page:quicksort 1`] = `
                   data-jsx={278668044}
                   style={
                     Object {
-                      "height": NaN,
-                      "width": NaN,
+                      "height": 354,
+                      "width": 734,
                     }
                   }>
                   <div
@@ -11205,8 +11205,8 @@ exports[`test page:quicksort 1`] = `
                     data-jsx={278668044}
                     style={
                       Object {
-                        "left": NaN,
-                        "top": NaN,
+                        "left": 0,
+                        "top": 182,
                         "transform": "rotate(0.5deg)",
                       }
                     }>
@@ -11215,9 +11215,9 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={1232486209}
                       style={
                         Object {
-                          "borderWidth": NaN,
-                          "height": NaN,
-                          "width": NaN,
+                          "borderWidth": 2,
+                          "height": 162,
+                          "width": 124,
                         }
                       }>
                       <div
@@ -11233,17 +11233,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "height": NaN,
-                            "left": NaN,
-                            "top": NaN,
-                            "width": NaN,
+                            "height": 99,
+                            "left": 12.4,
+                            "top": 15.5,
+                            "width": 99,
                           }
                         }>
                         <div>
                           <svg
-                            height={NaN}
+                            height={99}
                             viewBox="0 0 64 64"
-                            width={NaN}
+                            width={99}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M60.6 10.4c0 4.6-3.9 8.4-8.7 8.4-4.8 0-8.7-3.8-8.7-8.4S47.1 2 51.9 2c4.8 0 8.7 3.8 8.7 8.4"
@@ -11287,9 +11287,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "fontSize": NaN,
-                            "lineHeight": "NaNpx",
-                            "top": NaN,
+                            "fontSize": 24,
+                            "lineHeight": "38px",
+                            "top": 120,
                           }
                         }>
                         bear
@@ -11301,8 +11301,8 @@ exports[`test page:quicksort 1`] = `
                     data-jsx={278668044}
                     style={
                       Object {
-                        "left": NaN,
-                        "top": NaN,
+                        "left": 122,
+                        "top": 182,
                         "transform": "rotate(1deg)",
                       }
                     }>
@@ -11311,9 +11311,9 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={1232486209}
                       style={
                         Object {
-                          "borderWidth": NaN,
-                          "height": NaN,
-                          "width": NaN,
+                          "borderWidth": 2,
+                          "height": 162,
+                          "width": 124,
                         }
                       }>
                       <div
@@ -11329,17 +11329,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "height": NaN,
-                            "left": NaN,
-                            "top": NaN,
-                            "width": NaN,
+                            "height": 99,
+                            "left": 12.4,
+                            "top": 15.5,
+                            "width": 99,
                           }
                         }>
                         <div>
                           <svg
-                            height={NaN}
+                            height={99}
                             viewBox="0 0 64 64"
-                            width={NaN}
+                            width={99}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M4.5 2.2c-3.5 2.2-3.4 25.5.8 33l26.1-16c-4-7.1-23.6-19-26.9-17"
@@ -11398,9 +11398,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "fontSize": NaN,
-                            "lineHeight": "NaNpx",
-                            "top": NaN,
+                            "fontSize": 24,
+                            "lineHeight": "38px",
+                            "top": 120,
                           }
                         }>
                         cat
@@ -11412,8 +11412,8 @@ exports[`test page:quicksort 1`] = `
                     data-jsx={278668044}
                     style={
                       Object {
-                        "left": NaN,
-                        "top": NaN,
+                        "left": 244,
+                        "top": 182,
                         "transform": "rotate(-0.9deg)",
                       }
                     }>
@@ -11422,9 +11422,9 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={1232486209}
                       style={
                         Object {
-                          "borderWidth": NaN,
-                          "height": NaN,
-                          "width": NaN,
+                          "borderWidth": 2,
+                          "height": 162,
+                          "width": 124,
                         }
                       }>
                       <div
@@ -11440,17 +11440,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "height": NaN,
-                            "left": NaN,
-                            "top": NaN,
-                            "width": NaN,
+                            "height": 99,
+                            "left": 12.4,
+                            "top": 15.5,
+                            "width": 99,
                           }
                         }>
                         <div>
                           <svg
-                            height={NaN}
+                            height={99}
                             viewBox="0 0 64 64"
-                            width={NaN}
+                            width={99}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M15.8 52.1C9 47.7 6.3 30.6 8.5 22.9c1.6-5.8 7.8-14.3 13.4-16.5 4.7-1.9 15.5-1.9 20.1 0 5.6 2.2 11.8 10.7 13.4 16.5 2.2 7.8.5 24.8-6.2 29.2-14.2 9.2-19.2 9.2-33.4 0"
@@ -11519,9 +11519,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "fontSize": NaN,
-                            "lineHeight": "NaNpx",
-                            "top": NaN,
+                            "fontSize": 24,
+                            "lineHeight": "38px",
+                            "top": 120,
                           }
                         }>
                         dog
@@ -11533,8 +11533,8 @@ exports[`test page:quicksort 1`] = `
                     data-jsx={278668044}
                     style={
                       Object {
-                        "left": NaN,
-                        "top": NaN,
+                        "left": 366,
+                        "top": 182,
                         "transform": "rotate(1.4deg)",
                       }
                     }>
@@ -11543,9 +11543,9 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={1232486209}
                       style={
                         Object {
-                          "borderWidth": NaN,
-                          "height": NaN,
-                          "width": NaN,
+                          "borderWidth": 2,
+                          "height": 162,
+                          "width": 124,
                         }
                       }>
                       <div
@@ -11561,17 +11561,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "height": NaN,
-                            "left": NaN,
-                            "top": NaN,
-                            "width": NaN,
+                            "height": 99,
+                            "left": 12.4,
+                            "top": 15.5,
+                            "width": 99,
                           }
                         }>
                         <div>
                           <svg
-                            height={NaN}
+                            height={99}
                             viewBox="0 0 64 64"
-                            width={NaN}
+                            width={99}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M58 21.2c3.9-2.6 4-6.4 4-6.4-3.9-.2-3.8-4.2-7.4-7.8-4.8-4.8-10.9-1.8-10.9-1.8.3-1.5-.5-2.4.1-3.2C35.6 2 32 5.5 32 5.5S28.4 2 20.2 2c.5.8-.2 1.7.1 3.2 0 0-6.2-3.1-10.9 1.8-3.6 3.7-3.5 7.7-7.4 7.8 0 0 .1 3.8 4 6.4 0 0-4.1 3.9-3.4 12.1 0 0 1.6-2 5.5-2.7-4.5 3.8-1.9 9.4-5.2 13.2 0 0 4.6 1 6.5-.3-.7 5.9 2.9 8.2 2.9 11.1 4.1-1.3 4.7-5.4 4.7-5.4 0 7.5 2.6 7.2 2.6 11.2 0 0 4.5-.7 6.4-4.5.7 3.5 4.3 3.9 6.2 6.1 1.9-2.2 5.4-2.6 6.2-6.1 1.9 3.7 6.4 4.5 6.4 4.5 0-4 2.6-3.7 2.6-11.2 0 0 .6 4 4.7 5.4 0-2.9 3.6-5.2 2.9-11.1 1.9 1.3 6.5.3 6.5.3-3.3-3.9-.7-9.5-5.2-13.2 3.8.8 5.5 2.7 5.5 2.7.3-8.3-3.8-12.1-3.8-12.1"
@@ -11624,9 +11624,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "fontSize": NaN,
-                            "lineHeight": "NaNpx",
-                            "top": NaN,
+                            "fontSize": 24,
+                            "lineHeight": "38px",
+                            "top": 120,
                           }
                         }>
                         lion
@@ -11638,8 +11638,8 @@ exports[`test page:quicksort 1`] = `
                     data-jsx={278668044}
                     style={
                       Object {
-                        "left": NaN,
-                        "top": NaN,
+                        "left": 488,
+                        "top": 182,
                         "transform": "rotate(-0.4deg)",
                       }
                     }>
@@ -11648,9 +11648,9 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={1232486209}
                       style={
                         Object {
-                          "borderWidth": NaN,
-                          "height": NaN,
-                          "width": NaN,
+                          "borderWidth": 2,
+                          "height": 162,
+                          "width": 124,
                         }
                       }>
                       <div
@@ -11666,17 +11666,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "height": NaN,
-                            "left": NaN,
-                            "top": NaN,
-                            "width": NaN,
+                            "height": 99,
+                            "left": 12.4,
+                            "top": 15.5,
+                            "width": 99,
                           }
                         }>
                         <div>
                           <svg
-                            height={NaN}
+                            height={99}
                             viewBox="0 0 64 64"
-                            width={NaN}
+                            width={99}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M62 14c0 6.6-5.4 12-12 12s-12-5.4-12-12S43.4 2 50 2s12 5.4 12 12"
@@ -11741,9 +11741,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "fontSize": NaN,
-                            "lineHeight": "NaNpx",
-                            "top": NaN,
+                            "fontSize": 24,
+                            "lineHeight": "38px",
+                            "top": 120,
                           }
                         }>
                         panda
@@ -11755,8 +11755,8 @@ exports[`test page:quicksort 1`] = `
                     data-jsx={278668044}
                     style={
                       Object {
-                        "left": NaN,
-                        "top": NaN,
+                        "left": 610,
+                        "top": 182,
                         "transform": "rotate(-1.35deg)",
                       }
                     }>
@@ -11765,9 +11765,9 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={1232486209}
                       style={
                         Object {
-                          "borderWidth": NaN,
-                          "height": NaN,
-                          "width": NaN,
+                          "borderWidth": 2,
+                          "height": 162,
+                          "width": 124,
                         }
                       }>
                       <div
@@ -11783,17 +11783,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "height": NaN,
-                            "left": NaN,
-                            "top": NaN,
-                            "width": NaN,
+                            "height": 99,
+                            "left": 12.4,
+                            "top": 15.5,
+                            "width": 99,
                           }
                         }>
                         <div>
                           <svg
-                            height={NaN}
+                            height={99}
                             viewBox="0 0 64 64"
-                            width={NaN}
+                            width={99}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M29.6 42.8S24.9 22 16.5 22C1.4 22 1 49.8 11.2 59c3.1 2.8 16.1 2.8 43.5 0 2.9-.3 1.8-3.1-2.3-5-2.7-1.3-15.8-3.7-22.8-11.2"
@@ -11867,9 +11867,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1232486209}
                         style={
                           Object {
-                            "fontSize": NaN,
-                            "lineHeight": "NaNpx",
-                            "top": NaN,
+                            "fontSize": 24,
+                            "lineHeight": "38px",
+                            "top": 120,
                           }
                         }>
                         snail
@@ -11883,17 +11883,17 @@ exports[`test page:quicksort 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": NaN,
-                    "width": undefined,
+                    "height": 440,
+                    "width": 768,
                   }
                 }>
                 <pre
                   data-jsx={345238448}
                   style={
                     Object {
-                      "fontSize": NaN,
-                      "lineHeight": "NaNpx",
-                      "padding": "NaNpx 0",
+                      "fontSize": 24,
+                      "lineHeight": "28px",
+                      "padding": "10px 0",
                     }
                   }>
                   <div
@@ -12054,7 +12054,7 @@ exports[`test page:quicksort 1`] = `
           style={
             Object {
               "backgroundColor": "#FFD180",
-              "height": NaN,
+              "height": 96,
             }
           }>
           <div
@@ -12066,16 +12066,16 @@ exports[`test page:quicksort 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "height": NaN,
-                  "lineHeight": "NaNpx",
-                  "width": NaN,
+                  "height": 96,
+                  "lineHeight": "96px",
+                  "width": 96,
                 }
               }>
               <svg
                 data-jsx={4104513454}
-                height={NaN}
+                height={76}
                 viewBox="0 0 24 24"
-                width={NaN}>
+                width={76}>
                 <path
                   d="M8 5v14l11-7z"
                   data-jsx={4104513454} />
@@ -12088,7 +12088,7 @@ exports[`test page:quicksort 1`] = `
               onTouchStart={[Function]}
               style={
                 Object {
-                  "left": NaN,
+                  "left": 96,
                 }
               }>
               <div
@@ -12104,8 +12104,8 @@ exports[`test page:quicksort 1`] = `
                 data-jsx={3260177673}
                 style={
                   Object {
-                    "fontSize": NaN,
-                    "lineHeight": "NaNpx",
+                    "fontSize": 38,
+                    "lineHeight": "96px",
                   }
                 }>
                 drag to rewind

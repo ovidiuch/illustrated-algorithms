@@ -6,7 +6,7 @@ import Menu from './menu';
 import Player from './player';
 
 const getWindowSize = () => ({
-  width: document.body.clientWidth,
+  width: document.body.clientWidth || window.innerHeight, // fallback for jsdom
   height: window.innerHeight,
 });
 
