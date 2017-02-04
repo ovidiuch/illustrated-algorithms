@@ -3,7 +3,9 @@ export default {
   ignore: [/raw-data/],
   proxies: [
     './layout-proxy',
-    './context-proxy'
+    './context-proxy',
+    './global-style-proxy',
+    './bg-color-proxy',
   ],
   publicPath: '../static',
 };

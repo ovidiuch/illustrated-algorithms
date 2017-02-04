@@ -5,7 +5,6 @@ const { steps } = binarySearch(BinarySearch.initialData.list, 'dog');
 
 export default {
   _layoutFor: BinarySearch,
-  color: '#FF8A80',
   code: binarySearch.code,
   illustration: BinarySearch,
   state: {

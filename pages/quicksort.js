@@ -6,7 +6,7 @@ import Quicksort from '../components/ill/quicksort';
 class QuicksortPage extends React.Component {
   static async getInitialProps() {
     const items = [
-      'dog', 'cat', 'snail', 'bear', 'pig', 'rat'
+      'bear', 'cat', 'dog', 'lion', 'panda', 'snail'
     ];
     const { steps } = quicksort(items);
     return {

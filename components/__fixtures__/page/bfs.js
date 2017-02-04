@@ -14,7 +14,6 @@ const graph = {
 const { steps } = bfs(graph, 'you');
 
 export default {
-  color: '#80D8FF',
   currentPath: '/bfs',
   steps,
   illustration: Bfs,
