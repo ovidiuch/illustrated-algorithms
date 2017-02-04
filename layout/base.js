@@ -20,6 +20,8 @@ export default class BaseLayout {
       code,
     } = this;
 
+    this.color = '#fff';
+
     this.landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width > height;
     this.sideWidth = this.landscape ? floor(width / 2) : width;
 

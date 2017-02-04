@@ -13,6 +13,8 @@ export default class BinarySearchLayout extends BaseLayout {
   constructor(initial) {
     super(initial);
 
+    this.color = '#FF8A80';
+
     this.blockWidth = floor((this.sideWidth - (this.padding * 2)) / BLOCK_NUM);
     this.innerWidth = ((this.blockWidth - this.borderWidth) * BLOCK_NUM) + this.borderWidth;
 

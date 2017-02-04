@@ -8,7 +8,7 @@ export default {
   illustration: Quicksort,
   nextStep: {
     bindings: {
-      list: ['dog', 'cat', 'snail', 'bear', 'pig', 'rat']
+      list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail']
     },
   },
   stepProgress: 0,

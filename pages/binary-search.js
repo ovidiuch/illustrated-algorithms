@@ -7,7 +7,6 @@ class BinarySearchPage extends React.Component {
   render() {
     return (
       <Page
-        color="#FF8A80"
         currentPath="/binary-search"
         code={binarySearch.code}
         illustration={BinarySearch}

@@ -86,7 +86,11 @@ const EmojiBlock = ({
 
 EmojiBlock.propTypes = {
   name: React.PropTypes.string.isRequired,
-  glow: React.PropTypes.number.isRequired,
+  glow: React.PropTypes.number,
+};
+
+EmojiBlock.defaultProps = {
+  glow: 0,
 };
 
 EmojiBlock.contextTypes = {

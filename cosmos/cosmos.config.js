@@ -5,4 +5,5 @@ export default {
     './layout-proxy',
     './context-proxy'
   ],
+  publicPath: '../static',
 };

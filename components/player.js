@@ -164,7 +164,6 @@ class Player extends React.Component {
   render() {
     const {
       illustration,
-      color,
       code,
     } = this.props;
     const {
@@ -176,6 +175,7 @@ class Player extends React.Component {
       layout
     } = this.context;
     const {
+      color,
       headerHeight,
       footerHeight,
     } = layout;
@@ -307,7 +307,6 @@ Player.propTypes = {
   code: React.PropTypes.string.isRequired,
   steps: React.PropTypes.array,
   illustration: React.PropTypes.func.isRequired,
-  color: React.PropTypes.string.isRequired,
 };
 
 Player.contextTypes = {

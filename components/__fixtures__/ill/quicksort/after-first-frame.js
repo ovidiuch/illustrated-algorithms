@@ -5,10 +5,10 @@ export default {
   prevStep: {},
   nextStep: {
     bindings: {
-      list: ['dog', 'cat', 'snail', 'bear', 'pig', 'rat'],
+      list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
       pivot: 'cat',
       less: ['bear'],
-      greater: ['dog', 'snail', 'pig', 'rat']
+      greater: ['dog', 'lion', 'panda', 'snail']
     }
   },
 };

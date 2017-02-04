@@ -18,7 +18,6 @@ class QuicksortPage extends React.Component {
     const { steps } = this.props;
     return (
       <Page
-        color="#FFD180"
         currentPath="/quicksort"
         steps={steps}
         illustration={Quicksort}

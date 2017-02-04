@@ -2,7 +2,7 @@ import Quicksort from '../../../components/ill/quicksort';
 
 const quicksort = Quicksort.algorithm;
 const items = [
-  'dog', 'cat', 'snail', 'bear', 'pig', 'rat'
+  'bear', 'cat', 'dog', 'lion', 'panda', 'snail'
 ];
 const { steps } = quicksort(items);
 

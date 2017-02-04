@@ -25,7 +25,6 @@ class BfsPage extends React.Component {
     const { steps } = this.props;
     return (
       <Page
-        color="#80D8FF"
         currentPath="/bfs"
         steps={steps}
         illustration={Bfs}

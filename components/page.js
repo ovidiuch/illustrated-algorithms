@@ -68,7 +68,6 @@ class Page extends React.Component {
 
   render() {
     const {
-      color,
       currentPath,
       steps,
       illustration,
@@ -76,6 +75,9 @@ class Page extends React.Component {
     const {
       renderedOnClient,
     } = this.state;
+    const {
+      color,
+    } = this.layout;
 
     return (
       <div>
@@ -109,7 +111,6 @@ class Page extends React.Component {
               steps={steps}
               code={illustration.algorithm.code}
               illustration={illustration}
-              color={color}
               />
           </div>
           <style jsx>{`
@@ -133,7 +134,6 @@ class Page extends React.Component {
 }
 
 Page.propTypes = {
-  color: React.PropTypes.string.isRequired,
   currentPath: React.PropTypes.string.isRequired,
   steps: React.PropTypes.array,
   illustration: React.PropTypes.func.isRequired,
