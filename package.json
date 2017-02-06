@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@skidding/babel-plugin-inline-react-svg": "^0.2.1",
-    "babel-plugin-trace-execution": "^0.1.1",
+    "babel-plugin-trace-execution": "^0.2.0",
     "eslint-config-xo-react": "^0.10.0",
     "eslint-plugin-react": "^6.8.0",
     "jest": "^18.1.0",
