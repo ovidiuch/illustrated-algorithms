@@ -121,7 +121,6 @@ class RawData extends React.Component {
 RawData.propTypes = {
   prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  stepProgress: React.PropTypes.number.isRequired,
 };
 
 RawData.contextTypes = {
