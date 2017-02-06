@@ -70,8 +70,14 @@ Quicksort.contextTypes = {
   layout: React.PropTypes.object,
 };
 
+Quicksort.Layout = QuicksortLayout;
+
 Quicksort.algorithm = quicksort;
 
-Quicksort.Layout = QuicksortLayout;
+Quicksort.initialData = {
+  list: [
+    'cherries', 'kiwi', 'grapes', 'avocado', 'peach', 'pineapple'
+  ]
+};
 
 export default Quicksort;
