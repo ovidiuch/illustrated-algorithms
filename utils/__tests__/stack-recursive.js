@@ -839,17 +839,23 @@ test('returns first two steps', () => {
   ]);
 });
 
-test('returns two static entries for last two returning steps', () => {
+test('returns two paused entries for last two returning steps', () => {
   const { entries, isRemovingFromStack } = getStack(steps, steps.length - 2);
   const nestedReturnStep = steps[steps.length - 2];
 
   expect(entries).toEqual([
     {
       prevStep: nestedReturnStep,
-      nextStep: nestedReturnStep,
+      nextStep: {
+        ...nestedReturnStep,
+        isRemoved: true,
+      },
     },
     {
-      prevStep: steps[nestedReturnStep.parentStepId],
+      prevStep: {
+        ...steps[nestedReturnStep.parentStepId],
+        isPaused: true,
+      },
       nextStep: steps[steps.length - 1],
     }
   ]);
@@ -865,45 +871,63 @@ test('returns identical sides for last step', () => {
   ]);
 });
 
-test('returns two static entries when stepping into nested call', () => {
+test('returns two paused entries when stepping into nested call', () => {
   const index = steps.indexOf(firstNestedStep) - 1;
   const { entries, isAddingToStack } = getStack(steps, index);
 
   expect(entries).toEqual([
     {
-      prevStep: steps[index + 1],
+      prevStep: {
+        ...steps[index + 1],
+        isAdded: true,
+      },
       nextStep: steps[index + 1],
     },
     {
       prevStep: steps[index],
-      nextStep: steps[index],
+      nextStep: {
+        ...steps[index],
+        isPaused: true,
+      }
     },
   ]);
   expect(isAddingToStack).toBe(true);
 });
 
-test('returns three static entries when stepping into nested call', () => {
+test('returns three paused entries when stepping into nested call', () => {
   const index = steps.indexOf(secondNestedStep) - 1;
   const { entries, isAddingToStack } = getStack(steps, index);
 
   expect(entries).toEqual([
     {
-      prevStep: steps[index + 1],
+      prevStep: {
+        ...steps[index + 1],
+        isAdded: true,
+      },
       nextStep: steps[index + 1],
     },
     {
       prevStep: steps[index],
-      nextStep: steps[index],
+      nextStep: {
+        ...steps[index],
+        isPaused: true,
+      }
     },
     {
-      prevStep: steps[steps[index].parentStepId],
-      nextStep: steps[steps[index].parentStepId],
+      prevStep: {
+        ...steps[steps[index].parentStepId],
+        isPaused: true,
+      },
+      nextStep: {
+        ...steps[steps[index].parentStepId],
+        isPaused: true,
+      }
     },
   ]);
   expect(isAddingToStack).toBe(true);
 });
 
-test('returns child transition + static parent inside 1st nested call', () => {
+test('returns child transition + paused parent inside 1st nested call', () => {
   const index = steps.indexOf(firstNestedStep);
   const { entries } = getStack(steps, index);
 
@@ -913,13 +937,19 @@ test('returns child transition + static parent inside 1st nested call', () => {
       nextStep: steps[index + 1],
     },
     {
-      prevStep: steps[index - 1],
-      nextStep: steps[index - 1],
+      prevStep: {
+        ...steps[index - 1],
+        isPaused: true,
+      },
+      nextStep: {
+        ...steps[index - 1],
+        isPaused: true,
+      }
     },
   ]);
 });
 
-test('returns child transition + static parents inside 2nd nested call', () => {
+test('returns child transition + paused parents inside 2nd nested call', () => {
   const index = steps.indexOf(secondNestedStep);
   const { entries } = getStack(steps, index);
 
@@ -929,12 +959,24 @@ test('returns child transition + static parents inside 2nd nested call', () => {
       nextStep: steps[index + 1],
     },
     {
-      prevStep: steps[index - 1],
-      nextStep: steps[index - 1],
+      prevStep: {
+        ...steps[index - 1],
+        isPaused: true,
+      },
+      nextStep: {
+        ...steps[index - 1],
+        isPaused: true,
+      }
     },
     {
-      prevStep: steps[steps[index - 1].parentStepId],
-      nextStep: steps[steps[index - 1].parentStepId],
+      prevStep: {
+        ...steps[steps[index - 1].parentStepId],
+        isPaused: true,
+      },
+      nextStep: {
+        ...steps[steps[index - 1].parentStepId],
+        isPaused: true,
+      }
     }
   ]);
 });
