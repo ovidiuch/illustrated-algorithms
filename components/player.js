@@ -208,6 +208,9 @@ class Player extends React.Component {
             // Tieing stack entry elements to their parent step id will preserve
             // them when other entries are added to or removed from stack.
             const stackEntryKey = nextStep.parentStepId || 0;
+            // Only top entry needs to animate (and the one below when top is
+            // being removed from the stack). Any other entry is frozen
+            const stackEntryStepProgress = i > 1 ? 1 : stepProgress;
 
             return (
               <div
@@ -222,7 +225,7 @@ class Player extends React.Component {
                   code={code}
                   prevStep={prevStep}
                   nextStep={nextStep}
-                  stepProgress={i > 0 ? 1 : stepProgress}
+                  stepProgress={stackEntryStepProgress}
                   onGenerateSteps={this.handleGenerateSteps}
                   />
               </div>

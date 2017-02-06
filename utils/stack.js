@@ -44,7 +44,7 @@ export default (steps, index) => {
       prevStep,
       nextStep: prevStep,
     }, {
-      prevStep: nextStep,
+      prevStep: steps[parentStepId],
       nextStep,
     });
 

@@ -841,14 +841,15 @@ test('returns first two steps', () => {
 
 test('returns two static entries for last two returning steps', () => {
   const { entries, isRemovingFromStack } = getStack(steps, steps.length - 2);
+  const nestedReturnStep = steps[steps.length - 2];
 
   expect(entries).toEqual([
     {
-      prevStep: steps[steps.length - 2],
-      nextStep: steps[steps.length - 2],
+      prevStep: nestedReturnStep,
+      nextStep: nestedReturnStep,
     },
     {
-      prevStep: steps[steps.length - 1],
+      prevStep: steps[nestedReturnStep.parentStepId],
       nextStep: steps[steps.length - 1],
     }
   ]);
