@@ -846,16 +846,10 @@ test('returns two paused entries for last two returning steps', () => {
   expect(entries).toEqual([
     {
       prevStep: nestedReturnStep,
-      nextStep: {
-        ...nestedReturnStep,
-        isRemoved: true,
-      },
+      nextStep: nestedReturnStep,
     },
     {
-      prevStep: {
-        ...steps[nestedReturnStep.parentStepId],
-        isPaused: true,
-      },
+      prevStep: steps[nestedReturnStep.parentStepId],
       nextStep: steps[steps.length - 1],
     }
   ]);
@@ -877,18 +871,12 @@ test('returns two paused entries when stepping into nested call', () => {
 
   expect(entries).toEqual([
     {
-      prevStep: {
-        ...steps[index + 1],
-        isAdded: true,
-      },
+      prevStep: steps[index + 1],
       nextStep: steps[index + 1],
     },
     {
       prevStep: steps[index],
-      nextStep: {
-        ...steps[index],
-        isPaused: true,
-      }
+      nextStep: steps[index]
     },
   ]);
   expect(isAddingToStack).toBe(true);
@@ -900,28 +888,16 @@ test('returns three paused entries when stepping into nested call', () => {
 
   expect(entries).toEqual([
     {
-      prevStep: {
-        ...steps[index + 1],
-        isAdded: true,
-      },
+      prevStep: steps[index + 1],
       nextStep: steps[index + 1],
     },
     {
       prevStep: steps[index],
-      nextStep: {
-        ...steps[index],
-        isPaused: true,
-      }
+      nextStep: steps[index]
     },
     {
-      prevStep: {
-        ...steps[steps[index].parentStepId],
-        isPaused: true,
-      },
-      nextStep: {
-        ...steps[steps[index].parentStepId],
-        isPaused: true,
-      }
+      prevStep: steps[steps[index].parentStepId],
+      nextStep: steps[steps[index].parentStepId]
     },
   ]);
   expect(isAddingToStack).toBe(true);
@@ -937,14 +913,8 @@ test('returns child transition + paused parent inside 1st nested call', () => {
       nextStep: steps[index + 1],
     },
     {
-      prevStep: {
-        ...steps[index - 1],
-        isPaused: true,
-      },
-      nextStep: {
-        ...steps[index - 1],
-        isPaused: true,
-      }
+      prevStep: steps[index - 1],
+      nextStep: steps[index - 1]
     },
   ]);
 });
@@ -959,24 +929,12 @@ test('returns child transition + paused parents inside 2nd nested call', () => {
       nextStep: steps[index + 1],
     },
     {
-      prevStep: {
-        ...steps[index - 1],
-        isPaused: true,
-      },
-      nextStep: {
-        ...steps[index - 1],
-        isPaused: true,
-      }
+      prevStep: steps[index - 1],
+      nextStep: steps[index - 1]
     },
     {
-      prevStep: {
-        ...steps[steps[index - 1].parentStepId],
-        isPaused: true,
-      },
-      nextStep: {
-        ...steps[steps[index - 1].parentStepId],
-        isPaused: true,
-      }
+      prevStep: steps[steps[index - 1].parentStepId],
+      nextStep: steps[steps[index - 1].parentStepId]
     }
   ]);
 });

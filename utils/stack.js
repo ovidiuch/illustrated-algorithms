@@ -30,17 +30,11 @@ export default (steps, index) => {
     });
   } else if (nextStep.parentStepId === index) {
     entries.push({
-      prevStep: {
-        ...nextStep,
-        isAdded: true
-      },
+      prevStep: nextStep,
       nextStep,
     }, {
       prevStep,
-      nextStep: {
-        ...prevStep,
-        isPaused: true,
-      }
+      nextStep: prevStep
     });
 
     parentStepId = prevStep.parentStepId;
@@ -48,15 +42,9 @@ export default (steps, index) => {
   } else if (nextStep.parentStepId === steps[parentStepId].parentStepId) {
     entries.push({
       prevStep,
-      nextStep: {
-        ...prevStep,
-        isRemoved: true,
-      }
+      nextStep: prevStep
     }, {
-      prevStep: {
-        ...steps[parentStepId],
-        isPaused: true,
-      },
+      prevStep: steps[parentStepId],
       nextStep,
     });
 
@@ -68,14 +56,8 @@ export default (steps, index) => {
     const lastFromParentCall = steps[parentStepId];
 
     entries.push({
-      prevStep: {
-        ...lastFromParentCall,
-        isPaused: true,
-      },
-      nextStep: {
-        ...lastFromParentCall,
-        isPaused: true,
-      }
+      prevStep: lastFromParentCall,
+      nextStep: lastFromParentCall,
     });
 
     parentStepId = lastFromParentCall.parentStepId;
