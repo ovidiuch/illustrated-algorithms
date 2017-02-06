@@ -6,13 +6,27 @@ export default {
   _layoutFor: BinarySearch,
   code,
   illustration: BinarySearch,
-  nextStep: {
+  prevStep: {
     bindings: {
       list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
       item: 'panda',
     },
-    intro: true,
+    highlight: {
+      start: 9,
+      end: 33,
+    },
   },
-  stepProgress: 0,
+  nextStep: {
+    bindings: {
+      list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
+      item: 'panda',
+      low: 0,
+    },
+    highlight: {
+      start: 38,
+      end: 50,
+    },
+  },
+  stepProgress: 0.5,
   onGenerateSteps: steps => console.log('steps', steps),
 };

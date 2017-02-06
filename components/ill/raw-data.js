@@ -26,7 +26,7 @@ class RawData extends React.Component {
       lineHeight,
       illustrationHeight,
     } = layout;
-    const isFirstStep = !prevStep && !nextStep.parentStepId;
+    const isFirstStep = prevStep.intro;
 
     return (
       <div
@@ -119,8 +119,9 @@ class RawData extends React.Component {
 }
 
 RawData.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
+  stepProgress: React.PropTypes.number.isRequired,
 };
 
 RawData.contextTypes = {

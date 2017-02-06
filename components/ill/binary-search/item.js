@@ -6,7 +6,7 @@ import {
 import EmojiBlock from '../shared/emoji-block';
 import getWobbleRotation from '../../../utils/wobble';
 
-const getOpacity = step => step && step.bindings.item !== undefined ? 1 : 0;
+const getOpacity = step => !step.intro && step.bindings.item !== undefined ? 1 : 0;
 
 const BASE_ROTATION = -1.5;
 
@@ -48,8 +48,8 @@ export default function Item({ prevStep, nextStep, stepProgress }, { layout }) {
 }
 
 Item.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

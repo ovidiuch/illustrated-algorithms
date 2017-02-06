@@ -10,6 +10,7 @@ const EmojiBlock = ({
   layout
 }) => {
   const {
+    color,
     borderWidth,
     blockWidth,
     blockHeight,
@@ -25,6 +26,7 @@ const EmojiBlock = ({
         width: blockWidth,
         height: blockHeight,
         borderWidth,
+        background: color,
       }}
       >
       <div

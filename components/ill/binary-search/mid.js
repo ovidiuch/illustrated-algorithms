@@ -6,7 +6,7 @@ import {
 import NumberVar from '../shared/number-var';
 
 const getStyle = (step, layout) => {
-  if (!step || step.bindings.mid === undefined) {
+  if (step.bindings.mid === undefined) {
     return {
       opacity: 0,
     };
@@ -47,8 +47,8 @@ export default function Mid({ prevStep, nextStep, stepProgress }, { layout }) {
 }
 
 Mid.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

@@ -1,33 +1,18 @@
 import React from 'react';
-import quicksort from '../algorithms/quicksort';
 import Page from '../components/page';
 import Quicksort from '../components/ill/quicksort';
 
-class QuicksortPage extends React.Component {
-  static async getInitialProps() {
-    const items = [
-      'bear', 'cat', 'dog', 'lion', 'panda', 'snail'
-    ];
-    const { steps } = quicksort(items);
-    return {
-      steps,
-    };
-  }
-
+export default class QuicksortPage extends React.Component {
   render() {
-    const { steps } = this.props;
+    const { list } = Quicksort.initialData;
+    const { steps } = Quicksort.algorithm(list);
+
     return (
       <Page
         currentPath="/quicksort"
-        steps={steps}
         illustration={Quicksort}
+        steps={steps}
         />
     );
   }
 }
-
-QuicksortPage.propTypes = {
-  steps: React.PropTypes.array.isRequired,
-};
-
-export default QuicksortPage;

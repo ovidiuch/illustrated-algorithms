@@ -4,10 +4,6 @@ import {
 } from '../../../utils/transition';
 
 const getOpacity = step => {
-  if (!step) {
-    return 0;
-  }
-
   const {
     compared,
     returnValue,
@@ -73,8 +69,8 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
 }
 
 Comparison.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

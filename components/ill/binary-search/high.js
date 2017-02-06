@@ -7,7 +7,7 @@ import getWobbleRotation from '../../../utils/wobble';
 import NumberVar from '../shared/number-var';
 
 const getStyle = (step, layout) => {
-  if (!step || step.bindings.high === undefined) {
+  if (step.bindings.high === undefined) {
     return {
       opacity: 0,
     };
@@ -57,8 +57,8 @@ export default function High({ prevStep, nextStep, stepProgress }, { layout }) {
 }
 
 High.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

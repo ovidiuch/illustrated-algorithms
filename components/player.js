@@ -26,6 +26,13 @@ const getOpacityForStackDepth = level => {
   return level > 0 ? 0.5 : 1;
 };
 
+const offsetSteps = steps => steps.map(step => (
+  step.parentStepId ? {
+    ...step,
+    parentStepId: step.parentStepId + 1,
+  } : step
+));
+
 class Player extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +46,7 @@ class Player extends React.Component {
     this.state = {
       pos: 0,
       isPlaying: false,
-      steps: props.steps || [this.getIntroStep()],
+      steps: [this.getIntroStep(), ...offsetSteps(props.steps)],
     };
   }
 
@@ -67,7 +74,7 @@ class Player extends React.Component {
 
   handleGenerateSteps(steps) {
     this.setState({
-      steps: [this.getIntroStep(), ...steps],
+      steps: [this.getIntroStep(), ...offsetSteps(steps)],
       pos: 0,
       isPlaying: true,
     }, this.scheduleAnimation);
@@ -139,7 +146,6 @@ class Player extends React.Component {
       footerHeight,
     } = layout;
 
-    const isIntro = steps.length === 1;
     const stepIndex = floor(pos / FRAMES_PER_POS);
     const stepProgress = min(1, (pos % FRAMES_PER_POS) / FRAMES_PER_TRANSITION);
     const { entries, isAddingToStack, isRemovingFromStack } = getStack(steps, stepIndex);
@@ -223,7 +229,7 @@ class Player extends React.Component {
             );
           })}
         </div>
-        {!isIntro && (
+        {steps.length > 1 && (
           <div
             className="footer"
             style={{
@@ -262,8 +268,12 @@ class Player extends React.Component {
 
 Player.propTypes = {
   code: React.PropTypes.string.isRequired,
-  steps: React.PropTypes.array,
   illustration: React.PropTypes.func.isRequired,
+  steps: React.PropTypes.array,
+};
+
+Player.defaultProps = {
+  steps: []
 };
 
 Player.contextTypes = {

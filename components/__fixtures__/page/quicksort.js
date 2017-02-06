@@ -1,10 +1,7 @@
 import Quicksort from '../../../components/ill/quicksort';
 
 const quicksort = Quicksort.algorithm;
-const items = [
-  'bear', 'cat', 'dog', 'lion', 'panda', 'snail'
-];
-const { steps } = quicksort(items);
+const { steps } = quicksort(Quicksort.initialData.list);
 
 export default {
   currentPath: '/quicksort',

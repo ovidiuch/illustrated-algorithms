@@ -19,8 +19,9 @@
   },
   "scripts": {
     "clear-babel-cache": "rm -rf node_modules/.cache/babel-loader/*",
+    "test:source": "jest __tests__",
     "test:cosmos": "jest cosmos/cosmos.test.js",
-    "test": "xo && npm run test:cosmos",
+    "test": "xo && npm run test:source && npm run test:cosmos",
     "dev": "next",
     "build": "next build",
     "start": "next start",
@@ -37,7 +38,18 @@
       "comma-dangle": 0,
       "object-curly-spacing": 0,
       "react/jsx-no-bind": 0
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/**/*"
+        ],
+        "env": [
+          "jest",
+          "browser"
+        ]
+      }
+    ]
   },
   "dependencies": {
     "emojione": "^2.2.7",
