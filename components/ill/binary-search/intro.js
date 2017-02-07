@@ -27,7 +27,7 @@ export default function Intro({ prevStep, nextStep, stepProgress }, { layout }) 
           fontSize: layout.getRelSize(24, 2),
         }}
         >
-        Find the position of a value inside a sorted list
+        Find the position of a value<br/> inside a sorted list
       </p>
       <p
         style={{
