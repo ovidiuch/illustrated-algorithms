@@ -18,10 +18,12 @@ const EmojiBlock = ({
     blockLabelHeight,
   } = layout;
   const iconSize = round(blockWidth * 0.8);
+  const isEmpty = !name;
+  const classes = ['emoji-block'].concat(isEmpty && 'empty');
 
   return (
     <div
-      className="emoji-block"
+      className={classes.join(' ')}
       style={{
         width: blockWidth,
         height: blockHeight,
@@ -44,7 +46,11 @@ const EmojiBlock = ({
           left: blockWidth * 0.1,
         }}
         >
-        <EmojiIcon name={name} width={iconSize} height={iconSize}/>
+        <EmojiIcon
+          name={name || 'no entry'}
+          width={iconSize}
+          height={iconSize}
+          />
       </div>
       <div
         className="label"
@@ -54,7 +60,7 @@ const EmojiBlock = ({
           lineHeight: `${blockLabelHeight}px`,
         }}
         >
-        {name}
+        {name ? name : 'empty'}
       </div>
       <style jsx>{`
         .emoji-block {
@@ -81,17 +87,30 @@ const EmojiBlock = ({
           text-align: center;
           text-transform: uppercase;
         }
+        .empty {
+          border-style: dashed;
+        }
+        .empty .icon {
+          transform: rotate(90deg);
+        }
+        .empty .icon :global(path) {
+          fill: rgba(0, 0, 0, 0.3);
+        }
+        .empty .label {
+          color: rgba(0, 0, 0, 0.5);
+        }
       `}</style>
     </div>
   );
 };
 
 EmojiBlock.propTypes = {
-  name: React.PropTypes.string.isRequired,
+  name: React.PropTypes.string,
   glow: React.PropTypes.number,
 };
 
 EmojiBlock.defaultProps = {
+  name: '',
   glow: 0,
 };
 

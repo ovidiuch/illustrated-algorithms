@@ -10,6 +10,7 @@ import Grapes from 'emojione/assets/svg/1f347.svg';
 import Avocado from 'emojione/assets/svg/1f951.svg';
 import Peach from 'emojione/assets/svg/1f351.svg';
 import Pineapple from 'emojione/assets/svg/1f34d.svg';
+import NoEntry from 'emojione/assets/svg/1f6ab.svg';
 import React from 'react';
 
 const emojis = {
@@ -26,6 +27,7 @@ const emojis = {
   avocado: Avocado,
   peach: Peach,
   pineapple: Pineapple,
+  'no entry': NoEntry,
 };
 
 export default class EmojiIcon extends React.PureComponent {
