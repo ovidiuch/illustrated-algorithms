@@ -23,7 +23,7 @@ class StackEntry extends PureLayoutComponent {
       illustrationHeight,
       codeHeight,
     } = layout;
-    const highlight = stepProgress > 0 ? nextStep.highlight : prevStep.highlight;
+    const { highlight } = nextStep;
 
     const illustrationStyle = {
       width: sideWidth,
