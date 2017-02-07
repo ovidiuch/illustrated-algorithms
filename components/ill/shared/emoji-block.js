@@ -19,11 +19,10 @@ const EmojiBlock = ({
   } = layout;
   const iconSize = round(blockWidth * 0.8);
   const isEmpty = !name;
-  const classes = ['emoji-block'].concat(isEmpty && 'empty');
 
   return (
     <div
-      className={classes.join(' ')}
+      className={isEmpty ? 'emoji-block empty' : 'emoji-block'}
       style={{
         width: blockWidth,
         height: blockHeight,

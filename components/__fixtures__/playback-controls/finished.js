@@ -1,7 +1,5 @@
-import BinarySearch from '../../ill/binary-search/binary-search';
-
 export default {
-  _layoutFor: BinarySearch,
+  _layoutFor: 'binarySearch',
   isPlaying: false,
   pos: 1229,
   maxPos: 1229,

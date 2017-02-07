@@ -1,6 +1,4 @@
 import React from 'react';
-import quicksort from '../../algorithms/quicksort';
-import QuicksortLayout from '../../layout/quicksort';
 import PureLayoutComponent from '../../utils/pure-layout-component';
 
 import EmojiBlock from './shared/emoji-block';
@@ -68,16 +66,6 @@ class Quicksort extends PureLayoutComponent {
 
 Quicksort.contextTypes = {
   layout: React.PropTypes.object,
-};
-
-Quicksort.Layout = QuicksortLayout;
-
-Quicksort.algorithm = quicksort;
-
-Quicksort.initialData = {
-  list: [
-    'cherries', 'kiwi', 'grapes', 'avocado', 'peach', 'pineapple'
-  ]
 };
 
 export default Quicksort;

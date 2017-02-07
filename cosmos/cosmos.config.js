@@ -1,7 +1,6 @@
 export default {
   componentPaths: ['../components'],
   ignore: [
-    /raw-data/,
     /binary-search\/((?!binary-search).)/,
   ],
   proxies: [

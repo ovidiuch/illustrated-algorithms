@@ -26,13 +26,6 @@ const getOpacityForStackDepth = level => {
   return level > 0 ? 0.5 : 1;
 };
 
-const offsetSteps = steps => steps.map(step => (
-  step.parentStepId ? {
-    ...step,
-    parentStepId: step.parentStepId + 1,
-  } : step
-));
-
 class Player extends React.Component {
   constructor(props) {
     super(props);
@@ -40,13 +33,11 @@ class Player extends React.Component {
     this.handleScrollTo = this.handleScrollTo.bind(this);
     this.handlePlay = this.handlePlay.bind(this);
     this.handlePause = this.handlePause.bind(this);
-    this.handleGenerateSteps = this.handleGenerateSteps.bind(this);
     this.onFrame = this.onFrame.bind(this);
 
     this.state = {
       pos: 0,
       isPlaying: false,
-      steps: [this.getIntroStep(), ...offsetSteps(props.steps)],
     };
   }
 
@@ -72,14 +63,6 @@ class Player extends React.Component {
     }, this.cancelAnimation);
   }
 
-  handleGenerateSteps(steps) {
-    this.setState({
-      steps: [this.getIntroStep(), ...offsetSteps(steps)],
-      pos: 0,
-      isPlaying: true,
-    }, this.scheduleAnimation);
-  }
-
   scheduleAnimation() {
     this.cancelAnimation();
     this.prevTime = Date.now();
@@ -101,6 +84,8 @@ class Player extends React.Component {
 
     const {
       steps,
+    } = this.props;
+    const {
       pos,
     } = this.state;
     const maxPos = getMaxPos(steps.length);
@@ -118,22 +103,14 @@ class Player extends React.Component {
     }
   }
 
-  getIntroStep() {
-    return {
-      intro: true,
-      bindings: {
-        ...this.props.illustration.initialData,
-      },
-    };
-  }
-
   render() {
     const {
+      algorithm,
       illustration,
-      code,
+      steps,
+      actions,
     } = this.props;
     const {
-      steps,
       pos,
       isPlaying,
     } = this.state;
@@ -222,11 +199,15 @@ class Player extends React.Component {
                 >
                 <StackEntry
                   illustration={illustration}
-                  code={code}
+                  code={algorithm.code}
                   prevStep={prevStep}
                   nextStep={nextStep}
                   stepProgress={stackEntryStepProgress}
-                  onGenerateSteps={this.handleGenerateSteps}
+                  actions={{
+                    ...actions,
+                    play: this.handlePlay,
+                    pause: this.handlePause,
+                  }}
                   />
               </div>
             );
@@ -270,13 +251,10 @@ class Player extends React.Component {
 }
 
 Player.propTypes = {
-  code: React.PropTypes.string.isRequired,
+  algorithm: React.PropTypes.func.isRequired,
   illustration: React.PropTypes.func.isRequired,
-  steps: React.PropTypes.array,
-};
-
-Player.defaultProps = {
-  steps: []
+  steps: React.PropTypes.array.isRequired,
+  actions: React.PropTypes.object.isRequired,
 };
 
 Player.contextTypes = {

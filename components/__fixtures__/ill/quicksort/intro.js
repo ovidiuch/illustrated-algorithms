@@ -1,7 +1,5 @@
-import Quicksort from '../../../ill/quicksort';
-
 export default {
-  _layoutFor: Quicksort,
+  _layoutFor: 'quicksort',
   prevStep: {
     bindings: {
       list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail']

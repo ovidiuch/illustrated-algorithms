@@ -1,9 +1,10 @@
+import binarySearch from '../../../../algorithms/binary-search';
 import BinarySearch from '../../../../components/ill/binary-search/binary-search';
 
-const { code } = BinarySearch.algorithm;
+const { code } = binarySearch;
 
 export default {
-  _layoutFor: BinarySearch,
+  _layoutFor: 'binarySearch',
   code,
   illustration: BinarySearch,
   prevStep: {
@@ -36,5 +37,7 @@ export default {
     compared: ['guess', 'item'],
   },
   stepProgress: 0.65,
-  onGenerateSteps: steps => console.log('steps', steps),
+  actions: {
+    generateSteps: steps => console.log('steps', steps),
+  },
 };

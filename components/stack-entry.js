@@ -12,7 +12,7 @@ class StackEntry extends PureLayoutComponent {
       prevStep,
       nextStep,
       stepProgress,
-      onGenerateSteps,
+      actions,
     } = this.props;
     const {
       layout
@@ -58,7 +58,7 @@ class StackEntry extends PureLayoutComponent {
             prevStep,
             nextStep,
             stepProgress,
-            onGenerateSteps,
+            actions,
           })}
         </div>
         <div
@@ -86,7 +86,7 @@ StackEntry.propTypes = {
   prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
   stepProgress: React.PropTypes.number,
-  onGenerateSteps: React.PropTypes.func.isRequired,
+  actions: React.PropTypes.object.isRequired,
 };
 
 StackEntry.contextTypes = {

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import RawDataLayout from '../../layout/raw-data';
 
 class RawData extends React.Component {
   shouldComponentUpdate(nextProps, nextState, nextContext) {
@@ -126,7 +125,5 @@ RawData.propTypes = {
 RawData.contextTypes = {
   layout: React.PropTypes.object,
 };
-
-RawData.Layout = RawDataLayout;
 
 export default RawData;

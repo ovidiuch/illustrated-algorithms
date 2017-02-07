@@ -1,17 +1,39 @@
 import React from 'react';
 import Page from '../components/page';
-import Bfs from '../components/ill/bfs';
+import bfs from '../algorithms/bfs';
+import RawData from '../components/ill/raw-data';
+import BfsLayout from '../layout/bfs';
+
+const graph = {
+  you: ['alice', 'bob', 'claire'],
+  bob: ['anuj', 'peggy'],
+  alice: ['peggy'],
+  claire: ['thom', 'jonny'],
+  anuj: [],
+  peggy: [],
+  thom: [],
+  jonny: [],
+};
+const name = 'you';
 
 export default class BfsPage extends React.Component {
   render() {
-    const { graph, name } = Bfs.initialData;
-    const { steps } = Bfs.algorithm(graph, name);
+    const { steps } = bfs(graph, name);
 
     return (
       <Page
         currentPath="/bfs"
-        illustration={Bfs}
-        steps={steps}
+        algorithm={bfs}
+        illustration={RawData}
+        Layout={BfsLayout}
+        steps={[{
+          intro: true,
+          bindings: {
+            graph,
+            name,
+          },
+        }, ...steps]}
+        actions={{}}
         />
     );
   }

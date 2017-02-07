@@ -12,14 +12,15 @@ const getWindowSize = () => ({
 
 const createLayout = (props, state) => {
   const {
-    illustration,
+    algorithm,
+    Layout,
   } = props;
   const { width, height } = state;
 
-  return new illustration.Layout({
+  return new Layout({
     width,
     height,
-    code: illustration.algorithm.code,
+    code: algorithm.code,
   });
 };
 
@@ -69,8 +70,10 @@ class Page extends React.Component {
   render() {
     const {
       currentPath,
-      steps,
+      algorithm,
       illustration,
+      steps,
+      actions,
     } = this.props;
     const {
       renderedOnClient,
@@ -108,9 +111,10 @@ class Page extends React.Component {
           </div>
           <div className="content">
             <Player
-              steps={steps}
-              code={illustration.algorithm.code}
+              algorithm={algorithm}
               illustration={illustration}
+              steps={steps}
+              actions={actions}
               />
           </div>
           <style jsx>{`
@@ -135,8 +139,13 @@ class Page extends React.Component {
 
 Page.propTypes = {
   currentPath: React.PropTypes.string.isRequired,
-  steps: React.PropTypes.array,
+  algorithm: React.PropTypes.func.isRequired,
   illustration: React.PropTypes.func.isRequired,
+  // ESLint plugin bug
+  // eslint-disable-next-line react/no-unused-prop-types
+  Layout: React.PropTypes.func.isRequired,
+  steps: React.PropTypes.array.isRequired,
+  actions: React.PropTypes.object.isRequired,
 };
 
 Page.childContextTypes = {

@@ -1,7 +1,5 @@
-import BinarySearch from '../../../ill/binary-search/binary-search';
-
 export default {
-  _layoutFor: BinarySearch,
+  _layoutFor: 'binarySearch',
   prevStep: {
     bindings: {
       list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
@@ -17,5 +15,7 @@ export default {
     intro: true,
   },
   stepProgress: 0,
-  onGenerateSteps: steps => console.log('steps', steps),
+  actions: {
+    generateSteps: steps => console.log('steps', steps),
+  },
 };

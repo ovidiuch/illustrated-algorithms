@@ -1,7 +1,5 @@
-import Bfs from '../../../ill/bfs';
-
 export default {
-  _layoutFor: Bfs,
+  _layoutFor: 'bfs',
   prevStep: {
     bindings: {
       graph: {

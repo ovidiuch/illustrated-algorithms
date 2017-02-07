@@ -1,10 +1,14 @@
+import quicksort from '../../../algorithms/quicksort';
 import Quicksort from '../../../components/ill/quicksort';
+import QuicksortLayout from '../../../layout/quicksort';
 
-const quicksort = Quicksort.algorithm;
-const { steps } = quicksort(Quicksort.initialData.list);
+const { steps } = quicksort(['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach']);
 
 export default {
   currentPath: '/quicksort',
-  steps,
+  algorithm: quicksort,
   illustration: Quicksort,
+  Layout: QuicksortLayout,
+  steps,
+  actions: {},
 };
