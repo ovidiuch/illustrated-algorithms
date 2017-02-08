@@ -5,6 +5,7 @@ import {
   transitionValue,
 } from '../../../utils/transition';
 import getWobbleRotation from '../../../utils/wobble';
+import { getListItemLeftPosition } from '../../../layout/base';
 
 const getItemGlow = (name, step) => step.bindings.guess === name ? 0.4 : 0;
 
@@ -109,7 +110,7 @@ class List extends PureLayoutComponent {
               key={index}
               className={`item ${isSelectable && 'item-selectable'}`}
               style={{
-                left: layout.getListItemLeftPosition(index),
+                left: getListItemLeftPosition(layout, index),
                 opacity: transitionValue(
                   getItemOpacity(index, prevStep),
                   getItemOpacity(index, nextStep),

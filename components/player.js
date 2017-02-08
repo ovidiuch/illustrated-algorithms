@@ -4,6 +4,11 @@ import getStack from '../utils/stack';
 import {
   transitionValue,
 } from '../utils/transition';
+import {
+  getStackEntryHeight,
+  getContentHeight,
+  getContentTopOffset,
+} from '../layout/base';
 import StackEntry from './stack-entry';
 import PlaybackControls from './playback-controls';
 
@@ -127,28 +132,28 @@ class Player extends React.Component {
     const stepProgress = min(1, (pos % FRAMES_PER_POS) / FRAMES_PER_TRANSITION);
     const { entries, isAddingToStack, isRemovingFromStack } = getStack(steps, stepIndex);
 
-    const stackEntryHeight = layout.getStackEntryHeight();
-    const contentHeight = layout.getContentHeight(entries.length);
+    const stackEntryHeight = getStackEntryHeight(layout);
+    const contentHeight = getContentHeight(layout, entries.length);
 
     let topOffset;
     let topStackEntryOpacity;
 
     if (isAddingToStack) {
       topOffset = transitionValue(
-        layout.getContentTopOffset(entries.length - 1) - stackEntryHeight,
-        layout.getContentTopOffset(entries.length),
+        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
+        getContentTopOffset(layout, entries.length),
         stepProgress
       );
       topStackEntryOpacity = transitionValue(0, 1, stepProgress);
     } else if (isRemovingFromStack) {
       topOffset = transitionValue(
-        layout.getContentTopOffset(entries.length),
-        layout.getContentTopOffset(entries.length - 1) - stackEntryHeight,
+        getContentTopOffset(layout, entries.length),
+        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
         stepProgress
       );
       topStackEntryOpacity = transitionValue(1, 0, stepProgress);
     } else {
-      topOffset = layout.getContentTopOffset(entries.length);
+      topOffset = getContentTopOffset(layout, entries.length);
       topStackEntryOpacity = 1;
     }
 

@@ -13,11 +13,11 @@ const getWindowSize = () => ({
 const createLayout = (props, state) => {
   const {
     algorithm,
-    Layout,
+    computeLayout,
   } = props;
   const { width, height } = state;
 
-  return new Layout({
+  return computeLayout({
     width,
     height,
     code: algorithm.code,
@@ -143,7 +143,7 @@ Page.propTypes = {
   illustration: React.PropTypes.func.isRequired,
   // ESLint plugin bug
   // eslint-disable-next-line react/no-unused-prop-types
-  Layout: React.PropTypes.func.isRequired,
+  computeLayout: React.PropTypes.func.isRequired,
   steps: React.PropTypes.array.isRequired,
   actions: React.PropTypes.object.isRequired,
 };

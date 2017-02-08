@@ -5,6 +5,8 @@ import {
 } from '../../../utils/transition';
 import getWobbleRotation from '../../../utils/wobble';
 import NumberVar from '../shared/number-var';
+import { getListItemLeftPosition } from '../../../layout/base';
+import { getNumberVarTopPosition } from '../../../layout/binary-search';
 
 const getStyle = (step, layout) => {
   if (step.bindings.high === undefined) {
@@ -19,8 +21,8 @@ const getStyle = (step, layout) => {
 
   return {
     opacity: 1,
-    top: layout.getNumberVarTopPosition(1),
-    left: layout.getListItemLeftPosition(high),
+    top: getNumberVarTopPosition(layout, 1),
+    left: getListItemLeftPosition(layout, high),
   };
 };
 

@@ -4,7 +4,7 @@ import offsetSteps from '../utils/offset-steps';
 import Page from '../components/page';
 import quicksort from '../algorithms/quicksort';
 import Quicksort from '../components/ill/quicksort';
-import QuicksortLayout from '../layout/quicksort';
+import computeQuicksortLayout from '../layout/quicksort';
 
 const initialList = ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach'];
 
@@ -34,7 +34,7 @@ export default class QuicksortPage extends React.Component {
         currentPath="/quicksort"
         algorithm={quicksort}
         illustration={Quicksort}
-        Layout={QuicksortLayout}
+        computeLayout={computeQuicksortLayout}
         steps={this.state.steps}
         actions={{
           shuffleInput: this.handleShuffleInput,

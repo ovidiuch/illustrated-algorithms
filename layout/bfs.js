@@ -1,9 +1,6 @@
-import RawDataLayout from './raw-data';
+import computeRawDataLayout from './raw-data';
 
-export default class BfsLayout extends RawDataLayout {
-  constructor(initial) {
-    super(initial);
-
-    this.color = '#80D8FF';
-  }
-}
+export default init => ({
+  ...computeRawDataLayout(init),
+  color: '#80D8FF',
+});

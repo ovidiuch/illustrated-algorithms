@@ -4,6 +4,8 @@ import {
   getBindingValue,
 } from '../../../utils/transition';
 import NumberVar from '../shared/number-var';
+import { getListItemLeftPosition } from '../../../layout/base';
+import { getNumberVarTopPosition } from '../../../layout/binary-search';
 
 const getStyle = (step, layout) => {
   if (step.bindings.mid === undefined) {
@@ -18,8 +20,8 @@ const getStyle = (step, layout) => {
 
   return {
     opacity: 1,
-    left: layout.getListItemLeftPosition(mid),
-    top: layout.getNumberVarTopPosition(2),
+    left: getListItemLeftPosition(layout, mid),
+    top: getNumberVarTopPosition(layout, 2),
   };
 };
 

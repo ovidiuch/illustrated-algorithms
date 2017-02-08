@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../components/page';
 import bfs from '../algorithms/bfs';
 import RawData from '../components/ill/raw-data';
-import BfsLayout from '../layout/bfs';
+import computeRawDataLayout from '../layout/bfs';
 
 const graph = {
   you: ['alice', 'bob', 'claire'],
@@ -25,7 +25,7 @@ export default class BfsPage extends React.Component {
         currentPath="/bfs"
         algorithm={bfs}
         illustration={RawData}
-        Layout={BfsLayout}
+        computeLayout={computeRawDataLayout}
         steps={[{
           intro: true,
           bindings: {

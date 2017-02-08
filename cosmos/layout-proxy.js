@@ -3,22 +3,22 @@ import React from 'react';
 import binarySearch from '../algorithms/binary-search';
 import quicksort from '../algorithms/quicksort';
 import bfs from '../algorithms/bfs';
-import BinarySearchLayout from '../layout/binary-search';
-import QuicksortLayout from '../layout/quicksort';
-import BfsLayout from '../layout/bfs';
+import computeBinaryBindingLayout from '../layout/binary-search';
+import computeQuicksortLayout from '../layout/quicksort';
+import computeBfsLayout from '../layout/bfs';
 
 const layoutRefs = {
   binarySearch: {
     code: binarySearch.code,
-    Layout: BinarySearchLayout,
+    computeLayout: computeBinaryBindingLayout,
   },
   quicksort: {
     code: quicksort.code,
-    Layout: QuicksortLayout,
+    computeLayout: computeQuicksortLayout,
   },
   bfs: {
     code: bfs.code,
-    Layout: BfsLayout,
+    computeLayout: computeBfsLayout,
   },
 };
 
@@ -37,8 +37,8 @@ class LayoutProxy extends React.Component {
       });
     }
 
-    const { code, Layout } = layoutRefs[_layoutFor];
-    const layout = new Layout({
+    const { code, computeLayout } = layoutRefs[_layoutFor];
+    const layout = computeLayout({
       width: 1200,
       height: 600,
       code,

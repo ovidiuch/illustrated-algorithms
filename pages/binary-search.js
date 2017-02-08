@@ -3,7 +3,7 @@ import offsetSteps from '../utils/offset-steps';
 import Page from '../components/page';
 import binarySearch from '../algorithms/binary-search';
 import BinarySearch from '../components/ill/binary-search/binary-search';
-import BinarySearchLayout from '../layout/binary-search';
+import computeBinarySearchLayout from '../layout/binary-search';
 
 const list = ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'];
 
@@ -31,7 +31,7 @@ export default class BinarySearchPage extends React.Component {
         currentPath="/binary-search"
         algorithm={binarySearch}
         illustration={BinarySearch}
-        Layout={BinarySearchLayout}
+        computeLayout={computeBinarySearchLayout}
         steps={this.state.steps}
         actions={{
           generateSteps: this.handleGenerateSteps,
