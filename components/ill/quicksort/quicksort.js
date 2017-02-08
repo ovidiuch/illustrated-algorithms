@@ -1,8 +1,8 @@
 import React from 'react';
-import PureLayoutComponent from '../../utils/pure-layout-component';
-import EmojiBlock from './shared/emoji-block';
-import Label from './shared/label';
-import Intro from './quicksort/intro';
+import PureLayoutComponent from '../../../utils/pure-layout-component';
+import EmojiBlock from '../shared/emoji-block';
+import Label from '../shared/label';
+import Intro from '../quicksort/intro';
 
 const BASE_ROTATIONS = {
   cherries: 0.5,

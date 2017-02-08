@@ -1,6 +1,6 @@
 import offsetSteps from '../../../utils/offset-steps';
 import quicksort from '../../../algorithms/quicksort';
-import Quicksort from '../../../components/ill/quicksort';
+import Quicksort from '../../../components/ill/quicksort/quicksort';
 
 export default {
   _layoutFor: 'quicksort',
