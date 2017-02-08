@@ -113,7 +113,7 @@ class Quicksort extends PureLayoutComponent {
             transform: `
               translate(${less.left}px, ${itemGroupTopPosition}px)
               rotate(2.5deg)
-              scale(${greater.scale})
+              scale(${less.scale})
             `,
           }}
           >
