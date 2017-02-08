@@ -29,9 +29,12 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
   const {
     blockLabelFontSize,
     numberVarHeight,
-    comparisonTopPosition,
-    comparisonLeftPosition,
+    comparison,
   } = layout;
+  const {
+    top,
+    left,
+  } = comparison;
 
   const val = returnValue !== undefined || guess === item ? '=' : (
     guess > item ? '>' : '<'
@@ -41,8 +44,8 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
     <div
       className="comparison code"
       style={{
-        top: comparisonTopPosition,
-        left: comparisonLeftPosition,
+        top,
+        left,
         width: numberVarHeight,
         height: numberVarHeight,
         lineHeight: `${numberVarHeight}px`,

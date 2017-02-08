@@ -91,14 +91,14 @@ class List extends PureLayoutComponent {
     } = bindings;
     const isSelectable = Boolean(prevStep.intro && stepProgress === 0);
     const {
-      listTopPosition,
+      listTop,
     } = layout;
 
     return (
       <div
         className="list"
         style={{
-          top: listTopPosition,
+          top: listTop,
         }}
         >
         {list.map((name, index) => {

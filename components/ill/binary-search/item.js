@@ -23,9 +23,9 @@ export default function Item({ prevStep, nextStep, stepProgress }, { layout }) {
   );
 
   const {
-    itemTopPosition,
-    itemLeftPosition,
-  } = layout;
+    top,
+    left,
+  } = layout.item;
 
   const { compared } = nextStep;
   const rotation = BASE_ROTATION + (
@@ -37,8 +37,8 @@ export default function Item({ prevStep, nextStep, stepProgress }, { layout }) {
       style={{
         position: 'absolute',
         opacity,
-        top: itemTopPosition,
-        left: itemLeftPosition,
+        top,
+        left,
         transform: `rotate(${rotation}deg)`,
       }}
       >

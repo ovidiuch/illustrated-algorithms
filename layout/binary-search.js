@@ -22,31 +22,28 @@ export default init => {
 
   const innerWidth = ((blockWidth - borderWidth) * blockNum) + borderWidth;
 
-  const listTopPosition = getNumberVarTopPosition(base, 3);
-  const centerPosition = getListItemLeftPosition(base, 3) + (borderWidth / 2);
+  const listTop = getNumberVarTopPosition(base, 3);
+  const center = getListItemLeftPosition(base, 3) + (borderWidth / 2);
 
-  const comparisonTopPosition = listTopPosition + blockHeight + padding;
-  const comparisonLeftPosition = centerPosition - (numberVarHeight / 2);
+  const comparison = {
+    left: center - (numberVarHeight / 2),
+    top: listTop + blockHeight + padding,
+  };
+  const item = {
+    left: center - (blockWidth / 2),
+    top: comparison.top + numberVarHeight + padding,
+  };
 
-  const itemTopPosition = comparisonTopPosition + numberVarHeight + padding;
-  const itemLeftPosition = centerPosition - (blockWidth / 2);
-
-  const illustrationHeight = itemTopPosition + blockHeight + (padding * 2);
+  const illustrationHeight = item.top + blockHeight + (padding * 2);
 
   return {
     ...base,
     color: '#FF8A80',
     innerWidth,
-
-    listTopPosition,
-    centerPosition,
-
-    comparisonTopPosition,
-    comparisonLeftPosition,
-
-    itemTopPosition,
-    itemLeftPosition,
-
+    listTop,
+    center,
+    comparison,
+    item,
     illustrationHeight,
   };
 };
