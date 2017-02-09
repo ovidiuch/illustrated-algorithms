@@ -4,9 +4,11 @@ import {
   getBindingValue,
 } from '../../../utils/transition';
 import NumberVar from '../shared/number-var';
+import { getListItemLeftPosition } from '../../../layout/base';
+import { getNumberVarTopPosition } from '../../../layout/binary-search';
 
 const getStyle = (step, layout) => {
-  if (!step || step.bindings.mid === undefined) {
+  if (step.bindings.mid === undefined) {
     return {
       opacity: 0,
     };
@@ -18,8 +20,8 @@ const getStyle = (step, layout) => {
 
   return {
     opacity: 1,
-    left: layout.getListItemLeftPosition(mid),
-    top: layout.getNumberVarTopPosition(2),
+    left: getListItemLeftPosition(layout, mid),
+    top: getNumberVarTopPosition(layout, 2),
   };
 };
 
@@ -47,8 +49,8 @@ export default function Mid({ prevStep, nextStep, stepProgress }, { layout }) {
 }
 
 Mid.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

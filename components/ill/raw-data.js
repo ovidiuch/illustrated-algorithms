@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import RawDataLayout from '../../layout/raw-data';
 
 class RawData extends React.Component {
   shouldComponentUpdate(nextProps, nextState, nextContext) {
@@ -26,7 +25,7 @@ class RawData extends React.Component {
       lineHeight,
       illustrationHeight,
     } = layout;
-    const isFirstStep = !prevStep && !nextStep.parentStepId;
+    const isFirstStep = prevStep.intro;
 
     return (
       <div
@@ -56,7 +55,7 @@ class RawData extends React.Component {
               >
               <p>Work in progress: No visualisation. Context displayed as JSON.</p>
               <p>
-                <Link href="/binary-search"><a>See binary search</a></Link> for a complete example.{' '}
+                See <Link href="/binary-search"><a>binary search</a></Link> or <Link href="/quicksort"><a>quicksort</a></Link> for complete examples.{' '}
                 <a href="https://github.com/skidding/illustrated-algorithms#work-in-progress">Stay tuned for updates.</a>
               </p>
             </div>
@@ -119,14 +118,12 @@ class RawData extends React.Component {
 }
 
 RawData.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
 };
 
 RawData.contextTypes = {
   layout: React.PropTypes.object,
 };
-
-RawData.Layout = RawDataLayout;
 
 export default RawData;

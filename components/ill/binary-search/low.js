@@ -5,9 +5,11 @@ import {
 } from '../../../utils/transition';
 import getWobbleRotation from '../../../utils/wobble';
 import NumberVar from '../shared/number-var';
+import { getListItemLeftPosition } from '../../../layout/base';
+import { getNumberVarTopPosition } from '../../../layout/binary-search';
 
 const getStyle = (step, layout) => {
-  if (!step || step.bindings.low === undefined) {
+  if (step.bindings.low === undefined) {
     return {
       opacity: 0,
     };
@@ -19,8 +21,8 @@ const getStyle = (step, layout) => {
 
   return {
     opacity: 1,
-    top: layout.getNumberVarTopPosition(0),
-    left: layout.getListItemLeftPosition(low),
+    top: getNumberVarTopPosition(layout, 0),
+    left: getListItemLeftPosition(layout, low),
   };
 };
 
@@ -57,8 +59,8 @@ export default function Low({ prevStep, nextStep, stepProgress }, { layout }) {
 }
 
 Low.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

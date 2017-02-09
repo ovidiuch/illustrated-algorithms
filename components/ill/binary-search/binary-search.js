@@ -1,6 +1,4 @@
 import React from 'react';
-import binarySearch from '../../../algorithms/binary-search';
-import BinarySearchLayout from '../../../layout/binary-search';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
 import List from './list';
 import Item from './item';
@@ -17,9 +15,10 @@ class BinarySearch extends PureLayoutComponent {
     this.handleSelect = this.handleSelect.bind(this);
   }
 
-  handleSelect(name) {
-    const { steps } = binarySearch(BinarySearch.initialData.list, name);
-    this.props.onGenerateSteps(steps);
+  handleSelect(item) {
+    this.props.actions.generateSteps(item, () => {
+      this.props.actions.play();
+    });
   }
 
   render() {
@@ -59,21 +58,11 @@ class BinarySearch extends PureLayoutComponent {
 }
 
 BinarySearch.propTypes = {
-  onGenerateSteps: React.PropTypes.func.isRequired,
+  actions: React.PropTypes.object.isRequired,
 };
 
 BinarySearch.contextTypes = {
   layout: React.PropTypes.object,
-};
-
-BinarySearch.Layout = BinarySearchLayout;
-
-BinarySearch.algorithm = binarySearch;
-
-BinarySearch.initialData = {
-  list: [
-    'bear', 'cat', 'dog', 'lion', 'panda', 'snail'
-  ]
 };
 
 export default BinarySearch;

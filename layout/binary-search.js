@@ -1,45 +1,49 @@
-import BaseLayout from './base';
+import computeBaseLayout, { getListItemLeftPosition } from './base';
 
-const { floor } = Math;
+export const getNumberVarTopPosition = (layout, level) => {
+  const {
+    padding,
+    numberVarHeight,
+  } = layout;
 
-// Values are relative to a base width of 320px
-const BLOCK_LABEL_FONT_SIZE = 10;
-const BLOCK_LABEL_HEIGHT = 16;
-const NUMBER_VAR_HEIGHT = 24;
+  return (numberVarHeight * level) + (padding * (level + 1)) + padding;
+};
 
-const BLOCK_NUM = 6;
+export default init => {
+  const base = computeBaseLayout(init);
+  const {
+    padding,
+    blockNum,
+    borderWidth,
+    blockWidth,
+    blockHeight,
+    numberVarHeight,
+  } = base;
 
-export default class BinarySearchLayout extends BaseLayout {
-  constructor(initial) {
-    super(initial);
+  const innerWidth = ((blockWidth - borderWidth) * blockNum) + borderWidth;
 
-    this.blockWidth = floor((this.sideWidth - (this.padding * 2)) / BLOCK_NUM);
-    this.innerWidth = ((this.blockWidth - this.borderWidth) * BLOCK_NUM) + this.borderWidth;
+  const listTop = getNumberVarTopPosition(base, 3);
+  const center = getListItemLeftPosition(base, 3) + (borderWidth / 2);
 
-    this.blockLabelFontSize = this.getRelSize(BLOCK_LABEL_FONT_SIZE, 2);
-    this.blockLabelHeight = this.getRelSize(BLOCK_LABEL_HEIGHT, 2);
-    this.blockHeight = this.blockWidth + this.blockLabelHeight;
+  const comparison = {
+    left: center - (numberVarHeight / 2),
+    top: listTop + blockHeight + padding,
+  };
+  const item = {
+    left: center - (blockWidth / 2),
+    top: comparison.top + numberVarHeight + padding,
+  };
 
-    this.numberVarWidth = this.blockWidth;
-    this.numberVarHeight = this.getRelSize(NUMBER_VAR_HEIGHT, 2);
+  const illustrationHeight = item.top + blockHeight + (padding * 2);
 
-    this.listTopPosition = this.getNumberVarTopPosition(3);
-    this.centerPosition = this.getListItemLeftPosition(3) + (this.borderWidth / 2);
-
-    this.comparisonTopPosition = this.listTopPosition + this.blockHeight + this.padding;
-    this.comparisonLeftPosition = this.centerPosition - (this.numberVarHeight / 2);
-
-    this.itemTopPosition = this.comparisonTopPosition + this.numberVarHeight + this.padding;
-    this.itemLeftPosition = this.centerPosition - (this.blockWidth / 2);
-
-    this.illustrationHeight = this.itemTopPosition + this.blockHeight + (this.padding * 2);
-  }
-
-  getNumberVarTopPosition(level) {
-    return (this.numberVarHeight * level) + (this.padding * (level + 1)) + this.padding;
-  }
-
-  getListItemLeftPosition(itemIndex) {
-    return (this.blockWidth - this.borderWidth) * itemIndex;
-  }
-}
+  return {
+    ...base,
+    color: '#FF8A80',
+    innerWidth,
+    listTop,
+    center,
+    comparison,
+    item,
+    illustrationHeight,
+  };
+};

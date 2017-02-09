@@ -4,10 +4,6 @@ import {
 } from '../../../utils/transition';
 
 const getOpacity = step => {
-  if (!step) {
-    return 0;
-  }
-
   const {
     compared,
     returnValue,
@@ -33,9 +29,12 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
   const {
     blockLabelFontSize,
     numberVarHeight,
-    comparisonTopPosition,
-    comparisonLeftPosition,
+    comparison,
   } = layout;
+  const {
+    top,
+    left,
+  } = comparison;
 
   const val = returnValue !== undefined || guess === item ? '=' : (
     guess > item ? '>' : '<'
@@ -45,8 +44,8 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
     <div
       className="comparison code"
       style={{
-        top: comparisonTopPosition,
-        left: comparisonLeftPosition,
+        top,
+        left,
         width: numberVarHeight,
         height: numberVarHeight,
         lineHeight: `${numberVarHeight}px`,
@@ -73,8 +72,8 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
 }
 
 Comparison.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

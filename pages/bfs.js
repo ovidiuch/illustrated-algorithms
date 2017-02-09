@@ -1,41 +1,40 @@
 import React from 'react';
-import bfs from '../algorithms/bfs';
 import Page from '../components/page';
-import Bfs from '../components/ill/bfs';
+import bfs from '../algorithms/bfs';
+import RawData from '../components/ill/raw-data';
+import computeRawDataLayout from '../layout/bfs';
 
-class BfsPage extends React.Component {
-  static async getInitialProps() {
-    const graph = {
-      you: ['alice', 'bob', 'claire'],
-      bob: ['anuj', 'peggy'],
-      alice: ['peggy'],
-      claire: ['thom', 'jonny'],
-      anuj: [],
-      peggy: [],
-      thom: [],
-      jonny: [],
-    };
-    const { steps } = bfs(graph, 'you');
-    return {
-      steps,
-    };
-  }
+const graph = {
+  you: ['alice', 'bob', 'claire'],
+  bob: ['anuj', 'peggy'],
+  alice: ['peggy'],
+  claire: ['thom', 'jonny'],
+  anuj: [],
+  peggy: [],
+  thom: [],
+  jonny: [],
+};
+const name = 'you';
 
+export default class BfsPage extends React.Component {
   render() {
-    const { steps } = this.props;
+    const { steps } = bfs(graph, name);
+
     return (
       <Page
-        color="#80D8FF"
         currentPath="/bfs"
-        steps={steps}
-        illustration={Bfs}
+        algorithm={bfs}
+        illustration={RawData}
+        computeLayout={computeRawDataLayout}
+        steps={[{
+          intro: true,
+          bindings: {
+            graph,
+            name,
+          },
+        }, ...steps]}
+        actions={{}}
         />
     );
   }
 }
-
-BfsPage.propTypes = {
-  steps: React.PropTypes.array.isRequired,
-};
-
-export default BfsPage;

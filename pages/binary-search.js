@@ -1,19 +1,50 @@
 import React from 'react';
-import binarySearch from '../algorithms/binary-search';
+import offsetSteps from '../utils/offset-steps';
 import Page from '../components/page';
+import binarySearch from '../algorithms/binary-search';
 import BinarySearch from '../components/ill/binary-search/binary-search';
+import computeBinarySearchLayout from '../layout/binary-search';
 
-class BinarySearchPage extends React.Component {
+const list = ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'];
+
+const getIntroStep = () => ({
+  intro: true,
+  bindings: {
+    list,
+  },
+});
+
+export default class BinarySearchPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleGenerateSteps = this.handleGenerateSteps.bind(this);
+
+    this.state = {
+      steps: [getIntroStep()]
+    };
+  }
+
   render() {
     return (
       <Page
-        color="#FF8A80"
         currentPath="/binary-search"
-        code={binarySearch.code}
+        algorithm={binarySearch}
         illustration={BinarySearch}
+        computeLayout={computeBinarySearchLayout}
+        steps={this.state.steps}
+        actions={{
+          generateSteps: this.handleGenerateSteps,
+        }}
         />
     );
   }
-}
 
-export default BinarySearchPage;
+  handleGenerateSteps(item, cb) {
+    const { steps } = binarySearch(list, item);
+
+    this.setState({
+      steps: [getIntroStep(), ...offsetSteps(steps, 1)],
+    }, cb);
+  }
+}

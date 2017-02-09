@@ -1,21 +1,26 @@
 import binarySearch from '../../../algorithms/binary-search';
 import BinarySearch from '../../../components/ill/binary-search/binary-search';
 
-const { steps } = binarySearch(BinarySearch.initialData.list, 'dog');
+const list = ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'];
+const { steps } = binarySearch(list, 'dog');
 
 export default {
-  _layoutFor: BinarySearch,
-  color: '#FF8A80',
-  code: binarySearch.code,
+  _layoutFor: 'binarySearch',
+  algorithm: binarySearch,
   illustration: BinarySearch,
+  steps: [{
+    intro: true,
+    bindings: {
+      list,
+    },
+  }, ...steps],
+  actions: {
+    generateSteps: item => {
+      console.log('generate steps', item);
+    },
+  },
   state: {
     pos: 425.27999999999804,
     isPlaying: false,
-    steps: [{
-      intro: true,
-      bindings: {
-        ...BinarySearch.initialData,
-      },
-    }, ...steps],
   }
 };

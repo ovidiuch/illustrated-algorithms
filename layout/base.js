@@ -9,61 +9,105 @@ const BORDER_WIDTH = 1;
 const CODE_FONT_SIZE = 10;
 const CODE_LINE_HEIGHT = 12;
 
-export default class BaseLayout {
-  constructor(initial) {
-    Object.keys(initial).forEach(attr => {
-      this[attr] = initial[attr];
-    });
-    const {
-      width,
-      height,
-      code,
-    } = this;
+const roundToMultiOf = (value, multiOf) =>
+  multiOf === undefined ? value : multiOf * round(value / multiOf);
 
-    this.landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width > height;
-    this.sideWidth = this.landscape ? floor(width / 2) : width;
+export const getStackEntryHeight = layout => {
+  const {
+    landscape,
+    illustrationHeight,
+    codeHeight,
+  } = layout;
 
-    this.headerHeight = this.getRelSize(32, 2);
-    this.headerLinkFontSize = this.getRelSize(12, 2);
-    this.headerLinkMargin = this.getRelSize(10);
-    this.footerHeight = this.getRelSize(40, 2);
-    this.footerButtonIconSize = this.getRelSize(32, 2);
-    this.footerHintFontSize = this.getRelSize(16, 2);
-    this.availableContentHeight = height - this.headerHeight - this.footerHeight;
+  return landscape ? max(illustrationHeight, codeHeight) : illustrationHeight + codeHeight;
+};
 
-    this.padding = this.getRelSize(PADDING, 2);
-    this.borderWidth = this.getRelSize(BORDER_WIDTH, 1);
+export const getContentHeight = (layout, stackLength) => {
+  return getStackEntryHeight(layout) * stackLength;
+};
 
-    this.codeFontSize = this.getRelSize(CODE_FONT_SIZE, 2);
-    this.codeLineHeight = this.getRelSize(CODE_LINE_HEIGHT, 2);
-    this.codeHeight = (this.codeLineHeight * code.split('\n').length) + (this.padding * 2);
+export const getContentTopOffset = (layout, stackLength) => {
+  const {
+    availableContentHeight,
+  } = layout;
+  const contentHeight = getContentHeight(layout, stackLength);
+
+  return max(0, round((availableContentHeight - contentHeight) / 2));
+};
+
+export const getListItemLeftPosition = (layout, itemIndex) => {
+  const {
+    borderWidth,
+    blockWidth,
+  } = layout;
+
+  return (blockWidth - borderWidth) * itemIndex;
+};
+
+export default init => {
+  const {
+    width,
+    height,
+    code
+  } = init;
+
+  const color = '#fff';
+
+  const landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width > height;
+  const sideWidth = landscape ? floor(width / 2) : width;
+
+  const getRelSize = (baseValue, multiOf) =>
+    roundToMultiOf(baseValue / FRAME_OF_REFERENCE * sideWidth, multiOf);
+
+  const headerHeight = getRelSize(32, 2);
+  const footerHeight = getRelSize(40, 2);
+
+  const padding = getRelSize(PADDING, 2);
+  const borderWidth = getRelSize(BORDER_WIDTH, 1);
+
+  const codeLineHeight = getRelSize(CODE_LINE_HEIGHT, 2);
+
+  const blockNum = 6;
+  const blockWidth = floor((sideWidth - (padding * 2)) / blockNum);
+  const blockLabelHeight = getRelSize(16, 2);
+
+  return {
+    ...init,
+    color,
+
+    landscape: width >= IPHONE6_LANDSCAPE_WIDTH && width > height,
+    sideWidth: landscape ? floor(width / 2) : width,
+    getRelSize,
+
+    headerHeight,
+    headerLinkFontSize: getRelSize(12, 2),
+    headerLinkMargin: getRelSize(10),
+    footerHeight,
+    footerButtonIconSize: getRelSize(32, 2),
+    footerHintFontSize: getRelSize(16, 2),
+    availableContentHeight: height - headerHeight - footerHeight,
+
+    padding,
+    borderWidth,
+
+    codeFontSize: getRelSize(CODE_FONT_SIZE, 2),
+    codeLineHeight,
+    codeHeight: (codeLineHeight * code.split('\n').length) + (padding * 2),
+
+    blockNum,
+    blockWidth,
+    blockLabelFontSize: getRelSize(10, 2),
+    blockLabelHeight,
+    blockHeight: blockWidth + blockLabelHeight,
+
+    numberVarWidth: blockWidth,
+    numberVarHeight: getRelSize(24, 2),
+
+    labelWidth: blockWidth,
+    labelHeight: getRelSize(24, 2),
+    labelFontSize: getRelSize(10, 2),
 
     // YO: Calculate this and override in subclasses
-    this.illustrationHeight = 0;
-  }
-
-  getRelSize(baseValue, multiplierOf) {
-    const rawValue = baseValue / FRAME_OF_REFERENCE * this.sideWidth;
-    return multiplierOf === undefined ? rawValue : multiplierOf * round(rawValue / multiplierOf);
-  }
-
-  getStackEntryHeight() {
-    const {
-      landscape,
-      illustrationHeight,
-      codeHeight,
-    } = this;
-
-    return landscape ? max(illustrationHeight, codeHeight) : illustrationHeight + codeHeight;
-  }
-
-  getContentHeight(stackLength) {
-    return this.getStackEntryHeight() * stackLength;
-  }
-
-  getContentTopOffset(stackLength) {
-    const contentHeight = this.getContentHeight(stackLength);
-
-    return max(0, round((this.availableContentHeight - contentHeight) / 2));
-  }
-}
+    illustrationHeight: 0,
+  };
+};

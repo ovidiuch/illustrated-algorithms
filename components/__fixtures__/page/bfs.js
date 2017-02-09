@@ -1,6 +1,7 @@
-import Bfs from '../../../components/ill/bfs';
+import bfs from '../../../algorithms/bfs';
+import RawData from '../../../components/ill/raw-data';
+import computeBfsLayout from '../../../layout/bfs';
 
-const bfs = Bfs.algorithm;
 const graph = {
   you: ['alice', 'bob', 'claire'],
   bob: ['anuj', 'peggy'],
@@ -11,11 +12,20 @@ const graph = {
   thom: [],
   jonny: [],
 };
-const { steps } = bfs(graph, 'you');
+const name = 'you';
+const { steps } = bfs(graph, name);
 
 export default {
-  color: '#80D8FF',
   currentPath: '/bfs',
-  steps,
-  illustration: Bfs,
+  algorithm: bfs,
+  illustration: RawData,
+  computeLayout: computeBfsLayout,
+  steps: [{
+    intro: true,
+    bindings: {
+      graph,
+      name,
+    }
+  }, ...steps],
+  actions: {},
 };

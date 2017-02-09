@@ -3,7 +3,7 @@ import {
   transitionValue
 } from '../../../utils/transition';
 
-const getOpacity = step => step ? 0 : 1;
+const getOpacity = step => step.intro ? 1 : 0;
 
 export default function Intro({ prevStep, nextStep, stepProgress }, { layout }) {
   const {
@@ -27,7 +27,7 @@ export default function Intro({ prevStep, nextStep, stepProgress }, { layout }) 
           fontSize: layout.getRelSize(24, 2),
         }}
         >
-        Find the position of a value inside a sorted list
+        Find the position of a value<br/> inside a sorted list
       </p>
       <p
         style={{
@@ -57,8 +57,8 @@ export default function Intro({ prevStep, nextStep, stepProgress }, { layout }) 
 }
 
 Intro.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
 };
 

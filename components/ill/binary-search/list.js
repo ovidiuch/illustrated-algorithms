@@ -5,15 +5,11 @@ import {
   transitionValue,
 } from '../../../utils/transition';
 import getWobbleRotation from '../../../utils/wobble';
+import { getListItemLeftPosition } from '../../../layout/base';
 
-const getItemGlow = (name, step) =>
-  step !== undefined && step.bindings.guess === name ? 0.4 : 0;
+const getItemGlow = (name, step) => step.bindings.guess === name ? 0.4 : 0;
 
 const getItemOpacity = (index, step) => {
-  if (step === undefined) {
-    return 1;
-  }
-
   const {
     low,
     high,
@@ -93,16 +89,16 @@ class List extends PureLayoutComponent {
       list,
       mid,
     } = bindings;
-    const isSelectable = Boolean(nextStep.intro && stepProgress === 0);
+    const isSelectable = Boolean(prevStep.intro && stepProgress === 0);
     const {
-      listTopPosition,
+      listTop,
     } = layout;
 
     return (
       <div
         className="list"
         style={{
-          top: listTopPosition,
+          top: listTop,
         }}
         >
         {list.map((name, index) => {
@@ -114,7 +110,7 @@ class List extends PureLayoutComponent {
               key={index}
               className={`item ${isSelectable && 'item-selectable'}`}
               style={{
-                left: layout.getListItemLeftPosition(index),
+                left: getListItemLeftPosition(layout, index),
                 opacity: transitionValue(
                   getItemOpacity(index, prevStep),
                   getItemOpacity(index, nextStep),
@@ -154,8 +150,8 @@ class List extends PureLayoutComponent {
 }
 
 List.propTypes = {
+  prevStep: React.PropTypes.object.isRequired,
   nextStep: React.PropTypes.object.isRequired,
-  prevStep: React.PropTypes.object,
   stepProgress: React.PropTypes.number.isRequired,
   onSelect: React.PropTypes.func.isRequired,
 };

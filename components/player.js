@@ -1,8 +1,14 @@
 import React from 'react';
 import raf from 'raf';
+import getStack from '../utils/stack';
 import {
   transitionValue,
 } from '../utils/transition';
+import {
+  getStackEntryHeight,
+  getContentHeight,
+  getContentTopOffset,
+} from '../layout/base';
 import StackEntry from './stack-entry';
 import PlaybackControls from './playback-controls';
 
@@ -19,49 +25,7 @@ const FRAMES_PER_TRANSITION = getFramesPerTime(TRANSITION_TIME);
 const FRAMES_PER_DELAY = getFramesPerTime(DELAY_TIME);
 const FRAMES_PER_POS = FRAMES_PER_TRANSITION + FRAMES_PER_DELAY;
 
-const getMaxPos = steps =>
-  (steps * FRAMES_PER_TRANSITION) +
-  ((steps - 1) * FRAMES_PER_DELAY) - 1;
-
-const getPrevStepFromSameStackEntry = (steps, stepIndex) => {
-  if (stepIndex <= 0) {
-    return;
-  }
-
-  const nextStep = steps[stepIndex];
-  let prevStepIndex = stepIndex - 1;
-  let prevStep = steps[prevStepIndex];
-
-  while (prevStepIndex >= 0 && prevStep.parentStepId !== nextStep.parentStepId) {
-    prevStepIndex -= 1;
-    prevStep = steps[prevStepIndex];
-  }
-
-  return prevStep;
-};
-
-const getStackEntries = (steps, pos) => {
-  const entries = [];
-
-  let stepIndex = floor(pos / FRAMES_PER_POS);
-  let nextStep = steps[stepIndex];
-  const stepProgress = min(1, (pos - (stepIndex * FRAMES_PER_POS)) / FRAMES_PER_TRANSITION);
-
-  while (nextStep) {
-    const prevStep = getPrevStepFromSameStackEntry(steps, stepIndex);
-
-    entries.push([
-      prevStep,
-      nextStep,
-      entries.length > 0 ? 1 : stepProgress,
-    ]);
-
-    stepIndex = nextStep.parentStepId;
-    nextStep = steps[stepIndex];
-  }
-
-  return entries;
-};
+const getMaxPos = steps => (steps - 1) * FRAMES_PER_POS;
 
 const getOpacityForStackDepth = level => {
   return level > 0 ? 0.5 : 1;
@@ -74,13 +38,11 @@ class Player extends React.Component {
     this.handleScrollTo = this.handleScrollTo.bind(this);
     this.handlePlay = this.handlePlay.bind(this);
     this.handlePause = this.handlePause.bind(this);
-    this.handleGenerateSteps = this.handleGenerateSteps.bind(this);
     this.onFrame = this.onFrame.bind(this);
 
     this.state = {
       pos: 0,
       isPlaying: false,
-      steps: props.steps || [this.getIntroStep()],
     };
   }
 
@@ -106,14 +68,6 @@ class Player extends React.Component {
     }, this.cancelAnimation);
   }
 
-  handleGenerateSteps(steps) {
-    this.setState({
-      steps: [this.getIntroStep(), ...steps],
-      pos: 0,
-      isPlaying: true,
-    }, this.scheduleAnimation);
-  }
-
   scheduleAnimation() {
     this.cancelAnimation();
     this.prevTime = Date.now();
@@ -135,6 +89,8 @@ class Player extends React.Component {
 
     const {
       steps,
+    } = this.props;
+    const {
       pos,
     } = this.state;
     const maxPos = getMaxPos(steps.length);
@@ -152,23 +108,14 @@ class Player extends React.Component {
     }
   }
 
-  getIntroStep() {
-    return {
-      intro: true,
-      bindings: {
-        ...this.props.illustration.initialData,
-      },
-    };
-  }
-
   render() {
     const {
+      algorithm,
       illustration,
-      color,
-      code,
+      steps,
+      actions,
     } = this.props;
     const {
-      steps,
       pos,
       isPlaying,
     } = this.state;
@@ -176,39 +123,37 @@ class Player extends React.Component {
       layout
     } = this.context;
     const {
+      color,
       headerHeight,
       footerHeight,
     } = layout;
 
-    const isIntro = steps.length === 1;
-    const stackEntries = getStackEntries(steps, pos);
-    const stackEntryHeight = layout.getStackEntryHeight();
-    const contentHeight = layout.getContentHeight(stackEntries.length);
+    const stepIndex = floor(pos / FRAMES_PER_POS);
+    const stepProgress = min(1, (pos % FRAMES_PER_POS) / FRAMES_PER_TRANSITION);
+    const { entries, isAddingToStack, isRemovingFromStack } = getStack(steps, stepIndex);
 
-    const topStackEntry = stackEntries[0];
-    const [topPrevStep, topNextStep, topStepProgress] = topStackEntry;
-    const isAddingToStack = stackEntries.length > 1 && !topPrevStep;
-    const isRemovingFromStack = stackEntries.length > 1 && topNextStep.returnValue !== undefined;
+    const stackEntryHeight = getStackEntryHeight(layout);
+    const contentHeight = getContentHeight(layout, entries.length);
 
     let topOffset;
     let topStackEntryOpacity;
 
     if (isAddingToStack) {
       topOffset = transitionValue(
-        layout.getContentTopOffset(stackEntries.length - 1) - stackEntryHeight,
-        layout.getContentTopOffset(stackEntries.length),
-        topStepProgress
+        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
+        getContentTopOffset(layout, entries.length),
+        stepProgress
       );
-      topStackEntryOpacity = transitionValue(0, 1, topStepProgress);
+      topStackEntryOpacity = transitionValue(0, 1, stepProgress);
     } else if (isRemovingFromStack) {
       topOffset = transitionValue(
-        layout.getContentTopOffset(stackEntries.length),
-        layout.getContentTopOffset(stackEntries.length - 1) - stackEntryHeight,
-        topStepProgress
+        getContentTopOffset(layout, entries.length),
+        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
+        stepProgress
       );
-      topStackEntryOpacity = transitionValue(1, 0, topStepProgress);
+      topStackEntryOpacity = transitionValue(1, 0, stepProgress);
     } else {
-      topOffset = layout.getContentTopOffset(stackEntries.length);
+      topOffset = getContentTopOffset(layout, entries.length);
       topStackEntryOpacity = 1;
     }
 
@@ -221,7 +166,7 @@ class Player extends React.Component {
             transform: `translate(0, ${topOffset}px)`,
           }}
           >
-          {stackEntries.map(([prevStep, nextStep, stepProgress], i) => {
+          {entries.map(({ prevStep, nextStep }, i) => {
             let opacity;
 
             if (i === 0) {
@@ -230,13 +175,13 @@ class Player extends React.Component {
               opacity = transitionValue(
                 getOpacityForStackDepth(i - 1),
                 getOpacityForStackDepth(i),
-                topStepProgress,
+                stepProgress,
               );
             } else if (isRemovingFromStack) {
               opacity = transitionValue(
                 getOpacityForStackDepth(i),
                 getOpacityForStackDepth(i - 1),
-                topStepProgress,
+                stepProgress,
               );
             } else {
               opacity = getOpacityForStackDepth(i);
@@ -245,6 +190,9 @@ class Player extends React.Component {
             // Tieing stack entry elements to their parent step id will preserve
             // them when other entries are added to or removed from stack.
             const stackEntryKey = nextStep.parentStepId || 0;
+            // Only top entry needs to animate (and the one below when top is
+            // being removed from the stack). Any other entry is frozen
+            const stackEntryStepProgress = i > 1 ? 1 : stepProgress;
 
             return (
               <div
@@ -256,17 +204,21 @@ class Player extends React.Component {
                 >
                 <StackEntry
                   illustration={illustration}
-                  code={code}
+                  code={algorithm.code}
                   prevStep={prevStep}
                   nextStep={nextStep}
-                  stepProgress={stepProgress}
-                  onGenerateSteps={this.handleGenerateSteps}
+                  stepProgress={stackEntryStepProgress}
+                  actions={{
+                    ...actions,
+                    play: this.handlePlay,
+                    pause: this.handlePause,
+                  }}
                   />
               </div>
             );
           })}
         </div>
-        {!isIntro && (
+        {steps.length > 1 && (
           <div
             className="footer"
             style={{
@@ -304,10 +256,10 @@ class Player extends React.Component {
 }
 
 Player.propTypes = {
-  code: React.PropTypes.string.isRequired,
-  steps: React.PropTypes.array,
+  algorithm: React.PropTypes.func.isRequired,
   illustration: React.PropTypes.func.isRequired,
-  color: React.PropTypes.string.isRequired,
+  steps: React.PropTypes.array.isRequired,
+  actions: React.PropTypes.object.isRequired,
 };
 
 Player.contextTypes = {

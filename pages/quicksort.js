@@ -1,34 +1,64 @@
 import React from 'react';
-import quicksort from '../algorithms/quicksort';
+import shuffle from 'shuffle-array';
+import offsetSteps from '../utils/offset-steps';
 import Page from '../components/page';
-import Quicksort from '../components/ill/quicksort';
+import quicksort from '../algorithms/quicksort';
+import Quicksort from '../components/ill/quicksort/quicksort';
+import computeQuicksortLayout from '../layout/quicksort';
 
-class QuicksortPage extends React.Component {
-  static async getInitialProps() {
-    const items = [
-      'dog', 'cat', 'snail', 'bear', 'pig', 'rat'
-    ];
-    const { steps } = quicksort(items);
-    return {
-      steps,
+const initialList = ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach'];
+
+const getIntroStep = list => ({
+  intro: true,
+  bindings: {
+    list,
+  },
+});
+
+export default class QuicksortPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleShuffleInput = this.handleShuffleInput.bind(this);
+    this.handleGenerateSteps = this.handleGenerateSteps.bind(this);
+
+    this.state = {
+      list: initialList,
+      steps: [getIntroStep(initialList)]
     };
   }
 
   render() {
-    const { steps } = this.props;
     return (
       <Page
-        color="#FFD180"
         currentPath="/quicksort"
-        steps={steps}
+        algorithm={quicksort}
         illustration={Quicksort}
+        computeLayout={computeQuicksortLayout}
+        steps={this.state.steps}
+        actions={{
+          shuffleInput: this.handleShuffleInput,
+          generateSteps: this.handleGenerateSteps,
+        }}
         />
     );
   }
+
+  handleShuffleInput(cb) {
+    const list = shuffle(initialList, { copy: true });
+
+    this.setState({
+      list,
+      steps: [getIntroStep(list)]
+    }, cb);
+  }
+
+  handleGenerateSteps(cb) {
+    const { list } = this.state;
+    const { steps } = quicksort(list);
+
+    this.setState({
+      steps: [getIntroStep(list), ...offsetSteps(steps, 1)],
+    }, cb);
+  }
 }
-
-QuicksortPage.propTypes = {
-  steps: React.PropTypes.array.isRequired,
-};
-
-export default QuicksortPage;

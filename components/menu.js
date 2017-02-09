@@ -55,7 +55,7 @@ class Menu extends PureLayoutComponent {
         })}
         <a
           className="about-link"
-          href="https://github.com/skidding/illustrated-algorithms"
+          href="https://github.com/skidding/illustrated-algorithms/blob/master/README.md"
           style={{
             marginRight: headerLinkMargin,
           }}
