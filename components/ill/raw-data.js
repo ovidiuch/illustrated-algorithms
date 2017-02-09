@@ -55,7 +55,7 @@ class RawData extends React.Component {
               >
               <p>Work in progress: No visualisation. Context displayed as JSON.</p>
               <p>
-                <Link href="/binary-search"><a>See binary search</a></Link> for a complete example.{' '}
+                See <Link href="/binary-search"><a>binary search</a></Link> or <Link href="/quicksort"><a>quicksort</a></Link> for complete examples.{' '}
                 <a href="https://github.com/skidding/illustrated-algorithms#work-in-progress">Stay tuned for updates.</a>
               </p>
             </div>

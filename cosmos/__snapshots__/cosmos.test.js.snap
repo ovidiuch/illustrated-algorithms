@@ -5121,13 +5121,21 @@ exports[`test ill/raw-data:first-frame-wip 1`] = `
       </p>
       <p
         data-jsx={485082250}>
+        See 
         <a
           data-jsx={485082250}
           href="/binary-search"
           onClick={[Function]}>
-          See binary search
+          binary search
         </a>
-         for a complete example.
+         or 
+        <a
+          data-jsx={485082250}
+          href="/quicksort"
+          onClick={[Function]}>
+          quicksort
+        </a>
+         for complete examples.
          
         <a
           data-jsx={485082250}
@@ -6128,13 +6136,21 @@ exports[`test page:bfs 1`] = `
                       </p>
                       <p
                         data-jsx={485082250}>
+                        See 
                         <a
                           data-jsx={485082250}
                           href="/binary-search"
                           onClick={[Function]}>
-                          See binary search
+                          binary search
                         </a>
-                         for a complete example.
+                         or 
+                        <a
+                          data-jsx={485082250}
+                          href="/quicksort"
+                          onClick={[Function]}>
+                          quicksort
+                        </a>
+                         for complete examples.
                          
                         <a
                           data-jsx={485082250}
