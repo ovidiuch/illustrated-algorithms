@@ -3954,6 +3954,45 @@ exports[`test ill/quicksort/intro:blank 1`] = `
 </div>
 `;
 
+exports[`test ill/quicksort/outro:blank 1`] = `
+<div
+  className="outro"
+  data-jsx={3229234161}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }>
+  <h1
+    className="title"
+    data-jsx={3229234161}
+    style={
+      Object {
+        "fontSize": 46,
+        "lineHeight": "52px",
+        "top": 16,
+      }
+    }>
+    Sorted by name – 
+    <em
+      data-jsx={3229234161}>
+      phew!
+    </em>
+  </h1>
+  <p
+    className="subtext"
+    data-jsx={3229234161}
+    style={
+      Object {
+        "fontSize": 34,
+        "top": 249,
+      }
+    }>
+    rewind & scroll for close examination
+  </p>
+</div>
+`;
+
 exports[`test ill/quicksort:intro 1`] = `
 <div
   className="quicksort"
@@ -5004,6 +5043,42 @@ exports[`test ill/quicksort:intro 1`] = `
           start
         </span>
       </div>
+    </div>
+    <div
+      className="outro"
+      data-jsx={3229234161}
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }>
+      <h1
+        className="title"
+        data-jsx={3229234161}
+        style={
+          Object {
+            "fontSize": 46,
+            "lineHeight": "52px",
+            "top": 16,
+          }
+        }>
+        Sorted by name – 
+        <em
+          data-jsx={3229234161}>
+          phew!
+        </em>
+      </h1>
+      <p
+        className="subtext"
+        data-jsx={3229234161}
+        style={
+          Object {
+            "fontSize": 34,
+            "top": 249,
+          }
+        }>
+        rewind & scroll for close examination
+      </p>
     </div>
   </div>
 </div>
@@ -8636,6 +8711,42 @@ exports[`test page:quicksort 1`] = `
                           start
                         </span>
                       </div>
+                    </div>
+                    <div
+                      className="outro"
+                      data-jsx={3229234161}
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }>
+                      <h1
+                        className="title"
+                        data-jsx={3229234161}
+                        style={
+                          Object {
+                            "fontSize": 58,
+                            "lineHeight": "68px",
+                            "top": 20,
+                          }
+                        }>
+                        Sorted by name – 
+                        <em
+                          data-jsx={3229234161}>
+                          phew!
+                        </em>
+                      </h1>
+                      <p
+                        className="subtext"
+                        data-jsx={3229234161}
+                        style={
+                          Object {
+                            "fontSize": 44,
+                            "top": 316.5,
+                          }
+                        }>
+                        rewind & scroll for close examination
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -12496,6 +12607,42 @@ exports[`test player:quicksort 1`] = `
                     start
                   </span>
                 </div>
+              </div>
+              <div
+                className="outro"
+                data-jsx={3229234161}
+                style={
+                  Object {
+                    "opacity": 0,
+                  }
+                }>
+                <h1
+                  className="title"
+                  data-jsx={3229234161}
+                  style={
+                    Object {
+                      "fontSize": 46,
+                      "lineHeight": "52px",
+                      "top": 16,
+                    }
+                  }>
+                  Sorted by name – 
+                  <em
+                    data-jsx={3229234161}>
+                    phew!
+                  </em>
+                </h1>
+                <p
+                  className="subtext"
+                  data-jsx={3229234161}
+                  style={
+                    Object {
+                      "fontSize": 34,
+                      "top": 249,
+                    }
+                  }>
+                  rewind & scroll for close examination
+                </p>
               </div>
             </div>
           </div>

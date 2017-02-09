@@ -3,6 +3,7 @@ import PureLayoutComponent from '../../../utils/pure-layout-component';
 import EmojiBlock from '../shared/emoji-block';
 import Label from '../shared/label';
 import Intro from '../quicksort/intro';
+import Outro from '../quicksort/outro';
 
 const BASE_ROTATIONS = {
   cherries: 0.5,
@@ -185,6 +186,9 @@ class Quicksort extends PureLayoutComponent {
             frame={frame}
             onShuffle={this.handleShuffle}
             onStart={this.handleStart}
+            />
+          <Outro
+            frame={frame}
             />
         </div>
         <style jsx>{`

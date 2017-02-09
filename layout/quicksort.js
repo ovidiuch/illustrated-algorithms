@@ -151,6 +151,11 @@ const getTransItemProps = createTransitionGetter(getItemProps, transitionValues)
 const getIntroOpacity = step => step.intro ? 1 : 0;
 const getTransIntroOpacity = createTransitionGetter(getIntroOpacity, transitionValue);
 
+const isFinalStep = (step, { blockNum }) => step.bindings.list.length === blockNum && step.returnValue !== undefined;
+
+const getOutroOpacity = (step, layout) => isFinalStep(step, layout) ? 1 : 0;
+const getTransOutroOpacity = createTransitionGetter(getOutroOpacity, transitionValue);
+
 const isLessEmpty = ({ bindings }) => bindings.less && bindings.less.length === 0;
 const isGreaterEmpty = ({ bindings }) => bindings.greater && bindings.greater.length === 0;
 const isListEmpty = ({ bindings }) => bindings.list && bindings.list.length === 0;
@@ -196,6 +201,10 @@ const computeFrame = (layout, prevStep, nextStep, stepProgress) => {
     intro: {
       ...layout.intro,
       opacity: getTransIntroOpacity(prevStep, nextStep, stepProgress)
+    },
+    outro: {
+      ...layout.outro,
+      opacity: getTransOutroOpacity(prevStep, nextStep, stepProgress, layout),
     },
     pivot,
     less,
@@ -252,6 +261,13 @@ export default init => {
       btnFontSize: getRelSize(18, 2),
       btnSvgSize: getRelSize(20, 2),
     },
+    outro: {
+      titleFontSize,
+      titleLineHeight,
+      titleTop: padding * 2,
+      subtextFontSize: getRelSize(18, 2),
+      subtextTop: illustrationHeight * 0.75,
+    }
   };
 
   return {
