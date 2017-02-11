@@ -160,6 +160,7 @@ class Player extends React.Component {
     return (
       <div>
         <div
+          className="stack-entries"
           style={{
             height: contentHeight,
             padding: `${headerHeight}px 0 ${footerHeight}px 0`,
@@ -196,6 +197,7 @@ class Player extends React.Component {
 
             return (
               <div
+                className="stack-entry-outer"
                 key={stackEntryKey}
                 style={{
                   height: stackEntryHeight,
@@ -237,6 +239,12 @@ class Player extends React.Component {
           </div>
         )}
         <style jsx>{`
+          .stack-entries {
+            will-change: transform, height;
+          }
+          .stack-entry-outer {
+            will-change: opacity;
+          }
           .footer {
             position: fixed;
             bottom: 0;

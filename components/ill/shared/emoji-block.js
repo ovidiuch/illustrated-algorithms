@@ -78,6 +78,7 @@ class EmojiBlock extends PureLayoutComponent {
             bottom: 0;
             left: 0;
             right: 0;
+            will-change: background;
           }
           .icon {
             position: absolute;

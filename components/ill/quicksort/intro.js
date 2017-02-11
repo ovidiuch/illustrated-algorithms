@@ -88,6 +88,9 @@ class Intro extends PureLayoutComponent {
           </span>
         </div>
         <style jsx>{`
+          .intro {
+            will-change: opacity;
+          }
           .title {
             position: absolute;
             width: 100%;

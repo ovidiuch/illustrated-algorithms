@@ -204,6 +204,7 @@ class Quicksort extends PureLayoutComponent {
           .list-empty,
           .item {
             position: absolute;
+            will-change: transform, opacity;
           }
         `}</style>
       </div>

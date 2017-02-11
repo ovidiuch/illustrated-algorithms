@@ -52,7 +52,7 @@ exports[`test ill/binary-search:beginning 1`] = `
     }>
     <div
       className="emoji-block"
-      data-jsx={2270353202}
+      data-jsx={1836048290}
       style={
         Object {
           "background": "#FF8A80",
@@ -63,7 +63,7 @@ exports[`test ill/binary-search:beginning 1`] = `
       }>
       <div
         className="glow"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "rgba(255, 255, 255, 0.4)",
@@ -71,7 +71,7 @@ exports[`test ill/binary-search:beginning 1`] = `
         } />
       <div
         className="icon"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "height": 78,
@@ -146,7 +146,7 @@ exports[`test ill/binary-search:beginning 1`] = `
       </div>
       <div
         className="label"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "fontSize": 18,
@@ -181,7 +181,7 @@ exports[`test ill/binary-search:beginning 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -192,7 +192,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -200,7 +200,7 @@ exports[`test ill/binary-search:beginning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -254,7 +254,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -282,7 +282,7 @@ exports[`test ill/binary-search:beginning 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -293,7 +293,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -301,7 +301,7 @@ exports[`test ill/binary-search:beginning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -370,7 +370,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -398,7 +398,7 @@ exports[`test ill/binary-search:beginning 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -409,7 +409,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -417,7 +417,7 @@ exports[`test ill/binary-search:beginning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -496,7 +496,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -524,7 +524,7 @@ exports[`test ill/binary-search:beginning 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -535,7 +535,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -543,7 +543,7 @@ exports[`test ill/binary-search:beginning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -606,7 +606,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -634,7 +634,7 @@ exports[`test ill/binary-search:beginning 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -645,7 +645,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -653,7 +653,7 @@ exports[`test ill/binary-search:beginning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -728,7 +728,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -756,7 +756,7 @@ exports[`test ill/binary-search:beginning 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -767,7 +767,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -775,7 +775,7 @@ exports[`test ill/binary-search:beginning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -859,7 +859,7 @@ exports[`test ill/binary-search:beginning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -946,7 +946,7 @@ exports[`test ill/binary-search:comparing 1`] = `
     }>
     <div
       className="emoji-block"
-      data-jsx={2270353202}
+      data-jsx={1836048290}
       style={
         Object {
           "background": "#FF8A80",
@@ -957,7 +957,7 @@ exports[`test ill/binary-search:comparing 1`] = `
       }>
       <div
         className="glow"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "rgba(255, 255, 255, 0.4)",
@@ -965,7 +965,7 @@ exports[`test ill/binary-search:comparing 1`] = `
         } />
       <div
         className="icon"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "height": 78,
@@ -1040,7 +1040,7 @@ exports[`test ill/binary-search:comparing 1`] = `
       </div>
       <div
         className="label"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "fontSize": 18,
@@ -1215,7 +1215,7 @@ exports[`test ill/binary-search:comparing 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -1226,7 +1226,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -1234,7 +1234,7 @@ exports[`test ill/binary-search:comparing 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -1288,7 +1288,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -1316,7 +1316,7 @@ exports[`test ill/binary-search:comparing 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -1327,7 +1327,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -1335,7 +1335,7 @@ exports[`test ill/binary-search:comparing 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -1404,7 +1404,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -1432,7 +1432,7 @@ exports[`test ill/binary-search:comparing 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -1443,7 +1443,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -1451,7 +1451,7 @@ exports[`test ill/binary-search:comparing 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -1530,7 +1530,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -1558,7 +1558,7 @@ exports[`test ill/binary-search:comparing 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -1569,7 +1569,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -1577,7 +1577,7 @@ exports[`test ill/binary-search:comparing 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -1640,7 +1640,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -1668,7 +1668,7 @@ exports[`test ill/binary-search:comparing 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -1679,7 +1679,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -1687,7 +1687,7 @@ exports[`test ill/binary-search:comparing 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -1762,7 +1762,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -1790,7 +1790,7 @@ exports[`test ill/binary-search:comparing 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -1801,7 +1801,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -1809,7 +1809,7 @@ exports[`test ill/binary-search:comparing 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -1893,7 +1893,7 @@ exports[`test ill/binary-search:comparing 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -1980,7 +1980,7 @@ exports[`test ill/binary-search:found 1`] = `
     }>
     <div
       className="emoji-block"
-      data-jsx={2270353202}
+      data-jsx={1836048290}
       style={
         Object {
           "background": "#FF8A80",
@@ -1991,7 +1991,7 @@ exports[`test ill/binary-search:found 1`] = `
       }>
       <div
         className="glow"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "rgba(255, 255, 255, 0.4)",
@@ -1999,7 +1999,7 @@ exports[`test ill/binary-search:found 1`] = `
         } />
       <div
         className="icon"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "height": 78,
@@ -2074,7 +2074,7 @@ exports[`test ill/binary-search:found 1`] = `
       </div>
       <div
         className="label"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "fontSize": 18,
@@ -2249,7 +2249,7 @@ exports[`test ill/binary-search:found 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -2260,7 +2260,7 @@ exports[`test ill/binary-search:found 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -2268,7 +2268,7 @@ exports[`test ill/binary-search:found 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -2322,7 +2322,7 @@ exports[`test ill/binary-search:found 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -2350,7 +2350,7 @@ exports[`test ill/binary-search:found 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -2361,7 +2361,7 @@ exports[`test ill/binary-search:found 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -2369,7 +2369,7 @@ exports[`test ill/binary-search:found 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -2438,7 +2438,7 @@ exports[`test ill/binary-search:found 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -2466,7 +2466,7 @@ exports[`test ill/binary-search:found 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -2477,7 +2477,7 @@ exports[`test ill/binary-search:found 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -2485,7 +2485,7 @@ exports[`test ill/binary-search:found 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -2564,7 +2564,7 @@ exports[`test ill/binary-search:found 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -2592,7 +2592,7 @@ exports[`test ill/binary-search:found 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -2603,7 +2603,7 @@ exports[`test ill/binary-search:found 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -2611,7 +2611,7 @@ exports[`test ill/binary-search:found 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -2674,7 +2674,7 @@ exports[`test ill/binary-search:found 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -2702,7 +2702,7 @@ exports[`test ill/binary-search:found 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -2713,7 +2713,7 @@ exports[`test ill/binary-search:found 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -2721,7 +2721,7 @@ exports[`test ill/binary-search:found 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -2796,7 +2796,7 @@ exports[`test ill/binary-search:found 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -2824,7 +2824,7 @@ exports[`test ill/binary-search:found 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -2835,7 +2835,7 @@ exports[`test ill/binary-search:found 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -2843,7 +2843,7 @@ exports[`test ill/binary-search:found 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -2927,7 +2927,7 @@ exports[`test ill/binary-search:found 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -3014,7 +3014,7 @@ exports[`test ill/binary-search:intro 1`] = `
     }>
     <div
       className="emoji-block"
-      data-jsx={2270353202}
+      data-jsx={1836048290}
       style={
         Object {
           "background": "#FF8A80",
@@ -3025,7 +3025,7 @@ exports[`test ill/binary-search:intro 1`] = `
       }>
       <div
         className="glow"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "rgba(255, 255, 255, 0.4)",
@@ -3033,7 +3033,7 @@ exports[`test ill/binary-search:intro 1`] = `
         } />
       <div
         className="icon"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "height": 78,
@@ -3108,7 +3108,7 @@ exports[`test ill/binary-search:intro 1`] = `
       </div>
       <div
         className="label"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "fontSize": 18,
@@ -3143,7 +3143,7 @@ exports[`test ill/binary-search:intro 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -3154,7 +3154,7 @@ exports[`test ill/binary-search:intro 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -3162,7 +3162,7 @@ exports[`test ill/binary-search:intro 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -3216,7 +3216,7 @@ exports[`test ill/binary-search:intro 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -3244,7 +3244,7 @@ exports[`test ill/binary-search:intro 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -3255,7 +3255,7 @@ exports[`test ill/binary-search:intro 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -3263,7 +3263,7 @@ exports[`test ill/binary-search:intro 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -3332,7 +3332,7 @@ exports[`test ill/binary-search:intro 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -3360,7 +3360,7 @@ exports[`test ill/binary-search:intro 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -3371,7 +3371,7 @@ exports[`test ill/binary-search:intro 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -3379,7 +3379,7 @@ exports[`test ill/binary-search:intro 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -3458,7 +3458,7 @@ exports[`test ill/binary-search:intro 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -3486,7 +3486,7 @@ exports[`test ill/binary-search:intro 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -3497,7 +3497,7 @@ exports[`test ill/binary-search:intro 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -3505,7 +3505,7 @@ exports[`test ill/binary-search:intro 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -3568,7 +3568,7 @@ exports[`test ill/binary-search:intro 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -3596,7 +3596,7 @@ exports[`test ill/binary-search:intro 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -3607,7 +3607,7 @@ exports[`test ill/binary-search:intro 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -3615,7 +3615,7 @@ exports[`test ill/binary-search:intro 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -3690,7 +3690,7 @@ exports[`test ill/binary-search:intro 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -3718,7 +3718,7 @@ exports[`test ill/binary-search:intro 1`] = `
         onClick={[Function]}>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -3729,7 +3729,7 @@ exports[`test ill/binary-search:intro 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0)",
@@ -3737,7 +3737,7 @@ exports[`test ill/binary-search:intro 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -3821,7 +3821,7 @@ exports[`test ill/binary-search:intro 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -3857,7 +3857,7 @@ exports[`test ill/binary-search:intro 1`] = `
 exports[`test ill/quicksort/intro:blank 1`] = `
 <div
   className="intro"
-  data-jsx={4185549712}
+  data-jsx={1818264529}
   style={
     Object {
       "opacity": 1,
@@ -3865,7 +3865,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
   }>
   <h1
     className="title"
-    data-jsx={4185549712}
+    data-jsx={1818264529}
     style={
       Object {
         "fontSize": 38,
@@ -3874,12 +3874,12 @@ exports[`test ill/quicksort/intro:blank 1`] = `
     }>
     Place the elements of a list
     <br
-      data-jsx={4185549712} />
+      data-jsx={1818264529} />
      in alphabetical order
   </h1>
   <div
     className="shuffle-btn"
-    data-jsx={4185549712}
+    data-jsx={1818264529}
     onClick={[Function]}
     style={
       Object {
@@ -3889,7 +3889,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       }
     }>
     <svg
-      data-jsx={4185549712}
+      data-jsx={1818264529}
       height={32}
       style={
         Object {
@@ -3900,11 +3900,11 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       width={32}>
       <path
         d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-        data-jsx={4185549712} />
+        data-jsx={1818264529} />
     </svg>
     <span
       className="label"
-      data-jsx={4185549712}
+      data-jsx={1818264529}
       style={
         Object {
           "borderWidth": 2,
@@ -3916,7 +3916,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
   </div>
   <div
     className="start-btn"
-    data-jsx={4185549712}
+    data-jsx={1818264529}
     onClick={[Function]}
     style={
       Object {
@@ -3926,7 +3926,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       }
     }>
     <svg
-      data-jsx={4185549712}
+      data-jsx={1818264529}
       height={32}
       style={
         Object {
@@ -3937,11 +3937,11 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       width={32}>
       <path
         d="M8 5v14l11-7z"
-        data-jsx={4185549712} />
+        data-jsx={1818264529} />
     </svg>
     <span
       className="label"
-      data-jsx={4185549712}
+      data-jsx={1818264529}
       style={
         Object {
           "borderWidth": 2,
@@ -3957,7 +3957,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
 exports[`test ill/quicksort/outro:blank 1`] = `
 <div
   className="outro"
-  data-jsx={3229234161}
+  data-jsx={1657905901}
   style={
     Object {
       "opacity": 1,
@@ -3965,7 +3965,7 @@ exports[`test ill/quicksort/outro:blank 1`] = `
   }>
   <h1
     className="title"
-    data-jsx={3229234161}
+    data-jsx={1657905901}
     style={
       Object {
         "fontSize": 46,
@@ -3975,13 +3975,13 @@ exports[`test ill/quicksort/outro:blank 1`] = `
     }>
     Sorted by name – 
     <em
-      data-jsx={3229234161}>
+      data-jsx={1657905901}>
       phew!
     </em>
   </h1>
   <p
     className="subtext"
-    data-jsx={3229234161}
+    data-jsx={1657905901}
     style={
       Object {
         "fontSize": 34,
@@ -3996,7 +3996,7 @@ exports[`test ill/quicksort/outro:blank 1`] = `
 exports[`test ill/quicksort:intro 1`] = `
 <div
   className="quicksort"
-  data-jsx={1170976834}
+  data-jsx={4185613797}
   style={
     Object {
       "height": 332,
@@ -4005,7 +4005,7 @@ exports[`test ill/quicksort:intro 1`] = `
   }>
   <div
     className="pivot"
-    data-jsx={1170976834}
+    data-jsx={4185613797}
     style={
       Object {
         "opacity": 0,
@@ -4040,7 +4040,7 @@ exports[`test ill/quicksort:intro 1`] = `
   </div>
   <div
     className="less"
-    data-jsx={1170976834}
+    data-jsx={4185613797}
     style={
       Object {
         "opacity": 0,
@@ -4075,7 +4075,7 @@ exports[`test ill/quicksort:intro 1`] = `
   </div>
   <div
     className="greater"
-    data-jsx={1170976834}
+    data-jsx={4185613797}
     style={
       Object {
         "opacity": 0,
@@ -4110,7 +4110,7 @@ exports[`test ill/quicksort:intro 1`] = `
   </div>
   <div
     className="less-empty"
-    data-jsx={1170976834}
+    data-jsx={4185613797}
     style={
       Object {
         "opacity": 0,
@@ -4123,7 +4123,7 @@ exports[`test ill/quicksort:intro 1`] = `
     }>
     <div
       className="emoji-block empty"
-      data-jsx={2270353202}
+      data-jsx={1836048290}
       style={
         Object {
           "background": "#FFD180",
@@ -4134,7 +4134,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="glow"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "rgba(255, 255, 255, 0)",
@@ -4142,7 +4142,7 @@ exports[`test ill/quicksort:intro 1`] = `
         } />
       <div
         className="icon"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "height": 78,
@@ -4165,7 +4165,7 @@ exports[`test ill/quicksort:intro 1`] = `
       </div>
       <div
         className="label"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "fontSize": 16,
@@ -4179,7 +4179,7 @@ exports[`test ill/quicksort:intro 1`] = `
   </div>
   <div
     className="greater-empty"
-    data-jsx={1170976834}
+    data-jsx={4185613797}
     style={
       Object {
         "opacity": 0,
@@ -4192,7 +4192,7 @@ exports[`test ill/quicksort:intro 1`] = `
     }>
     <div
       className="emoji-block empty"
-      data-jsx={2270353202}
+      data-jsx={1836048290}
       style={
         Object {
           "background": "#FFD180",
@@ -4203,7 +4203,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="glow"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "rgba(255, 255, 255, 0)",
@@ -4211,7 +4211,7 @@ exports[`test ill/quicksort:intro 1`] = `
         } />
       <div
         className="icon"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "height": 78,
@@ -4234,7 +4234,7 @@ exports[`test ill/quicksort:intro 1`] = `
       </div>
       <div
         className="label"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "fontSize": 16,
@@ -4248,7 +4248,7 @@ exports[`test ill/quicksort:intro 1`] = `
   </div>
   <div
     className="list-empty"
-    data-jsx={1170976834}
+    data-jsx={4185613797}
     style={
       Object {
         "opacity": 0,
@@ -4260,7 +4260,7 @@ exports[`test ill/quicksort:intro 1`] = `
     }>
     <div
       className="emoji-block empty"
-      data-jsx={2270353202}
+      data-jsx={1836048290}
       style={
         Object {
           "background": "#FFD180",
@@ -4271,7 +4271,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="glow"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "rgba(255, 255, 255, 0)",
@@ -4279,7 +4279,7 @@ exports[`test ill/quicksort:intro 1`] = `
         } />
       <div
         className="icon"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "height": 78,
@@ -4302,7 +4302,7 @@ exports[`test ill/quicksort:intro 1`] = `
       </div>
       <div
         className="label"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "fontSize": 16,
@@ -4315,10 +4315,10 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
   </div>
   <div
-    data-jsx={1170976834}>
+    data-jsx={4185613797}>
     <div
       className="item"
-      data-jsx={1170976834}
+      data-jsx={4185613797}
       style={
         Object {
           "transform": "
@@ -4330,7 +4330,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="emoji-block"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "#FFD180",
@@ -4341,7 +4341,7 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         <div
           className="glow"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "rgba(255, 255, 255, 0)",
@@ -4349,7 +4349,7 @@ exports[`test ill/quicksort:intro 1`] = `
           } />
         <div
           className="icon"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "height": 78,
@@ -4396,7 +4396,7 @@ exports[`test ill/quicksort:intro 1`] = `
         </div>
         <div
           className="label"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "fontSize": 16,
@@ -4410,7 +4410,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="item"
-      data-jsx={1170976834}
+      data-jsx={4185613797}
       style={
         Object {
           "transform": "
@@ -4422,7 +4422,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="emoji-block"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "#FFD180",
@@ -4433,7 +4433,7 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         <div
           className="glow"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "rgba(255, 255, 255, 0)",
@@ -4441,7 +4441,7 @@ exports[`test ill/quicksort:intro 1`] = `
           } />
         <div
           className="icon"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "height": 78,
@@ -4493,7 +4493,7 @@ exports[`test ill/quicksort:intro 1`] = `
         </div>
         <div
           className="label"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "fontSize": 16,
@@ -4507,7 +4507,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="item"
-      data-jsx={1170976834}
+      data-jsx={4185613797}
       style={
         Object {
           "transform": "
@@ -4519,7 +4519,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="emoji-block"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "#FFD180",
@@ -4530,7 +4530,7 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         <div
           className="glow"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "rgba(255, 255, 255, 0)",
@@ -4538,7 +4538,7 @@ exports[`test ill/quicksort:intro 1`] = `
           } />
         <div
           className="icon"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "height": 78,
@@ -4638,7 +4638,7 @@ exports[`test ill/quicksort:intro 1`] = `
         </div>
         <div
           className="label"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "fontSize": 16,
@@ -4652,7 +4652,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="item"
-      data-jsx={1170976834}
+      data-jsx={4185613797}
       style={
         Object {
           "transform": "
@@ -4664,7 +4664,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="emoji-block"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "#FFD180",
@@ -4675,7 +4675,7 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         <div
           className="glow"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "rgba(255, 255, 255, 0)",
@@ -4683,7 +4683,7 @@ exports[`test ill/quicksort:intro 1`] = `
           } />
         <div
           className="icon"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "height": 78,
@@ -4732,7 +4732,7 @@ exports[`test ill/quicksort:intro 1`] = `
         </div>
         <div
           className="label"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "fontSize": 16,
@@ -4746,7 +4746,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="item"
-      data-jsx={1170976834}
+      data-jsx={4185613797}
       style={
         Object {
           "transform": "
@@ -4758,7 +4758,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="emoji-block"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "#FFD180",
@@ -4769,7 +4769,7 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         <div
           className="glow"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "rgba(255, 255, 255, 0)",
@@ -4777,7 +4777,7 @@ exports[`test ill/quicksort:intro 1`] = `
           } />
         <div
           className="icon"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "height": 78,
@@ -4846,7 +4846,7 @@ exports[`test ill/quicksort:intro 1`] = `
         </div>
         <div
           className="label"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "fontSize": 16,
@@ -4860,7 +4860,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="item"
-      data-jsx={1170976834}
+      data-jsx={4185613797}
       style={
         Object {
           "transform": "
@@ -4872,7 +4872,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <div
         className="emoji-block"
-        data-jsx={2270353202}
+        data-jsx={1836048290}
         style={
           Object {
             "background": "#FFD180",
@@ -4883,7 +4883,7 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         <div
           className="glow"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "rgba(255, 255, 255, 0)",
@@ -4891,7 +4891,7 @@ exports[`test ill/quicksort:intro 1`] = `
           } />
         <div
           className="icon"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "height": 78,
@@ -4935,7 +4935,7 @@ exports[`test ill/quicksort:intro 1`] = `
         </div>
         <div
           className="label"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "fontSize": 16,
@@ -4949,7 +4949,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="intro"
-      data-jsx={4185549712}
+      data-jsx={1818264529}
       style={
         Object {
           "opacity": 1,
@@ -4957,7 +4957,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <h1
         className="title"
-        data-jsx={4185549712}
+        data-jsx={1818264529}
         style={
           Object {
             "fontSize": 46,
@@ -4966,12 +4966,12 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         Place the elements of a list
         <br
-          data-jsx={4185549712} />
+          data-jsx={1818264529} />
          in alphabetical order
       </h1>
       <div
         className="shuffle-btn"
-        data-jsx={4185549712}
+        data-jsx={1818264529}
         onClick={[Function]}
         style={
           Object {
@@ -4981,7 +4981,7 @@ exports[`test ill/quicksort:intro 1`] = `
           }
         }>
         <svg
-          data-jsx={4185549712}
+          data-jsx={1818264529}
           height={38}
           style={
             Object {
@@ -4992,11 +4992,11 @@ exports[`test ill/quicksort:intro 1`] = `
           width={38}>
           <path
             d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-            data-jsx={4185549712} />
+            data-jsx={1818264529} />
         </svg>
         <span
           className="label"
-          data-jsx={4185549712}
+          data-jsx={1818264529}
           style={
             Object {
               "borderWidth": 2,
@@ -5008,7 +5008,7 @@ exports[`test ill/quicksort:intro 1`] = `
       </div>
       <div
         className="start-btn"
-        data-jsx={4185549712}
+        data-jsx={1818264529}
         onClick={[Function]}
         style={
           Object {
@@ -5018,7 +5018,7 @@ exports[`test ill/quicksort:intro 1`] = `
           }
         }>
         <svg
-          data-jsx={4185549712}
+          data-jsx={1818264529}
           height={38}
           style={
             Object {
@@ -5029,11 +5029,11 @@ exports[`test ill/quicksort:intro 1`] = `
           width={38}>
           <path
             d="M8 5v14l11-7z"
-            data-jsx={4185549712} />
+            data-jsx={1818264529} />
         </svg>
         <span
           className="label"
-          data-jsx={4185549712}
+          data-jsx={1818264529}
           style={
             Object {
               "borderWidth": 2,
@@ -5046,7 +5046,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="outro"
-      data-jsx={3229234161}
+      data-jsx={1657905901}
       style={
         Object {
           "opacity": 0,
@@ -5054,7 +5054,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <h1
         className="title"
-        data-jsx={3229234161}
+        data-jsx={1657905901}
         style={
           Object {
             "fontSize": 46,
@@ -5064,13 +5064,13 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         Sorted by name – 
         <em
-          data-jsx={3229234161}>
+          data-jsx={1657905901}>
           phew!
         </em>
       </h1>
       <p
         className="subtext"
-        data-jsx={3229234161}
+        data-jsx={1657905901}
         style={
           Object {
             "fontSize": 34,
@@ -5173,7 +5173,7 @@ exports[`test ill/raw-data:first-frame-wip 1`] = `
 exports[`test ill/shared/emoji-block:blank 1`] = `
 <div
   className="emoji-block"
-  data-jsx={2270353202}
+  data-jsx={1836048290}
   style={
     Object {
       "background": "#FF8A80",
@@ -5184,7 +5184,7 @@ exports[`test ill/shared/emoji-block:blank 1`] = `
   }>
   <div
     className="glow"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "background": "rgba(255, 255, 255, 0)",
@@ -5192,7 +5192,7 @@ exports[`test ill/shared/emoji-block:blank 1`] = `
     } />
   <div
     className="icon"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "height": 78,
@@ -5267,7 +5267,7 @@ exports[`test ill/shared/emoji-block:blank 1`] = `
   </div>
   <div
     className="label"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "fontSize": 18,
@@ -5283,7 +5283,7 @@ exports[`test ill/shared/emoji-block:blank 1`] = `
 exports[`test ill/shared/emoji-block:empty 1`] = `
 <div
   className="emoji-block empty"
-  data-jsx={2270353202}
+  data-jsx={1836048290}
   style={
     Object {
       "background": "#FFD180",
@@ -5294,7 +5294,7 @@ exports[`test ill/shared/emoji-block:empty 1`] = `
   }>
   <div
     className="glow"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "background": "rgba(255, 255, 255, 0)",
@@ -5302,7 +5302,7 @@ exports[`test ill/shared/emoji-block:empty 1`] = `
     } />
   <div
     className="icon"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "height": 78,
@@ -5325,7 +5325,7 @@ exports[`test ill/shared/emoji-block:empty 1`] = `
   </div>
   <div
     className="label"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "fontSize": 16,
@@ -5341,7 +5341,7 @@ exports[`test ill/shared/emoji-block:empty 1`] = `
 exports[`test ill/shared/emoji-block:glow 1`] = `
 <div
   className="emoji-block"
-  data-jsx={2270353202}
+  data-jsx={1836048290}
   style={
     Object {
       "background": "#FF8A80",
@@ -5352,7 +5352,7 @@ exports[`test ill/shared/emoji-block:glow 1`] = `
   }>
   <div
     className="glow"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "background": "rgba(255, 255, 255, 0.8)",
@@ -5360,7 +5360,7 @@ exports[`test ill/shared/emoji-block:glow 1`] = `
     } />
   <div
     className="icon"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "height": 78,
@@ -5435,7 +5435,7 @@ exports[`test ill/shared/emoji-block:glow 1`] = `
   </div>
   <div
     className="label"
-    data-jsx={2270353202}
+    data-jsx={1836048290}
     style={
       Object {
         "fontSize": 18,
@@ -6071,9 +6071,10 @@ exports[`test page:bfs 1`] = `
       className="content"
       data-jsx={3709186718}>
       <div
-        data-jsx={4290871778}>
+        data-jsx={2464810934}>
         <div
-          data-jsx={4290871778}
+          className="stack-entries"
+          data-jsx={2464810934}
           style={
             Object {
               "height": 946,
@@ -6082,7 +6083,8 @@ exports[`test page:bfs 1`] = `
             }
           }>
           <div
-            data-jsx={4290871778}
+            className="stack-entry-outer"
+            data-jsx={2464810934}
             style={
               Object {
                 "height": 946,
@@ -6388,7 +6390,7 @@ exports[`test page:bfs 1`] = `
         </div>
         <div
           className="footer"
-          data-jsx={4290871778}
+          data-jsx={2464810934}
           style={
             Object {
               "backgroundColor": "#80D8FF",
@@ -6552,9 +6554,10 @@ exports[`test page:binary-search 1`] = `
       className="content"
       data-jsx={3709186718}>
       <div
-        data-jsx={4290871778}>
+        data-jsx={2464810934}>
         <div
-          data-jsx={4290871778}
+          className="stack-entries"
+          data-jsx={2464810934}
           style={
             Object {
               "height": 1226,
@@ -6563,7 +6566,8 @@ exports[`test page:binary-search 1`] = `
             }
           }>
           <div
-            data-jsx={4290871778}
+            className="stack-entry-outer"
+            data-jsx={2464810934}
             style={
               Object {
                 "height": 1226,
@@ -6645,7 +6649,7 @@ exports[`test page:binary-search 1`] = `
                         onClick={[Function]}>
                         <div
                           className="emoji-block"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "#FF8A80",
@@ -6656,7 +6660,7 @@ exports[`test page:binary-search 1`] = `
                           }>
                           <div
                             className="glow"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "background": "rgba(255, 255, 255, 0)",
@@ -6664,7 +6668,7 @@ exports[`test page:binary-search 1`] = `
                             } />
                           <div
                             className="icon"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "height": 99,
@@ -6718,7 +6722,7 @@ exports[`test page:binary-search 1`] = `
                           </div>
                           <div
                             className="label"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "fontSize": 24,
@@ -6746,7 +6750,7 @@ exports[`test page:binary-search 1`] = `
                         onClick={[Function]}>
                         <div
                           className="emoji-block"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "#FF8A80",
@@ -6757,7 +6761,7 @@ exports[`test page:binary-search 1`] = `
                           }>
                           <div
                             className="glow"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "background": "rgba(255, 255, 255, 0)",
@@ -6765,7 +6769,7 @@ exports[`test page:binary-search 1`] = `
                             } />
                           <div
                             className="icon"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "height": 99,
@@ -6834,7 +6838,7 @@ exports[`test page:binary-search 1`] = `
                           </div>
                           <div
                             className="label"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "fontSize": 24,
@@ -6862,7 +6866,7 @@ exports[`test page:binary-search 1`] = `
                         onClick={[Function]}>
                         <div
                           className="emoji-block"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "#FF8A80",
@@ -6873,7 +6877,7 @@ exports[`test page:binary-search 1`] = `
                           }>
                           <div
                             className="glow"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "background": "rgba(255, 255, 255, 0)",
@@ -6881,7 +6885,7 @@ exports[`test page:binary-search 1`] = `
                             } />
                           <div
                             className="icon"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "height": 99,
@@ -6960,7 +6964,7 @@ exports[`test page:binary-search 1`] = `
                           </div>
                           <div
                             className="label"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "fontSize": 24,
@@ -6988,7 +6992,7 @@ exports[`test page:binary-search 1`] = `
                         onClick={[Function]}>
                         <div
                           className="emoji-block"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "#FF8A80",
@@ -6999,7 +7003,7 @@ exports[`test page:binary-search 1`] = `
                           }>
                           <div
                             className="glow"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "background": "rgba(255, 255, 255, 0)",
@@ -7007,7 +7011,7 @@ exports[`test page:binary-search 1`] = `
                             } />
                           <div
                             className="icon"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "height": 99,
@@ -7070,7 +7074,7 @@ exports[`test page:binary-search 1`] = `
                           </div>
                           <div
                             className="label"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "fontSize": 24,
@@ -7098,7 +7102,7 @@ exports[`test page:binary-search 1`] = `
                         onClick={[Function]}>
                         <div
                           className="emoji-block"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "#FF8A80",
@@ -7109,7 +7113,7 @@ exports[`test page:binary-search 1`] = `
                           }>
                           <div
                             className="glow"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "background": "rgba(255, 255, 255, 0)",
@@ -7117,7 +7121,7 @@ exports[`test page:binary-search 1`] = `
                             } />
                           <div
                             className="icon"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "height": 99,
@@ -7192,7 +7196,7 @@ exports[`test page:binary-search 1`] = `
                           </div>
                           <div
                             className="label"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "fontSize": 24,
@@ -7220,7 +7224,7 @@ exports[`test page:binary-search 1`] = `
                         onClick={[Function]}>
                         <div
                           className="emoji-block"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "#FF8A80",
@@ -7231,7 +7235,7 @@ exports[`test page:binary-search 1`] = `
                           }>
                           <div
                             className="glow"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "background": "rgba(255, 255, 255, 0)",
@@ -7239,7 +7243,7 @@ exports[`test page:binary-search 1`] = `
                             } />
                           <div
                             className="icon"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "height": 99,
@@ -7323,7 +7327,7 @@ exports[`test page:binary-search 1`] = `
                           </div>
                           <div
                             className="label"
-                            data-jsx={2270353202}
+                            data-jsx={1836048290}
                             style={
                               Object {
                                 "fontSize": 24,
@@ -7649,9 +7653,10 @@ exports[`test page:quicksort 1`] = `
       className="content"
       data-jsx={3709186718}>
       <div
-        data-jsx={4290871778}>
+        data-jsx={2464810934}>
         <div
-          data-jsx={4290871778}
+          className="stack-entries"
+          data-jsx={2464810934}
           style={
             Object {
               "height": 862,
@@ -7660,7 +7665,8 @@ exports[`test page:quicksort 1`] = `
             }
           }>
           <div
-            data-jsx={4290871778}
+            className="stack-entry-outer"
+            data-jsx={2464810934}
             style={
               Object {
                 "height": 862,
@@ -7680,7 +7686,7 @@ exports[`test page:quicksort 1`] = `
                 }>
                 <div
                   className="quicksort"
-                  data-jsx={1170976834}
+                  data-jsx={4185613797}
                   style={
                     Object {
                       "height": 422,
@@ -7689,7 +7695,7 @@ exports[`test page:quicksort 1`] = `
                   }>
                   <div
                     className="pivot"
-                    data-jsx={1170976834}
+                    data-jsx={4185613797}
                     style={
                       Object {
                         "opacity": 0,
@@ -7724,7 +7730,7 @@ exports[`test page:quicksort 1`] = `
                   </div>
                   <div
                     className="less"
-                    data-jsx={1170976834}
+                    data-jsx={4185613797}
                     style={
                       Object {
                         "opacity": 0,
@@ -7759,7 +7765,7 @@ exports[`test page:quicksort 1`] = `
                   </div>
                   <div
                     className="greater"
-                    data-jsx={1170976834}
+                    data-jsx={4185613797}
                     style={
                       Object {
                         "opacity": 0,
@@ -7794,7 +7800,7 @@ exports[`test page:quicksort 1`] = `
                   </div>
                   <div
                     className="less-empty"
-                    data-jsx={1170976834}
+                    data-jsx={4185613797}
                     style={
                       Object {
                         "opacity": 0,
@@ -7807,7 +7813,7 @@ exports[`test page:quicksort 1`] = `
                     }>
                     <div
                       className="emoji-block empty"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "#FFD180",
@@ -7818,7 +7824,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="glow"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "rgba(255, 255, 255, 0)",
@@ -7826,7 +7832,7 @@ exports[`test page:quicksort 1`] = `
                         } />
                       <div
                         className="icon"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "height": 99,
@@ -7849,7 +7855,7 @@ exports[`test page:quicksort 1`] = `
                       </div>
                       <div
                         className="label"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "fontSize": 20,
@@ -7863,7 +7869,7 @@ exports[`test page:quicksort 1`] = `
                   </div>
                   <div
                     className="greater-empty"
-                    data-jsx={1170976834}
+                    data-jsx={4185613797}
                     style={
                       Object {
                         "opacity": 0,
@@ -7876,7 +7882,7 @@ exports[`test page:quicksort 1`] = `
                     }>
                     <div
                       className="emoji-block empty"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "#FFD180",
@@ -7887,7 +7893,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="glow"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "rgba(255, 255, 255, 0)",
@@ -7895,7 +7901,7 @@ exports[`test page:quicksort 1`] = `
                         } />
                       <div
                         className="icon"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "height": 99,
@@ -7918,7 +7924,7 @@ exports[`test page:quicksort 1`] = `
                       </div>
                       <div
                         className="label"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "fontSize": 20,
@@ -7932,7 +7938,7 @@ exports[`test page:quicksort 1`] = `
                   </div>
                   <div
                     className="list-empty"
-                    data-jsx={1170976834}
+                    data-jsx={4185613797}
                     style={
                       Object {
                         "opacity": 0,
@@ -7944,7 +7950,7 @@ exports[`test page:quicksort 1`] = `
                     }>
                     <div
                       className="emoji-block empty"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "#FFD180",
@@ -7955,7 +7961,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="glow"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "rgba(255, 255, 255, 0)",
@@ -7963,7 +7969,7 @@ exports[`test page:quicksort 1`] = `
                         } />
                       <div
                         className="icon"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "height": 99,
@@ -7986,7 +7992,7 @@ exports[`test page:quicksort 1`] = `
                       </div>
                       <div
                         className="label"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "fontSize": 20,
@@ -7999,10 +8005,10 @@ exports[`test page:quicksort 1`] = `
                     </div>
                   </div>
                   <div
-                    data-jsx={1170976834}>
+                    data-jsx={4185613797}>
                     <div
                       className="item"
-                      data-jsx={1170976834}
+                      data-jsx={4185613797}
                       style={
                         Object {
                           "transform": "
@@ -8014,7 +8020,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="emoji-block"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "#FFD180",
@@ -8025,7 +8031,7 @@ exports[`test page:quicksort 1`] = `
                         }>
                         <div
                           className="glow"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "rgba(255, 255, 255, 0)",
@@ -8033,7 +8039,7 @@ exports[`test page:quicksort 1`] = `
                           } />
                         <div
                           className="icon"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "height": 99,
@@ -8080,7 +8086,7 @@ exports[`test page:quicksort 1`] = `
                         </div>
                         <div
                           className="label"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "fontSize": 20,
@@ -8094,7 +8100,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="item"
-                      data-jsx={1170976834}
+                      data-jsx={4185613797}
                       style={
                         Object {
                           "transform": "
@@ -8106,7 +8112,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="emoji-block"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "#FFD180",
@@ -8117,7 +8123,7 @@ exports[`test page:quicksort 1`] = `
                         }>
                         <div
                           className="glow"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "rgba(255, 255, 255, 0)",
@@ -8125,7 +8131,7 @@ exports[`test page:quicksort 1`] = `
                           } />
                         <div
                           className="icon"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "height": 99,
@@ -8177,7 +8183,7 @@ exports[`test page:quicksort 1`] = `
                         </div>
                         <div
                           className="label"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "fontSize": 20,
@@ -8191,7 +8197,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="item"
-                      data-jsx={1170976834}
+                      data-jsx={4185613797}
                       style={
                         Object {
                           "transform": "
@@ -8203,7 +8209,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="emoji-block"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "#FFD180",
@@ -8214,7 +8220,7 @@ exports[`test page:quicksort 1`] = `
                         }>
                         <div
                           className="glow"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "rgba(255, 255, 255, 0)",
@@ -8222,7 +8228,7 @@ exports[`test page:quicksort 1`] = `
                           } />
                         <div
                           className="icon"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "height": 99,
@@ -8322,7 +8328,7 @@ exports[`test page:quicksort 1`] = `
                         </div>
                         <div
                           className="label"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "fontSize": 20,
@@ -8336,7 +8342,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="item"
-                      data-jsx={1170976834}
+                      data-jsx={4185613797}
                       style={
                         Object {
                           "transform": "
@@ -8348,7 +8354,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="emoji-block"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "#FFD180",
@@ -8359,7 +8365,7 @@ exports[`test page:quicksort 1`] = `
                         }>
                         <div
                           className="glow"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "rgba(255, 255, 255, 0)",
@@ -8367,7 +8373,7 @@ exports[`test page:quicksort 1`] = `
                           } />
                         <div
                           className="icon"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "height": 99,
@@ -8416,7 +8422,7 @@ exports[`test page:quicksort 1`] = `
                         </div>
                         <div
                           className="label"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "fontSize": 20,
@@ -8430,7 +8436,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="item"
-                      data-jsx={1170976834}
+                      data-jsx={4185613797}
                       style={
                         Object {
                           "transform": "
@@ -8442,7 +8448,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="emoji-block"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "#FFD180",
@@ -8453,7 +8459,7 @@ exports[`test page:quicksort 1`] = `
                         }>
                         <div
                           className="glow"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "rgba(255, 255, 255, 0)",
@@ -8461,7 +8467,7 @@ exports[`test page:quicksort 1`] = `
                           } />
                         <div
                           className="icon"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "height": 99,
@@ -8530,7 +8536,7 @@ exports[`test page:quicksort 1`] = `
                         </div>
                         <div
                           className="label"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "fontSize": 20,
@@ -8544,7 +8550,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="item"
-                      data-jsx={1170976834}
+                      data-jsx={4185613797}
                       style={
                         Object {
                           "transform": "
@@ -8556,7 +8562,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <div
                         className="emoji-block"
-                        data-jsx={2270353202}
+                        data-jsx={1836048290}
                         style={
                           Object {
                             "background": "#FFD180",
@@ -8567,7 +8573,7 @@ exports[`test page:quicksort 1`] = `
                         }>
                         <div
                           className="glow"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "background": "rgba(255, 255, 255, 0)",
@@ -8575,7 +8581,7 @@ exports[`test page:quicksort 1`] = `
                           } />
                         <div
                           className="icon"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "height": 99,
@@ -8619,7 +8625,7 @@ exports[`test page:quicksort 1`] = `
                         </div>
                         <div
                           className="label"
-                          data-jsx={2270353202}
+                          data-jsx={1836048290}
                           style={
                             Object {
                               "fontSize": 20,
@@ -8633,7 +8639,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="intro"
-                      data-jsx={4185549712}
+                      data-jsx={1818264529}
                       style={
                         Object {
                           "opacity": 0,
@@ -8641,7 +8647,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <h1
                         className="title"
-                        data-jsx={4185549712}
+                        data-jsx={1818264529}
                         style={
                           Object {
                             "fontSize": 58,
@@ -8650,12 +8656,12 @@ exports[`test page:quicksort 1`] = `
                         }>
                         Place the elements of a list
                         <br
-                          data-jsx={4185549712} />
+                          data-jsx={1818264529} />
                          in alphabetical order
                       </h1>
                       <div
                         className="shuffle-btn"
-                        data-jsx={4185549712}
+                        data-jsx={1818264529}
                         onClick={[Function]}
                         style={
                           Object {
@@ -8665,7 +8671,7 @@ exports[`test page:quicksort 1`] = `
                           }
                         }>
                         <svg
-                          data-jsx={4185549712}
+                          data-jsx={1818264529}
                           height={48}
                           style={
                             Object {
@@ -8676,11 +8682,11 @@ exports[`test page:quicksort 1`] = `
                           width={48}>
                           <path
                             d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-                            data-jsx={4185549712} />
+                            data-jsx={1818264529} />
                         </svg>
                         <span
                           className="label"
-                          data-jsx={4185549712}
+                          data-jsx={1818264529}
                           style={
                             Object {
                               "borderWidth": 2,
@@ -8692,7 +8698,7 @@ exports[`test page:quicksort 1`] = `
                       </div>
                       <div
                         className="start-btn"
-                        data-jsx={4185549712}
+                        data-jsx={1818264529}
                         onClick={[Function]}
                         style={
                           Object {
@@ -8702,7 +8708,7 @@ exports[`test page:quicksort 1`] = `
                           }
                         }>
                         <svg
-                          data-jsx={4185549712}
+                          data-jsx={1818264529}
                           height={48}
                           style={
                             Object {
@@ -8713,11 +8719,11 @@ exports[`test page:quicksort 1`] = `
                           width={48}>
                           <path
                             d="M8 5v14l11-7z"
-                            data-jsx={4185549712} />
+                            data-jsx={1818264529} />
                         </svg>
                         <span
                           className="label"
-                          data-jsx={4185549712}
+                          data-jsx={1818264529}
                           style={
                             Object {
                               "borderWidth": 2,
@@ -8730,7 +8736,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="outro"
-                      data-jsx={3229234161}
+                      data-jsx={1657905901}
                       style={
                         Object {
                           "opacity": 0,
@@ -8738,7 +8744,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <h1
                         className="title"
-                        data-jsx={3229234161}
+                        data-jsx={1657905901}
                         style={
                           Object {
                             "fontSize": 58,
@@ -8748,13 +8754,13 @@ exports[`test page:quicksort 1`] = `
                         }>
                         Sorted by name – 
                         <em
-                          data-jsx={3229234161}>
+                          data-jsx={1657905901}>
                           phew!
                         </em>
                       </h1>
                       <p
                         className="subtext"
-                        data-jsx={3229234161}
+                        data-jsx={1657905901}
                         style={
                           Object {
                             "fontSize": 44,
@@ -8939,7 +8945,7 @@ exports[`test page:quicksort 1`] = `
         </div>
         <div
           className="footer"
-          data-jsx={4290871778}
+          data-jsx={2464810934}
           style={
             Object {
               "backgroundColor": "#FFD180",
@@ -9184,9 +9190,10 @@ exports[`test playback-controls:stopped 1`] = `
 
 exports[`test player:binary-search 1`] = `
 <div
-  data-jsx={4290871778}>
+  data-jsx={2464810934}>
   <div
-    data-jsx={4290871778}
+    className="stack-entries"
+    data-jsx={2464810934}
     style={
       Object {
         "height": 510,
@@ -9195,7 +9202,8 @@ exports[`test player:binary-search 1`] = `
       }
     }>
     <div
-      data-jsx={4290871778}
+      className="stack-entry-outer"
+      data-jsx={2464810934}
       style={
         Object {
           "height": 510,
@@ -9280,7 +9288,7 @@ exports[`test player:binary-search 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -9291,7 +9299,7 @@ exports[`test player:binary-search 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -9299,7 +9307,7 @@ exports[`test player:binary-search 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -9353,7 +9361,7 @@ exports[`test player:binary-search 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -9381,7 +9389,7 @@ exports[`test player:binary-search 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -9392,7 +9400,7 @@ exports[`test player:binary-search 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -9400,7 +9408,7 @@ exports[`test player:binary-search 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -9469,7 +9477,7 @@ exports[`test player:binary-search 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -9497,7 +9505,7 @@ exports[`test player:binary-search 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -9508,7 +9516,7 @@ exports[`test player:binary-search 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -9516,7 +9524,7 @@ exports[`test player:binary-search 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -9595,7 +9603,7 @@ exports[`test player:binary-search 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -9623,7 +9631,7 @@ exports[`test player:binary-search 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -9634,7 +9642,7 @@ exports[`test player:binary-search 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -9642,7 +9650,7 @@ exports[`test player:binary-search 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -9705,7 +9713,7 @@ exports[`test player:binary-search 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -9733,7 +9741,7 @@ exports[`test player:binary-search 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -9744,7 +9752,7 @@ exports[`test player:binary-search 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -9752,7 +9760,7 @@ exports[`test player:binary-search 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -9827,7 +9835,7 @@ exports[`test player:binary-search 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -9855,7 +9863,7 @@ exports[`test player:binary-search 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -9866,7 +9874,7 @@ exports[`test player:binary-search 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -9874,7 +9882,7 @@ exports[`test player:binary-search 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -9958,7 +9966,7 @@ exports[`test player:binary-search 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -10191,9 +10199,10 @@ exports[`test player:binary-search 1`] = `
 
 exports[`test player:binary-search-mid-way 1`] = `
 <div
-  data-jsx={4290871778}>
+  data-jsx={2464810934}>
   <div
-    data-jsx={4290871778}
+    className="stack-entries"
+    data-jsx={2464810934}
     style={
       Object {
         "height": 510,
@@ -10202,7 +10211,8 @@ exports[`test player:binary-search-mid-way 1`] = `
       }
     }>
     <div
-      data-jsx={4290871778}
+      className="stack-entry-outer"
+      data-jsx={2464810934}
       style={
         Object {
           "height": 510,
@@ -10276,7 +10286,7 @@ exports[`test player:binary-search-mid-way 1`] = `
               }>
               <div
                 className="emoji-block"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "#FF8A80",
@@ -10287,7 +10297,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                 }>
                 <div
                   className="glow"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "rgba(255, 255, 255, 0.4)",
@@ -10295,7 +10305,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   } />
                 <div
                   className="icon"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "height": 78,
@@ -10374,7 +10384,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                 </div>
                 <div
                   className="label"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "fontSize": 18,
@@ -10549,7 +10559,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -10560,7 +10570,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -10568,7 +10578,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -10622,7 +10632,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -10650,7 +10660,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -10661,7 +10671,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -10669,7 +10679,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -10738,7 +10748,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -10766,7 +10776,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -10777,7 +10787,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -10785,7 +10795,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -10864,7 +10874,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -10892,7 +10902,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -10903,7 +10913,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0.4)",
@@ -10911,7 +10921,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -10974,7 +10984,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -11002,7 +11012,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -11013,7 +11023,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -11021,7 +11031,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -11096,7 +11106,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -11124,7 +11134,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   onClick={[Function]}>
                   <div
                     className="emoji-block"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "#FF8A80",
@@ -11135,7 +11145,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     }>
                     <div
                       className="glow"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "background": "rgba(255, 255, 255, 0)",
@@ -11143,7 +11153,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                       } />
                     <div
                       className="icon"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "height": 78,
@@ -11227,7 +11237,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     </div>
                     <div
                       className="label"
-                      data-jsx={2270353202}
+                      data-jsx={1836048290}
                       style={
                         Object {
                           "fontSize": 18,
@@ -11474,7 +11484,7 @@ exports[`test player:binary-search-mid-way 1`] = `
   </div>
   <div
     className="footer"
-    data-jsx={4290871778}
+    data-jsx={2464810934}
     style={
       Object {
         "backgroundColor": "#FF8A80",
@@ -11542,9 +11552,10 @@ exports[`test player:binary-search-mid-way 1`] = `
 
 exports[`test player:quicksort 1`] = `
 <div
-  data-jsx={4290871778}>
+  data-jsx={2464810934}>
   <div
-    data-jsx={4290871778}
+    className="stack-entries"
+    data-jsx={2464810934}
     style={
       Object {
         "height": 346,
@@ -11553,7 +11564,8 @@ exports[`test player:quicksort 1`] = `
       }
     }>
     <div
-      data-jsx={4290871778}
+      className="stack-entry-outer"
+      data-jsx={2464810934}
       style={
         Object {
           "height": 346,
@@ -11576,7 +11588,7 @@ exports[`test player:quicksort 1`] = `
           }>
           <div
             className="quicksort"
-            data-jsx={1170976834}
+            data-jsx={4185613797}
             style={
               Object {
                 "height": 332,
@@ -11585,7 +11597,7 @@ exports[`test player:quicksort 1`] = `
             }>
             <div
               className="pivot"
-              data-jsx={1170976834}
+              data-jsx={4185613797}
               style={
                 Object {
                   "opacity": 0,
@@ -11620,7 +11632,7 @@ exports[`test player:quicksort 1`] = `
             </div>
             <div
               className="less"
-              data-jsx={1170976834}
+              data-jsx={4185613797}
               style={
                 Object {
                   "opacity": 0,
@@ -11655,7 +11667,7 @@ exports[`test player:quicksort 1`] = `
             </div>
             <div
               className="greater"
-              data-jsx={1170976834}
+              data-jsx={4185613797}
               style={
                 Object {
                   "opacity": 0,
@@ -11690,7 +11702,7 @@ exports[`test player:quicksort 1`] = `
             </div>
             <div
               className="less-empty"
-              data-jsx={1170976834}
+              data-jsx={4185613797}
               style={
                 Object {
                   "opacity": 0,
@@ -11703,7 +11715,7 @@ exports[`test player:quicksort 1`] = `
               }>
               <div
                 className="emoji-block empty"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "#FFD180",
@@ -11714,7 +11726,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="glow"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "rgba(255, 255, 255, 0)",
@@ -11722,7 +11734,7 @@ exports[`test player:quicksort 1`] = `
                   } />
                 <div
                   className="icon"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "height": 78,
@@ -11745,7 +11757,7 @@ exports[`test player:quicksort 1`] = `
                 </div>
                 <div
                   className="label"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "fontSize": 16,
@@ -11759,7 +11771,7 @@ exports[`test player:quicksort 1`] = `
             </div>
             <div
               className="greater-empty"
-              data-jsx={1170976834}
+              data-jsx={4185613797}
               style={
                 Object {
                   "opacity": 0,
@@ -11772,7 +11784,7 @@ exports[`test player:quicksort 1`] = `
               }>
               <div
                 className="emoji-block empty"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "#FFD180",
@@ -11783,7 +11795,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="glow"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "rgba(255, 255, 255, 0)",
@@ -11791,7 +11803,7 @@ exports[`test player:quicksort 1`] = `
                   } />
                 <div
                   className="icon"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "height": 78,
@@ -11814,7 +11826,7 @@ exports[`test player:quicksort 1`] = `
                 </div>
                 <div
                   className="label"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "fontSize": 16,
@@ -11828,7 +11840,7 @@ exports[`test player:quicksort 1`] = `
             </div>
             <div
               className="list-empty"
-              data-jsx={1170976834}
+              data-jsx={4185613797}
               style={
                 Object {
                   "opacity": 0,
@@ -11840,7 +11852,7 @@ exports[`test player:quicksort 1`] = `
               }>
               <div
                 className="emoji-block empty"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "#FFD180",
@@ -11851,7 +11863,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="glow"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "rgba(255, 255, 255, 0)",
@@ -11859,7 +11871,7 @@ exports[`test player:quicksort 1`] = `
                   } />
                 <div
                   className="icon"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "height": 78,
@@ -11882,7 +11894,7 @@ exports[`test player:quicksort 1`] = `
                 </div>
                 <div
                   className="label"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "fontSize": 16,
@@ -11895,10 +11907,10 @@ exports[`test player:quicksort 1`] = `
               </div>
             </div>
             <div
-              data-jsx={1170976834}>
+              data-jsx={4185613797}>
               <div
                 className="item"
-                data-jsx={1170976834}
+                data-jsx={4185613797}
                 style={
                   Object {
                     "transform": "
@@ -11910,7 +11922,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="emoji-block"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "#FFD180",
@@ -11921,7 +11933,7 @@ exports[`test player:quicksort 1`] = `
                   }>
                   <div
                     className="glow"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "rgba(255, 255, 255, 0)",
@@ -11929,7 +11941,7 @@ exports[`test player:quicksort 1`] = `
                     } />
                   <div
                     className="icon"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "height": 78,
@@ -11976,7 +11988,7 @@ exports[`test player:quicksort 1`] = `
                   </div>
                   <div
                     className="label"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "fontSize": 16,
@@ -11990,7 +12002,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="item"
-                data-jsx={1170976834}
+                data-jsx={4185613797}
                 style={
                   Object {
                     "transform": "
@@ -12002,7 +12014,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="emoji-block"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "#FFD180",
@@ -12013,7 +12025,7 @@ exports[`test player:quicksort 1`] = `
                   }>
                   <div
                     className="glow"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "rgba(255, 255, 255, 0)",
@@ -12021,7 +12033,7 @@ exports[`test player:quicksort 1`] = `
                     } />
                   <div
                     className="icon"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "height": 78,
@@ -12073,7 +12085,7 @@ exports[`test player:quicksort 1`] = `
                   </div>
                   <div
                     className="label"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "fontSize": 16,
@@ -12087,7 +12099,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="item"
-                data-jsx={1170976834}
+                data-jsx={4185613797}
                 style={
                   Object {
                     "transform": "
@@ -12099,7 +12111,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="emoji-block"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "#FFD180",
@@ -12110,7 +12122,7 @@ exports[`test player:quicksort 1`] = `
                   }>
                   <div
                     className="glow"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "rgba(255, 255, 255, 0)",
@@ -12118,7 +12130,7 @@ exports[`test player:quicksort 1`] = `
                     } />
                   <div
                     className="icon"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "height": 78,
@@ -12218,7 +12230,7 @@ exports[`test player:quicksort 1`] = `
                   </div>
                   <div
                     className="label"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "fontSize": 16,
@@ -12232,7 +12244,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="item"
-                data-jsx={1170976834}
+                data-jsx={4185613797}
                 style={
                   Object {
                     "transform": "
@@ -12244,7 +12256,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="emoji-block"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "#FFD180",
@@ -12255,7 +12267,7 @@ exports[`test player:quicksort 1`] = `
                   }>
                   <div
                     className="glow"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "rgba(255, 255, 255, 0)",
@@ -12263,7 +12275,7 @@ exports[`test player:quicksort 1`] = `
                     } />
                   <div
                     className="icon"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "height": 78,
@@ -12312,7 +12324,7 @@ exports[`test player:quicksort 1`] = `
                   </div>
                   <div
                     className="label"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "fontSize": 16,
@@ -12326,7 +12338,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="item"
-                data-jsx={1170976834}
+                data-jsx={4185613797}
                 style={
                   Object {
                     "transform": "
@@ -12338,7 +12350,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="emoji-block"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "#FFD180",
@@ -12349,7 +12361,7 @@ exports[`test player:quicksort 1`] = `
                   }>
                   <div
                     className="glow"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "rgba(255, 255, 255, 0)",
@@ -12357,7 +12369,7 @@ exports[`test player:quicksort 1`] = `
                     } />
                   <div
                     className="icon"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "height": 78,
@@ -12426,7 +12438,7 @@ exports[`test player:quicksort 1`] = `
                   </div>
                   <div
                     className="label"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "fontSize": 16,
@@ -12440,7 +12452,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="item"
-                data-jsx={1170976834}
+                data-jsx={4185613797}
                 style={
                   Object {
                     "transform": "
@@ -12452,7 +12464,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <div
                   className="emoji-block"
-                  data-jsx={2270353202}
+                  data-jsx={1836048290}
                   style={
                     Object {
                       "background": "#FFD180",
@@ -12463,7 +12475,7 @@ exports[`test player:quicksort 1`] = `
                   }>
                   <div
                     className="glow"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "background": "rgba(255, 255, 255, 0)",
@@ -12471,7 +12483,7 @@ exports[`test player:quicksort 1`] = `
                     } />
                   <div
                     className="icon"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "height": 78,
@@ -12515,7 +12527,7 @@ exports[`test player:quicksort 1`] = `
                   </div>
                   <div
                     className="label"
-                    data-jsx={2270353202}
+                    data-jsx={1836048290}
                     style={
                       Object {
                         "fontSize": 16,
@@ -12529,7 +12541,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="intro"
-                data-jsx={4185549712}
+                data-jsx={1818264529}
                 style={
                   Object {
                     "opacity": 1,
@@ -12537,7 +12549,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <h1
                   className="title"
-                  data-jsx={4185549712}
+                  data-jsx={1818264529}
                   style={
                     Object {
                       "fontSize": 46,
@@ -12546,12 +12558,12 @@ exports[`test player:quicksort 1`] = `
                   }>
                   Place the elements of a list
                   <br
-                    data-jsx={4185549712} />
+                    data-jsx={1818264529} />
                    in alphabetical order
                 </h1>
                 <div
                   className="shuffle-btn"
-                  data-jsx={4185549712}
+                  data-jsx={1818264529}
                   onClick={[Function]}
                   style={
                     Object {
@@ -12561,7 +12573,7 @@ exports[`test player:quicksort 1`] = `
                     }
                   }>
                   <svg
-                    data-jsx={4185549712}
+                    data-jsx={1818264529}
                     height={38}
                     style={
                       Object {
@@ -12572,11 +12584,11 @@ exports[`test player:quicksort 1`] = `
                     width={38}>
                     <path
                       d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-                      data-jsx={4185549712} />
+                      data-jsx={1818264529} />
                   </svg>
                   <span
                     className="label"
-                    data-jsx={4185549712}
+                    data-jsx={1818264529}
                     style={
                       Object {
                         "borderWidth": 2,
@@ -12588,7 +12600,7 @@ exports[`test player:quicksort 1`] = `
                 </div>
                 <div
                   className="start-btn"
-                  data-jsx={4185549712}
+                  data-jsx={1818264529}
                   onClick={[Function]}
                   style={
                     Object {
@@ -12598,7 +12610,7 @@ exports[`test player:quicksort 1`] = `
                     }
                   }>
                   <svg
-                    data-jsx={4185549712}
+                    data-jsx={1818264529}
                     height={38}
                     style={
                       Object {
@@ -12609,11 +12621,11 @@ exports[`test player:quicksort 1`] = `
                     width={38}>
                     <path
                       d="M8 5v14l11-7z"
-                      data-jsx={4185549712} />
+                      data-jsx={1818264529} />
                   </svg>
                   <span
                     className="label"
-                    data-jsx={4185549712}
+                    data-jsx={1818264529}
                     style={
                       Object {
                         "borderWidth": 2,
@@ -12626,7 +12638,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="outro"
-                data-jsx={3229234161}
+                data-jsx={1657905901}
                 style={
                   Object {
                     "opacity": 0,
@@ -12634,7 +12646,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <h1
                   className="title"
-                  data-jsx={3229234161}
+                  data-jsx={1657905901}
                   style={
                     Object {
                       "fontSize": 46,
@@ -12644,13 +12656,13 @@ exports[`test player:quicksort 1`] = `
                   }>
                   Sorted by name – 
                   <em
-                    data-jsx={3229234161}>
+                    data-jsx={1657905901}>
                     phew!
                   </em>
                 </h1>
                 <p
                   className="subtext"
-                  data-jsx={3229234161}
+                  data-jsx={1657905901}
                   style={
                     Object {
                       "fontSize": 34,
@@ -12838,7 +12850,7 @@ exports[`test player:quicksort 1`] = `
   </div>
   <div
     className="footer"
-    data-jsx={4290871778}
+    data-jsx={2464810934}
     style={
       Object {
         "backgroundColor": "#FFD180",
@@ -13473,7 +13485,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         }>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -13484,7 +13496,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -13492,7 +13504,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -13567,7 +13579,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -13602,7 +13614,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -13613,7 +13625,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -13621,7 +13633,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -13675,7 +13687,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -13703,7 +13715,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -13714,7 +13726,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -13722,7 +13734,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -13791,7 +13803,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -13819,7 +13831,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -13830,7 +13842,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -13838,7 +13850,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -13917,7 +13929,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -13945,7 +13957,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -13956,7 +13968,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -13964,7 +13976,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -14027,7 +14039,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -14055,7 +14067,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -14066,7 +14078,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -14074,7 +14086,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -14149,7 +14161,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -14177,7 +14189,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -14188,7 +14200,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -14196,7 +14208,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -14280,7 +14292,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -14593,7 +14605,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         }>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -14604,7 +14616,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -14612,7 +14624,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -14681,7 +14693,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -14856,7 +14868,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -14867,7 +14879,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -14875,7 +14887,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -14929,7 +14941,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -14957,7 +14969,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -14968,7 +14980,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0.4)",
@@ -14976,7 +14988,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -15045,7 +15057,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -15073,7 +15085,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -15084,7 +15096,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -15092,7 +15104,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -15171,7 +15183,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -15199,7 +15211,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -15210,7 +15222,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -15218,7 +15230,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -15281,7 +15293,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -15309,7 +15321,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -15320,7 +15332,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -15328,7 +15340,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -15403,7 +15415,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -15431,7 +15443,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -15442,7 +15454,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -15450,7 +15462,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -15534,7 +15546,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -15847,7 +15859,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         }>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -15858,7 +15870,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -15866,7 +15878,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -15941,7 +15953,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -16023,7 +16035,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -16034,7 +16046,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -16042,7 +16054,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -16096,7 +16108,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -16124,7 +16136,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -16135,7 +16147,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -16143,7 +16155,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -16212,7 +16224,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -16240,7 +16252,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -16251,7 +16263,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -16259,7 +16271,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -16338,7 +16350,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -16366,7 +16378,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -16377,7 +16389,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -16385,7 +16397,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -16448,7 +16460,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -16476,7 +16488,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -16487,7 +16499,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -16495,7 +16507,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -16570,7 +16582,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -16598,7 +16610,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -16609,7 +16621,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -16617,7 +16629,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -16701,7 +16713,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -17014,7 +17026,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         }>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -17025,7 +17037,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -17033,7 +17045,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -17108,7 +17120,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -17143,7 +17155,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -17154,7 +17166,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -17162,7 +17174,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -17216,7 +17228,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -17244,7 +17256,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -17255,7 +17267,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -17263,7 +17275,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -17332,7 +17344,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -17360,7 +17372,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -17371,7 +17383,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -17379,7 +17391,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -17458,7 +17470,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -17486,7 +17498,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -17497,7 +17509,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -17505,7 +17517,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -17568,7 +17580,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -17596,7 +17608,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -17607,7 +17619,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -17615,7 +17627,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -17690,7 +17702,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -17718,7 +17730,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -17729,7 +17741,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -17737,7 +17749,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -17821,7 +17833,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -18117,7 +18129,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         }>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -18128,7 +18140,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -18136,7 +18148,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -18205,7 +18217,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -18380,7 +18392,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -18391,7 +18403,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -18399,7 +18411,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -18453,7 +18465,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -18481,7 +18493,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -18492,7 +18504,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0.4)",
@@ -18500,7 +18512,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -18569,7 +18581,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -18597,7 +18609,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -18608,7 +18620,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -18616,7 +18628,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -18695,7 +18707,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -18723,7 +18735,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -18734,7 +18746,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -18742,7 +18754,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -18805,7 +18817,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -18833,7 +18845,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -18844,7 +18856,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -18852,7 +18864,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -18927,7 +18939,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -18955,7 +18967,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -18966,7 +18978,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -18974,7 +18986,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -19058,7 +19070,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -19371,7 +19383,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         }>
         <div
           className="emoji-block"
-          data-jsx={2270353202}
+          data-jsx={1836048290}
           style={
             Object {
               "background": "#FF8A80",
@@ -19382,7 +19394,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
           }>
           <div
             className="glow"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "background": "rgba(255, 255, 255, 0.4)",
@@ -19390,7 +19402,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
             } />
           <div
             className="icon"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "height": 78,
@@ -19459,7 +19471,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
           </div>
           <div
             className="label"
-            data-jsx={2270353202}
+            data-jsx={1836048290}
             style={
               Object {
                 "fontSize": 18,
@@ -19634,7 +19646,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -19645,7 +19657,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -19653,7 +19665,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -19707,7 +19719,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -19735,7 +19747,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -19746,7 +19758,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0.4)",
@@ -19754,7 +19766,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -19823,7 +19835,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -19851,7 +19863,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -19862,7 +19874,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -19870,7 +19882,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -19949,7 +19961,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -19977,7 +19989,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -19988,7 +20000,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -19996,7 +20008,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -20059,7 +20071,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -20087,7 +20099,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -20098,7 +20110,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -20106,7 +20118,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -20181,7 +20193,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
@@ -20209,7 +20221,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
             onClick={[Function]}>
             <div
               className="emoji-block"
-              data-jsx={2270353202}
+              data-jsx={1836048290}
               style={
                 Object {
                   "background": "#FF8A80",
@@ -20220,7 +20232,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               }>
               <div
                 className="glow"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "background": "rgba(255, 255, 255, 0)",
@@ -20228,7 +20240,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
                 } />
               <div
                 className="icon"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "height": 78,
@@ -20312,7 +20324,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
               </div>
               <div
                 className="label"
-                data-jsx={2270353202}
+                data-jsx={1836048290}
                 style={
                   Object {
                     "fontSize": 18,
