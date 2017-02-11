@@ -1,14 +1,7 @@
 import React from 'react';
 import raf from 'raf';
 import getStack from '../utils/stack';
-import {
-  transitionValue,
-} from '../utils/transition';
-import {
-  getStackEntryHeight,
-  getContentHeight,
-  getContentTopOffset,
-} from '../layout/base';
+import { computeStackFrame } from '../layout/base';
 import StackEntry from './stack-entry';
 import PlaybackControls from './playback-controls';
 
@@ -26,10 +19,6 @@ const FRAMES_PER_DELAY = getFramesPerTime(DELAY_TIME);
 const FRAMES_PER_POS = FRAMES_PER_TRANSITION + FRAMES_PER_DELAY;
 
 const getMaxPos = steps => (steps - 1) * FRAMES_PER_POS;
-
-const getOpacityForStackDepth = level => {
-  return level > 0 ? 0.5 : 1;
-};
 
 class Player extends React.Component {
   constructor(props) {
@@ -130,64 +119,20 @@ class Player extends React.Component {
 
     const stepIndex = floor(pos / FRAMES_PER_POS);
     const stepProgress = min(1, (pos % FRAMES_PER_POS) / FRAMES_PER_TRANSITION);
-    const { entries, isAddingToStack, isRemovingFromStack } = getStack(steps, stepIndex);
-
-    const stackEntryHeight = getStackEntryHeight(layout);
-    const contentHeight = getContentHeight(layout, entries.length);
-
-    let topOffset;
-    let topStackEntryOpacity;
-
-    if (isAddingToStack) {
-      topOffset = transitionValue(
-        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
-        getContentTopOffset(layout, entries.length),
-        stepProgress
-      );
-      topStackEntryOpacity = transitionValue(0, 1, stepProgress);
-    } else if (isRemovingFromStack) {
-      topOffset = transitionValue(
-        getContentTopOffset(layout, entries.length),
-        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
-        stepProgress
-      );
-      topStackEntryOpacity = transitionValue(1, 0, stepProgress);
-    } else {
-      topOffset = getContentTopOffset(layout, entries.length);
-      topStackEntryOpacity = 1;
-    }
+    const stack = getStack(steps, stepIndex);
+    const frame = computeStackFrame(layout, stack, stepProgress);
 
     return (
       <div>
         <div
           className="stack-entries"
           style={{
-            height: contentHeight,
+            height: frame.stack.height,
             padding: `${headerHeight}px 0 ${footerHeight}px 0`,
-            transform: `translate(0, ${topOffset}px)`,
+            transform: `translate(0, ${frame.stack.top}px)`,
           }}
           >
-          {entries.map(({ prevStep, nextStep }, i) => {
-            let opacity;
-
-            if (i === 0) {
-              opacity = topStackEntryOpacity;
-            } else if (isAddingToStack) {
-              opacity = transitionValue(
-                getOpacityForStackDepth(i - 1),
-                getOpacityForStackDepth(i),
-                stepProgress,
-              );
-            } else if (isRemovingFromStack) {
-              opacity = transitionValue(
-                getOpacityForStackDepth(i),
-                getOpacityForStackDepth(i - 1),
-                stepProgress,
-              );
-            } else {
-              opacity = getOpacityForStackDepth(i);
-            }
-
+          {stack.entries.map(({ prevStep, nextStep }, i) => {
             // Tieing stack entry elements to their parent step id will preserve
             // them when other entries are added to or removed from stack.
             const stackEntryKey = nextStep.parentStepId || 0;
@@ -200,8 +145,8 @@ class Player extends React.Component {
                 className="stack-entry-outer"
                 key={stackEntryKey}
                 style={{
-                  height: stackEntryHeight,
-                  opacity,
+                  height: frame.entryHeight,
+                  opacity: frame.entries[i].opacity,
                 }}
                 >
                 <StackEntry
