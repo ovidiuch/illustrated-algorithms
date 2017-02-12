@@ -1,5 +1,5 @@
-import binarySearch from '../../../../algorithms/binary-search';
-import BinarySearch from '../../../../components/ill/binary-search/binary-search';
+import binarySearch from '../../../algorithms/binary-search';
+import BinarySearch from '../../../components/ill/binary-search/binary-search';
 
 const { code } = binarySearch;
 
@@ -16,10 +16,10 @@ export default {
         guess: 'cat',
       },
       highlight: {
-        start: 190,
-        end: 204,
+        start: 214,
+        end: 225,
       },
-      compared: ['guess', 'item'],
+      returnValue: 1,
     },
     nextStep: {
       bindings: {
@@ -36,7 +36,7 @@ export default {
       },
       returnValue: 1,
     },
-    stepProgress: 0.65,
+    stepProgress: 0,
   },
   code,
   illustration: BinarySearch,

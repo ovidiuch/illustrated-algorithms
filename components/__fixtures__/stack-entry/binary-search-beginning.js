@@ -1,5 +1,5 @@
-import binarySearch from '../../../../algorithms/binary-search';
-import BinarySearch from '../../../../components/ill/binary-search/binary-search';
+import binarySearch from '../../../algorithms/binary-search';
+import BinarySearch from '../../../components/ill/binary-search/binary-search';
 
 const { code } = binarySearch;
 
@@ -18,9 +18,12 @@ export default {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
         item: 'panda',
       },
-      intro: true,
+      highlight: {
+        start: 9,
+        end: 33,
+      },
     },
-    stepProgress: 0,
+    stepProgress: 0.5,
   },
   code,
   illustration: BinarySearch,

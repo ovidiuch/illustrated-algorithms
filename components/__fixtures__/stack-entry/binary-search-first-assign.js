@@ -1,5 +1,5 @@
-import binarySearch from '../../../../algorithms/binary-search';
-import BinarySearch from '../../../../components/ill/binary-search/binary-search';
+import binarySearch from '../../../algorithms/binary-search';
+import BinarySearch from '../../../components/ill/binary-search/binary-search';
 
 const { code } = binarySearch;
 
