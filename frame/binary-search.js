@@ -84,91 +84,95 @@ export default (layout, stack, stepProgress) => {
       mid,
       guess,
     } = bindings;
+    const baseEntry = baseFrame.entries[i];
     return {
-      ...baseFrame.entries[i],
-      intro: {
-        opacity: transitionValue(
-          getIntroOpacity(prevStep, layout),
-          getIntroOpacity(nextStep, layout),
-          stepProgress,
-        )
-      },
-      list: {
-        items: list.map((name, index) => {
-          const isGuess = compared && compared.indexOf('guess') !== -1 && index === mid;
+      ...baseEntry,
+      frame: {
+        ...baseEntry.frame,
+        intro: {
+          opacity: transitionValue(
+            getIntroOpacity(prevStep, layout),
+            getIntroOpacity(nextStep, layout),
+            stepProgress,
+          )
+        },
+        list: {
+          items: list.map((name, index) => {
+            const isGuess = compared && compared.indexOf('guess') !== -1 && index === mid;
 
-          return {
-            name,
-            isGuess,
-            left: getListItemLeftPosition(layout, index),
-            opacity: transitionValue(
-              getListItemOpacity(index, prevStep),
-              getListItemOpacity(index, nextStep),
-              stepProgress,
-            ),
-            rotation: LIST_BASE_ROTATIONS[index] + (isGuess ? getWobbleRotation(stepProgress) : 0),
-            glow: transitionValue(
-              getListItemGlow(name, prevStep),
-              getListItemGlow(name, nextStep),
-              stepProgress,
-            ),
-          };
-        }),
-        isSelectable: Boolean(prevStep.intro && stepProgress === 0),
-      },
-      item: {
-        value: getBindingValue(prevStep, nextStep, 'item'),
-        opacity: transitionValue(
-          getItemOpacity(prevStep),
-          getItemOpacity(nextStep),
-          stepProgress,
-        ),
-        rotation: ITEM_BASE_ROTATION + (
-          compared && compared.indexOf('item') !== -1 ?
-          getWobbleRotation(stepProgress) : 0
-        )
-      },
-      low: {
-        value: getBindingValue(prevStep, nextStep, 'low'),
-        ...transitionValues(
-          getVarProps(prevStep, layout, 'low'),
-          getVarProps(nextStep, layout, 'low'),
-          stepProgress,
-        ),
-        rotation: (
-          compared && compared.indexOf('low') !== -1 ?
-          getWobbleRotation(stepProgress) : 0
-        ),
-      },
-      high: {
-        value: getBindingValue(prevStep, nextStep, 'high'),
-        ...transitionValues(
-          getVarProps(prevStep, layout, 'high'),
-          getVarProps(nextStep, layout, 'high'),
-          stepProgress,
-        ),
-        rotation: (
-          compared && compared.indexOf('high') !== -1 ?
-          getWobbleRotation(stepProgress) : 0
-        ),
-      },
-      mid: {
-        value: getBindingValue(prevStep, nextStep, 'mid'),
-        ...transitionValues(
-          getVarProps(prevStep, layout, 'mid'),
-          getVarProps(nextStep, layout, 'mid'),
-          stepProgress,
-        ),
-      },
-      comparison: {
-        value: returnValue !== undefined || guess === item ? '=' : (
-          guess > item ? '>' : '<'
-        ),
-        opacity: transitionValue(
-          getComparisonOpacity(prevStep, layout),
-          getComparisonOpacity(nextStep, layout),
-          stepProgress,
-        )
+            return {
+              name,
+              isGuess,
+              left: getListItemLeftPosition(layout, index),
+              opacity: transitionValue(
+                getListItemOpacity(index, prevStep),
+                getListItemOpacity(index, nextStep),
+                stepProgress,
+              ),
+              rotation: LIST_BASE_ROTATIONS[index] + (isGuess ? getWobbleRotation(stepProgress) : 0),
+              glow: transitionValue(
+                getListItemGlow(name, prevStep),
+                getListItemGlow(name, nextStep),
+                stepProgress,
+              ),
+            };
+          }),
+          isSelectable: Boolean(prevStep.intro && stepProgress === 0),
+        },
+        item: {
+          value: getBindingValue(prevStep, nextStep, 'item'),
+          opacity: transitionValue(
+            getItemOpacity(prevStep),
+            getItemOpacity(nextStep),
+            stepProgress,
+          ),
+          rotation: ITEM_BASE_ROTATION + (
+            compared && compared.indexOf('item') !== -1 ?
+            getWobbleRotation(stepProgress) : 0
+          )
+        },
+        low: {
+          value: getBindingValue(prevStep, nextStep, 'low'),
+          ...transitionValues(
+            getVarProps(prevStep, layout, 'low'),
+            getVarProps(nextStep, layout, 'low'),
+            stepProgress,
+          ),
+          rotation: (
+            compared && compared.indexOf('low') !== -1 ?
+            getWobbleRotation(stepProgress) : 0
+          ),
+        },
+        high: {
+          value: getBindingValue(prevStep, nextStep, 'high'),
+          ...transitionValues(
+            getVarProps(prevStep, layout, 'high'),
+            getVarProps(nextStep, layout, 'high'),
+            stepProgress,
+          ),
+          rotation: (
+            compared && compared.indexOf('high') !== -1 ?
+            getWobbleRotation(stepProgress) : 0
+          ),
+        },
+        mid: {
+          value: getBindingValue(prevStep, nextStep, 'mid'),
+          ...transitionValues(
+            getVarProps(prevStep, layout, 'mid'),
+            getVarProps(nextStep, layout, 'mid'),
+            stepProgress,
+          ),
+        },
+        comparison: {
+          value: returnValue !== undefined || guess === item ? '=' : (
+            guess > item ? '>' : '<'
+          ),
+          opacity: transitionValue(
+            getComparisonOpacity(prevStep, layout),
+            getComparisonOpacity(nextStep, layout),
+            stepProgress,
+          )
+        }
       }
     };
   });

@@ -1,10 +1,11 @@
 import React from 'react';
 import raf from 'raf';
+import range from 'lodash.range';
 import getStack from '../utils/stack';
 import StackEntry from './stack-entry';
 import PlaybackControls from './playback-controls';
 
-const { floor, min } = Math;
+const { round, floor, min } = Math;
 
 const FPS = 60;
 const TIME_PER_FRAME = 1000 / FPS;
@@ -19,9 +20,29 @@ const FRAMES_PER_POS = FRAMES_PER_TRANSITION + FRAMES_PER_DELAY;
 
 const getMaxPos = steps => (steps - 1) * FRAMES_PER_POS;
 
+let _frames;
+
+const computeAllFrames = (layout, steps, computeFrame) => {
+  return steps.reduce((prev, next, stepIndex) => {
+    const stack = getStack(steps, stepIndex);
+    const transFrameNum = round(FPS * TRANSITION_TIME);
+    const delayFrameNum = round(FPS * DELAY_TIME);
+    const transFrames = range(transFrameNum).map(frame =>
+      computeFrame(layout, stack, frame / (transFrameNum - 1)));
+    const lastFrame = transFrames[transFrames.length - 1];
+    const delayFrames = range(delayFrameNum).map(() => lastFrame);
+
+    return [
+      ...prev,
+      ...transFrames,
+      ...delayFrames,
+    ];
+  }, []);
+};
+
 class Player extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor(props, context) {
+    super(props, context);
 
     this.handleScrollTo = this.handleScrollTo.bind(this);
     this.handlePlay = this.handlePlay.bind(this);
@@ -32,6 +53,32 @@ class Player extends React.Component {
       pos: 0,
       isPlaying: false,
     };
+
+    const {
+      computeFrame,
+      steps,
+      actions,
+    } = props;
+
+    // Assumption: props.actions never change
+    // Creating object instead of render func to prevent invalidating shallow
+    // prop comparison is children components
+    this.actions = {
+      ...actions,
+      play: this.handlePlay,
+      pause: this.handlePause,
+    };
+
+    _frames = computeAllFrames(context.layout, steps, computeFrame);
+  }
+
+  componentWillReceiveProps(nextProps, nextContext) {
+    const {
+      steps,
+      computeFrame,
+    } = nextProps;
+
+    _frames = computeAllFrames(nextContext.layout, steps, computeFrame);
   }
 
   componentWillUnmount() {
@@ -100,9 +147,7 @@ class Player extends React.Component {
     const {
       algorithm,
       illustration,
-      computeFrame,
       steps,
-      actions,
     } = this.props;
     const {
       pos,
@@ -117,45 +162,43 @@ class Player extends React.Component {
       footerHeight,
     } = layout;
 
-    const stepIndex = floor(pos / FRAMES_PER_POS);
-    const stepProgress = min(1, (pos % FRAMES_PER_POS) / FRAMES_PER_TRANSITION);
-    const stack = getStack(steps, stepIndex);
-    const frame = computeFrame(layout, stack, stepProgress);
+    const frame = _frames[floor(pos)];
+    const {
+      stack,
+      entryHeight,
+      entries,
+    } = frame;
 
     return (
       <div>
         <div
           className="stack-entries"
           style={{
-            height: frame.stack.height,
+            height: stack.height,
             padding: `${headerHeight}px 0 ${footerHeight}px 0`,
-            transform: `translate(0, ${frame.stack.top}px)`,
+            transform: `translate(0, ${stack.top}px)`,
           }}
           >
-          {frame.entries.map(entryFrame => {
+          {entries.map(entry => {
             const {
               entryId,
               opacity,
-            } = entryFrame;
+            } = entry;
 
             return (
               <div
                 className="stack-entry-outer"
                 key={entryId}
                 style={{
-                  height: frame.entryHeight,
+                  height: entryHeight,
                   opacity,
                 }}
                 >
                 <StackEntry
                   illustration={illustration}
                   code={algorithm.code}
-                  frame={entryFrame}
-                  actions={{
-                    ...actions,
-                    play: this.handlePlay,
-                    pause: this.handlePause,
-                  }}
+                  frame={entry.frame}
+                  actions={this.actions}
                   />
               </div>
             );

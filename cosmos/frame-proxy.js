@@ -36,7 +36,7 @@ class FrameProxy extends React.Component {
     } = _frameFrom;
     const stack = getStack([prevStep, nextStep], 0);
     const computer = frameComputers[_layoutFor];
-    const frame = computer(layout, stack, stepProgress).entries[0];
+    const frame = computer(layout, stack, stepProgress).entries[0].frame;
 
     return React.createElement(nextProxy.value, {
       ...this.props,

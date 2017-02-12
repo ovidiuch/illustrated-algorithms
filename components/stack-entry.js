@@ -4,7 +4,6 @@ import SourceCode from './source-code';
 
 const { max, round } = Math;
 
-// TODO: Don't re-render on same stack entry frame
 class StackEntry extends PureLayoutComponent {
   render() {
     const {

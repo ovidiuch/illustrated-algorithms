@@ -165,7 +165,6 @@ const isListEmpty = ({ bindings }) => bindings.list && bindings.list.length === 
 const computeEntryFrame = ({
   baseFrame,
   layout,
-  entryIndex,
   prevStep,
   nextStep,
   stepProgress
@@ -215,7 +214,7 @@ const computeEntryFrame = ({
   }, {});
 
   return {
-    ...baseFrame.entries[entryIndex],
+    ...baseFrame,
     intro: {
       titleFontSize,
       titleLineHeight,
@@ -242,18 +241,51 @@ const computeEntryFrame = ({
   };
 };
 
+// Memoizing entry frames speeds up the initial calculation of frames, but also
+// helps StackEntry components avoid useless renders because identical entry
+// frames will also share identity
+// TODO: Generalize memoize mechanism (when adding 2nd recursive algorithm)
+const cacheKeys = [];
+const cache = new Map();
+
+const findCacheKey = props => cacheKeys.find(
+  p => Object.keys(props).reduce((prev, next) => (
+    prev && p[next] === props[next]
+  ), true));
+
 export default (layout, stack, stepProgress) => {
   const baseFrame = computeBaseFrame(layout, stack, stepProgress);
-  const entries = stack.entries.map(({ prevStep, nextStep }, i) =>
-    computeEntryFrame({
-      baseFrame,
+  const entries = stack.entries.map(({ prevStep, nextStep }, i) => {
+    const baseEntry = baseFrame.entries[i];
+    const entryStepProgress = nextStep === prevStep ? 1 : stepProgress;
+    const cacheProps = {
       layout,
-      entryIndex: i,
       prevStep,
       nextStep,
-      stepProgress
-    })
-  );
+      entryStepProgress
+    };
+    const cacheKey = findCacheKey(cacheProps);
+    let entryFrame;
+
+    if (cacheKey) {
+      entryFrame = cache.get(cacheKey);
+    } else {
+      entryFrame = computeEntryFrame({
+        baseFrame: baseEntry.frame,
+        layout,
+        prevStep,
+        nextStep,
+        stepProgress: entryStepProgress,
+      });
+      cacheKeys.push(cacheProps);
+      cache.set(cacheProps, entryFrame);
+    }
+
+    return {
+      ...baseEntry,
+      frame: entryFrame,
+    };
+  });
 
   return {
     ...baseFrame,

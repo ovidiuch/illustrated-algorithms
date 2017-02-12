@@ -10370,7 +10370,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                   "opacity": 1,
                   "transform": "
                           translate(237.5px, 367px)
-                          rotate(2.51deg)
+                          rotate(2.6399999999999997deg)
                         ",
                 }
               }>
@@ -10995,7 +10995,7 @@ exports[`test player:binary-search-mid-way 1`] = `
                     "opacity": 1,
                     "transform": "
                                     translate(285px, 0px)
-                                    rotate(4.51deg)
+                                    rotate(4.64deg)
                                   ",
                     "zIndex": 1,
                   }
