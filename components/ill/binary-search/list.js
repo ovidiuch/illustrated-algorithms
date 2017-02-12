@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
 import EmojiBlock from '../shared/emoji-block';
 
@@ -81,7 +82,10 @@ class List extends PureLayoutComponent {
           return (
             <div
               key={index}
-              className={`item ${isSelectable && 'item-selectable'}`}
+              className={classNames({
+                item: true,
+                'item-selectable': isSelectable,
+              })}
               style={{
                 opacity,
                 transform: `

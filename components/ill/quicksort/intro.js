@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
 
 class Intro extends PureLayoutComponent {
@@ -18,6 +19,7 @@ class Intro extends PureLayoutComponent {
       btnTop,
       btnFontSize,
       btnSvgSize,
+      areControlsEnabled,
     } = frame.intro;
 
     return (
@@ -35,13 +37,16 @@ class Intro extends PureLayoutComponent {
           }}
           >Place the elements of a list<br/> in alphabetical order</h1>
         <div
-          className="shuffle-btn"
+          className={classNames({
+            'shuffle-btn': true,
+            'btn-selectable': areControlsEnabled,
+          })}
           style={{
             top: btnTop,
             left: innerWidth * 0.25,
             fontSize: btnFontSize,
           }}
-          onClick={this.props.onShuffle}
+          onClick={areControlsEnabled ? this.props.onShuffle : undefined}
           >
           <svg
             style={{
@@ -63,13 +68,16 @@ class Intro extends PureLayoutComponent {
           </span>
         </div>
         <div
-          className="start-btn"
+          className={classNames({
+            'start-btn': true,
+            'btn-selectable': areControlsEnabled,
+          })}
           style={{
             top: btnTop,
             left: innerWidth * 0.55,
             fontSize: btnFontSize,
           }}
-          onClick={this.props.onStart}
+          onClick={areControlsEnabled ? this.props.onStart : undefined}
           >
           <svg
             style={{
@@ -111,6 +119,8 @@ class Intro extends PureLayoutComponent {
             text-align: center;
             user-select: none;
             opacity: 0.5;
+          }
+          .btn-selectable {
             cursor: pointer;
           }
           .shuffle-btn svg,

@@ -222,7 +222,8 @@ const computeEntryFrame = ({
       btnTop: (titleLineHeight * 2) + getRelSize(10),
       btnFontSize: getRelSize(18, 2),
       btnSvgSize: getRelSize(20, 2),
-      opacity: getTransIntroOpacity(prevStep, nextStep, stepProgress)
+      opacity: getTransIntroOpacity(prevStep, nextStep, stepProgress),
+      areControlsEnabled: stepProgress === 0,
     },
     outro: {
       titleFontSize,
@@ -252,7 +253,7 @@ export default (layout, stack, stepProgress) => {
   const baseFrame = computeBaseFrame(layout, stack, stepProgress);
   const entries = stack.entries.map(({ prevStep, nextStep }, i) => {
     const baseEntry = baseFrame.entries[i];
-    const entryStepProgress = nextStep === prevStep ? 1 : stepProgress;
+    const entryStepProgress = nextStep === prevStep ? 0 : stepProgress;
     const cacheFields = [layout, prevStep, nextStep, entryStepProgress];
     let entryFrame = retrieveFromCache(_cache, ...cacheFields);
 

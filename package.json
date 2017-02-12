@@ -52,6 +52,7 @@
     ]
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "emojione": "^2.2.7",
     "lodash.debounce": "^4.0.8",
     "lodash.range": "^3.2.0",
