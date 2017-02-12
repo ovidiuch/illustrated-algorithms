@@ -2,6 +2,7 @@ import {
   transitionValue,
   transitionValues,
 } from '../utils/transition';
+import { retrieveFromCache, addToCache } from '../utils/cache';
 import { getListItemLeftPosition } from '../layout/base';
 import computeBaseFrame from '../frame/base';
 
@@ -244,32 +245,17 @@ const computeEntryFrame = ({
 // Memoizing entry frames speeds up the initial calculation of frames, but also
 // helps StackEntry components avoid useless renders because identical entry
 // frames will also share identity
-// TODO: Generalize memoize mechanism (when adding 2nd recursive algorithm)
-const cacheKeys = [];
-const cache = new Map();
-
-const findCacheKey = props => cacheKeys.find(
-  p => Object.keys(props).reduce((prev, next) => (
-    prev && p[next] === props[next]
-  ), true));
+const _cache = new Map();
 
 export default (layout, stack, stepProgress) => {
   const baseFrame = computeBaseFrame(layout, stack, stepProgress);
   const entries = stack.entries.map(({ prevStep, nextStep }, i) => {
     const baseEntry = baseFrame.entries[i];
     const entryStepProgress = nextStep === prevStep ? 1 : stepProgress;
-    const cacheProps = {
-      layout,
-      prevStep,
-      nextStep,
-      entryStepProgress
-    };
-    const cacheKey = findCacheKey(cacheProps);
-    let entryFrame;
+    const cacheFields = [layout, prevStep, nextStep, entryStepProgress];
+    let entryFrame = retrieveFromCache(_cache, ...cacheFields);
 
-    if (cacheKey) {
-      entryFrame = cache.get(cacheKey);
-    } else {
+    if (!entryFrame) {
       entryFrame = computeEntryFrame({
         baseFrame: baseEntry.frame,
         layout,
@@ -277,8 +263,7 @@ export default (layout, stack, stepProgress) => {
         nextStep,
         stepProgress: entryStepProgress,
       });
-      cacheKeys.push(cacheProps);
-      cache.set(cacheProps, entryFrame);
+      addToCache(_cache, entryFrame, ...cacheFields);
     }
 
     return {
