@@ -9,9 +9,9 @@ class StackEntry extends PureLayoutComponent {
     const {
       illustration,
       code,
-      prevStep,
-      nextStep,
-      stepProgress,
+      highlight,
+      entryIndex,
+      frame,
       actions,
     } = this.props;
     const {
@@ -23,7 +23,6 @@ class StackEntry extends PureLayoutComponent {
       illustrationHeight,
       codeHeight,
     } = layout;
-    const { highlight } = nextStep;
 
     const illustrationStyle = {
       width: sideWidth,
@@ -55,9 +54,8 @@ class StackEntry extends PureLayoutComponent {
           style={illustrationStyle}
           >
           {createElement(illustration, {
-            prevStep,
-            nextStep,
-            stepProgress,
+            entryIndex,
+            frame,
             actions,
           })}
         </div>
@@ -83,9 +81,8 @@ class StackEntry extends PureLayoutComponent {
 StackEntry.propTypes = {
   code: React.PropTypes.string.isRequired,
   illustration: React.PropTypes.func.isRequired,
-  prevStep: React.PropTypes.object.isRequired,
-  nextStep: React.PropTypes.object.isRequired,
-  stepProgress: React.PropTypes.number,
+  entryIndex: React.PropTypes.number.isRequired,
+  frame: React.PropTypes.object.isRequired,
   actions: React.PropTypes.object.isRequired,
 };
 

@@ -4,6 +4,10 @@ import PureLayoutComponent from '../../../utils/pure-layout-component';
 class Intro extends PureLayoutComponent {
   render() {
     const {
+      frame,
+      entryIndex,
+    } = this.props;
+    const {
       padding,
       borderWidth,
       innerWidth,
@@ -15,7 +19,7 @@ class Intro extends PureLayoutComponent {
       btnTop,
       btnFontSize,
       btnSvgSize,
-    } = this.props.frame.intro;
+    } = frame.entries[entryIndex].intro;
 
     return (
       <div

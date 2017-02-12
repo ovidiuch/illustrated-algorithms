@@ -4,13 +4,17 @@ import PureLayoutComponent from '../../../utils/pure-layout-component';
 class Outro extends PureLayoutComponent {
   render() {
     const {
+      frame,
+      entryIndex,
+    } = this.props;
+    const {
       opacity,
       titleFontSize,
       titleLineHeight,
       titleTop,
       subtextFontSize,
       subtextTop,
-    } = this.props.frame.outro;
+    } = frame.entries[entryIndex].outro;
 
     return (
       <div

@@ -1,24 +1,18 @@
 import React from 'react';
-import {
-  transitionValue
-} from '../../../utils/transition';
 
-const getOpacity = step => step.intro ? 1 : 0;
-
-export default function Intro({ prevStep, nextStep, stepProgress }, { layout }) {
+export default function Intro({ frame, entryIndex }, { layout }) {
   const {
     illustrationHeight,
   } = layout;
+  const {
+    opacity,
+  } = frame.entries[entryIndex].intro;
 
   return (
     <div
       className="intro"
       style={{
-        opacity: transitionValue(
-          getOpacity(prevStep, layout),
-          getOpacity(nextStep, layout),
-          stepProgress,
-        ),
+        opacity,
       }}
       >
       <p
@@ -47,6 +41,7 @@ export default function Intro({ prevStep, nextStep, stepProgress }, { layout }) 
           text-align: center;
           user-select: none;
           cursor: default;
+          will-change: opacity;
         }
         p:last-child {
           opacity: 0.5;
@@ -57,9 +52,8 @@ export default function Intro({ prevStep, nextStep, stepProgress }, { layout }) 
 }
 
 Intro.propTypes = {
-  prevStep: React.PropTypes.object.isRequired,
-  nextStep: React.PropTypes.object.isRequired,
-  stepProgress: React.PropTypes.number.isRequired,
+  frame: React.PropTypes.object.isRequired,
+  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Intro.contextTypes = {

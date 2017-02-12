@@ -1,59 +1,61 @@
 export default {
   _layoutFor: 'bfs',
-  prevStep: {
-    bindings: {
-      graph: {
-        you: [
-          'alice',
-          'bob',
-          'claire'
-        ],
-        bob: [
-          'anuj',
-          'peggy'
-        ],
-        alice: [
-          'peggy'
-        ],
-        claire: [
-          'thom',
-          'jonny'
-        ],
-        anuj: [],
-        peggy: [],
-        thom: [],
-        jonny: []
+  _frameFrom: {
+    prevStep: {
+      bindings: {
+        graph: {
+          you: [
+            'alice',
+            'bob',
+            'claire'
+          ],
+          bob: [
+            'anuj',
+            'peggy'
+          ],
+          alice: [
+            'peggy'
+          ],
+          claire: [
+            'thom',
+            'jonny'
+          ],
+          anuj: [],
+          peggy: [],
+          thom: [],
+          jonny: []
+        },
+        name: 'you'
       },
-      name: 'you'
+      intro: true,
     },
-    intro: true,
-  },
-  nextStep: {
-    bindings: {
-      graph: {
-        you: [
-          'alice',
-          'bob',
-          'claire'
-        ],
-        bob: [
-          'anuj',
-          'peggy'
-        ],
-        alice: [
-          'peggy'
-        ],
-        claire: [
-          'thom',
-          'jonny'
-        ],
-        anuj: [],
-        peggy: [],
-        thom: [],
-        jonny: []
-      },
-      name: 'you'
-    }
-  },
-  stepProgress: 0,
+    nextStep: {
+      bindings: {
+        graph: {
+          you: [
+            'alice',
+            'bob',
+            'claire'
+          ],
+          bob: [
+            'anuj',
+            'peggy'
+          ],
+          alice: [
+            'peggy'
+          ],
+          claire: [
+            'thom',
+            'jonny'
+          ],
+          anuj: [],
+          peggy: [],
+          thom: [],
+          jonny: []
+        },
+        name: 'you'
+      }
+    },
+    stepProgress: 0,
+  }
 };

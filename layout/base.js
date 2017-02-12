@@ -1,7 +1,3 @@
-import {
-  transitionValue,
-} from '../utils/transition';
-
 const { floor, round, max } = Math;
 
 const IPHONE6_LANDSCAPE_WIDTH = 667;
@@ -46,71 +42,6 @@ export const getListItemLeftPosition = (layout, itemIndex) => {
   } = layout;
 
   return (blockWidth - borderWidth) * itemIndex;
-};
-
-const getOpacityForStackDepth = level => {
-  return level > 0 ? 0.5 : 1;
-};
-
-export const computeStackFrame = (layout, stack, stepProgress) => {
-  const { entries, isAddingToStack, isRemovingFromStack } = stack;
-  const { length } = entries;
-
-  const entryHeight = getStackEntryHeight(layout);
-  const height = getContentHeight(layout, length);
-
-  let top;
-  let topStackEntryOpacity;
-
-  if (isAddingToStack) {
-    top = transitionValue(
-      getContentTopOffset(layout, length - 1) - entryHeight,
-      getContentTopOffset(layout, length),
-      stepProgress
-    );
-    topStackEntryOpacity = transitionValue(0, 1, stepProgress);
-  } else if (isRemovingFromStack) {
-    top = transitionValue(
-      getContentTopOffset(layout, length),
-      getContentTopOffset(layout, length - 1) - entryHeight,
-      stepProgress
-    );
-    topStackEntryOpacity = transitionValue(1, 0, stepProgress);
-  } else {
-    top = getContentTopOffset(layout, length);
-    topStackEntryOpacity = 1;
-  }
-
-  return {
-    stack: {
-      top,
-      height,
-    },
-    entryHeight,
-    entries: entries.map(({ prevStep, nextStep }, i) => {
-      if (i === 0) {
-        return topStackEntryOpacity;
-      }
-
-      if (isAddingToStack) {
-        return transitionValue(
-          getOpacityForStackDepth(i - 1),
-          getOpacityForStackDepth(i),
-          stepProgress,
-        );
-      }
-
-      if (isRemovingFromStack) {
-        return transitionValue(
-          getOpacityForStackDepth(i),
-          getOpacityForStackDepth(i - 1),
-          stepProgress,
-        );
-      }
-
-      return getOpacityForStackDepth(i);
-    }).map(opacity => ({ opacity }))
-  };
 };
 
 export default init => {

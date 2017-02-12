@@ -5,6 +5,7 @@ export default {
   ],
   proxies: [
     './layout-proxy',
+    './frame-proxy',
     './context-proxy',
     './global-style-proxy',
     './bg-color-proxy',

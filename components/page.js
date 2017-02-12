@@ -72,6 +72,7 @@ class Page extends React.Component {
       currentPath,
       algorithm,
       illustration,
+      computeFrame,
       steps,
       actions,
     } = this.props;
@@ -113,6 +114,7 @@ class Page extends React.Component {
             <Player
               algorithm={algorithm}
               illustration={illustration}
+              computeFrame={computeFrame}
               steps={steps}
               actions={actions}
               />
@@ -144,6 +146,7 @@ Page.propTypes = {
   // ESLint plugin bug
   // eslint-disable-next-line react/no-unused-prop-types
   computeLayout: React.PropTypes.func.isRequired,
+  computeFrame: React.PropTypes.func.isRequired,
   steps: React.PropTypes.array.isRequired,
   actions: React.PropTypes.object.isRequired,
 };

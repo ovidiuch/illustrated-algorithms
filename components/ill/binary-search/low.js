@@ -1,67 +1,47 @@
 import React from 'react';
-import {
-  transitionValues,
-  getBindingValue,
-} from '../../../utils/transition';
-import getWobbleRotation from '../../../utils/wobble';
 import NumberVar from '../shared/number-var';
-import { getListItemLeftPosition } from '../../../layout/base';
-import { getNumberVarTopPosition } from '../../../layout/binary-search';
 
-const getStyle = (step, layout) => {
-  if (step.bindings.low === undefined) {
-    return {
-      opacity: 0,
-    };
-  }
-
+export default function Low({ frame, entryIndex }) {
   const {
-    low,
-  } = step.bindings;
+    value,
+    top,
+    left,
+    opacity,
+    rotation,
+  } = frame.entries[entryIndex].low;
 
-  return {
-    opacity: 1,
-    top: getNumberVarTopPosition(layout, 0),
-    left: getListItemLeftPosition(layout, low),
-  };
-};
-
-export default function Low({ prevStep, nextStep, stepProgress }, { layout }) {
-  const low = getBindingValue(prevStep, nextStep, 'low');
-  if (low === undefined) {
+  if (value === undefined) {
     return null;
   }
 
-  const currStyle = transitionValues(
-    getStyle(prevStep, layout),
-    getStyle(nextStep, layout),
-    stepProgress,
-  );
-
-  const { compared } = nextStep;
-  const rotation =
-    compared && compared.indexOf('low') !== -1 ? getWobbleRotation(stepProgress) : 0;
-
   return (
     <div
+      className="low"
       style={{
-        position: 'absolute',
-        ...currStyle,
-        transform: `rotate(${rotation}deg)`
+        opacity,
+        transform: `
+          translate(${left}px, ${top}px)
+          rotate(${rotation}deg)
+        `
       }}
       >
       <NumberVar
-        value={low}
+        value={value}
         label="low"
         />
+      <style jsx>{`
+        .low {
+          position: absolute;
+          will-change: opacity, transform;
+        }
+      `}</style>
     </div>
   );
 }
 
 Low.propTypes = {
-  prevStep: React.PropTypes.object.isRequired,
-  nextStep: React.PropTypes.object.isRequired,
-  stepProgress: React.PropTypes.number.isRequired,
+  frame: React.PropTypes.object.isRequired,
+  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Low.contextTypes = {

@@ -1,6 +1,7 @@
 import bfs from '../../../algorithms/bfs';
 import RawData from '../../../components/ill/raw-data';
 import computeBfsLayout from '../../../layout/bfs';
+import computeRawDataFrame from '../../../frame/raw-data';
 
 const graph = {
   you: ['alice', 'bob', 'claire'],
@@ -20,6 +21,7 @@ export default {
   algorithm: bfs,
   illustration: RawData,
   computeLayout: computeBfsLayout,
+  computeFrame: computeRawDataFrame,
   steps: [{
     intro: true,
     bindings: {

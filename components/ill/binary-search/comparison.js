@@ -1,31 +1,10 @@
 import React from 'react';
-import {
-  transitionValue
-} from '../../../utils/transition';
 
-const getOpacity = step => {
+export default function Comparison({ frame, entryIndex }, { layout }) {
   const {
-    compared,
-    returnValue,
-  } = step;
-
-  if (returnValue !== undefined) {
-    return 1;
-  }
-
-  if (!compared || compared.indexOf('guess') === -1) {
-    return 0;
-  }
-
-  return 1;
-};
-
-export default function Comparison({ prevStep, nextStep, stepProgress }, { layout }) {
-  const { bindings, returnValue } = nextStep;
-  const {
-    item,
-    guess,
-  } = bindings;
+    value,
+    opacity,
+  } = frame.entries[entryIndex].comparison;
   const {
     blockLabelFontSize,
     numberVarHeight,
@@ -35,10 +14,6 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
     top,
     left,
   } = comparison;
-
-  const val = returnValue !== undefined || guess === item ? '=' : (
-    guess > item ? '>' : '<'
-  );
 
   return (
     <div
@@ -50,14 +25,10 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
         height: numberVarHeight,
         lineHeight: `${numberVarHeight}px`,
         fontSize: blockLabelFontSize * 1.5,
-        opacity: transitionValue(
-          getOpacity(prevStep, layout),
-          getOpacity(nextStep, layout),
-          stepProgress,
-        ),
+        opacity,
       }}
       >
-      {val}
+      {value}
       <style jsx>{`
         .comparison {
           position: absolute;
@@ -65,6 +36,7 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
           border-radius: 50%;
           color: white;
           text-align: center;
+          will-change: opacity;
         }
       `}</style>
     </div>
@@ -72,9 +44,8 @@ export default function Comparison({ prevStep, nextStep, stepProgress }, { layou
 }
 
 Comparison.propTypes = {
-  prevStep: React.PropTypes.object.isRequired,
-  nextStep: React.PropTypes.object.isRequired,
-  stepProgress: React.PropTypes.number.isRequired,
+  frame: React.PropTypes.object.isRequired,
+  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Comparison.contextTypes = {

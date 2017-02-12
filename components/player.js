@@ -1,7 +1,6 @@
 import React from 'react';
 import raf from 'raf';
 import getStack from '../utils/stack';
-import { computeStackFrame } from '../layout/base';
 import StackEntry from './stack-entry';
 import PlaybackControls from './playback-controls';
 
@@ -101,6 +100,7 @@ class Player extends React.Component {
     const {
       algorithm,
       illustration,
+      computeFrame,
       steps,
       actions,
     } = this.props;
@@ -120,7 +120,7 @@ class Player extends React.Component {
     const stepIndex = floor(pos / FRAMES_PER_POS);
     const stepProgress = min(1, (pos % FRAMES_PER_POS) / FRAMES_PER_TRANSITION);
     const stack = getStack(steps, stepIndex);
-    const frame = computeStackFrame(layout, stack, stepProgress);
+    const frame = computeFrame(layout, stack, stepProgress);
 
     return (
       <div>
@@ -136,9 +136,6 @@ class Player extends React.Component {
             // Tieing stack entry elements to their parent step id will preserve
             // them when other entries are added to or removed from stack.
             const stackEntryKey = nextStep.parentStepId || 0;
-            // Only top entry needs to animate (and the one below when top is
-            // being removed from the stack). Any other entry is frozen
-            const stackEntryStepProgress = i > 1 ? 1 : stepProgress;
 
             return (
               <div
@@ -152,9 +149,9 @@ class Player extends React.Component {
                 <StackEntry
                   illustration={illustration}
                   code={algorithm.code}
-                  prevStep={prevStep}
-                  nextStep={nextStep}
-                  stepProgress={stackEntryStepProgress}
+                  highlight={nextStep.highlight}
+                  entryIndex={i}
+                  frame={frame}
                   actions={{
                     ...actions,
                     play: this.handlePlay,
@@ -211,6 +208,7 @@ class Player extends React.Component {
 Player.propTypes = {
   algorithm: React.PropTypes.func.isRequired,
   illustration: React.PropTypes.func.isRequired,
+  computeFrame: React.PropTypes.func.isRequired,
   steps: React.PropTypes.array.isRequired,
   actions: React.PropTypes.object.isRequired,
 };

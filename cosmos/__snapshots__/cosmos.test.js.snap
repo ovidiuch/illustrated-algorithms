@@ -10,14 +10,14 @@ exports[`test ill/binary-search:beginning 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={1657365838}
+    data-jsx={342053577}
     style={
       Object {
         "opacity": 0.5,
       }
     }>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 46,
@@ -26,11 +26,11 @@ exports[`test ill/binary-search:beginning 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={1657365838} />
+        data-jsx={342053577} />
        inside a sorted list
     </p>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 34,
@@ -41,13 +41,15 @@ exports[`test ill/binary-search:beginning 1`] = `
     </p>
   </div>
   <div
+    className="item"
+    data-jsx={477783248}
     style={
       Object {
-        "left": 237.5,
         "opacity": 0.5,
-        "position": "absolute",
-        "top": 367,
-        "transform": "rotate(-1.5deg)",
+        "transform": "
+                translate(237.5px, 367px)
+                rotate(-1.5deg)
+              ",
       }
     }>
     <div
@@ -160,7 +162,7 @@ exports[`test ill/binary-search:beginning 1`] = `
   </div>
   <div
     className="list"
-    data-jsx={3910051856}
+    data-jsx={2297240151}
     style={
       Object {
         "top": 178,
@@ -168,12 +170,14 @@ exports[`test ill/binary-search:beginning 1`] = `
     }>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 0,
           "opacity": 1,
-          "transform": "rotate(-0.9deg)",
+          "transform": "
+                          translate(0px, 0px)
+                          rotate(-0.9deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -269,12 +273,14 @@ exports[`test ill/binary-search:beginning 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 95,
           "opacity": 1,
-          "transform": "rotate(-0.4deg)",
+          "transform": "
+                          translate(95px, 0px)
+                          rotate(-0.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -385,12 +391,14 @@ exports[`test ill/binary-search:beginning 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 190,
           "opacity": 1,
-          "transform": "rotate(1.4deg)",
+          "transform": "
+                          translate(190px, 0px)
+                          rotate(1.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -511,12 +519,14 @@ exports[`test ill/binary-search:beginning 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 285,
           "opacity": 1,
-          "transform": "rotate(0.5deg)",
+          "transform": "
+                          translate(285px, 0px)
+                          rotate(0.5deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -621,12 +631,14 @@ exports[`test ill/binary-search:beginning 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 380,
           "opacity": 1,
-          "transform": "rotate(-1.35deg)",
+          "transform": "
+                          translate(380px, 0px)
+                          rotate(-1.35deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -743,12 +755,14 @@ exports[`test ill/binary-search:beginning 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 475,
           "opacity": 1,
-          "transform": "rotate(1deg)",
+          "transform": "
+                          translate(475px, 0px)
+                          rotate(1deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -875,7 +889,7 @@ exports[`test ill/binary-search:beginning 1`] = `
   </div>
   <div
     className="comparison code"
-    data-jsx={790948768}
+    data-jsx={750233767}
     style={
       Object {
         "fontSize": 27,
@@ -904,14 +918,14 @@ exports[`test ill/binary-search:comparing 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={1657365838}
+    data-jsx={342053577}
     style={
       Object {
         "opacity": 0,
       }
     }>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 46,
@@ -920,11 +934,11 @@ exports[`test ill/binary-search:comparing 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={1657365838} />
+        data-jsx={342053577} />
        inside a sorted list
     </p>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 34,
@@ -935,13 +949,15 @@ exports[`test ill/binary-search:comparing 1`] = `
     </p>
   </div>
   <div
+    className="item"
+    data-jsx={477783248}
     style={
       Object {
-        "left": 237.5,
         "opacity": 1,
-        "position": "absolute",
-        "top": 367,
-        "transform": "rotate(3.4699999999999998deg)",
+        "transform": "
+                translate(237.5px, 367px)
+                rotate(3.4699999999999998deg)
+              ",
       }
     }>
     <div
@@ -1053,13 +1069,15 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
   </div>
   <div
+    className="low"
+    data-jsx={725735441}
     style={
       Object {
-        "left": 0,
         "opacity": 1,
-        "position": "absolute",
-        "top": 16,
-        "transform": "rotate(0deg)",
+        "transform": "
+                translate(0px, 16px)
+                rotate(0deg)
+              ",
       }
     }>
     <div
@@ -1100,13 +1118,15 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
   </div>
   <div
+    className="high"
+    data-jsx={3313166091}
     style={
       Object {
-        "left": 475,
         "opacity": 1,
-        "position": "absolute",
-        "top": 70,
-        "transform": "rotate(0deg)",
+        "transform": "
+                translate(475px, 70px)
+                rotate(0deg)
+              ",
       }
     }>
     <div
@@ -1147,12 +1167,12 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
   </div>
   <div
+    className="mid"
+    data-jsx={1845835653}
     style={
       Object {
-        "left": 285,
         "opacity": 1,
-        "position": "absolute",
-        "top": 124,
+        "transform": "translate(285px, 124px)",
       }
     }>
     <div
@@ -1194,7 +1214,7 @@ exports[`test ill/binary-search:comparing 1`] = `
   </div>
   <div
     className="list"
-    data-jsx={3910051856}
+    data-jsx={2297240151}
     style={
       Object {
         "top": 178,
@@ -1202,12 +1222,14 @@ exports[`test ill/binary-search:comparing 1`] = `
     }>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 0,
           "opacity": 1,
-          "transform": "rotate(-0.9deg)",
+          "transform": "
+                          translate(0px, 0px)
+                          rotate(-0.9deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -1303,12 +1325,14 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 95,
           "opacity": 1,
-          "transform": "rotate(-0.4deg)",
+          "transform": "
+                          translate(95px, 0px)
+                          rotate(-0.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -1419,12 +1443,14 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 190,
           "opacity": 1,
-          "transform": "rotate(1.4deg)",
+          "transform": "
+                          translate(190px, 0px)
+                          rotate(1.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -1545,12 +1571,14 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 285,
           "opacity": 1,
-          "transform": "rotate(5.47deg)",
+          "transform": "
+                          translate(285px, 0px)
+                          rotate(5.47deg)
+                        ",
           "zIndex": 1,
         }
       }>
@@ -1655,12 +1683,14 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 380,
           "opacity": 1,
-          "transform": "rotate(-1.35deg)",
+          "transform": "
+                          translate(380px, 0px)
+                          rotate(-1.35deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -1777,12 +1807,14 @@ exports[`test ill/binary-search:comparing 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 475,
           "opacity": 1,
-          "transform": "rotate(1deg)",
+          "transform": "
+                          translate(475px, 0px)
+                          rotate(1deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -1909,7 +1941,7 @@ exports[`test ill/binary-search:comparing 1`] = `
   </div>
   <div
     className="comparison code"
-    data-jsx={790948768}
+    data-jsx={750233767}
     style={
       Object {
         "fontSize": 27,
@@ -1938,14 +1970,14 @@ exports[`test ill/binary-search:found 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={1657365838}
+    data-jsx={342053577}
     style={
       Object {
         "opacity": 0,
       }
     }>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 46,
@@ -1954,11 +1986,11 @@ exports[`test ill/binary-search:found 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={1657365838} />
+        data-jsx={342053577} />
        inside a sorted list
     </p>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 34,
@@ -1969,13 +2001,15 @@ exports[`test ill/binary-search:found 1`] = `
     </p>
   </div>
   <div
+    className="item"
+    data-jsx={477783248}
     style={
       Object {
-        "left": 237.5,
         "opacity": 1,
-        "position": "absolute",
-        "top": 367,
-        "transform": "rotate(-1.5deg)",
+        "transform": "
+                translate(237.5px, 367px)
+                rotate(-1.5deg)
+              ",
       }
     }>
     <div
@@ -2087,13 +2121,15 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
   </div>
   <div
+    className="low"
+    data-jsx={725735441}
     style={
       Object {
-        "left": 285,
         "opacity": 1,
-        "position": "absolute",
-        "top": 16,
-        "transform": "rotate(0deg)",
+        "transform": "
+                translate(285px, 16px)
+                rotate(0deg)
+              ",
       }
     }>
     <div
@@ -2134,13 +2170,15 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
   </div>
   <div
+    className="high"
+    data-jsx={3313166091}
     style={
       Object {
-        "left": 285,
         "opacity": 1,
-        "position": "absolute",
-        "top": 70,
-        "transform": "rotate(0deg)",
+        "transform": "
+                translate(285px, 70px)
+                rotate(0deg)
+              ",
       }
     }>
     <div
@@ -2181,12 +2219,12 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
   </div>
   <div
+    className="mid"
+    data-jsx={1845835653}
     style={
       Object {
-        "left": 285,
         "opacity": 1,
-        "position": "absolute",
-        "top": 124,
+        "transform": "translate(285px, 124px)",
       }
     }>
     <div
@@ -2228,7 +2266,7 @@ exports[`test ill/binary-search:found 1`] = `
   </div>
   <div
     className="list"
-    data-jsx={3910051856}
+    data-jsx={2297240151}
     style={
       Object {
         "top": 178,
@@ -2236,12 +2274,14 @@ exports[`test ill/binary-search:found 1`] = `
     }>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 0,
           "opacity": 0.2,
-          "transform": "rotate(-0.9deg)",
+          "transform": "
+                          translate(0px, 0px)
+                          rotate(-0.9deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -2337,12 +2377,14 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 95,
           "opacity": 0.2,
-          "transform": "rotate(-0.4deg)",
+          "transform": "
+                          translate(95px, 0px)
+                          rotate(-0.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -2453,12 +2495,14 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 190,
           "opacity": 0.2,
-          "transform": "rotate(1.4deg)",
+          "transform": "
+                          translate(190px, 0px)
+                          rotate(1.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -2579,12 +2623,14 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 285,
           "opacity": 1,
-          "transform": "rotate(0.5deg)",
+          "transform": "
+                          translate(285px, 0px)
+                          rotate(0.5deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -2689,12 +2735,14 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 380,
           "opacity": 0.2,
-          "transform": "rotate(-1.35deg)",
+          "transform": "
+                          translate(380px, 0px)
+                          rotate(-1.35deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -2811,12 +2859,14 @@ exports[`test ill/binary-search:found 1`] = `
     </div>
     <div
       className="item false"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 475,
           "opacity": 0.2,
-          "transform": "rotate(1deg)",
+          "transform": "
+                          translate(475px, 0px)
+                          rotate(1deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -2943,7 +2993,7 @@ exports[`test ill/binary-search:found 1`] = `
   </div>
   <div
     className="comparison code"
-    data-jsx={790948768}
+    data-jsx={750233767}
     style={
       Object {
         "fontSize": 27,
@@ -2972,14 +3022,14 @@ exports[`test ill/binary-search:intro 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={1657365838}
+    data-jsx={342053577}
     style={
       Object {
         "opacity": 1,
       }
     }>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 46,
@@ -2988,11 +3038,11 @@ exports[`test ill/binary-search:intro 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={1657365838} />
+        data-jsx={342053577} />
        inside a sorted list
     </p>
     <p
-      data-jsx={1657365838}
+      data-jsx={342053577}
       style={
         Object {
           "fontSize": 34,
@@ -3003,13 +3053,15 @@ exports[`test ill/binary-search:intro 1`] = `
     </p>
   </div>
   <div
+    className="item"
+    data-jsx={477783248}
     style={
       Object {
-        "left": 237.5,
         "opacity": 0,
-        "position": "absolute",
-        "top": 367,
-        "transform": "rotate(-1.5deg)",
+        "transform": "
+                translate(237.5px, 367px)
+                rotate(-1.5deg)
+              ",
       }
     }>
     <div
@@ -3122,7 +3174,7 @@ exports[`test ill/binary-search:intro 1`] = `
   </div>
   <div
     className="list"
-    data-jsx={3910051856}
+    data-jsx={2297240151}
     style={
       Object {
         "top": 178,
@@ -3130,12 +3182,14 @@ exports[`test ill/binary-search:intro 1`] = `
     }>
     <div
       className="item item-selectable"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 0,
           "opacity": 1,
-          "transform": "rotate(-0.9deg)",
+          "transform": "
+                          translate(0px, 0px)
+                          rotate(-0.9deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -3231,12 +3285,14 @@ exports[`test ill/binary-search:intro 1`] = `
     </div>
     <div
       className="item item-selectable"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 95,
           "opacity": 1,
-          "transform": "rotate(-0.4deg)",
+          "transform": "
+                          translate(95px, 0px)
+                          rotate(-0.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -3347,12 +3403,14 @@ exports[`test ill/binary-search:intro 1`] = `
     </div>
     <div
       className="item item-selectable"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 190,
           "opacity": 1,
-          "transform": "rotate(1.4deg)",
+          "transform": "
+                          translate(190px, 0px)
+                          rotate(1.4deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -3473,12 +3531,14 @@ exports[`test ill/binary-search:intro 1`] = `
     </div>
     <div
       className="item item-selectable"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 285,
           "opacity": 1,
-          "transform": "rotate(0.5deg)",
+          "transform": "
+                          translate(285px, 0px)
+                          rotate(0.5deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -3583,12 +3643,14 @@ exports[`test ill/binary-search:intro 1`] = `
     </div>
     <div
       className="item item-selectable"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 380,
           "opacity": 1,
-          "transform": "rotate(-1.35deg)",
+          "transform": "
+                          translate(380px, 0px)
+                          rotate(-1.35deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -3705,12 +3767,14 @@ exports[`test ill/binary-search:intro 1`] = `
     </div>
     <div
       className="item item-selectable"
-      data-jsx={3910051856}
+      data-jsx={2297240151}
       style={
         Object {
-          "left": 475,
           "opacity": 1,
-          "transform": "rotate(1deg)",
+          "transform": "
+                          translate(475px, 0px)
+                          rotate(1deg)
+                        ",
           "zIndex": 0,
         }
       }>
@@ -3837,7 +3901,7 @@ exports[`test ill/binary-search:intro 1`] = `
   </div>
   <div
     className="comparison code"
-    data-jsx={790948768}
+    data-jsx={750233767}
     style={
       Object {
         "fontSize": 27,
@@ -6596,14 +6660,14 @@ exports[`test page:binary-search 1`] = `
                   }>
                   <div
                     className="intro"
-                    data-jsx={1657365838}
+                    data-jsx={342053577}
                     style={
                       Object {
                         "opacity": 1,
                       }
                     }>
                     <p
-                      data-jsx={1657365838}
+                      data-jsx={342053577}
                       style={
                         Object {
                           "fontSize": 58,
@@ -6612,11 +6676,11 @@ exports[`test page:binary-search 1`] = `
                       }>
                       Find the position of a value
                       <br
-                        data-jsx={1657365838} />
+                        data-jsx={342053577} />
                        inside a sorted list
                     </p>
                     <p
-                      data-jsx={1657365838}
+                      data-jsx={342053577}
                       style={
                         Object {
                           "fontSize": 44,
@@ -6628,7 +6692,7 @@ exports[`test page:binary-search 1`] = `
                   </div>
                   <div
                     className="list"
-                    data-jsx={3910051856}
+                    data-jsx={2297240151}
                     style={
                       Object {
                         "top": 224,
@@ -6636,12 +6700,14 @@ exports[`test page:binary-search 1`] = `
                     }>
                     <div
                       className="item item-selectable"
-                      data-jsx={3910051856}
+                      data-jsx={2297240151}
                       style={
                         Object {
-                          "left": 0,
                           "opacity": 1,
-                          "transform": "rotate(-0.9deg)",
+                          "transform": "
+                                          translate(0px, 0px)
+                                          rotate(-0.9deg)
+                                        ",
                           "zIndex": 0,
                         }
                       }>
@@ -6737,12 +6803,14 @@ exports[`test page:binary-search 1`] = `
                     </div>
                     <div
                       className="item item-selectable"
-                      data-jsx={3910051856}
+                      data-jsx={2297240151}
                       style={
                         Object {
-                          "left": 122,
                           "opacity": 1,
-                          "transform": "rotate(-0.4deg)",
+                          "transform": "
+                                          translate(122px, 0px)
+                                          rotate(-0.4deg)
+                                        ",
                           "zIndex": 0,
                         }
                       }>
@@ -6853,12 +6921,14 @@ exports[`test page:binary-search 1`] = `
                     </div>
                     <div
                       className="item item-selectable"
-                      data-jsx={3910051856}
+                      data-jsx={2297240151}
                       style={
                         Object {
-                          "left": 244,
                           "opacity": 1,
-                          "transform": "rotate(1.4deg)",
+                          "transform": "
+                                          translate(244px, 0px)
+                                          rotate(1.4deg)
+                                        ",
                           "zIndex": 0,
                         }
                       }>
@@ -6979,12 +7049,14 @@ exports[`test page:binary-search 1`] = `
                     </div>
                     <div
                       className="item item-selectable"
-                      data-jsx={3910051856}
+                      data-jsx={2297240151}
                       style={
                         Object {
-                          "left": 366,
                           "opacity": 1,
-                          "transform": "rotate(0.5deg)",
+                          "transform": "
+                                          translate(366px, 0px)
+                                          rotate(0.5deg)
+                                        ",
                           "zIndex": 0,
                         }
                       }>
@@ -7089,12 +7161,14 @@ exports[`test page:binary-search 1`] = `
                     </div>
                     <div
                       className="item item-selectable"
-                      data-jsx={3910051856}
+                      data-jsx={2297240151}
                       style={
                         Object {
-                          "left": 488,
                           "opacity": 1,
-                          "transform": "rotate(-1.35deg)",
+                          "transform": "
+                                          translate(488px, 0px)
+                                          rotate(-1.35deg)
+                                        ",
                           "zIndex": 0,
                         }
                       }>
@@ -7211,12 +7285,14 @@ exports[`test page:binary-search 1`] = `
                     </div>
                     <div
                       className="item item-selectable"
-                      data-jsx={3910051856}
+                      data-jsx={2297240151}
                       style={
                         Object {
-                          "left": 610,
                           "opacity": 1,
-                          "transform": "rotate(1deg)",
+                          "transform": "
+                                          translate(610px, 0px)
+                                          rotate(1deg)
+                                        ",
                           "zIndex": 0,
                         }
                       }>
@@ -7343,7 +7419,7 @@ exports[`test page:binary-search 1`] = `
                   </div>
                   <div
                     className="comparison code"
-                    data-jsx={790948768}
+                    data-jsx={750233767}
                     style={
                       Object {
                         "fontSize": 36,
@@ -9235,14 +9311,14 @@ exports[`test player:binary-search 1`] = `
             }>
             <div
               className="intro"
-              data-jsx={1657365838}
+              data-jsx={342053577}
               style={
                 Object {
                   "opacity": 1,
                 }
               }>
               <p
-                data-jsx={1657365838}
+                data-jsx={342053577}
                 style={
                   Object {
                     "fontSize": 46,
@@ -9251,11 +9327,11 @@ exports[`test player:binary-search 1`] = `
                 }>
                 Find the position of a value
                 <br
-                  data-jsx={1657365838} />
+                  data-jsx={342053577} />
                  inside a sorted list
               </p>
               <p
-                data-jsx={1657365838}
+                data-jsx={342053577}
                 style={
                   Object {
                     "fontSize": 34,
@@ -9267,7 +9343,7 @@ exports[`test player:binary-search 1`] = `
             </div>
             <div
               className="list"
-              data-jsx={3910051856}
+              data-jsx={2297240151}
               style={
                 Object {
                   "top": 178,
@@ -9275,12 +9351,14 @@ exports[`test player:binary-search 1`] = `
               }>
               <div
                 className="item item-selectable"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 0,
                     "opacity": 1,
-                    "transform": "rotate(-0.9deg)",
+                    "transform": "
+                                    translate(0px, 0px)
+                                    rotate(-0.9deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -9376,12 +9454,14 @@ exports[`test player:binary-search 1`] = `
               </div>
               <div
                 className="item item-selectable"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 95,
                     "opacity": 1,
-                    "transform": "rotate(-0.4deg)",
+                    "transform": "
+                                    translate(95px, 0px)
+                                    rotate(-0.4deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -9492,12 +9572,14 @@ exports[`test player:binary-search 1`] = `
               </div>
               <div
                 className="item item-selectable"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 190,
                     "opacity": 1,
-                    "transform": "rotate(1.4deg)",
+                    "transform": "
+                                    translate(190px, 0px)
+                                    rotate(1.4deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -9618,12 +9700,14 @@ exports[`test player:binary-search 1`] = `
               </div>
               <div
                 className="item item-selectable"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 285,
                     "opacity": 1,
-                    "transform": "rotate(0.5deg)",
+                    "transform": "
+                                    translate(285px, 0px)
+                                    rotate(0.5deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -9728,12 +9812,14 @@ exports[`test player:binary-search 1`] = `
               </div>
               <div
                 className="item item-selectable"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 380,
                     "opacity": 1,
-                    "transform": "rotate(-1.35deg)",
+                    "transform": "
+                                    translate(380px, 0px)
+                                    rotate(-1.35deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -9850,12 +9936,14 @@ exports[`test player:binary-search 1`] = `
               </div>
               <div
                 className="item item-selectable"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 475,
                     "opacity": 1,
-                    "transform": "rotate(1deg)",
+                    "transform": "
+                                    translate(475px, 0px)
+                                    rotate(1deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -9982,7 +10070,7 @@ exports[`test player:binary-search 1`] = `
             </div>
             <div
               className="comparison code"
-              data-jsx={790948768}
+              data-jsx={750233767}
               style={
                 Object {
                   "fontSize": 27,
@@ -10244,14 +10332,14 @@ exports[`test player:binary-search-mid-way 1`] = `
             }>
             <div
               className="intro"
-              data-jsx={1657365838}
+              data-jsx={342053577}
               style={
                 Object {
                   "opacity": 0,
                 }
               }>
               <p
-                data-jsx={1657365838}
+                data-jsx={342053577}
                 style={
                   Object {
                     "fontSize": 46,
@@ -10260,11 +10348,11 @@ exports[`test player:binary-search-mid-way 1`] = `
                 }>
                 Find the position of a value
                 <br
-                  data-jsx={1657365838} />
+                  data-jsx={342053577} />
                  inside a sorted list
               </p>
               <p
-                data-jsx={1657365838}
+                data-jsx={342053577}
                 style={
                   Object {
                     "fontSize": 34,
@@ -10275,13 +10363,15 @@ exports[`test player:binary-search-mid-way 1`] = `
               </p>
             </div>
             <div
+              className="item"
+              data-jsx={477783248}
               style={
                 Object {
-                  "left": 237.5,
                   "opacity": 1,
-                  "position": "absolute",
-                  "top": 367,
-                  "transform": "rotate(2.51deg)",
+                  "transform": "
+                          translate(237.5px, 367px)
+                          rotate(2.51deg)
+                        ",
                 }
               }>
               <div
@@ -10397,13 +10487,15 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
             </div>
             <div
+              className="low"
+              data-jsx={725735441}
               style={
                 Object {
-                  "left": 0,
                   "opacity": 1,
-                  "position": "absolute",
-                  "top": 16,
-                  "transform": "rotate(0deg)",
+                  "transform": "
+                          translate(0px, 16px)
+                          rotate(0deg)
+                        ",
                 }
               }>
               <div
@@ -10444,13 +10536,15 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
             </div>
             <div
+              className="high"
+              data-jsx={3313166091}
               style={
                 Object {
-                  "left": 475,
                   "opacity": 1,
-                  "position": "absolute",
-                  "top": 70,
-                  "transform": "rotate(0deg)",
+                  "transform": "
+                          translate(475px, 70px)
+                          rotate(0deg)
+                        ",
                 }
               }>
               <div
@@ -10491,12 +10585,12 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
             </div>
             <div
+              className="mid"
+              data-jsx={1845835653}
               style={
                 Object {
-                  "left": 285,
                   "opacity": 1,
-                  "position": "absolute",
-                  "top": 124,
+                  "transform": "translate(285px, 124px)",
                 }
               }>
               <div
@@ -10538,7 +10632,7 @@ exports[`test player:binary-search-mid-way 1`] = `
             </div>
             <div
               className="list"
-              data-jsx={3910051856}
+              data-jsx={2297240151}
               style={
                 Object {
                   "top": 178,
@@ -10546,12 +10640,14 @@ exports[`test player:binary-search-mid-way 1`] = `
               }>
               <div
                 className="item false"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 0,
                     "opacity": 1,
-                    "transform": "rotate(-0.9deg)",
+                    "transform": "
+                                    translate(0px, 0px)
+                                    rotate(-0.9deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -10647,12 +10743,14 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
               <div
                 className="item false"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 95,
                     "opacity": 1,
-                    "transform": "rotate(-0.4deg)",
+                    "transform": "
+                                    translate(95px, 0px)
+                                    rotate(-0.4deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -10763,12 +10861,14 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
               <div
                 className="item false"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 190,
                     "opacity": 1,
-                    "transform": "rotate(1.4deg)",
+                    "transform": "
+                                    translate(190px, 0px)
+                                    rotate(1.4deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -10889,12 +10989,14 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
               <div
                 className="item false"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 285,
                     "opacity": 1,
-                    "transform": "rotate(4.51deg)",
+                    "transform": "
+                                    translate(285px, 0px)
+                                    rotate(4.51deg)
+                                  ",
                     "zIndex": 1,
                   }
                 }>
@@ -10999,12 +11101,14 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
               <div
                 className="item false"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 380,
                     "opacity": 1,
-                    "transform": "rotate(-1.35deg)",
+                    "transform": "
+                                    translate(380px, 0px)
+                                    rotate(-1.35deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -11121,12 +11225,14 @@ exports[`test player:binary-search-mid-way 1`] = `
               </div>
               <div
                 className="item false"
-                data-jsx={3910051856}
+                data-jsx={2297240151}
                 style={
                   Object {
-                    "left": 475,
                     "opacity": 1,
-                    "transform": "rotate(1deg)",
+                    "transform": "
+                                    translate(475px, 0px)
+                                    rotate(1deg)
+                                  ",
                     "zIndex": 0,
                   }
                 }>
@@ -11253,7 +11359,7 @@ exports[`test player:binary-search-mid-way 1`] = `
             </div>
             <div
               className="comparison code"
-              data-jsx={790948768}
+              data-jsx={750233767}
               style={
                 Object {
                   "fontSize": 27,
@@ -13443,14 +13549,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={1657365838}
+        data-jsx={342053577}
         style={
           Object {
             "opacity": 0.5,
           }
         }>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 46,
@@ -13459,11 +13565,11 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={1657365838} />
+            data-jsx={342053577} />
            inside a sorted list
         </p>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 34,
@@ -13474,13 +13580,15 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         </p>
       </div>
       <div
+        className="item"
+        data-jsx={477783248}
         style={
           Object {
-            "left": 237.5,
             "opacity": 0.5,
-            "position": "absolute",
-            "top": 367,
-            "transform": "rotate(-1.5deg)",
+            "transform": "
+                    translate(237.5px, 367px)
+                    rotate(-1.5deg)
+                  ",
           }
         }>
         <div
@@ -13593,7 +13701,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
       </div>
       <div
         className="list"
-        data-jsx={3910051856}
+        data-jsx={2297240151}
         style={
           Object {
             "top": 178,
@@ -13601,12 +13709,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         }>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 0,
               "opacity": 1,
-              "transform": "rotate(-0.9deg)",
+              "transform": "
+                              translate(0px, 0px)
+                              rotate(-0.9deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -13702,12 +13812,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 95,
               "opacity": 1,
-              "transform": "rotate(-0.4deg)",
+              "transform": "
+                              translate(95px, 0px)
+                              rotate(-0.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -13818,12 +13930,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 190,
               "opacity": 1,
-              "transform": "rotate(1.4deg)",
+              "transform": "
+                              translate(190px, 0px)
+                              rotate(1.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -13944,12 +14058,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 285,
               "opacity": 1,
-              "transform": "rotate(0.5deg)",
+              "transform": "
+                              translate(285px, 0px)
+                              rotate(0.5deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -14054,12 +14170,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 380,
               "opacity": 1,
-              "transform": "rotate(-1.35deg)",
+              "transform": "
+                              translate(380px, 0px)
+                              rotate(-1.35deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -14176,12 +14294,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 475,
               "opacity": 1,
-              "transform": "rotate(1deg)",
+              "transform": "
+                              translate(475px, 0px)
+                              rotate(1deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -14308,7 +14428,7 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
       </div>
       <div
         className="comparison code"
-        data-jsx={790948768}
+        data-jsx={750233767}
         style={
           Object {
             "fontSize": 27,
@@ -14563,14 +14683,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={1657365838}
+        data-jsx={342053577}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 46,
@@ -14579,11 +14699,11 @@ exports[`test stack-entry:binary-search-finished 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={1657365838} />
+            data-jsx={342053577} />
            inside a sorted list
         </p>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 34,
@@ -14594,13 +14714,15 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </p>
       </div>
       <div
+        className="item"
+        data-jsx={477783248}
         style={
           Object {
-            "left": 237.5,
             "opacity": 1,
-            "position": "absolute",
-            "top": 367,
-            "transform": "rotate(-1.5deg)",
+            "transform": "
+                    translate(237.5px, 367px)
+                    rotate(-1.5deg)
+                  ",
           }
         }>
         <div
@@ -14706,13 +14828,15 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
       </div>
       <div
+        className="low"
+        data-jsx={725735441}
         style={
           Object {
-            "left": 0,
             "opacity": 1,
-            "position": "absolute",
-            "top": 16,
-            "transform": "rotate(0deg)",
+            "transform": "
+                    translate(0px, 16px)
+                    rotate(0deg)
+                  ",
           }
         }>
         <div
@@ -14753,13 +14877,15 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
       </div>
       <div
+        className="high"
+        data-jsx={3313166091}
         style={
           Object {
-            "left": 190,
             "opacity": 1,
-            "position": "absolute",
-            "top": 70,
-            "transform": "rotate(0deg)",
+            "transform": "
+                    translate(190px, 70px)
+                    rotate(0deg)
+                  ",
           }
         }>
         <div
@@ -14800,12 +14926,12 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
       </div>
       <div
+        className="mid"
+        data-jsx={1845835653}
         style={
           Object {
-            "left": 95,
             "opacity": 1,
-            "position": "absolute",
-            "top": 124,
+            "transform": "translate(95px, 124px)",
           }
         }>
         <div
@@ -14847,7 +14973,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
       </div>
       <div
         className="list"
-        data-jsx={3910051856}
+        data-jsx={2297240151}
         style={
           Object {
             "top": 178,
@@ -14855,12 +14981,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         }>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 0,
               "opacity": 1,
-              "transform": "rotate(-0.9deg)",
+              "transform": "
+                              translate(0px, 0px)
+                              rotate(-0.9deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -14956,12 +15084,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 95,
               "opacity": 1,
-              "transform": "rotate(-0.4deg)",
+              "transform": "
+                              translate(95px, 0px)
+                              rotate(-0.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -15072,12 +15202,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 190,
               "opacity": 1,
-              "transform": "rotate(1.4deg)",
+              "transform": "
+                              translate(190px, 0px)
+                              rotate(1.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -15198,12 +15330,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 285,
               "opacity": 0.2,
-              "transform": "rotate(0.5deg)",
+              "transform": "
+                              translate(285px, 0px)
+                              rotate(0.5deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -15308,12 +15442,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 380,
               "opacity": 0.2,
-              "transform": "rotate(-1.35deg)",
+              "transform": "
+                              translate(380px, 0px)
+                              rotate(-1.35deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -15430,12 +15566,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 475,
               "opacity": 0.2,
-              "transform": "rotate(1deg)",
+              "transform": "
+                              translate(475px, 0px)
+                              rotate(1deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -15562,7 +15700,7 @@ exports[`test stack-entry:binary-search-finished 1`] = `
       </div>
       <div
         className="comparison code"
-        data-jsx={790948768}
+        data-jsx={750233767}
         style={
           Object {
             "fontSize": 27,
@@ -15817,14 +15955,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={1657365838}
+        data-jsx={342053577}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 46,
@@ -15833,11 +15971,11 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={1657365838} />
+            data-jsx={342053577} />
            inside a sorted list
         </p>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 34,
@@ -15848,13 +15986,15 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         </p>
       </div>
       <div
+        className="item"
+        data-jsx={477783248}
         style={
           Object {
-            "left": 237.5,
             "opacity": 1,
-            "position": "absolute",
-            "top": 367,
-            "transform": "rotate(-1.5deg)",
+            "transform": "
+                    translate(237.5px, 367px)
+                    rotate(-1.5deg)
+                  ",
           }
         }>
         <div
@@ -15966,13 +16106,15 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         </div>
       </div>
       <div
+        className="low"
+        data-jsx={725735441}
         style={
           Object {
-            "left": 0,
             "opacity": 0.5,
-            "position": "absolute",
-            "top": 16,
-            "transform": "rotate(0deg)",
+            "transform": "
+                    translate(0px, 16px)
+                    rotate(0deg)
+                  ",
           }
         }>
         <div
@@ -16014,7 +16156,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
       </div>
       <div
         className="list"
-        data-jsx={3910051856}
+        data-jsx={2297240151}
         style={
           Object {
             "top": 178,
@@ -16022,12 +16164,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         }>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 0,
               "opacity": 1,
-              "transform": "rotate(-0.9deg)",
+              "transform": "
+                              translate(0px, 0px)
+                              rotate(-0.9deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -16123,12 +16267,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 95,
               "opacity": 1,
-              "transform": "rotate(-0.4deg)",
+              "transform": "
+                              translate(95px, 0px)
+                              rotate(-0.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -16239,12 +16385,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 190,
               "opacity": 1,
-              "transform": "rotate(1.4deg)",
+              "transform": "
+                              translate(190px, 0px)
+                              rotate(1.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -16365,12 +16513,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 285,
               "opacity": 1,
-              "transform": "rotate(0.5deg)",
+              "transform": "
+                              translate(285px, 0px)
+                              rotate(0.5deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -16475,12 +16625,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 380,
               "opacity": 1,
-              "transform": "rotate(-1.35deg)",
+              "transform": "
+                              translate(380px, 0px)
+                              rotate(-1.35deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -16597,12 +16749,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 475,
               "opacity": 1,
-              "transform": "rotate(1deg)",
+              "transform": "
+                              translate(475px, 0px)
+                              rotate(1deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -16729,7 +16883,7 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
       </div>
       <div
         className="comparison code"
-        data-jsx={790948768}
+        data-jsx={750233767}
         style={
           Object {
             "fontSize": 27,
@@ -16984,14 +17138,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={1657365838}
+        data-jsx={342053577}
         style={
           Object {
             "opacity": 1,
           }
         }>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 46,
@@ -17000,11 +17154,11 @@ exports[`test stack-entry:binary-search-intro 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={1657365838} />
+            data-jsx={342053577} />
            inside a sorted list
         </p>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 34,
@@ -17015,13 +17169,15 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         </p>
       </div>
       <div
+        className="item"
+        data-jsx={477783248}
         style={
           Object {
-            "left": 237.5,
             "opacity": 0,
-            "position": "absolute",
-            "top": 367,
-            "transform": "rotate(-1.5deg)",
+            "transform": "
+                    translate(237.5px, 367px)
+                    rotate(-1.5deg)
+                  ",
           }
         }>
         <div
@@ -17134,7 +17290,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
       </div>
       <div
         className="list"
-        data-jsx={3910051856}
+        data-jsx={2297240151}
         style={
           Object {
             "top": 178,
@@ -17142,12 +17298,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         }>
         <div
           className="item item-selectable"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 0,
               "opacity": 1,
-              "transform": "rotate(-0.9deg)",
+              "transform": "
+                              translate(0px, 0px)
+                              rotate(-0.9deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -17243,12 +17401,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         </div>
         <div
           className="item item-selectable"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 95,
               "opacity": 1,
-              "transform": "rotate(-0.4deg)",
+              "transform": "
+                              translate(95px, 0px)
+                              rotate(-0.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -17359,12 +17519,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         </div>
         <div
           className="item item-selectable"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 190,
               "opacity": 1,
-              "transform": "rotate(1.4deg)",
+              "transform": "
+                              translate(190px, 0px)
+                              rotate(1.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -17485,12 +17647,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         </div>
         <div
           className="item item-selectable"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 285,
               "opacity": 1,
-              "transform": "rotate(0.5deg)",
+              "transform": "
+                              translate(285px, 0px)
+                              rotate(0.5deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -17595,12 +17759,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         </div>
         <div
           className="item item-selectable"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 380,
               "opacity": 1,
-              "transform": "rotate(-1.35deg)",
+              "transform": "
+                              translate(380px, 0px)
+                              rotate(-1.35deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -17717,12 +17883,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
         </div>
         <div
           className="item item-selectable"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 475,
               "opacity": 1,
-              "transform": "rotate(1deg)",
+              "transform": "
+                              translate(475px, 0px)
+                              rotate(1deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -17849,7 +18017,7 @@ exports[`test stack-entry:binary-search-intro 1`] = `
       </div>
       <div
         className="comparison code"
-        data-jsx={790948768}
+        data-jsx={750233767}
         style={
           Object {
             "fontSize": 27,
@@ -18087,14 +18255,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={1657365838}
+        data-jsx={342053577}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 46,
@@ -18103,11 +18271,11 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={1657365838} />
+            data-jsx={342053577} />
            inside a sorted list
         </p>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 34,
@@ -18118,13 +18286,15 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </p>
       </div>
       <div
+        className="item"
+        data-jsx={477783248}
         style={
           Object {
-            "left": 237.5,
             "opacity": 1,
-            "position": "absolute",
-            "top": 367,
-            "transform": "rotate(3.26deg)",
+            "transform": "
+                    translate(237.5px, 367px)
+                    rotate(3.26deg)
+                  ",
           }
         }>
         <div
@@ -18230,13 +18400,15 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
       </div>
       <div
+        className="low"
+        data-jsx={725735441}
         style={
           Object {
-            "left": 0,
             "opacity": 1,
-            "position": "absolute",
-            "top": 16,
-            "transform": "rotate(0deg)",
+            "transform": "
+                    translate(0px, 16px)
+                    rotate(0deg)
+                  ",
           }
         }>
         <div
@@ -18277,13 +18449,15 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
       </div>
       <div
+        className="high"
+        data-jsx={3313166091}
         style={
           Object {
-            "left": 190,
             "opacity": 1,
-            "position": "absolute",
-            "top": 70,
-            "transform": "rotate(0deg)",
+            "transform": "
+                    translate(190px, 70px)
+                    rotate(0deg)
+                  ",
           }
         }>
         <div
@@ -18324,12 +18498,12 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
       </div>
       <div
+        className="mid"
+        data-jsx={1845835653}
         style={
           Object {
-            "left": 95,
             "opacity": 1,
-            "position": "absolute",
-            "top": 124,
+            "transform": "translate(95px, 124px)",
           }
         }>
         <div
@@ -18371,7 +18545,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
       </div>
       <div
         className="list"
-        data-jsx={3910051856}
+        data-jsx={2297240151}
         style={
           Object {
             "top": 178,
@@ -18379,12 +18553,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         }>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 0,
               "opacity": 1,
-              "transform": "rotate(-0.9deg)",
+              "transform": "
+                              translate(0px, 0px)
+                              rotate(-0.9deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -18480,12 +18656,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 95,
               "opacity": 1,
-              "transform": "rotate(4.359999999999999deg)",
+              "transform": "
+                              translate(95px, 0px)
+                              rotate(4.359999999999999deg)
+                            ",
               "zIndex": 1,
             }
           }>
@@ -18596,12 +18774,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 190,
               "opacity": 1,
-              "transform": "rotate(1.4deg)",
+              "transform": "
+                              translate(190px, 0px)
+                              rotate(1.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -18722,12 +18902,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 285,
               "opacity": 0.2,
-              "transform": "rotate(0.5deg)",
+              "transform": "
+                              translate(285px, 0px)
+                              rotate(0.5deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -18832,12 +19014,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 380,
               "opacity": 0.2,
-              "transform": "rotate(-1.35deg)",
+              "transform": "
+                              translate(380px, 0px)
+                              rotate(-1.35deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -18954,12 +19138,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 475,
               "opacity": 0.2,
-              "transform": "rotate(1deg)",
+              "transform": "
+                              translate(475px, 0px)
+                              rotate(1deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -19086,7 +19272,7 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
       </div>
       <div
         className="comparison code"
-        data-jsx={790948768}
+        data-jsx={750233767}
         style={
           Object {
             "fontSize": 27,
@@ -19341,14 +19527,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={1657365838}
+        data-jsx={342053577}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 46,
@@ -19357,11 +19543,11 @@ exports[`test stack-entry:binary-search-returning 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={1657365838} />
+            data-jsx={342053577} />
            inside a sorted list
         </p>
         <p
-          data-jsx={1657365838}
+          data-jsx={342053577}
           style={
             Object {
               "fontSize": 34,
@@ -19372,13 +19558,15 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </p>
       </div>
       <div
+        className="item"
+        data-jsx={477783248}
         style={
           Object {
-            "left": 237.5,
             "opacity": 1,
-            "position": "absolute",
-            "top": 367,
-            "transform": "rotate(-1.5deg)",
+            "transform": "
+                    translate(237.5px, 367px)
+                    rotate(-1.5deg)
+                  ",
           }
         }>
         <div
@@ -19484,13 +19672,15 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
       </div>
       <div
+        className="low"
+        data-jsx={725735441}
         style={
           Object {
-            "left": 0,
             "opacity": 1,
-            "position": "absolute",
-            "top": 16,
-            "transform": "rotate(0deg)",
+            "transform": "
+                    translate(0px, 16px)
+                    rotate(0deg)
+                  ",
           }
         }>
         <div
@@ -19531,13 +19721,15 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
       </div>
       <div
+        className="high"
+        data-jsx={3313166091}
         style={
           Object {
-            "left": 190,
             "opacity": 1,
-            "position": "absolute",
-            "top": 70,
-            "transform": "rotate(0deg)",
+            "transform": "
+                    translate(190px, 70px)
+                    rotate(0deg)
+                  ",
           }
         }>
         <div
@@ -19578,12 +19770,12 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
       </div>
       <div
+        className="mid"
+        data-jsx={1845835653}
         style={
           Object {
-            "left": 95,
             "opacity": 1,
-            "position": "absolute",
-            "top": 124,
+            "transform": "translate(95px, 124px)",
           }
         }>
         <div
@@ -19625,7 +19817,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
       </div>
       <div
         className="list"
-        data-jsx={3910051856}
+        data-jsx={2297240151}
         style={
           Object {
             "top": 178,
@@ -19633,12 +19825,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         }>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 0,
               "opacity": 1,
-              "transform": "rotate(-0.9deg)",
+              "transform": "
+                              translate(0px, 0px)
+                              rotate(-0.9deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -19734,12 +19928,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 95,
               "opacity": 1,
-              "transform": "rotate(-0.4deg)",
+              "transform": "
+                              translate(95px, 0px)
+                              rotate(-0.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -19850,12 +20046,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 190,
               "opacity": 1,
-              "transform": "rotate(1.4deg)",
+              "transform": "
+                              translate(190px, 0px)
+                              rotate(1.4deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -19976,12 +20174,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 285,
               "opacity": 0.2,
-              "transform": "rotate(0.5deg)",
+              "transform": "
+                              translate(285px, 0px)
+                              rotate(0.5deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -20086,12 +20286,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 380,
               "opacity": 0.2,
-              "transform": "rotate(-1.35deg)",
+              "transform": "
+                              translate(380px, 0px)
+                              rotate(-1.35deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -20208,12 +20410,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
         </div>
         <div
           className="item false"
-          data-jsx={3910051856}
+          data-jsx={2297240151}
           style={
             Object {
-              "left": 475,
               "opacity": 0.2,
-              "transform": "rotate(1deg)",
+              "transform": "
+                              translate(475px, 0px)
+                              rotate(1deg)
+                            ",
               "zIndex": 0,
             }
           }>
@@ -20340,7 +20544,7 @@ exports[`test stack-entry:binary-search-returning 1`] = `
       </div>
       <div
         className="comparison code"
-        data-jsx={790948768}
+        data-jsx={750233767}
         style={
           Object {
             "fontSize": 27,

@@ -34,13 +34,9 @@ class Quicksort extends PureLayoutComponent {
 
   render() {
     const {
-      prevStep,
-      nextStep,
-      stepProgress,
+      entryIndex,
+      frame,
     } = this.props;
-    const {
-      list,
-    } = nextStep.bindings;
     const {
       layout
     } = this.context;
@@ -50,9 +46,7 @@ class Quicksort extends PureLayoutComponent {
       illustrationHeight,
       itemGroupTopPosition,
       listCenterTopPosition,
-      computeFrame,
     } = layout;
-    const frame = computeFrame(prevStep, nextStep, stepProgress);
     const {
       pivot,
       less,
@@ -61,7 +55,11 @@ class Quicksort extends PureLayoutComponent {
       greaterEmpty,
       listEmptyOpacity,
       itemPositions,
-    } = frame;
+      bindings,
+    } = frame.entries[entryIndex];
+    const {
+      list,
+    } = bindings;
 
     return (
       <div
@@ -183,11 +181,13 @@ class Quicksort extends PureLayoutComponent {
             );
           })}
           <Intro
+            entryIndex={entryIndex}
             frame={frame}
             onShuffle={this.handleShuffle}
             onStart={this.handleStart}
             />
           <Outro
+            entryIndex={entryIndex}
             frame={frame}
             />
         </div>

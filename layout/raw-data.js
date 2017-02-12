@@ -15,8 +15,5 @@ export default init => {
 
     fontSize: getRelSize(FONT_SIZE, 2),
     lineHeight: getRelSize(LINE_HEIGHT, 2),
-
-    // Hardcoded to fit raw data from Bfs
-    illustrationHeight: getRelSize(164, 1),
   };
 };

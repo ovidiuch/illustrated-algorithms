@@ -1,9 +1,11 @@
 import offsetSteps from '../../../utils/offset-steps';
 import quicksort from '../../../algorithms/quicksort';
 import Quicksort from '../../../components/ill/quicksort/quicksort';
+import computeQuicksortFrame from '../../../frame/quicksort';
 
 export default {
   _layoutFor: 'quicksort',
+  computeFrame: computeQuicksortFrame,
   algorithm: quicksort,
   illustration: Quicksort,
   steps: [
