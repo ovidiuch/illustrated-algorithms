@@ -1,8 +1,8 @@
 import React from 'react';
-import getStack from '../utils/stack';
-import computeBinarySearchFrame from '../frame/binary-search';
-import computeQuicksortFrame from '../frame/quicksort';
-import computeRawDataFrame from '../frame/raw-data';
+import getStack from '../../utils/stack';
+import computeBinarySearchFrame from '../../frame/binary-search';
+import computeQuicksortFrame from '../../frame/quicksort';
+import computeRawDataFrame from '../../frame/raw-data';
 
 const frameComputers = {
   binarySearch: computeBinarySearchFrame,

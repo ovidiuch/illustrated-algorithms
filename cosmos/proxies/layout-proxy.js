@@ -1,11 +1,11 @@
 import React from 'react';
 
-import binarySearch from '../algorithms/binary-search';
-import quicksort from '../algorithms/quicksort';
-import bfs from '../algorithms/bfs';
-import computeBinaryBindingLayout from '../layout/binary-search';
-import computeQuicksortLayout from '../layout/quicksort';
-import computeBfsLayout from '../layout/bfs';
+import binarySearch from '../../algorithms/binary-search';
+import quicksort from '../../algorithms/quicksort';
+import bfs from '../../algorithms/bfs';
+import computeBinaryBindingLayout from '../../layout/binary-search';
+import computeQuicksortLayout from '../../layout/quicksort';
+import computeBfsLayout from '../../layout/bfs';
 
 const layoutRefs = {
   binarySearch: {

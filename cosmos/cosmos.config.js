@@ -4,11 +4,11 @@ export default {
     /binary-search\/((?!binary-search).)/,
   ],
   proxies: [
-    './layout-proxy',
-    './frame-proxy',
-    './context-proxy',
-    './global-style-proxy',
-    './bg-color-proxy',
+    './proxies/layout-proxy',
+    './proxies/frame-proxy',
+    './proxies/context-proxy',
+    './proxies/global-style-proxy',
+    './proxies/bg-color-proxy',
   ],
   publicPath: '../static',
 };
