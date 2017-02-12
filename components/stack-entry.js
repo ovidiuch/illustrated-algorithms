@@ -4,16 +4,18 @@ import SourceCode from './source-code';
 
 const { max, round } = Math;
 
+// TODO: Don't re-render on same stack entry frame
 class StackEntry extends PureLayoutComponent {
   render() {
     const {
       illustration,
       code,
-      highlight,
-      entryIndex,
       frame,
       actions,
     } = this.props;
+    const {
+      highlight,
+    } = frame;
     const {
       layout
     } = this.context;
@@ -54,7 +56,6 @@ class StackEntry extends PureLayoutComponent {
           style={illustrationStyle}
           >
           {createElement(illustration, {
-            entryIndex,
             frame,
             actions,
           })}
@@ -81,7 +82,6 @@ class StackEntry extends PureLayoutComponent {
 StackEntry.propTypes = {
   code: React.PropTypes.string.isRequired,
   illustration: React.PropTypes.func.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
   frame: React.PropTypes.object.isRequired,
   actions: React.PropTypes.object.isRequired,
 };

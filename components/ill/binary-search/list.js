@@ -53,13 +53,12 @@ class List extends PureLayoutComponent {
   render() {
     const {
       frame,
-      entryIndex,
       onSelect,
     } = this.props;
     const {
       items,
       isSelectable,
-    } = frame.entries[entryIndex].list;
+    } = frame.list;
     const { layout } = this.context;
     const {
       listTop,
@@ -120,7 +119,6 @@ class List extends PureLayoutComponent {
 
 List.propTypes = {
   frame: React.PropTypes.object.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
   onSelect: React.PropTypes.func.isRequired,
 };
 

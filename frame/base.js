@@ -120,11 +120,17 @@ export default (layout, stack, stepProgress) => {
     entryHeight,
     entries: entries.map(({ prevStep, nextStep }, i) => {
       const {
+        parentStepId,
+        highlight,
         bindings,
         returnValue,
       } = nextStep;
 
       return {
+        // Tieing stack entry elements to their parent step id will preserve
+        // their DOM nodes when other entries are added to or removed from stack
+        entryId: parentStepId || 0,
+        highlight,
         bindings,
         returnValue,
         opacity: getTransOpacityForStackEntry(stack, i, stepProgress),

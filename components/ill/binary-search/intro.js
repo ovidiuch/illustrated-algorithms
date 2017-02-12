@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Intro({ frame, entryIndex }, { layout }) {
+export default function Intro({ frame }, { layout }) {
   const {
     illustrationHeight,
   } = layout;
   const {
     opacity,
-  } = frame.entries[entryIndex].intro;
+  } = frame.intro;
 
   return (
     <div
@@ -53,7 +53,6 @@ export default function Intro({ frame, entryIndex }, { layout }) {
 
 Intro.propTypes = {
   frame: React.PropTypes.object.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Intro.contextTypes = {

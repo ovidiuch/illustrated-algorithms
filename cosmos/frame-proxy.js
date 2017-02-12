@@ -36,8 +36,7 @@ class FrameProxy extends React.Component {
     } = _frameFrom;
     const stack = getStack([prevStep, nextStep], 0);
     const computer = frameComputers[_layoutFor];
-    const frame = computer(layout, stack, stepProgress);
-    const { highlight } = nextStep;
+    const frame = computer(layout, stack, stepProgress).entries[0];
 
     return React.createElement(nextProxy.value, {
       ...this.props,
@@ -45,8 +44,6 @@ class FrameProxy extends React.Component {
       fixture: {
         ...fixture,
         frame,
-        highlight,
-        entryIndex: 0,
       },
     });
   }

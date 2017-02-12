@@ -6,7 +6,6 @@ class RawData extends PureLayoutComponent {
   render() {
     const {
       frame,
-      entryIndex,
     } = this.props;
     const {
       layout
@@ -15,7 +14,7 @@ class RawData extends PureLayoutComponent {
       bindings,
       returnValue,
       isFirstStep,
-    } = frame.entries[entryIndex];
+    } = frame;
     const {
       padding,
       fontSize,
@@ -115,7 +114,6 @@ class RawData extends PureLayoutComponent {
 
 RawData.propTypes = {
   frame: React.PropTypes.object.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
 };
 
 RawData.contextTypes = {

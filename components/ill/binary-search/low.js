@@ -1,14 +1,14 @@
 import React from 'react';
 import NumberVar from '../shared/number-var';
 
-export default function Low({ frame, entryIndex }) {
+export default function Low({ frame }) {
   const {
     value,
     top,
     left,
     opacity,
     rotation,
-  } = frame.entries[entryIndex].low;
+  } = frame.low;
 
   if (value === undefined) {
     return null;
@@ -41,7 +41,6 @@ export default function Low({ frame, entryIndex }) {
 
 Low.propTypes = {
   frame: React.PropTypes.object.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Low.contextTypes = {

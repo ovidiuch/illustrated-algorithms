@@ -132,26 +132,25 @@ class Player extends React.Component {
             transform: `translate(0, ${frame.stack.top}px)`,
           }}
           >
-          {stack.entries.map(({ prevStep, nextStep }, i) => {
-            // Tieing stack entry elements to their parent step id will preserve
-            // them when other entries are added to or removed from stack.
-            const stackEntryKey = nextStep.parentStepId || 0;
+          {frame.entries.map(entryFrame => {
+            const {
+              entryId,
+              opacity,
+            } = entryFrame;
 
             return (
               <div
                 className="stack-entry-outer"
-                key={stackEntryKey}
+                key={entryId}
                 style={{
                   height: frame.entryHeight,
-                  opacity: frame.entries[i].opacity,
+                  opacity,
                 }}
                 >
                 <StackEntry
                   illustration={illustration}
                   code={algorithm.code}
-                  highlight={nextStep.highlight}
-                  entryIndex={i}
-                  frame={frame}
+                  frame={entryFrame}
                   actions={{
                     ...actions,
                     play: this.handlePlay,

@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Comparison({ frame, entryIndex }, { layout }) {
+export default function Comparison({ frame }, { layout }) {
   const {
     value,
     opacity,
-  } = frame.entries[entryIndex].comparison;
+  } = frame.comparison;
   const {
     blockLabelFontSize,
     numberVarHeight,
@@ -45,7 +45,6 @@ export default function Comparison({ frame, entryIndex }, { layout }) {
 
 Comparison.propTypes = {
   frame: React.PropTypes.object.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Comparison.contextTypes = {

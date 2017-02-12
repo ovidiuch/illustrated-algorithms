@@ -1,12 +1,12 @@
 import React from 'react';
 import EmojiBlock from '../shared/emoji-block';
 
-export default function Item({ frame, entryIndex }, { layout }) {
+export default function Item({ frame }, { layout }) {
   const {
     value,
     opacity,
     rotation,
-  } = frame.entries[entryIndex].item;
+  } = frame.item;
   const {
     top,
     left,
@@ -40,7 +40,6 @@ export default function Item({ frame, entryIndex }, { layout }) {
 
 Item.propTypes = {
   frame: React.PropTypes.object.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Item.contextTypes = {

@@ -5,7 +5,6 @@ class Outro extends PureLayoutComponent {
   render() {
     const {
       frame,
-      entryIndex,
     } = this.props;
     const {
       opacity,
@@ -14,7 +13,7 @@ class Outro extends PureLayoutComponent {
       titleTop,
       subtextFontSize,
       subtextTop,
-    } = frame.entries[entryIndex].outro;
+    } = frame.outro;
 
     return (
       <div

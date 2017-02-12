@@ -1,13 +1,13 @@
 import React from 'react';
 import NumberVar from '../shared/number-var';
 
-export default function Mid({ frame, entryIndex }) {
+export default function Mid({ frame }) {
   const {
     value,
     top,
     left,
     opacity,
-  } = frame.entries[entryIndex].mid;
+  } = frame.mid;
 
   if (value === undefined) {
     return null;
@@ -37,7 +37,6 @@ export default function Mid({ frame, entryIndex }) {
 
 Mid.propTypes = {
   frame: React.PropTypes.object.isRequired,
-  entryIndex: React.PropTypes.number.isRequired,
 };
 
 Mid.contextTypes = {
