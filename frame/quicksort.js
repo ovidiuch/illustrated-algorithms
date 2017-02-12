@@ -245,6 +245,7 @@ const computeEntryFrame = ({
 // Memoizing entry frames speeds up the initial calculation of frames, but also
 // helps StackEntry components avoid useless renders because identical entry
 // frames will also share identity
+// TODO: Flush this when leaving viz
 const _cache = new Map();
 
 export default (layout, stack, stepProgress) => {

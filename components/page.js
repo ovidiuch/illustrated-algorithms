@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Head from 'next/head';
+import debounce from 'lodash.debounce';
 import Menu from './menu';
 import Player from './player';
 
@@ -28,7 +29,7 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handleResize = this.handleResize.bind(this);
+    this.handleResize = debounce(this.handleResize.bind(this), 300);
 
     this.state = {
       renderedOnClient: false,
