@@ -1,12 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import getAlgoName from '../utils/names';
 import PureLayoutComponent from '../utils/pure-layout-component';
-
-const pathLabels = {
-  '/binary-search': 'Binary search',
-  '/quicksort': 'Quicksort',
-  '/bfs': 'BFS',
-};
 
 const LINKS = [
   '/binary-search',
@@ -38,7 +33,7 @@ class Menu extends PureLayoutComponent {
         }}
         >
         {LINKS.map(linkPath => {
-          const label = pathLabels[linkPath];
+          const label = getAlgoName(linkPath);
           return (
             <span
               key={linkPath}

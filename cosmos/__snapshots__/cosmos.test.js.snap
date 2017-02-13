@@ -5980,7 +5980,7 @@ exports[`test menu:binary-search 1`] = `
     }>
     <span
       data-jsx={2559894650}>
-      Binary search
+      Binary Search
     </span>
   </span>
   <span
@@ -6074,7 +6074,7 @@ exports[`test page:bfs 1`] = `
             data-jsx={2559894650}
             href="/binary-search"
             onClick={[Function]}>
-            Binary search
+            Binary Search
           </a>
         </span>
         <span
@@ -6555,7 +6555,7 @@ exports[`test page:binary-search 1`] = `
           }>
           <span
             data-jsx={2559894650}>
-            Binary search
+            Binary Search
           </span>
         </span>
         <span
@@ -7668,7 +7668,7 @@ exports[`test page:quicksort 1`] = `
             data-jsx={2559894650}
             href="/binary-search"
             onClick={[Function]}>
-            Binary search
+            Binary Search
           </a>
         </span>
         <span

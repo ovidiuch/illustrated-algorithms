@@ -3,6 +3,7 @@
 import React from 'react';
 import Head from 'next/head';
 import debounce from 'lodash.debounce';
+import getAlgoName from '../utils/names';
 import Menu from './menu';
 import Player from './player';
 
@@ -87,6 +88,7 @@ class Page extends React.Component {
     return (
       <div>
         <Head>
+          <title>{`Illustrated ${getAlgoName(currentPath)} algorithm`}</title>
           <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
           <meta name="apple-mobile-web-app-capable" content="yes"/>
           <style>{`
