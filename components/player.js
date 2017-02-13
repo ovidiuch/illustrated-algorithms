@@ -61,8 +61,8 @@ class Player extends React.Component {
     } = props;
 
     // Assumption: props.actions never change
-    // Creating object instead of render func to prevent invalidating shallow
-    // prop comparison is children components
+    // Creating object here instead of render func to prevent invalidating shallow
+    // prop comparison in children components
     this.actions = {
       ...actions,
       play: this.handlePlay,
