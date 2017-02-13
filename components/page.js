@@ -7,8 +7,8 @@ import Menu from './menu';
 import Player from './player';
 
 const getWindowSize = () => ({
-  width: document.body.clientWidth || window.innerHeight, // fallback for jsdom
-  height: window.innerHeight,
+  width: document.body.clientWidth || window.outerHeight, // fallback for jsdom
+  height: window.outerHeight,
 });
 
 const createLayout = (props, state) => {
