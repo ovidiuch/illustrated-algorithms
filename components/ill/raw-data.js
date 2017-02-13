@@ -1,16 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import PureLayoutComponent from '../../utils/pure-layout-component';
 
-class RawData extends React.Component {
-  shouldComponentUpdate(nextProps, nextState, nextContext) {
-    // This component doesn't do any animation and only prints the next step
-    return nextProps.nextStep !== this.props.nextStep || nextContext.layout !== this.context.layout;
-  }
-
+class RawData extends PureLayoutComponent {
   render() {
     const {
-      prevStep,
-      nextStep,
+      frame,
     } = this.props;
     const {
       layout
@@ -18,14 +13,14 @@ class RawData extends React.Component {
     const {
       bindings,
       returnValue,
-    } = nextStep;
+      isFirstStep,
+    } = frame;
     const {
       padding,
       fontSize,
       lineHeight,
       illustrationHeight,
     } = layout;
-    const isFirstStep = prevStep.intro;
 
     return (
       <div
@@ -118,8 +113,7 @@ class RawData extends React.Component {
 }
 
 RawData.propTypes = {
-  prevStep: React.PropTypes.object.isRequired,
-  nextStep: React.PropTypes.object.isRequired,
+  frame: React.PropTypes.object.isRequired,
 };
 
 RawData.contextTypes = {

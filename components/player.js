@@ -1,18 +1,11 @@
 import React from 'react';
 import raf from 'raf';
+import range from 'lodash.range';
 import getStack from '../utils/stack';
-import {
-  transitionValue,
-} from '../utils/transition';
-import {
-  getStackEntryHeight,
-  getContentHeight,
-  getContentTopOffset,
-} from '../layout/base';
 import StackEntry from './stack-entry';
 import PlaybackControls from './playback-controls';
 
-const { floor, min } = Math;
+const { round, floor, min } = Math;
 
 const FPS = 60;
 const TIME_PER_FRAME = 1000 / FPS;
@@ -27,13 +20,29 @@ const FRAMES_PER_POS = FRAMES_PER_TRANSITION + FRAMES_PER_DELAY;
 
 const getMaxPos = steps => (steps - 1) * FRAMES_PER_POS;
 
-const getOpacityForStackDepth = level => {
-  return level > 0 ? 0.5 : 1;
+let _frames;
+
+const computeAllFrames = (layout, steps, computeFrame) => {
+  return steps.reduce((prev, next, stepIndex) => {
+    const stack = getStack(steps, stepIndex);
+    const transFrameNum = round(FPS * TRANSITION_TIME);
+    const delayFrameNum = round(FPS * DELAY_TIME);
+    const transFrames = range(transFrameNum).map(frame =>
+      computeFrame(layout, stack, frame / (transFrameNum - 1)));
+    const lastFrame = transFrames[transFrames.length - 1];
+    const delayFrames = range(delayFrameNum).map(() => lastFrame);
+
+    return [
+      ...prev,
+      ...transFrames,
+      ...delayFrames,
+    ];
+  }, []);
 };
 
 class Player extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor(props, context) {
+    super(props, context);
 
     this.handleScrollTo = this.handleScrollTo.bind(this);
     this.handlePlay = this.handlePlay.bind(this);
@@ -44,6 +53,32 @@ class Player extends React.Component {
       pos: 0,
       isPlaying: false,
     };
+
+    const {
+      computeFrame,
+      steps,
+      actions,
+    } = props;
+
+    // Assumption: props.actions never change
+    // Creating object here instead of render func to prevent invalidating shallow
+    // prop comparison in children components
+    this.actions = {
+      ...actions,
+      play: this.handlePlay,
+      pause: this.handlePause,
+    };
+
+    _frames = computeAllFrames(context.layout, steps, computeFrame);
+  }
+
+  componentWillReceiveProps(nextProps, nextContext) {
+    const {
+      steps,
+      computeFrame,
+    } = nextProps;
+
+    _frames = computeAllFrames(nextContext.layout, steps, computeFrame);
   }
 
   componentWillUnmount() {
@@ -113,7 +148,6 @@ class Player extends React.Component {
       algorithm,
       illustration,
       steps,
-      actions,
     } = this.props;
     const {
       pos,
@@ -128,91 +162,43 @@ class Player extends React.Component {
       footerHeight,
     } = layout;
 
-    const stepIndex = floor(pos / FRAMES_PER_POS);
-    const stepProgress = min(1, (pos % FRAMES_PER_POS) / FRAMES_PER_TRANSITION);
-    const { entries, isAddingToStack, isRemovingFromStack } = getStack(steps, stepIndex);
-
-    const stackEntryHeight = getStackEntryHeight(layout);
-    const contentHeight = getContentHeight(layout, entries.length);
-
-    let topOffset;
-    let topStackEntryOpacity;
-
-    if (isAddingToStack) {
-      topOffset = transitionValue(
-        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
-        getContentTopOffset(layout, entries.length),
-        stepProgress
-      );
-      topStackEntryOpacity = transitionValue(0, 1, stepProgress);
-    } else if (isRemovingFromStack) {
-      topOffset = transitionValue(
-        getContentTopOffset(layout, entries.length),
-        getContentTopOffset(layout, entries.length - 1) - stackEntryHeight,
-        stepProgress
-      );
-      topStackEntryOpacity = transitionValue(1, 0, stepProgress);
-    } else {
-      topOffset = getContentTopOffset(layout, entries.length);
-      topStackEntryOpacity = 1;
-    }
+    const frame = _frames[floor(pos)];
+    const {
+      stack,
+      entryHeight,
+      entries,
+    } = frame;
 
     return (
       <div>
         <div
+          className="stack-entries"
           style={{
-            height: contentHeight,
+            height: stack.height,
             padding: `${headerHeight}px 0 ${footerHeight}px 0`,
-            transform: `translate(0, ${topOffset}px)`,
+            transform: `translate(0, ${stack.top}px)`,
           }}
           >
-          {entries.map(({ prevStep, nextStep }, i) => {
-            let opacity;
-
-            if (i === 0) {
-              opacity = topStackEntryOpacity;
-            } else if (isAddingToStack) {
-              opacity = transitionValue(
-                getOpacityForStackDepth(i - 1),
-                getOpacityForStackDepth(i),
-                stepProgress,
-              );
-            } else if (isRemovingFromStack) {
-              opacity = transitionValue(
-                getOpacityForStackDepth(i),
-                getOpacityForStackDepth(i - 1),
-                stepProgress,
-              );
-            } else {
-              opacity = getOpacityForStackDepth(i);
-            }
-
-            // Tieing stack entry elements to their parent step id will preserve
-            // them when other entries are added to or removed from stack.
-            const stackEntryKey = nextStep.parentStepId || 0;
-            // Only top entry needs to animate (and the one below when top is
-            // being removed from the stack). Any other entry is frozen
-            const stackEntryStepProgress = i > 1 ? 1 : stepProgress;
+          {entries.map(entry => {
+            const {
+              entryId,
+              opacity,
+            } = entry;
 
             return (
               <div
-                key={stackEntryKey}
+                className="stack-entry-outer"
+                key={entryId}
                 style={{
-                  height: stackEntryHeight,
+                  height: entryHeight,
                   opacity,
                 }}
                 >
                 <StackEntry
                   illustration={illustration}
                   code={algorithm.code}
-                  prevStep={prevStep}
-                  nextStep={nextStep}
-                  stepProgress={stackEntryStepProgress}
-                  actions={{
-                    ...actions,
-                    play: this.handlePlay,
-                    pause: this.handlePause,
-                  }}
+                  frame={entry.frame}
+                  actions={this.actions}
                   />
               </div>
             );
@@ -237,6 +223,12 @@ class Player extends React.Component {
           </div>
         )}
         <style jsx>{`
+          .stack-entries {
+            will-change: transform, height;
+          }
+          .stack-entry-outer {
+            will-change: opacity;
+          }
           .footer {
             position: fixed;
             bottom: 0;
@@ -258,6 +250,7 @@ class Player extends React.Component {
 Player.propTypes = {
   algorithm: React.PropTypes.func.isRequired,
   illustration: React.PropTypes.func.isRequired,
+  computeFrame: React.PropTypes.func.isRequired,
   steps: React.PropTypes.array.isRequired,
   actions: React.PropTypes.object.isRequired,
 };

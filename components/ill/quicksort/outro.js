@@ -4,13 +4,16 @@ import PureLayoutComponent from '../../../utils/pure-layout-component';
 class Outro extends PureLayoutComponent {
   render() {
     const {
+      frame,
+    } = this.props;
+    const {
       opacity,
       titleFontSize,
       titleLineHeight,
       titleTop,
       subtextFontSize,
       subtextTop,
-    } = this.props.frame.outro;
+    } = frame.outro;
 
     return (
       <div
@@ -35,6 +38,9 @@ class Outro extends PureLayoutComponent {
           }}
           >rewind & scroll for close examination</p>
         <style jsx>{`
+          .outro {
+            will-change: opacity;
+          }
           .title,
           .subtext {
             position: absolute;

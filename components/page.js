@@ -2,12 +2,13 @@
 
 import React from 'react';
 import Head from 'next/head';
+import debounce from 'lodash.debounce';
 import Menu from './menu';
 import Player from './player';
 
 const getWindowSize = () => ({
-  width: document.body.clientWidth || window.innerHeight, // fallback for jsdom
-  height: window.innerHeight,
+  width: document.body.clientWidth || window.outerHeight, // fallback for jsdom
+  height: window.outerHeight,
 });
 
 const createLayout = (props, state) => {
@@ -28,7 +29,7 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handleResize = this.handleResize.bind(this);
+    this.handleResize = debounce(this.handleResize.bind(this), 300);
 
     this.state = {
       renderedOnClient: false,
@@ -72,6 +73,7 @@ class Page extends React.Component {
       currentPath,
       algorithm,
       illustration,
+      computeFrame,
       steps,
       actions,
     } = this.props;
@@ -113,6 +115,7 @@ class Page extends React.Component {
             <Player
               algorithm={algorithm}
               illustration={illustration}
+              computeFrame={computeFrame}
               steps={steps}
               actions={actions}
               />
@@ -144,6 +147,7 @@ Page.propTypes = {
   // ESLint plugin bug
   // eslint-disable-next-line react/no-unused-prop-types
   computeLayout: React.PropTypes.func.isRequired,
+  computeFrame: React.PropTypes.func.isRequired,
   steps: React.PropTypes.array.isRequired,
   actions: React.PropTypes.object.isRequired,
 };

@@ -1,22 +1,24 @@
 export default {
   _layoutFor: 'binarySearch',
-  prevStep: {
-    bindings: {
-      list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
-      item: 'panda',
+  _frameFrom: {
+    prevStep: {
+      bindings: {
+        list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
+        item: 'panda',
+      },
+      intro: true,
     },
-    intro: true,
+    nextStep: {
+      bindings: {
+        list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
+        item: 'panda',
+      },
+      highlight: {
+        start: 9,
+        end: 33,
+      },
+    },
+    stepProgress: 0.5,
   },
-  nextStep: {
-    bindings: {
-      list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
-      item: 'panda',
-    },
-    highlight: {
-      start: 9,
-      end: 33,
-    },
-  },
-  stepProgress: 0.5,
   actions: {},
 };

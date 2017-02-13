@@ -1,3 +1,8 @@
+import binarySearch from '../../../algorithms/binary-search';
+import BinarySearch from '../../../components/ill/binary-search/binary-search';
+
+const { code } = binarySearch;
+
 export default {
   _layoutFor: 'binarySearch',
   _frameFrom: {
@@ -17,6 +22,8 @@ export default {
     },
     stepProgress: 0,
   },
+  code,
+  illustration: BinarySearch,
   actions: {
     generateSteps: steps => console.log('steps', steps),
   },

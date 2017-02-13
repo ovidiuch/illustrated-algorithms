@@ -1,17 +1,19 @@
 export default {
   _layoutFor: 'quicksort',
-  prevStep: {
-    bindings: {
-      list: ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach']
+  _frameFrom: {
+    prevStep: {
+      bindings: {
+        list: ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach']
+      },
+      intro: true,
     },
-    intro: true,
+    nextStep: {
+      bindings: {
+        list: ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach']
+      }
+    },
+    stepProgress: 0,
   },
-  nextStep: {
-    bindings: {
-      list: ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach']
-    }
-  },
-  stepProgress: 0,
   actions: {
     shuffleInput: () => console.log('shuffle input'),
     generateSteps: cb => {

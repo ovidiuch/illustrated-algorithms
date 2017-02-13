@@ -5,6 +5,7 @@ import Page from '../components/page';
 import quicksort from '../algorithms/quicksort';
 import Quicksort from '../components/ill/quicksort/quicksort';
 import computeQuicksortLayout from '../layout/quicksort';
+import computeQuicksortFrame from '../frame/quicksort';
 
 const initialList = ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach'];
 
@@ -35,6 +36,7 @@ export default class QuicksortPage extends React.Component {
         algorithm={quicksort}
         illustration={Quicksort}
         computeLayout={computeQuicksortLayout}
+        computeFrame={computeQuicksortFrame}
         steps={this.state.steps}
         actions={{
           shuffleInput: this.handleShuffleInput,

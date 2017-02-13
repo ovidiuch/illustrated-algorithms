@@ -1,56 +1,45 @@
 import React from 'react';
-import {
-  transitionValue,
-  getBindingValue,
-} from '../../../utils/transition';
 import EmojiBlock from '../shared/emoji-block';
-import getWobbleRotation from '../../../utils/wobble';
 
-const getOpacity = step => !step.intro && step.bindings.item !== undefined ? 1 : 0;
-
-const BASE_ROTATION = -1.5;
-
-export default function Item({ prevStep, nextStep, stepProgress }, { layout }) {
-  const item = getBindingValue(prevStep, nextStep, 'item');
-  if (item === undefined) {
-    return null;
-  }
-
-  const opacity = transitionValue(
-    getOpacity(prevStep),
-    getOpacity(nextStep),
-    stepProgress,
-  );
-
+export default function Item({ frame }, { layout }) {
+  const {
+    value,
+    opacity,
+    rotation,
+  } = frame.item;
   const {
     top,
     left,
   } = layout.item;
 
-  const { compared } = nextStep;
-  const rotation = BASE_ROTATION + (
-    compared && compared.indexOf('item') !== -1 ? getWobbleRotation(stepProgress) : 0
-  );
+  if (!value) {
+    return null;
+  }
 
   return (
     <div
+      className="item"
       style={{
-        position: 'absolute',
         opacity,
-        top,
-        left,
-        transform: `rotate(${rotation}deg)`,
+        transform: `
+          translate(${left}px, ${top}px)
+          rotate(${rotation}deg)
+        `
       }}
       >
-      <EmojiBlock name={item} glow={0.4}/>
+      <EmojiBlock name={value} glow={0.4}/>
+      <style jsx>{`
+        .item {
+          position: absolute;
+          will-change: opacity, transform;
+        }
+      `}</style>
     </div>
   );
 }
 
 Item.propTypes = {
-  prevStep: React.PropTypes.object.isRequired,
-  nextStep: React.PropTypes.object.isRequired,
-  stepProgress: React.PropTypes.number.isRequired,
+  frame: React.PropTypes.object.isRequired,
 };
 
 Item.contextTypes = {

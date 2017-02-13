@@ -52,7 +52,10 @@
     ]
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "emojione": "^2.2.7",
+    "lodash.debounce": "^4.0.8",
+    "lodash.range": "^3.2.0",
     "next": "2.0.0-beta.16",
     "raf": "^3.3.0",
     "react": "^15.4.2",
