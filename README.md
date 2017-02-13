@@ -1,7 +1,7 @@
 # Illustrated Algorithms
 Algorithm → AST → CSS (3 x JavaScript)
 
-[![Binary search](binary-search.gif)](https://illustrated-algorithms-uwmguqbvwo.now.sh/)
+[![Binary search](binary-search.gif)](https://illustrated-algorithms.now.sh/)
 
 Inspired by [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms) and [python-execution-trace](https://github.com/mihneadb/python-execution-trace), this project aims to make common algorithms easier to grasp through interactive visualizations of their execution.
 
