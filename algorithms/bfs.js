@@ -4,18 +4,18 @@ function isSeller(name) {
 
 export default function bfs(graph, name) {
   const queue = [...graph[name]];
-  const searched = [];
+  const searched = new Set();
 
   while (queue.length > 0) {
     const person = queue.shift();
 
-    if (!searched.includes(person)) {
+    if (!searched.has(person)) {
       if (isSeller(person)) {
         return person;
       }
 
       queue.push(...graph[person]);
-      searched.push(person);
+      searched.add(person);
     }
   }
 

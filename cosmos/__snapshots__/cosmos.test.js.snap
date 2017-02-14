@@ -6310,7 +6310,7 @@ exports[`test page:bfs 1`] = `
                        
                       2. 
                     </span>
-                      const searched = [];
+                      const searched = new Set();
                   </div>
                   <div>
                     <span
@@ -6355,7 +6355,7 @@ exports[`test page:bfs 1`] = `
                        
                       7. 
                     </span>
-                        if (!searched.includes(person)) {
+                        if (!searched.has(person)) {
                   </div>
                   <div>
                     <span
@@ -6405,7 +6405,7 @@ exports[`test page:bfs 1`] = `
                       data-jsx={4083623245}>
                       13. 
                     </span>
-                          searched.push(person);
+                          searched.add(person);
                   </div>
                   <div>
                     <span
@@ -13057,7 +13057,7 @@ exports[`test source-code:bfs 1`] = `
        
       2. 
     </span>
-      const searched = [];
+      const searched = new Set();
   </div>
   <div>
     <span
@@ -13102,7 +13102,7 @@ exports[`test source-code:bfs 1`] = `
        
       7. 
     </span>
-        if (!searched.includes(person)) {
+        if (!searched.has(person)) {
   </div>
   <div>
     <span
@@ -13152,7 +13152,7 @@ exports[`test source-code:bfs 1`] = `
       data-jsx={4083623245}>
       13. 
     </span>
-          searched.push(person);
+          searched.add(person);
   </div>
   <div>
     <span
