@@ -6355,7 +6355,7 @@ exports[`test page:bfs 1`] = `
                        
                       7. 
                     </span>
-                        if (searched.indexOf(person) === -1) {
+                        if (!searched.includes(person)) {
                   </div>
                   <div>
                     <span
@@ -13102,7 +13102,7 @@ exports[`test source-code:bfs 1`] = `
        
       7. 
     </span>
-        if (searched.indexOf(person) === -1) {
+        if (!searched.includes(person)) {
   </div>
   <div>
     <span
