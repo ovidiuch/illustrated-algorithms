@@ -9,7 +9,7 @@ export default function bfs(graph, name) {
   while (queue.length > 0) {
     const person = queue.shift();
 
-    if (searched.indexOf(person) === -1) {
+    if (!searched.includes(person)) {
       if (isSeller(person)) {
         return person;
       }
