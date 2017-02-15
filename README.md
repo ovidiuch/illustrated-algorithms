@@ -3,9 +3,9 @@ Algorithm → AST → CSS (3 x JavaScript)
 
 [![Binary search](binary-search.gif)](https://illustrated-algorithms.now.sh/)
 
-Inspired by [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms) and [python-execution-trace](https://github.com/mihneadb/python-execution-trace), this project aims to make common algorithms easier to grasp through interactive visualizations of their execution.
+Inspired by [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms) and [python-execution-trace](https://github.com/mihneadb/python-execution-trace), this project aims to reveal the mechanics behind algorithms via interactive visualizations of their execution.
 
-Visual representations of local variables augment the control flow, alongside actual source code. You can fast forward and rewind the execution to closely observe how an algorithm works.
+Visual representations of variables and operations augment the control flow, alongside actual source code. You can fast forward and rewind the execution to closely observe how an algorithm works.
 
 ## Disclaimer ✌️
 
