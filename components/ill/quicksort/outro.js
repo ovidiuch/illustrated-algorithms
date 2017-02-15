@@ -39,6 +39,7 @@ class Outro extends PureLayoutComponent {
           >rewind & scroll for close examination</p>
         <style jsx>{`
           .outro {
+            position: relative;
             will-change: opacity;
           }
           .title,
