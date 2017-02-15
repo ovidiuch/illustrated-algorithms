@@ -3,13 +3,13 @@ Algorithm → AST → CSS (3 x JavaScript)
 
 [![Binary search](binary-search.gif)](https://illustrated-algorithms.now.sh/)
 
-Inspired by [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms) and [python-execution-trace](https://github.com/mihneadb/python-execution-trace), this project aims to make common algorithms easier to grasp through interactive visualizations of their execution.
+Inspired by [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms) and [python-execution-trace](https://github.com/mihneadb/python-execution-trace), this project aims to reveal the mechanics behind algorithms via interactive visualizations of their execution.
 
-Visual representations of local variables augment the control flow, alongside actual source code. You can fast forward and rewind the execution to closely observe how an algorithm works.
+Visual representations of variables and operations augment the control flow, alongside actual source code. You can fast forward and rewind the execution to closely observe how an algorithm works.
 
 ## Disclaimer ✌️
 
-Edge cases and optimizations are beyond the scope of this project. The featured implementations are chosen for their simplicity and do not promise to work for data sets different from the illustrated ones. Please rely on other resources for learning algorithms in depth, from Wikipedia to other [visualization](https://visualgo.net/) [projects](https://www.youtube.com/watch?v=ywWBy6J5gz8). Thanks.
+Edge cases and optimizations are beyond the scope of this project. The featured implementations are chosen for their simplicity and do not promise to work for data sets different from the illustrated ones. Please rely on other resources for learning algorithms in depth, from Wikipedia to other [visualization](https://visualgo.net/) [projects](https://www.youtube.com/watch?v=ywWBy6J5gz8). Also see community-driven [Footnotes](#footnotes). Thanks.
 
 ## Principles
 
@@ -54,3 +54,15 @@ npm test
 # Start React Cosmos playground (localhost:8989)
 npm run cosmos
 ```
+
+## Footnotes
+
+While this project doesn't focus on algorithm implementation specifics, here's a list of valuable insights brought up by the community which serves to complement the visuals.
+
+#### Binary Search
+
+- [#21](https://github.com/skidding/illustrated-algorithms/issues/21) Calculating `mid` can be improved to avoid overflow when list is sufficiently large enough ([@mhaji](https://github.com/mhaji))
+
+#### Quicksort
+
+- [#19](https://github.com/skidding/illustrated-algorithms/issues/19) Extending implementation to support duplicates ([@ACollectionOfAtoms](https://github.com/ACollectionOfAtoms))
