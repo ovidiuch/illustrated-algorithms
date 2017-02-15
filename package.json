@@ -52,6 +52,7 @@
     ]
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
     "emojione": "^2.2.7",
     "lodash.debounce": "^4.0.8",
