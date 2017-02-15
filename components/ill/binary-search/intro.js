@@ -32,6 +32,10 @@ export default function Intro({ frame }, { layout }) {
         press on one of the animals to begin
       </p>
       <style jsx>{`
+        .intro {
+          position: relative;
+          will-change: opacity;
+        }
         p {
           position: absolute;
           width: 100%;

@@ -10,14 +10,14 @@ exports[`test ill/binary-search:beginning 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={342053577}
+    data-jsx={3101443438}
     style={
       Object {
         "opacity": 0.5,
       }
     }>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 46,
@@ -26,11 +26,11 @@ exports[`test ill/binary-search:beginning 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={342053577} />
+        data-jsx={3101443438} />
        inside a sorted list
     </p>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 34,
@@ -918,14 +918,14 @@ exports[`test ill/binary-search:comparing 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={342053577}
+    data-jsx={3101443438}
     style={
       Object {
         "opacity": 0,
       }
     }>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 46,
@@ -934,11 +934,11 @@ exports[`test ill/binary-search:comparing 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={342053577} />
+        data-jsx={3101443438} />
        inside a sorted list
     </p>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 34,
@@ -1970,14 +1970,14 @@ exports[`test ill/binary-search:found 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={342053577}
+    data-jsx={3101443438}
     style={
       Object {
         "opacity": 0,
       }
     }>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 46,
@@ -1986,11 +1986,11 @@ exports[`test ill/binary-search:found 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={342053577} />
+        data-jsx={3101443438} />
        inside a sorted list
     </p>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 34,
@@ -3022,14 +3022,14 @@ exports[`test ill/binary-search:intro 1`] = `
   }>
   <div
     className="intro"
-    data-jsx={342053577}
+    data-jsx={3101443438}
     style={
       Object {
         "opacity": 1,
       }
     }>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 46,
@@ -3038,11 +3038,11 @@ exports[`test ill/binary-search:intro 1`] = `
       }>
       Find the position of a value
       <br
-        data-jsx={342053577} />
+        data-jsx={3101443438} />
        inside a sorted list
     </p>
     <p
-      data-jsx={342053577}
+      data-jsx={3101443438}
       style={
         Object {
           "fontSize": 34,
@@ -3921,7 +3921,7 @@ exports[`test ill/binary-search:intro 1`] = `
 exports[`test ill/quicksort/intro:blank 1`] = `
 <div
   className="intro"
-  data-jsx={242776334}
+  data-jsx={3637862792}
   style={
     Object {
       "opacity": 1,
@@ -3929,7 +3929,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
   }>
   <h1
     className="title"
-    data-jsx={242776334}
+    data-jsx={3637862792}
     style={
       Object {
         "fontSize": 38,
@@ -3938,12 +3938,12 @@ exports[`test ill/quicksort/intro:blank 1`] = `
     }>
     Place the elements of a list
     <br
-      data-jsx={242776334} />
+      data-jsx={3637862792} />
      in alphabetical order
   </h1>
   <div
     className="shuffle-btn"
-    data-jsx={242776334}
+    data-jsx={3637862792}
     onClick={undefined}
     style={
       Object {
@@ -3953,7 +3953,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       }
     }>
     <svg
-      data-jsx={242776334}
+      data-jsx={3637862792}
       height={32}
       style={
         Object {
@@ -3964,11 +3964,11 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       width={32}>
       <path
         d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-        data-jsx={242776334} />
+        data-jsx={3637862792} />
     </svg>
     <span
       className="label"
-      data-jsx={242776334}
+      data-jsx={3637862792}
       style={
         Object {
           "borderWidth": 2,
@@ -3980,7 +3980,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
   </div>
   <div
     className="start-btn"
-    data-jsx={242776334}
+    data-jsx={3637862792}
     onClick={undefined}
     style={
       Object {
@@ -3990,7 +3990,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       }
     }>
     <svg
-      data-jsx={242776334}
+      data-jsx={3637862792}
       height={32}
       style={
         Object {
@@ -4001,11 +4001,11 @@ exports[`test ill/quicksort/intro:blank 1`] = `
       width={32}>
       <path
         d="M8 5v14l11-7z"
-        data-jsx={242776334} />
+        data-jsx={3637862792} />
     </svg>
     <span
       className="label"
-      data-jsx={242776334}
+      data-jsx={3637862792}
       style={
         Object {
           "borderWidth": 2,
@@ -4021,7 +4021,7 @@ exports[`test ill/quicksort/intro:blank 1`] = `
 exports[`test ill/quicksort/outro:blank 1`] = `
 <div
   className="outro"
-  data-jsx={1657905901}
+  data-jsx={3186501227}
   style={
     Object {
       "opacity": 1,
@@ -4029,7 +4029,7 @@ exports[`test ill/quicksort/outro:blank 1`] = `
   }>
   <h1
     className="title"
-    data-jsx={1657905901}
+    data-jsx={3186501227}
     style={
       Object {
         "fontSize": 46,
@@ -4039,13 +4039,13 @@ exports[`test ill/quicksort/outro:blank 1`] = `
     }>
     Sorted by name – 
     <em
-      data-jsx={1657905901}>
+      data-jsx={3186501227}>
       phew!
     </em>
   </h1>
   <p
     className="subtext"
-    data-jsx={1657905901}
+    data-jsx={3186501227}
     style={
       Object {
         "fontSize": 34,
@@ -5013,7 +5013,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="intro"
-      data-jsx={242776334}
+      data-jsx={3637862792}
       style={
         Object {
           "opacity": 1,
@@ -5021,7 +5021,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <h1
         className="title"
-        data-jsx={242776334}
+        data-jsx={3637862792}
         style={
           Object {
             "fontSize": 46,
@@ -5030,12 +5030,12 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         Place the elements of a list
         <br
-          data-jsx={242776334} />
+          data-jsx={3637862792} />
          in alphabetical order
       </h1>
       <div
         className="shuffle-btn btn-selectable"
-        data-jsx={242776334}
+        data-jsx={3637862792}
         onClick={[Function]}
         style={
           Object {
@@ -5045,7 +5045,7 @@ exports[`test ill/quicksort:intro 1`] = `
           }
         }>
         <svg
-          data-jsx={242776334}
+          data-jsx={3637862792}
           height={38}
           style={
             Object {
@@ -5056,11 +5056,11 @@ exports[`test ill/quicksort:intro 1`] = `
           width={38}>
           <path
             d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-            data-jsx={242776334} />
+            data-jsx={3637862792} />
         </svg>
         <span
           className="label"
-          data-jsx={242776334}
+          data-jsx={3637862792}
           style={
             Object {
               "borderWidth": 2,
@@ -5072,7 +5072,7 @@ exports[`test ill/quicksort:intro 1`] = `
       </div>
       <div
         className="start-btn btn-selectable"
-        data-jsx={242776334}
+        data-jsx={3637862792}
         onClick={[Function]}
         style={
           Object {
@@ -5082,7 +5082,7 @@ exports[`test ill/quicksort:intro 1`] = `
           }
         }>
         <svg
-          data-jsx={242776334}
+          data-jsx={3637862792}
           height={38}
           style={
             Object {
@@ -5093,11 +5093,11 @@ exports[`test ill/quicksort:intro 1`] = `
           width={38}>
           <path
             d="M8 5v14l11-7z"
-            data-jsx={242776334} />
+            data-jsx={3637862792} />
         </svg>
         <span
           className="label"
-          data-jsx={242776334}
+          data-jsx={3637862792}
           style={
             Object {
               "borderWidth": 2,
@@ -5110,7 +5110,7 @@ exports[`test ill/quicksort:intro 1`] = `
     </div>
     <div
       className="outro"
-      data-jsx={1657905901}
+      data-jsx={3186501227}
       style={
         Object {
           "opacity": 0,
@@ -5118,7 +5118,7 @@ exports[`test ill/quicksort:intro 1`] = `
       }>
       <h1
         className="title"
-        data-jsx={1657905901}
+        data-jsx={3186501227}
         style={
           Object {
             "fontSize": 46,
@@ -5128,13 +5128,13 @@ exports[`test ill/quicksort:intro 1`] = `
         }>
         Sorted by name – 
         <em
-          data-jsx={1657905901}>
+          data-jsx={3186501227}>
           phew!
         </em>
       </h1>
       <p
         className="subtext"
-        data-jsx={1657905901}
+        data-jsx={3186501227}
         style={
           Object {
             "fontSize": 34,
@@ -6660,14 +6660,14 @@ exports[`test page:binary-search 1`] = `
                   }>
                   <div
                     className="intro"
-                    data-jsx={342053577}
+                    data-jsx={3101443438}
                     style={
                       Object {
                         "opacity": 1,
                       }
                     }>
                     <p
-                      data-jsx={342053577}
+                      data-jsx={3101443438}
                       style={
                         Object {
                           "fontSize": 58,
@@ -6676,11 +6676,11 @@ exports[`test page:binary-search 1`] = `
                       }>
                       Find the position of a value
                       <br
-                        data-jsx={342053577} />
+                        data-jsx={3101443438} />
                        inside a sorted list
                     </p>
                     <p
-                      data-jsx={342053577}
+                      data-jsx={3101443438}
                       style={
                         Object {
                           "fontSize": 44,
@@ -8715,7 +8715,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="intro"
-                      data-jsx={242776334}
+                      data-jsx={3637862792}
                       style={
                         Object {
                           "opacity": 0,
@@ -8723,7 +8723,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <h1
                         className="title"
-                        data-jsx={242776334}
+                        data-jsx={3637862792}
                         style={
                           Object {
                             "fontSize": 58,
@@ -8732,12 +8732,12 @@ exports[`test page:quicksort 1`] = `
                         }>
                         Place the elements of a list
                         <br
-                          data-jsx={242776334} />
+                          data-jsx={3637862792} />
                          in alphabetical order
                       </h1>
                       <div
                         className="shuffle-btn btn-selectable"
-                        data-jsx={242776334}
+                        data-jsx={3637862792}
                         onClick={[Function]}
                         style={
                           Object {
@@ -8747,7 +8747,7 @@ exports[`test page:quicksort 1`] = `
                           }
                         }>
                         <svg
-                          data-jsx={242776334}
+                          data-jsx={3637862792}
                           height={48}
                           style={
                             Object {
@@ -8758,11 +8758,11 @@ exports[`test page:quicksort 1`] = `
                           width={48}>
                           <path
                             d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-                            data-jsx={242776334} />
+                            data-jsx={3637862792} />
                         </svg>
                         <span
                           className="label"
-                          data-jsx={242776334}
+                          data-jsx={3637862792}
                           style={
                             Object {
                               "borderWidth": 2,
@@ -8774,7 +8774,7 @@ exports[`test page:quicksort 1`] = `
                       </div>
                       <div
                         className="start-btn btn-selectable"
-                        data-jsx={242776334}
+                        data-jsx={3637862792}
                         onClick={[Function]}
                         style={
                           Object {
@@ -8784,7 +8784,7 @@ exports[`test page:quicksort 1`] = `
                           }
                         }>
                         <svg
-                          data-jsx={242776334}
+                          data-jsx={3637862792}
                           height={48}
                           style={
                             Object {
@@ -8795,11 +8795,11 @@ exports[`test page:quicksort 1`] = `
                           width={48}>
                           <path
                             d="M8 5v14l11-7z"
-                            data-jsx={242776334} />
+                            data-jsx={3637862792} />
                         </svg>
                         <span
                           className="label"
-                          data-jsx={242776334}
+                          data-jsx={3637862792}
                           style={
                             Object {
                               "borderWidth": 2,
@@ -8812,7 +8812,7 @@ exports[`test page:quicksort 1`] = `
                     </div>
                     <div
                       className="outro"
-                      data-jsx={1657905901}
+                      data-jsx={3186501227}
                       style={
                         Object {
                           "opacity": 0,
@@ -8820,7 +8820,7 @@ exports[`test page:quicksort 1`] = `
                       }>
                       <h1
                         className="title"
-                        data-jsx={1657905901}
+                        data-jsx={3186501227}
                         style={
                           Object {
                             "fontSize": 58,
@@ -8830,13 +8830,13 @@ exports[`test page:quicksort 1`] = `
                         }>
                         Sorted by name – 
                         <em
-                          data-jsx={1657905901}>
+                          data-jsx={3186501227}>
                           phew!
                         </em>
                       </h1>
                       <p
                         className="subtext"
-                        data-jsx={1657905901}
+                        data-jsx={3186501227}
                         style={
                           Object {
                             "fontSize": 44,
@@ -9311,14 +9311,14 @@ exports[`test player:binary-search 1`] = `
             }>
             <div
               className="intro"
-              data-jsx={342053577}
+              data-jsx={3101443438}
               style={
                 Object {
                   "opacity": 1,
                 }
               }>
               <p
-                data-jsx={342053577}
+                data-jsx={3101443438}
                 style={
                   Object {
                     "fontSize": 46,
@@ -9327,11 +9327,11 @@ exports[`test player:binary-search 1`] = `
                 }>
                 Find the position of a value
                 <br
-                  data-jsx={342053577} />
+                  data-jsx={3101443438} />
                  inside a sorted list
               </p>
               <p
-                data-jsx={342053577}
+                data-jsx={3101443438}
                 style={
                   Object {
                     "fontSize": 34,
@@ -10332,14 +10332,14 @@ exports[`test player:binary-search-mid-way 1`] = `
             }>
             <div
               className="intro"
-              data-jsx={342053577}
+              data-jsx={3101443438}
               style={
                 Object {
                   "opacity": 0,
                 }
               }>
               <p
-                data-jsx={342053577}
+                data-jsx={3101443438}
                 style={
                   Object {
                     "fontSize": 46,
@@ -10348,11 +10348,11 @@ exports[`test player:binary-search-mid-way 1`] = `
                 }>
                 Find the position of a value
                 <br
-                  data-jsx={342053577} />
+                  data-jsx={3101443438} />
                  inside a sorted list
               </p>
               <p
-                data-jsx={342053577}
+                data-jsx={3101443438}
                 style={
                   Object {
                     "fontSize": 34,
@@ -12647,7 +12647,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="intro"
-                data-jsx={242776334}
+                data-jsx={3637862792}
                 style={
                   Object {
                     "opacity": 1,
@@ -12655,7 +12655,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <h1
                   className="title"
-                  data-jsx={242776334}
+                  data-jsx={3637862792}
                   style={
                     Object {
                       "fontSize": 46,
@@ -12664,12 +12664,12 @@ exports[`test player:quicksort 1`] = `
                   }>
                   Place the elements of a list
                   <br
-                    data-jsx={242776334} />
+                    data-jsx={3637862792} />
                    in alphabetical order
                 </h1>
                 <div
                   className="shuffle-btn btn-selectable"
-                  data-jsx={242776334}
+                  data-jsx={3637862792}
                   onClick={[Function]}
                   style={
                     Object {
@@ -12679,7 +12679,7 @@ exports[`test player:quicksort 1`] = `
                     }
                   }>
                   <svg
-                    data-jsx={242776334}
+                    data-jsx={3637862792}
                     height={38}
                     style={
                       Object {
@@ -12690,11 +12690,11 @@ exports[`test player:quicksort 1`] = `
                     width={38}>
                     <path
                       d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-                      data-jsx={242776334} />
+                      data-jsx={3637862792} />
                   </svg>
                   <span
                     className="label"
-                    data-jsx={242776334}
+                    data-jsx={3637862792}
                     style={
                       Object {
                         "borderWidth": 2,
@@ -12706,7 +12706,7 @@ exports[`test player:quicksort 1`] = `
                 </div>
                 <div
                   className="start-btn btn-selectable"
-                  data-jsx={242776334}
+                  data-jsx={3637862792}
                   onClick={[Function]}
                   style={
                     Object {
@@ -12716,7 +12716,7 @@ exports[`test player:quicksort 1`] = `
                     }
                   }>
                   <svg
-                    data-jsx={242776334}
+                    data-jsx={3637862792}
                     height={38}
                     style={
                       Object {
@@ -12727,11 +12727,11 @@ exports[`test player:quicksort 1`] = `
                     width={38}>
                     <path
                       d="M8 5v14l11-7z"
-                      data-jsx={242776334} />
+                      data-jsx={3637862792} />
                   </svg>
                   <span
                     className="label"
-                    data-jsx={242776334}
+                    data-jsx={3637862792}
                     style={
                       Object {
                         "borderWidth": 2,
@@ -12744,7 +12744,7 @@ exports[`test player:quicksort 1`] = `
               </div>
               <div
                 className="outro"
-                data-jsx={1657905901}
+                data-jsx={3186501227}
                 style={
                   Object {
                     "opacity": 0,
@@ -12752,7 +12752,7 @@ exports[`test player:quicksort 1`] = `
                 }>
                 <h1
                   className="title"
-                  data-jsx={1657905901}
+                  data-jsx={3186501227}
                   style={
                     Object {
                       "fontSize": 46,
@@ -12762,13 +12762,13 @@ exports[`test player:quicksort 1`] = `
                   }>
                   Sorted by name – 
                   <em
-                    data-jsx={1657905901}>
+                    data-jsx={3186501227}>
                     phew!
                   </em>
                 </h1>
                 <p
                   className="subtext"
-                  data-jsx={1657905901}
+                  data-jsx={3186501227}
                   style={
                     Object {
                       "fontSize": 34,
@@ -13549,14 +13549,14 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={342053577}
+        data-jsx={3101443438}
         style={
           Object {
             "opacity": 0.5,
           }
         }>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 46,
@@ -13565,11 +13565,11 @@ exports[`test stack-entry:binary-search-beginning 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={342053577} />
+            data-jsx={3101443438} />
            inside a sorted list
         </p>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 34,
@@ -14683,14 +14683,14 @@ exports[`test stack-entry:binary-search-finished 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={342053577}
+        data-jsx={3101443438}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 46,
@@ -14699,11 +14699,11 @@ exports[`test stack-entry:binary-search-finished 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={342053577} />
+            data-jsx={3101443438} />
            inside a sorted list
         </p>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 34,
@@ -15955,14 +15955,14 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={342053577}
+        data-jsx={3101443438}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 46,
@@ -15971,11 +15971,11 @@ exports[`test stack-entry:binary-search-first-assign 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={342053577} />
+            data-jsx={3101443438} />
            inside a sorted list
         </p>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 34,
@@ -17138,14 +17138,14 @@ exports[`test stack-entry:binary-search-intro 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={342053577}
+        data-jsx={3101443438}
         style={
           Object {
             "opacity": 1,
           }
         }>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 46,
@@ -17154,11 +17154,11 @@ exports[`test stack-entry:binary-search-intro 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={342053577} />
+            data-jsx={3101443438} />
            inside a sorted list
         </p>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 34,
@@ -18255,14 +18255,14 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={342053577}
+        data-jsx={3101443438}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 46,
@@ -18271,11 +18271,11 @@ exports[`test stack-entry:binary-search-last-check 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={342053577} />
+            data-jsx={3101443438} />
            inside a sorted list
         </p>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 34,
@@ -19527,14 +19527,14 @@ exports[`test stack-entry:binary-search-returning 1`] = `
       }>
       <div
         className="intro"
-        data-jsx={342053577}
+        data-jsx={3101443438}
         style={
           Object {
             "opacity": 0,
           }
         }>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 46,
@@ -19543,11 +19543,11 @@ exports[`test stack-entry:binary-search-returning 1`] = `
           }>
           Find the position of a value
           <br
-            data-jsx={342053577} />
+            data-jsx={3101443438} />
            inside a sorted list
         </p>
         <p
-          data-jsx={342053577}
+          data-jsx={3101443438}
           style={
             Object {
               "fontSize": 34,
