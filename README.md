@@ -9,7 +9,7 @@ Visual representations of variables and operations augment the control flow, alo
 
 ## Disclaimer ✌️
 
-Edge cases and optimizations are beyond the scope of this project. The featured implementations are chosen for their simplicity and do not promise to work for data sets different from the illustrated ones. Please rely on other resources for learning algorithms in depth, from Wikipedia to other [visualization](https://visualgo.net/) [projects](https://www.youtube.com/watch?v=ywWBy6J5gz8). Also see [Footnotes](#footnotes). Thanks.
+Edge cases and optimizations are beyond the scope of this project. The featured implementations are chosen for their simplicity and do not promise to work for data sets different from the illustrated ones. Please rely on other resources for learning algorithms in depth, from Wikipedia to other [visualization](https://visualgo.net/) [projects](https://www.youtube.com/watch?v=ywWBy6J5gz8). Also see community-driven [Footnotes](#footnotes). Thanks.
 
 ## Principles
 
@@ -61,8 +61,8 @@ While this project doesn't focus on algorithm implementation specifics, here's a
 
 #### Binary Search
 
-- #21 Calculating `mid` can be improved to avoid overflow when list is sufficiently large enough (@mhaji)
+- [#21](https://github.com/skidding/illustrated-algorithms/issues/21) Calculating `mid` can be improved to avoid overflow when list is sufficiently large enough ([@mhaji](https://github.com/mhaji))
 
 #### Quicksort
 
-- #22 Extending implementation to support duplicates (@ACollectionOfAtoms)
+- [#19](https://github.com/skidding/illustrated-algorithms/issues/19) Extending implementation to support duplicates ([@ACollectionOfAtoms](https://github.com/ACollectionOfAtoms))
