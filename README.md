@@ -7,6 +7,10 @@ Inspired by [Grokking Algorithms](https://www.manning.com/books/grokking-algorit
 
 Visual representations of local variables augment the control flow, alongside actual source code. You can fast forward and rewind the execution to closely observe how an algorithm works.
 
+## Disclaimer ✌️
+
+Edge cases and optimizations are beyond the scope of this project. The featured implementations are chosen for their simplicity and do not promise to work for data sets different from the illustrated ones. Please rely on other resources for learning algorithms in depth, from Wikipedia to other [visualization](https://visualgo.net/) [projects](https://www.youtube.com/watch?v=ywWBy6J5gz8). Thanks.
+
 ## Principles
 
 - The same code that is displayed next to the illustration is also decorated using [babel-plugin-trace-execution](https://github.com/skidding/babel-plugin-trace-execution) and executed to record the context at every step. Literally the same source file.
