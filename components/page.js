@@ -95,7 +95,6 @@ class Page extends React.Component {
             body {
               margin: 0;
               padding: 0;
-              background: ${color};
               transition: background 0.5s;
               font-family: 'Helvetica Neue', Helvetica, sans-serif;
             }
@@ -106,6 +105,11 @@ class Page extends React.Component {
             pre,
             .code {
               font-family: 'FiraCode-Light', monospace;
+            }
+          `}</style>
+          <style>{`
+            body {
+              background: ${color};
             }
           `}</style>
         </Head>
