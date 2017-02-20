@@ -6058,8 +6058,8 @@ exports[`test page:bfs 1`] = `
         data-jsx={2559894650}
         style={
           Object {
-            "fontSize": 28,
-            "lineHeight": "76px",
+            "fontSize": 20,
+            "lineHeight": "52px",
           }
         }>
         <span
@@ -6067,7 +6067,7 @@ exports[`test page:bfs 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <a
@@ -6082,7 +6082,7 @@ exports[`test page:bfs 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <a
@@ -6097,7 +6097,7 @@ exports[`test page:bfs 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <span
@@ -6111,15 +6111,15 @@ exports[`test page:bfs 1`] = `
           href="https://github.com/skidding/illustrated-algorithms/blob/master/README.md"
           style={
             Object {
-              "marginRight": 24,
+              "marginRight": 16,
             }
           }>
           <svg
             data-jsx={2559894650}
             style={
               Object {
-                "height": 38,
-                "width": 38,
+                "height": 26,
+                "width": 26,
               }
             }
             viewBox="0 0 256 256">
@@ -6141,9 +6141,9 @@ exports[`test page:bfs 1`] = `
           data-jsx={2464810934}
           style={
             Object {
-              "height": 946,
-              "padding": "76px 0 96px 0",
-              "transform": "translate(0, 0px)",
+              "height": 392,
+              "padding": "52px 0 64px 0",
+              "transform": "translate(0, 130px)",
             }
           }>
           <div
@@ -6151,7 +6151,7 @@ exports[`test page:bfs 1`] = `
             data-jsx={2464810934}
             style={
               Object {
-                "height": 946,
+                "height": 392,
                 "opacity": 1,
               }
             }>
@@ -6162,8 +6162,11 @@ exports[`test page:bfs 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": 394,
-                    "width": 768,
+                    "display": "table-cell",
+                    "height": 262,
+                    "paddingTop": 65,
+                    "verticalAlign": "top",
+                    "width": 512,
                   }
                 }>
                 <div
@@ -6171,10 +6174,10 @@ exports[`test page:bfs 1`] = `
                   data-jsx={485082250}
                   style={
                     Object {
-                      "fontSize": 24,
-                      "height": 394,
-                      "lineHeight": "28px",
-                      "padding": 10,
+                      "fontSize": 16,
+                      "height": 262,
+                      "lineHeight": "20px",
+                      "padding": 6,
                     }
                   }>
                   <div
@@ -6182,8 +6185,8 @@ exports[`test page:bfs 1`] = `
                     data-jsx={485082250}
                     style={
                       Object {
-                        "left": 10,
-                        "right": 10,
+                        "left": 6,
+                        "right": 6,
                       }
                     }>
                     <div
@@ -6191,9 +6194,9 @@ exports[`test page:bfs 1`] = `
                       data-jsx={485082250}
                       style={
                         Object {
-                          "fontSize": 24,
-                          "marginBottom": 10,
-                          "padding": 10,
+                          "fontSize": 16,
+                          "marginBottom": 6,
+                          "padding": 6,
                         }
                       }>
                       <p
@@ -6229,7 +6232,7 @@ exports[`test page:bfs 1`] = `
                       data-jsx={485082250}
                       style={
                         Object {
-                          "padding": 10,
+                          "padding": 6,
                         }
                       }>
                       graph
@@ -6240,7 +6243,7 @@ exports[`test page:bfs 1`] = `
                       data-jsx={485082250}
                       style={
                         Object {
-                          "padding": 10,
+                          "padding": 6,
                         }
                       }>
                       name
@@ -6255,17 +6258,20 @@ exports[`test page:bfs 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": 552,
-                    "width": 768,
+                    "display": "table-cell",
+                    "height": 392,
+                    "paddingTop": 0,
+                    "verticalAlign": "top",
+                    "width": 512,
                   }
                 }>
                 <pre
                   data-jsx={345238448}
                   style={
                     Object {
-                      "fontSize": 24,
-                      "lineHeight": "28px",
-                      "padding": "10px 0",
+                      "fontSize": 16,
+                      "lineHeight": "20px",
+                      "padding": "6px 0",
                     }
                   }>
                   <div
@@ -6458,7 +6464,7 @@ exports[`test page:bfs 1`] = `
           style={
             Object {
               "backgroundColor": "#80D8FF",
-              "height": 96,
+              "height": 64,
             }
           }>
           <div
@@ -6470,16 +6476,16 @@ exports[`test page:bfs 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "height": 96,
-                  "lineHeight": "96px",
-                  "width": 96,
+                  "height": 64,
+                  "lineHeight": "64px",
+                  "width": 64,
                 }
               }>
               <svg
                 data-jsx={4104513454}
-                height={76}
+                height={52}
                 viewBox="0 0 24 24"
-                width={76}>
+                width={52}>
                 <path
                   d="M8 5v14l11-7z"
                   data-jsx={4104513454} />
@@ -6492,7 +6498,7 @@ exports[`test page:bfs 1`] = `
               onTouchStart={[Function]}
               style={
                 Object {
-                  "left": 96,
+                  "left": 64,
                 }
               }>
               <div
@@ -6508,8 +6514,8 @@ exports[`test page:bfs 1`] = `
                 data-jsx={3260177673}
                 style={
                   Object {
-                    "fontSize": 38,
-                    "lineHeight": "96px",
+                    "fontSize": 26,
+                    "lineHeight": "64px",
                   }
                 }>
                 drag to rewind
@@ -6541,8 +6547,8 @@ exports[`test page:binary-search 1`] = `
         data-jsx={2559894650}
         style={
           Object {
-            "fontSize": 28,
-            "lineHeight": "76px",
+            "fontSize": 20,
+            "lineHeight": "52px",
           }
         }>
         <span
@@ -6550,7 +6556,7 @@ exports[`test page:binary-search 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <span
@@ -6563,7 +6569,7 @@ exports[`test page:binary-search 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <a
@@ -6578,7 +6584,7 @@ exports[`test page:binary-search 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <a
@@ -6594,15 +6600,15 @@ exports[`test page:binary-search 1`] = `
           href="https://github.com/skidding/illustrated-algorithms/blob/master/README.md"
           style={
             Object {
-              "marginRight": 24,
+              "marginRight": 16,
             }
           }>
           <svg
             data-jsx={2559894650}
             style={
               Object {
-                "height": 38,
-                "width": 38,
+                "height": 26,
+                "width": 26,
               }
             }
             viewBox="0 0 256 256">
@@ -6624,9 +6630,9 @@ exports[`test page:binary-search 1`] = `
           data-jsx={2464810934}
           style={
             Object {
-              "height": 1226,
-              "padding": "76px 0 96px 0",
-              "transform": "translate(0, 0px)",
+              "height": 424,
+              "padding": "52px 0 64px 0",
+              "transform": "translate(0, 114px)",
             }
           }>
           <div
@@ -6634,7 +6640,7 @@ exports[`test page:binary-search 1`] = `
             data-jsx={2464810934}
             style={
               Object {
-                "height": 1226,
+                "height": 424,
                 "opacity": 1,
               }
             }>
@@ -6645,8 +6651,11 @@ exports[`test page:binary-search 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": 646,
-                    "width": 768,
+                    "display": "table-cell",
+                    "height": 424,
+                    "paddingTop": 0,
+                    "verticalAlign": "top",
+                    "width": 512,
                   }
                 }>
                 <div
@@ -6654,8 +6663,8 @@ exports[`test page:binary-search 1`] = `
                   data-jsx={3766609991}
                   style={
                     Object {
-                      "height": 646,
-                      "width": 734,
+                      "height": 424,
+                      "width": 488,
                     }
                   }>
                   <div
@@ -6670,8 +6679,8 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3101443438}
                       style={
                         Object {
-                          "fontSize": 58,
-                          "top": 38.76,
+                          "fontSize": 38,
+                          "top": 25.439999999999998,
                         }
                       }>
                       Find the position of a value
@@ -6683,8 +6692,8 @@ exports[`test page:binary-search 1`] = `
                       data-jsx={3101443438}
                       style={
                         Object {
-                          "fontSize": 44,
-                          "top": 400.52,
+                          "fontSize": 28,
+                          "top": 262.88,
                         }
                       }>
                       press on one of the animals to begin
@@ -6695,7 +6704,7 @@ exports[`test page:binary-search 1`] = `
                     data-jsx={2297240151}
                     style={
                       Object {
-                        "top": 224,
+                        "top": 144,
                       }
                     }>
                     <div
@@ -6720,8 +6729,8 @@ exports[`test page:binary-search 1`] = `
                             Object {
                               "background": "#FF8A80",
                               "borderWidth": 2,
-                              "height": 162,
-                              "width": 124,
+                              "height": 109,
+                              "width": 83,
                             }
                           }>
                           <div
@@ -6737,17 +6746,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "height": 99,
-                                "left": 12.4,
-                                "top": 15.5,
-                                "width": 99,
+                                "height": 66,
+                                "left": 8.3,
+                                "top": 10.375,
+                                "width": 66,
                               }
                             }>
                             <div>
                               <svg
-                                height={99}
+                                height={66}
                                 viewBox="0 0 64 64"
-                                width={99}
+                                width={66}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M60.6 10.4c0 4.6-3.9 8.4-8.7 8.4-4.8 0-8.7-3.8-8.7-8.4S47.1 2 51.9 2c4.8 0 8.7 3.8 8.7 8.4"
@@ -6791,9 +6800,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "fontSize": 24,
-                                "lineHeight": "38px",
-                                "top": 120,
+                                "fontSize": 16,
+                                "lineHeight": "26px",
+                                "top": 79,
                               }
                             }>
                             bear
@@ -6808,7 +6817,7 @@ exports[`test page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(122px, 0px)
+                                          translate(81px, 0px)
                                           rotate(-0.4deg)
                                         ",
                           "zIndex": 0,
@@ -6823,8 +6832,8 @@ exports[`test page:binary-search 1`] = `
                             Object {
                               "background": "#FF8A80",
                               "borderWidth": 2,
-                              "height": 162,
-                              "width": 124,
+                              "height": 109,
+                              "width": 83,
                             }
                           }>
                           <div
@@ -6840,17 +6849,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "height": 99,
-                                "left": 12.4,
-                                "top": 15.5,
-                                "width": 99,
+                                "height": 66,
+                                "left": 8.3,
+                                "top": 10.375,
+                                "width": 66,
                               }
                             }>
                             <div>
                               <svg
-                                height={99}
+                                height={66}
                                 viewBox="0 0 64 64"
-                                width={99}
+                                width={66}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M4.5 2.2c-3.5 2.2-3.4 25.5.8 33l26.1-16c-4-7.1-23.6-19-26.9-17"
@@ -6909,9 +6918,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "fontSize": 24,
-                                "lineHeight": "38px",
-                                "top": 120,
+                                "fontSize": 16,
+                                "lineHeight": "26px",
+                                "top": 79,
                               }
                             }>
                             cat
@@ -6926,7 +6935,7 @@ exports[`test page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(244px, 0px)
+                                          translate(162px, 0px)
                                           rotate(1.4deg)
                                         ",
                           "zIndex": 0,
@@ -6941,8 +6950,8 @@ exports[`test page:binary-search 1`] = `
                             Object {
                               "background": "#FF8A80",
                               "borderWidth": 2,
-                              "height": 162,
-                              "width": 124,
+                              "height": 109,
+                              "width": 83,
                             }
                           }>
                           <div
@@ -6958,17 +6967,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "height": 99,
-                                "left": 12.4,
-                                "top": 15.5,
-                                "width": 99,
+                                "height": 66,
+                                "left": 8.3,
+                                "top": 10.375,
+                                "width": 66,
                               }
                             }>
                             <div>
                               <svg
-                                height={99}
+                                height={66}
                                 viewBox="0 0 64 64"
-                                width={99}
+                                width={66}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M15.8 52.1C9 47.7 6.3 30.6 8.5 22.9c1.6-5.8 7.8-14.3 13.4-16.5 4.7-1.9 15.5-1.9 20.1 0 5.6 2.2 11.8 10.7 13.4 16.5 2.2 7.8.5 24.8-6.2 29.2-14.2 9.2-19.2 9.2-33.4 0"
@@ -7037,9 +7046,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "fontSize": 24,
-                                "lineHeight": "38px",
-                                "top": 120,
+                                "fontSize": 16,
+                                "lineHeight": "26px",
+                                "top": 79,
                               }
                             }>
                             dog
@@ -7054,7 +7063,7 @@ exports[`test page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(366px, 0px)
+                                          translate(243px, 0px)
                                           rotate(0.5deg)
                                         ",
                           "zIndex": 0,
@@ -7069,8 +7078,8 @@ exports[`test page:binary-search 1`] = `
                             Object {
                               "background": "#FF8A80",
                               "borderWidth": 2,
-                              "height": 162,
-                              "width": 124,
+                              "height": 109,
+                              "width": 83,
                             }
                           }>
                           <div
@@ -7086,17 +7095,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "height": 99,
-                                "left": 12.4,
-                                "top": 15.5,
-                                "width": 99,
+                                "height": 66,
+                                "left": 8.3,
+                                "top": 10.375,
+                                "width": 66,
                               }
                             }>
                             <div>
                               <svg
-                                height={99}
+                                height={66}
                                 viewBox="0 0 64 64"
-                                width={99}
+                                width={66}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M58 21.2c3.9-2.6 4-6.4 4-6.4-3.9-.2-3.8-4.2-7.4-7.8-4.8-4.8-10.9-1.8-10.9-1.8.3-1.5-.5-2.4.1-3.2C35.6 2 32 5.5 32 5.5S28.4 2 20.2 2c.5.8-.2 1.7.1 3.2 0 0-6.2-3.1-10.9 1.8-3.6 3.7-3.5 7.7-7.4 7.8 0 0 .1 3.8 4 6.4 0 0-4.1 3.9-3.4 12.1 0 0 1.6-2 5.5-2.7-4.5 3.8-1.9 9.4-5.2 13.2 0 0 4.6 1 6.5-.3-.7 5.9 2.9 8.2 2.9 11.1 4.1-1.3 4.7-5.4 4.7-5.4 0 7.5 2.6 7.2 2.6 11.2 0 0 4.5-.7 6.4-4.5.7 3.5 4.3 3.9 6.2 6.1 1.9-2.2 5.4-2.6 6.2-6.1 1.9 3.7 6.4 4.5 6.4 4.5 0-4 2.6-3.7 2.6-11.2 0 0 .6 4 4.7 5.4 0-2.9 3.6-5.2 2.9-11.1 1.9 1.3 6.5.3 6.5.3-3.3-3.9-.7-9.5-5.2-13.2 3.8.8 5.5 2.7 5.5 2.7.3-8.3-3.8-12.1-3.8-12.1"
@@ -7149,9 +7158,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "fontSize": 24,
-                                "lineHeight": "38px",
-                                "top": 120,
+                                "fontSize": 16,
+                                "lineHeight": "26px",
+                                "top": 79,
                               }
                             }>
                             lion
@@ -7166,7 +7175,7 @@ exports[`test page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(488px, 0px)
+                                          translate(324px, 0px)
                                           rotate(-1.35deg)
                                         ",
                           "zIndex": 0,
@@ -7181,8 +7190,8 @@ exports[`test page:binary-search 1`] = `
                             Object {
                               "background": "#FF8A80",
                               "borderWidth": 2,
-                              "height": 162,
-                              "width": 124,
+                              "height": 109,
+                              "width": 83,
                             }
                           }>
                           <div
@@ -7198,17 +7207,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "height": 99,
-                                "left": 12.4,
-                                "top": 15.5,
-                                "width": 99,
+                                "height": 66,
+                                "left": 8.3,
+                                "top": 10.375,
+                                "width": 66,
                               }
                             }>
                             <div>
                               <svg
-                                height={99}
+                                height={66}
                                 viewBox="0 0 64 64"
-                                width={99}
+                                width={66}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M62 14c0 6.6-5.4 12-12 12s-12-5.4-12-12S43.4 2 50 2s12 5.4 12 12"
@@ -7273,9 +7282,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "fontSize": 24,
-                                "lineHeight": "38px",
-                                "top": 120,
+                                "fontSize": 16,
+                                "lineHeight": "26px",
+                                "top": 79,
                               }
                             }>
                             panda
@@ -7290,7 +7299,7 @@ exports[`test page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(610px, 0px)
+                                          translate(405px, 0px)
                                           rotate(1deg)
                                         ",
                           "zIndex": 0,
@@ -7305,8 +7314,8 @@ exports[`test page:binary-search 1`] = `
                             Object {
                               "background": "#FF8A80",
                               "borderWidth": 2,
-                              "height": 162,
-                              "width": 124,
+                              "height": 109,
+                              "width": 83,
                             }
                           }>
                           <div
@@ -7322,17 +7331,17 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "height": 99,
-                                "left": 12.4,
-                                "top": 15.5,
-                                "width": 99,
+                                "height": 66,
+                                "left": 8.3,
+                                "top": 10.375,
+                                "width": 66,
                               }
                             }>
                             <div>
                               <svg
-                                height={99}
+                                height={66}
                                 viewBox="0 0 64 64"
-                                width={99}
+                                width={66}
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                   d="M29.6 42.8S24.9 22 16.5 22C1.4 22 1 49.8 11.2 59c3.1 2.8 16.1 2.8 43.5 0 2.9-.3 1.8-3.1-2.3-5-2.7-1.3-15.8-3.7-22.8-11.2"
@@ -7406,9 +7415,9 @@ exports[`test page:binary-search 1`] = `
                             data-jsx={1836048290}
                             style={
                               Object {
-                                "fontSize": 24,
-                                "lineHeight": "38px",
-                                "top": 120,
+                                "fontSize": 16,
+                                "lineHeight": "26px",
+                                "top": 79,
                               }
                             }>
                             snail
@@ -7422,13 +7431,13 @@ exports[`test page:binary-search 1`] = `
                     data-jsx={750233767}
                     style={
                       Object {
-                        "fontSize": 36,
-                        "height": 58,
-                        "left": 338,
-                        "lineHeight": "58px",
+                        "fontSize": 24,
+                        "height": 38,
+                        "left": 225,
+                        "lineHeight": "38px",
                         "opacity": 0,
-                        "top": 396,
-                        "width": 58,
+                        "top": 259,
+                        "width": 38,
                       }
                     }>
                     =
@@ -7440,17 +7449,20 @@ exports[`test page:binary-search 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": 580,
-                    "width": 768,
+                    "display": "table-cell",
+                    "height": 412,
+                    "paddingTop": 6,
+                    "verticalAlign": "top",
+                    "width": 512,
                   }
                 }>
                 <pre
                   data-jsx={345238448}
                   style={
                     Object {
-                      "fontSize": 24,
-                      "lineHeight": "28px",
-                      "padding": "10px 0",
+                      "fontSize": 16,
+                      "lineHeight": "20px",
+                      "padding": "6px 0",
                     }
                   }>
                   <div>
@@ -7652,8 +7664,8 @@ exports[`test page:quicksort 1`] = `
         data-jsx={2559894650}
         style={
           Object {
-            "fontSize": 28,
-            "lineHeight": "76px",
+            "fontSize": 20,
+            "lineHeight": "52px",
           }
         }>
         <span
@@ -7661,7 +7673,7 @@ exports[`test page:quicksort 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <a
@@ -7676,7 +7688,7 @@ exports[`test page:quicksort 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <span
@@ -7689,7 +7701,7 @@ exports[`test page:quicksort 1`] = `
           data-jsx={2559894650}
           style={
             Object {
-              "marginLeft": 24,
+              "marginLeft": 16,
             }
           }>
           <a
@@ -7705,15 +7717,15 @@ exports[`test page:quicksort 1`] = `
           href="https://github.com/skidding/illustrated-algorithms/blob/master/README.md"
           style={
             Object {
-              "marginRight": 24,
+              "marginRight": 16,
             }
           }>
           <svg
             data-jsx={2559894650}
             style={
               Object {
-                "height": 38,
-                "width": 38,
+                "height": 26,
+                "width": 26,
               }
             }
             viewBox="0 0 256 256">
@@ -7735,9 +7747,9 @@ exports[`test page:quicksort 1`] = `
           data-jsx={2464810934}
           style={
             Object {
-              "height": 862,
-              "padding": "76px 0 96px 0",
-              "transform": "translate(0, 0px)",
+              "height": 312,
+              "padding": "52px 0 64px 0",
+              "transform": "translate(0, 170px)",
             }
           }>
           <div
@@ -7745,7 +7757,7 @@ exports[`test page:quicksort 1`] = `
             data-jsx={2464810934}
             style={
               Object {
-                "height": 862,
+                "height": 312,
                 "opacity": 1,
               }
             }>
@@ -7756,8 +7768,11 @@ exports[`test page:quicksort 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": 422,
-                    "width": 768,
+                    "display": "table-cell",
+                    "height": 280,
+                    "paddingTop": 16,
+                    "verticalAlign": "top",
+                    "width": 512,
                   }
                 }>
                 <div
@@ -7765,8 +7780,8 @@ exports[`test page:quicksort 1`] = `
                   data-jsx={4185613797}
                   style={
                     Object {
-                      "height": 422,
-                      "width": 734,
+                      "height": 280,
+                      "width": 488,
                     }
                   }>
                   <div
@@ -7776,7 +7791,7 @@ exports[`test page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(305px, 10px)
+                                    translate(202.5px, 6px)
                                     scale(0.9)
                                   ",
                       }
@@ -7786,10 +7801,10 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={2547828282}
                       style={
                         Object {
-                          "fontSize": 24,
-                          "height": 58,
-                          "lineHeight": "58px",
-                          "width": 124,
+                          "fontSize": 16,
+                          "height": 38,
+                          "lineHeight": "38px",
+                          "width": 83,
                         }
                       }>
                       <div
@@ -7797,7 +7812,7 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={2547828282}
                         style={
                           Object {
-                            "padding": "0 20px",
+                            "padding": "0 12px",
                           }
                         }>
                         pivot
@@ -7811,7 +7826,7 @@ exports[`test page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(61px, 10px)
+                                    translate(40.5px, 6px)
                                     scale(0.9)
                                   ",
                       }
@@ -7821,10 +7836,10 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={2547828282}
                       style={
                         Object {
-                          "fontSize": 24,
-                          "height": 58,
-                          "lineHeight": "58px",
-                          "width": 124,
+                          "fontSize": 16,
+                          "height": 38,
+                          "lineHeight": "38px",
+                          "width": 83,
                         }
                       }>
                       <div
@@ -7832,7 +7847,7 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={2547828282}
                         style={
                           Object {
-                            "padding": "0 20px",
+                            "padding": "0 12px",
                           }
                         }>
                         less
@@ -7846,7 +7861,7 @@ exports[`test page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(549px, 10px)
+                                    translate(364.5px, 6px)
                                     scale(0.9)
                                   ",
                       }
@@ -7856,10 +7871,10 @@ exports[`test page:quicksort 1`] = `
                       data-jsx={2547828282}
                       style={
                         Object {
-                          "fontSize": 24,
-                          "height": 58,
-                          "lineHeight": "58px",
-                          "width": 124,
+                          "fontSize": 16,
+                          "height": 38,
+                          "lineHeight": "38px",
+                          "width": 83,
                         }
                       }>
                       <div
@@ -7867,7 +7882,7 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={2547828282}
                         style={
                           Object {
-                            "padding": "0 20px",
+                            "padding": "0 12px",
                           }
                         }>
                         greater
@@ -7881,7 +7896,7 @@ exports[`test page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(61px, 78px)
+                                    translate(40.5px, 50px)
                                     rotate(2.5deg)
                                     scale(0.9)
                                   ",
@@ -7894,8 +7909,8 @@ exports[`test page:quicksort 1`] = `
                         Object {
                           "background": "#FFD180",
                           "borderWidth": 2,
-                          "height": 162,
-                          "width": 124,
+                          "height": 109,
+                          "width": 83,
                         }
                       }>
                       <div
@@ -7911,17 +7926,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1836048290}
                         style={
                           Object {
-                            "height": 99,
-                            "left": 12.4,
-                            "top": 15.5,
-                            "width": 99,
+                            "height": 66,
+                            "left": 8.3,
+                            "top": 10.375,
+                            "width": 66,
                           }
                         }>
                         <div>
                           <svg
-                            height={99}
+                            height={66}
                             viewBox="0 0 64 64"
-                            width={99}
+                            width={66}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M32 2C15.4 2 2 15.4 2 32s13.4 30 30 30 30-13.4 30-30S48.6 2 32 2m22 30c0 4.6-1.4 8.9-3.9 12.5L19.5 13.9C23.1 11.4 27.4 10 32 10c12.2 0 22 9.9 22 22m-44 0c0-4.6 1.4-8.9 3.9-12.5l30.6 30.6C40.9 52.6 36.6 54 32 54c-12.1 0-22-9.9-22-22"
@@ -7934,9 +7949,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1836048290}
                         style={
                           Object {
-                            "fontSize": 20,
-                            "lineHeight": "38px",
-                            "top": 120,
+                            "fontSize": 12,
+                            "lineHeight": "26px",
+                            "top": 79,
                           }
                         }>
                         empty
@@ -7950,7 +7965,7 @@ exports[`test page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(549px, 78px)
+                                    translate(364.5px, 50px)
                                     rotate(-1.9deg)
                                     scale(0.9)
                                   ",
@@ -7963,8 +7978,8 @@ exports[`test page:quicksort 1`] = `
                         Object {
                           "background": "#FFD180",
                           "borderWidth": 2,
-                          "height": 162,
-                          "width": 124,
+                          "height": 109,
+                          "width": 83,
                         }
                       }>
                       <div
@@ -7980,17 +7995,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1836048290}
                         style={
                           Object {
-                            "height": 99,
-                            "left": 12.4,
-                            "top": 15.5,
-                            "width": 99,
+                            "height": 66,
+                            "left": 8.3,
+                            "top": 10.375,
+                            "width": 66,
                           }
                         }>
                         <div>
                           <svg
-                            height={99}
+                            height={66}
                             viewBox="0 0 64 64"
-                            width={99}
+                            width={66}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M32 2C15.4 2 2 15.4 2 32s13.4 30 30 30 30-13.4 30-30S48.6 2 32 2m22 30c0 4.6-1.4 8.9-3.9 12.5L19.5 13.9C23.1 11.4 27.4 10 32 10c12.2 0 22 9.9 22 22m-44 0c0-4.6 1.4-8.9 3.9-12.5l30.6 30.6C40.9 52.6 36.6 54 32 54c-12.1 0-22-9.9-22-22"
@@ -8003,9 +8018,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1836048290}
                         style={
                           Object {
-                            "fontSize": 20,
-                            "lineHeight": "38px",
-                            "top": 120,
+                            "fontSize": 12,
+                            "lineHeight": "26px",
+                            "top": 79,
                           }
                         }>
                         empty
@@ -8019,7 +8034,7 @@ exports[`test page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(305px, 130px)
+                                    translate(202.5px, 85.5px)
                                     rotate(0.5deg)
                                   ",
                       }
@@ -8031,8 +8046,8 @@ exports[`test page:quicksort 1`] = `
                         Object {
                           "background": "#FFD180",
                           "borderWidth": 2,
-                          "height": 162,
-                          "width": 124,
+                          "height": 109,
+                          "width": 83,
                         }
                       }>
                       <div
@@ -8048,17 +8063,17 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1836048290}
                         style={
                           Object {
-                            "height": 99,
-                            "left": 12.4,
-                            "top": 15.5,
-                            "width": 99,
+                            "height": 66,
+                            "left": 8.3,
+                            "top": 10.375,
+                            "width": 66,
                           }
                         }>
                         <div>
                           <svg
-                            height={99}
+                            height={66}
                             viewBox="0 0 64 64"
-                            width={99}
+                            width={66}
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M32 2C15.4 2 2 15.4 2 32s13.4 30 30 30 30-13.4 30-30S48.6 2 32 2m22 30c0 4.6-1.4 8.9-3.9 12.5L19.5 13.9C23.1 11.4 27.4 10 32 10c12.2 0 22 9.9 22 22m-44 0c0-4.6 1.4-8.9 3.9-12.5l30.6 30.6C40.9 52.6 36.6 54 32 54c-12.1 0-22-9.9-22-22"
@@ -8071,9 +8086,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={1836048290}
                         style={
                           Object {
-                            "fontSize": 20,
-                            "lineHeight": "38px",
-                            "top": 120,
+                            "fontSize": 12,
+                            "lineHeight": "26px",
+                            "top": 79,
                           }
                         }>
                         empty
@@ -8088,7 +8103,7 @@ exports[`test page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(0px, 250px)
+                                            translate(0px, 165px)
                                             rotate(0.5deg)
                                           ",
                           "zIndex": 0,
@@ -8101,8 +8116,8 @@ exports[`test page:quicksort 1`] = `
                           Object {
                             "background": "#FFD180",
                             "borderWidth": 2,
-                            "height": 162,
-                            "width": 124,
+                            "height": 109,
+                            "width": 83,
                           }
                         }>
                         <div
@@ -8118,17 +8133,17 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "height": 99,
-                              "left": 12.4,
-                              "top": 15.5,
-                              "width": 99,
+                              "height": 66,
+                              "left": 8.3,
+                              "top": 10.375,
+                              "width": 66,
                             }
                           }>
                           <div>
                             <svg
-                              height={99}
+                              height={66}
                               viewBox="0 0 64 64"
-                              width={99}
+                              width={66}
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M61 39.2c3.7 10.5-4.1 18.4-12.8 19.9-8.7 1.4-18.4-3.6-18.8-14.7-.6-14.7 10.1-13 13.9-13.6 6.3-1 13-5 17.7 8.4"
@@ -8165,9 +8180,9 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "fontSize": 20,
-                              "lineHeight": "38px",
-                              "top": 120,
+                              "fontSize": 12,
+                              "lineHeight": "26px",
+                              "top": 79,
                             }
                           }>
                           cherries
@@ -8180,7 +8195,7 @@ exports[`test page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(122px, 250px)
+                                            translate(81px, 165px)
                                             rotate(1.4deg)
                                           ",
                           "zIndex": 1,
@@ -8193,8 +8208,8 @@ exports[`test page:quicksort 1`] = `
                           Object {
                             "background": "#FFD180",
                             "borderWidth": 2,
-                            "height": 162,
-                            "width": 124,
+                            "height": 109,
+                            "width": 83,
                           }
                         }>
                         <div
@@ -8210,17 +8225,17 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "height": 99,
-                              "left": 12.4,
-                              "top": 15.5,
-                              "width": 99,
+                              "height": 66,
+                              "left": 8.3,
+                              "top": 10.375,
+                              "width": 66,
                             }
                           }>
                           <div>
                             <svg
-                              height={99}
+                              height={66}
                               viewBox="0 0 64 64"
-                              width={99}
+                              width={66}
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M37.7 62c-47.5 0-47.5-60 0-60v60"
@@ -8262,9 +8277,9 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "fontSize": 20,
-                              "lineHeight": "38px",
-                              "top": 120,
+                              "fontSize": 12,
+                              "lineHeight": "26px",
+                              "top": 79,
                             }
                           }>
                           kiwi
@@ -8277,7 +8292,7 @@ exports[`test page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(244px, 250px)
+                                            translate(162px, 165px)
                                             rotate(-2.9deg)
                                           ",
                           "zIndex": 2,
@@ -8290,8 +8305,8 @@ exports[`test page:quicksort 1`] = `
                           Object {
                             "background": "#FFD180",
                             "borderWidth": 2,
-                            "height": 162,
-                            "width": 124,
+                            "height": 109,
+                            "width": 83,
                           }
                         }>
                         <div
@@ -8307,17 +8322,17 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "height": 99,
-                              "left": 12.4,
-                              "top": 15.5,
-                              "width": 99,
+                              "height": 66,
+                              "left": 8.3,
+                              "top": 10.375,
+                              "width": 66,
                             }
                           }>
                           <div>
                             <svg
-                              height={99}
+                              height={66}
                               viewBox="0 0 64 64"
-                              width={99}
+                              width={66}
                               xmlns="http://www.w3.org/2000/svg">
                               <g
                                 fill="#8cc63e">
@@ -8407,9 +8422,9 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "fontSize": 20,
-                              "lineHeight": "38px",
-                              "top": 120,
+                              "fontSize": 12,
+                              "lineHeight": "26px",
+                              "top": 79,
                             }
                           }>
                           grapes
@@ -8422,7 +8437,7 @@ exports[`test page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(366px, 250px)
+                                            translate(243px, 165px)
                                             rotate(1.9deg)
                                           ",
                           "zIndex": 3,
@@ -8435,8 +8450,8 @@ exports[`test page:quicksort 1`] = `
                           Object {
                             "background": "#FFD180",
                             "borderWidth": 2,
-                            "height": 162,
-                            "width": 124,
+                            "height": 109,
+                            "width": 83,
                           }
                         }>
                         <div
@@ -8452,17 +8467,17 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "height": 99,
-                              "left": 12.4,
-                              "top": 15.5,
-                              "width": 99,
+                              "height": 66,
+                              "left": 8.3,
+                              "top": 10.375,
+                              "width": 66,
                             }
                           }>
                           <div>
                             <svg
-                              height={99}
+                              height={66}
                               viewBox="0 0 64 64"
-                              width={99}
+                              width={66}
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M52.2 7.9l2.5 2.6L60 7c2.2-.3 3.2-5-2.8-3.5-1.5.4-3.8 1.5-5 4.4"
@@ -8501,9 +8516,9 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "fontSize": 20,
-                              "lineHeight": "38px",
-                              "top": 120,
+                              "fontSize": 12,
+                              "lineHeight": "26px",
+                              "top": 79,
                             }
                           }>
                           avocado
@@ -8516,7 +8531,7 @@ exports[`test page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(488px, 250px)
+                                            translate(324px, 165px)
                                             rotate(-2.35deg)
                                           ",
                           "zIndex": 4,
@@ -8529,8 +8544,8 @@ exports[`test page:quicksort 1`] = `
                           Object {
                             "background": "#FFD180",
                             "borderWidth": 2,
-                            "height": 162,
-                            "width": 124,
+                            "height": 109,
+                            "width": 83,
                           }
                         }>
                         <div
@@ -8546,17 +8561,17 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "height": 99,
-                              "left": 12.4,
-                              "top": 15.5,
-                              "width": 99,
+                              "height": 66,
+                              "left": 8.3,
+                              "top": 10.375,
+                              "width": 66,
                             }
                           }>
                           <div>
                             <svg
-                              height={99}
+                              height={66}
                               viewBox="0 0 64 64"
-                              width={99}
+                              width={66}
                               xmlns="http://www.w3.org/2000/svg">
                               <g
                                 fill="#64892f">
@@ -8615,9 +8630,9 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "fontSize": 20,
-                              "lineHeight": "38px",
-                              "top": 120,
+                              "fontSize": 12,
+                              "lineHeight": "26px",
+                              "top": 79,
                             }
                           }>
                           pineapple
@@ -8630,7 +8645,7 @@ exports[`test page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(610px, 250px)
+                                            translate(405px, 165px)
                                             rotate(-0.8deg)
                                           ",
                           "zIndex": 5,
@@ -8643,8 +8658,8 @@ exports[`test page:quicksort 1`] = `
                           Object {
                             "background": "#FFD180",
                             "borderWidth": 2,
-                            "height": 162,
-                            "width": 124,
+                            "height": 109,
+                            "width": 83,
                           }
                         }>
                         <div
@@ -8660,17 +8675,17 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "height": 99,
-                              "left": 12.4,
-                              "top": 15.5,
-                              "width": 99,
+                              "height": 66,
+                              "left": 8.3,
+                              "top": 10.375,
+                              "width": 66,
                             }
                           }>
                           <div>
                             <svg
-                              height={99}
+                              height={66}
                               viewBox="0 0 64 64"
-                              width={99}
+                              width={66}
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M34.4 9.1c0-2.3-3.4-2.7-3.4-.5 0 2.6-1.4 3.6-1.4 5 0 1.8 4 2.1 4 .2 0-1.8.8-1.6.8-4.7"
@@ -8704,9 +8719,9 @@ exports[`test page:quicksort 1`] = `
                           data-jsx={1836048290}
                           style={
                             Object {
-                              "fontSize": 20,
-                              "lineHeight": "38px",
-                              "top": 120,
+                              "fontSize": 12,
+                              "lineHeight": "26px",
+                              "top": 79,
                             }
                           }>
                           peach
@@ -8726,8 +8741,8 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={3637862792}
                         style={
                           Object {
-                            "fontSize": 58,
-                            "lineHeight": "68px",
+                            "fontSize": 38,
+                            "lineHeight": "44px",
                           }
                         }>
                         Place the elements of a list
@@ -8741,21 +8756,21 @@ exports[`test page:quicksort 1`] = `
                         onClick={[Function]}
                         style={
                           Object {
-                            "fontSize": 44,
-                            "left": 183.5,
-                            "top": 160,
+                            "fontSize": 28,
+                            "left": 122,
+                            "top": 104,
                           }
                         }>
                         <svg
                           data-jsx={3637862792}
-                          height={48}
+                          height={32}
                           style={
                             Object {
-                              "marginTop": 5,
+                              "marginTop": 3,
                             }
                           }
                           viewBox="0 0 24 24"
-                          width={48}>
+                          width={32}>
                           <path
                             d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
                             data-jsx={3637862792} />
@@ -8766,7 +8781,7 @@ exports[`test page:quicksort 1`] = `
                           style={
                             Object {
                               "borderWidth": 2,
-                              "marginLeft": 48,
+                              "marginLeft": 32,
                             }
                           }>
                           shuffle
@@ -8778,21 +8793,21 @@ exports[`test page:quicksort 1`] = `
                         onClick={[Function]}
                         style={
                           Object {
-                            "fontSize": 44,
-                            "left": 403.70000000000005,
-                            "top": 160,
+                            "fontSize": 28,
+                            "left": 268.40000000000003,
+                            "top": 104,
                           }
                         }>
                         <svg
                           data-jsx={3637862792}
-                          height={48}
+                          height={32}
                           style={
                             Object {
-                              "marginTop": 5,
+                              "marginTop": 3,
                             }
                           }
                           viewBox="0 0 24 24"
-                          width={48}>
+                          width={32}>
                           <path
                             d="M8 5v14l11-7z"
                             data-jsx={3637862792} />
@@ -8803,7 +8818,7 @@ exports[`test page:quicksort 1`] = `
                           style={
                             Object {
                               "borderWidth": 2,
-                              "marginLeft": 48,
+                              "marginLeft": 32,
                             }
                           }>
                           start
@@ -8823,9 +8838,9 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={3186501227}
                         style={
                           Object {
-                            "fontSize": 58,
-                            "lineHeight": "68px",
-                            "top": 20,
+                            "fontSize": 38,
+                            "lineHeight": "44px",
+                            "top": 12,
                           }
                         }>
                         Sorted by name – 
@@ -8839,8 +8854,8 @@ exports[`test page:quicksort 1`] = `
                         data-jsx={3186501227}
                         style={
                           Object {
-                            "fontSize": 44,
-                            "top": 316.5,
+                            "fontSize": 28,
+                            "top": 210,
                           }
                         }>
                         rewind & scroll for close examination
@@ -8854,17 +8869,20 @@ exports[`test page:quicksort 1`] = `
                 data-jsx={581520481}
                 style={
                   Object {
-                    "height": 440,
-                    "width": 768,
+                    "display": "table-cell",
+                    "height": 312,
+                    "paddingTop": 0,
+                    "verticalAlign": "top",
+                    "width": 512,
                   }
                 }>
                 <pre
                   data-jsx={345238448}
                   style={
                     Object {
-                      "fontSize": 24,
-                      "lineHeight": "28px",
-                      "padding": "10px 0",
+                      "fontSize": 16,
+                      "lineHeight": "20px",
+                      "padding": "6px 0",
                     }
                   }>
                   <div>
@@ -9025,7 +9043,7 @@ exports[`test page:quicksort 1`] = `
           style={
             Object {
               "backgroundColor": "#FFD180",
-              "height": 96,
+              "height": 64,
             }
           }>
           <div
@@ -9037,16 +9055,16 @@ exports[`test page:quicksort 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "height": 96,
-                  "lineHeight": "96px",
-                  "width": 96,
+                  "height": 64,
+                  "lineHeight": "64px",
+                  "width": 64,
                 }
               }>
               <svg
                 data-jsx={4104513454}
-                height={76}
+                height={52}
                 viewBox="0 0 24 24"
-                width={76}>
+                width={52}>
                 <path
                   d="M8 5v14l11-7z"
                   data-jsx={4104513454} />
@@ -9059,7 +9077,7 @@ exports[`test page:quicksort 1`] = `
               onTouchStart={[Function]}
               style={
                 Object {
-                  "left": 96,
+                  "left": 64,
                 }
               }>
               <div
@@ -9075,8 +9093,8 @@ exports[`test page:quicksort 1`] = `
                 data-jsx={3260177673}
                 style={
                   Object {
-                    "fontSize": 38,
-                    "lineHeight": "96px",
+                    "fontSize": 26,
+                    "lineHeight": "64px",
                   }
                 }>
                 drag to rewind
