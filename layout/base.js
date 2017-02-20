@@ -53,7 +53,7 @@ export default init => {
 
   const color = '#fff';
 
-  const landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width > height;
+  const landscape = width >= IPHONE6_LANDSCAPE_WIDTH && width >= height;
   const sideWidth = landscape ? floor(width / 2) : width;
 
   const getRelSize = (baseValue, multiOf) =>
@@ -75,8 +75,8 @@ export default init => {
     ...init,
     color,
 
-    landscape: width >= IPHONE6_LANDSCAPE_WIDTH && width > height,
-    sideWidth: landscape ? floor(width / 2) : width,
+    landscape,
+    sideWidth,
     getRelSize,
 
     headerHeight,
