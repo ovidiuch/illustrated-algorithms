@@ -66,3 +66,7 @@ While this project doesn't focus on algorithm implementation specifics, here's a
 #### Quicksort
 
 - [#19](https://github.com/skidding/illustrated-algorithms/issues/19) Extending implementation to support duplicates ([@ACollectionOfAtoms](https://github.com/ACollectionOfAtoms))
+
+---
+
+Please note that this project is released with a [Contributor Code of Conduct.](CODE_OF_CONDUCT.md) By participating in this project you agree to abide by its terms.
