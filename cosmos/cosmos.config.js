@@ -4,6 +4,7 @@ export default {
     /binary-search\/((?!binary-search).)/,
   ],
   proxies: [
+    './proxies/normalize-props-proxy',
     './proxies/layout-proxy',
     './proxies/frame-proxy',
     './proxies/context-proxy',

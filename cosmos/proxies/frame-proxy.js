@@ -43,7 +43,10 @@ class FrameProxy extends React.Component {
       nextProxy: nextProxy.next(),
       fixture: {
         ...fixture,
-        frame,
+        props: {
+          ...fixture.props,
+          frame
+        },
       },
     });
   }
