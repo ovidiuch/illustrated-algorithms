@@ -1,20 +1,16 @@
-export default function binarySearch(list, item) {
-  let low = 0;
-  let high = list.length - 1;
+let binary_search = (arr, item) => { // Sorted array
+  let start = 0;
+  let end = arr.length - 1;
 
-  while (low <= high) {
-    const mid = Math.round((low + high) / 2);
-    const guess = list[mid];
+  while (end >= start) {
+    let i = ((end - start) >> 1) + start; // Right shift the bit and get the item from array 
+    if (arr[i] === item) { return i; } // Return the position
 
-    if (guess === item) {
-      return mid;
-    }
-    if (guess > item) {
-      high = mid - 1;
-    } else {
-      low = mid + 1;
-    }
+    if (arr[i] < item) { start = i + 1; } // Right half
+    else { end = i - 1; } // Left half
   }
 
   return null;
-}
+};
+
+export default binary_search;
