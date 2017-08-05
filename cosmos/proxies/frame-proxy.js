@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import getStack from '../../utils/stack';
 import computeBinarySearchFrame from '../../frame/binary-search';
@@ -53,12 +54,16 @@ class FrameProxy extends React.Component {
 }
 
 FrameProxy.propTypes = {
-  nextProxy: React.PropTypes.shape({
-    value: React.PropTypes.func,
-    next: React.PropTypes.func,
+  nextProxy: PropTypes.shape({
+    value: PropTypes.func,
+    next: PropTypes.func,
   }).isRequired,
-  fixture: React.PropTypes.object.isRequired,
-  layout: React.PropTypes.object,
+  fixture: PropTypes.object.isRequired,
+  layout: PropTypes.object,
+};
+
+FrameProxy.defaultProps = {
+  layout: {}
 };
 
 export default () => FrameProxy;

@@ -36,7 +36,7 @@ export default class BfsPage extends React.Component {
           },
         }, ...steps]}
         actions={{}}
-        />
+      />
     );
   }
 }

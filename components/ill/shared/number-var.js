@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const { round } = Math;
@@ -27,7 +28,7 @@ const NumberVar = ({
         width: numberVarWidth,
         height: numberVarHeight,
       }}
-      >
+    >
       <div
         className="label"
         style={{
@@ -36,7 +37,7 @@ const NumberVar = ({
           fontSize: blockLabelFontSize,
           lineHeight: `${numberVarHeight}px`,
         }}
-        >
+      >
         {label}
       </div>
       <div
@@ -47,7 +48,7 @@ const NumberVar = ({
           fontSize: blockLabelFontSize,
           lineHeight: `${numberVarHeight}px`,
         }}
-        >
+      >
         {value}
       </div>
       <style jsx>{`
@@ -65,18 +66,19 @@ const NumberVar = ({
           background: rgba(0, 0, 0, 0.5);
           color: white;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 };
 
 NumberVar.propTypes = {
-  value: React.PropTypes.number.isRequired,
-  label: React.PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 NumberVar.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default NumberVar;

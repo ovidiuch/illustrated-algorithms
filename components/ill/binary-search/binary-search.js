@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
 import List from './list';
@@ -35,7 +36,7 @@ class BinarySearch extends PureLayoutComponent {
           width: innerWidth,
           height: illustrationHeight,
         }}
-        >
+      >
         <Intro {...props}/>
         <Item {...props}/>
         <Low {...props}/>
@@ -44,25 +45,26 @@ class BinarySearch extends PureLayoutComponent {
         <List
           {...props}
           onSelect={this.handleSelect}
-          />
+        />
         <Comparison {...props}/>
         <style jsx>{`
           .binary-search {
             position: relative;
             margin: 0 auto;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 BinarySearch.propTypes = {
-  actions: React.PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 BinarySearch.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default BinarySearch;

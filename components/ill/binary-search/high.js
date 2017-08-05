@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import NumberVar from '../shared/number-var';
 
@@ -24,25 +25,26 @@ export default function High({ frame }) {
           rotate(${rotation}deg)
         `
       }}
-      >
+    >
       <NumberVar
         value={value}
         label="high"
-        />
+      />
       <style jsx>{`
         .high {
           position: absolute;
           will-change: opacity, transform;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
 
 High.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 High.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };

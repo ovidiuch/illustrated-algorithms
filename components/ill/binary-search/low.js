@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import NumberVar from '../shared/number-var';
 
@@ -24,25 +25,26 @@ export default function Low({ frame }) {
           rotate(${rotation}deg)
         `
       }}
-      >
+    >
       <NumberVar
         value={value}
         label="low"
-        />
+      />
       <style jsx>{`
         .low {
           position: absolute;
           will-change: opacity, transform;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
 
 Low.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 Low.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };

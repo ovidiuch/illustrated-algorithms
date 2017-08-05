@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 /* global window */
 
 import React from 'react';
@@ -24,12 +25,12 @@ const SvgButton = ({
         lineHeight: `${footerHeight}px`,
       }}
       onClick={onClick}
-      >
+    >
       <svg
         width={footerButtonIconSize}
         height={footerButtonIconSize}
         viewBox="0 0 24 24"
-        >
+      >
         <path d={svgPath}/>
       </svg>
       <style jsx>{`
@@ -46,18 +47,19 @@ const SvgButton = ({
           transform: translate(-50%, -50%);
           fill: rgba(0, 0, 0, 0.8);
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 };
 
 SvgButton.propTypes = {
-  svgPath: React.PropTypes.string.isRequired,
-  onClick: React.PropTypes.func.isRequired,
+  svgPath: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 SvgButton.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 class PlaybackControls extends PureLayoutComponent {
@@ -139,17 +141,17 @@ class PlaybackControls extends PureLayoutComponent {
           <SvgButton
             svgPath="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
             onClick={this.handleReplay}
-            />
+          />
         ) : isPlaying ? (
           <SvgButton
             svgPath="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
             onClick={onPause}
-            />
+          />
         ) : (
           <SvgButton
             svgPath="M8 5v14l11-7z"
             onClick={onPlay}
-            />
+          />
         )}
         <div
           ref={node => {
@@ -159,18 +161,18 @@ class PlaybackControls extends PureLayoutComponent {
           style={{ left: footerHeight }}
           onMouseDown={this.handleSliderPress}
           onTouchStart={this.handleSliderPress}
-          >
+        >
           <div
             className="progress"
             style={{ width: `${(pos / maxPos) * 100}%` }}
-            />
+          />
           <div
             className="slider-hint"
             style={{
               fontSize: footerHintFontSize,
               lineHeight: `${footerHeight}px`,
             }}
-            >
+          >
             drag to rewind
           </div>
         </div>
@@ -207,22 +209,23 @@ class PlaybackControls extends PureLayoutComponent {
             user-select: none;
             cursor: default;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 PlaybackControls.propTypes = {
-  pos: React.PropTypes.number.isRequired,
-  isPlaying: React.PropTypes.bool.isRequired,
-  onPlay: React.PropTypes.func.isRequired,
-  onPause: React.PropTypes.func.isRequired,
-  onScrollTo: React.PropTypes.func.isRequired,
+  pos: PropTypes.number.isRequired,
+  isPlaying: PropTypes.bool.isRequired,
+  onPlay: PropTypes.func.isRequired,
+  onPause: PropTypes.func.isRequired,
+  onScrollTo: PropTypes.func.isRequired,
 };
 
 PlaybackControls.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default PlaybackControls;

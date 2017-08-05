@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function Intro({ frame }, { layout }) {
@@ -14,13 +15,13 @@ export default function Intro({ frame }, { layout }) {
       style={{
         opacity,
       }}
-      >
+    >
       <p
         style={{
           top: illustrationHeight * 0.06,
           fontSize: layout.getRelSize(24, 2),
         }}
-        >
+      >
         Find the position of a value<br/> inside a sorted list
       </p>
       <p
@@ -28,7 +29,7 @@ export default function Intro({ frame }, { layout }) {
           top: illustrationHeight * 0.62,
           fontSize: layout.getRelSize(18, 2),
         }}
-        >
+      >
         press on one of the animals to begin
       </p>
       <style jsx>{`
@@ -50,15 +51,16 @@ export default function Intro({ frame }, { layout }) {
         p:last-child {
           opacity: 0.5;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
 
 Intro.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 Intro.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };

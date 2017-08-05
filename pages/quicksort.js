@@ -42,7 +42,7 @@ export default class QuicksortPage extends React.Component {
           shuffleInput: this.handleShuffleInput,
           generateSteps: this.handleGenerateSteps,
         }}
-        />
+      />
     );
   }
 

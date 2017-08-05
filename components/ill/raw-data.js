@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Link from 'next/link';
 import PureLayoutComponent from '../../utils/pure-layout-component';
@@ -31,14 +32,14 @@ class RawData extends PureLayoutComponent {
           fontSize,
           lineHeight: `${lineHeight}px`,
         }}
-        >
+      >
         <div
           className="inner"
           style={{
             left: padding,
             right: padding,
           }}
-          >
+        >
           {isFirstStep ? (
             <div
               className="wip"
@@ -47,7 +48,7 @@ class RawData extends PureLayoutComponent {
                 padding,
                 marginBottom: padding,
               }}
-              >
+            >
               <p>Work in progress: No visualisation. Context displayed as JSON.</p>
               <p>
                 See <Link href="/binary-search"><a>binary search</a></Link> or <Link href="/quicksort"><a>quicksort</a></Link> for complete examples.{' '}
@@ -56,18 +57,20 @@ class RawData extends PureLayoutComponent {
             </div>
           ) : null}
           {Object.keys(bindings).filter(key => bindings[key] !== undefined).map(key =>
-            <pre
-              key={key}
-              style={{ padding }}
+            (
+              <pre
+                key={key}
+                style={{ padding }}
               >
-              {key} = {JSON.stringify(bindings[key])}
-            </pre>
+                {key} = {JSON.stringify(bindings[key])}
+              </pre>
+            )
           )}
           {returnValue !== undefined && (
             <pre
               className="return-value"
               style={{ padding }}
-              >
+            >
               {JSON.stringify(returnValue)}
             </pre>
           )}
@@ -106,18 +109,19 @@ class RawData extends PureLayoutComponent {
             color: black;
             white-space: nowrap;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 RawData.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 RawData.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default RawData;

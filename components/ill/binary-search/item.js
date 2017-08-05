@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import EmojiBlock from '../shared/emoji-block';
 
@@ -26,22 +27,23 @@ export default function Item({ frame }, { layout }) {
           rotate(${rotation}deg)
         `
       }}
-      >
+    >
       <EmojiBlock name={value} glow={0.4}/>
       <style jsx>{`
         .item {
           position: absolute;
           will-change: opacity, transform;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
 
 Item.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 Item.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };

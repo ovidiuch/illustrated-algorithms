@@ -6,17 +6,17 @@
     "url": "git+https://github.com/skidding/illustrated-algorithms.git"
   },
   "devDependencies": {
-    "@skidding/babel-plugin-inline-react-svg": "^0.2.1",
+    "babel-plugin-inline-react-svg": "^0.4.0",
     "babel-plugin-trace-execution": "^0.2.0",
-    "eslint-config-xo-react": "^0.10.0",
-    "eslint-plugin-react": "^6.8.0",
-    "jest": "^18.1.0",
-    "react-cosmos-context-proxy": "^2.0.0-beta.15",
-    "react-cosmos-normalize-props-proxy": "^2.0.0-beta.15",
-    "react-cosmos-telescope": "^2.0.0-beta.17",
-    "react-cosmos-webpack": "^2.0.0-beta.16",
-    "webpack": "^2.2.0",
-    "xo": "^0.17.1"
+    "eslint-config-xo-react": "^0.13.0",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^20.0.4",
+    "react-cosmos-context-proxy": "^2.0.0-beta.20",
+    "react-cosmos-normalize-props-proxy": "^2.0.0-beta.20",
+    "react-cosmos-telescope": "^2.0.0-beta.20",
+    "react-cosmos-webpack": "^2.0.0-beta.20",
+    "webpack": "^3.4.1",
+    "xo": "^0.18.2"
   },
   "scripts": {
     "clear-babel-cache": "rm -rf node_modules/.cache/babel-loader/*",
@@ -53,16 +53,16 @@
     ]
   },
   "dependencies": {
-    "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
     "emojione": "^2.2.7",
     "lodash.debounce": "^4.0.8",
     "lodash.range": "^3.2.0",
-    "next": "2.0.0-beta.16",
-    "raf": "^3.3.0",
-    "react": "^15.4.2",
-    "react-addons-shallow-compare": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "shuffle-array": "^1.0.0"
+    "next": "^2.4.9",
+    "prop-types": "^15.5.10",
+    "raf": "^3.3.2",
+    "react": "^15.6.1",
+    "react-addons-shallow-compare": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "shuffle-array": "^1.0.1"
   }
 }

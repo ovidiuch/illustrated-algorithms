@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
@@ -28,14 +29,15 @@ class Intro extends PureLayoutComponent {
         style={{
           opacity,
         }}
-        >
+      >
         <h1
           className="title"
           style={{
             fontSize: titleFontSize,
             lineHeight: `${titleLineHeight}px`,
           }}
-          >Place the elements of a list<br/> in alphabetical order</h1>
+        >Place the elements of a list<br/> in alphabetical order
+        </h1>
         <div
           className={classNames({
             'shuffle-btn': true,
@@ -47,7 +49,7 @@ class Intro extends PureLayoutComponent {
             fontSize: btnFontSize,
           }}
           onClick={areControlsEnabled ? this.props.onShuffle : undefined}
-          >
+        >
           <svg
             style={{
               marginTop: padding / 2,
@@ -55,7 +57,7 @@ class Intro extends PureLayoutComponent {
             width={btnSvgSize}
             height={btnSvgSize}
             viewBox="0 0 24 24"
-            >
+          >
             <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>
           </svg>
           <span
@@ -64,7 +66,7 @@ class Intro extends PureLayoutComponent {
               borderWidth,
               marginLeft: btnSvgSize,
             }}
-            >shuffle
+          >shuffle
           </span>
         </div>
         <div
@@ -78,7 +80,7 @@ class Intro extends PureLayoutComponent {
             fontSize: btnFontSize,
           }}
           onClick={areControlsEnabled ? this.props.onStart : undefined}
-          >
+        >
           <svg
             style={{
               marginTop: padding / 2,
@@ -86,7 +88,7 @@ class Intro extends PureLayoutComponent {
             width={btnSvgSize}
             height={btnSvgSize}
             viewBox="0 0 24 24"
-            >
+          >
             <path d="M8 5v14l11-7z"/>
           </svg>
           <span
@@ -95,7 +97,7 @@ class Intro extends PureLayoutComponent {
               borderWidth,
               marginLeft: btnSvgSize,
             }}
-            >start
+          >start
           </span>
         </div>
         <style jsx>{`
@@ -137,20 +139,21 @@ class Intro extends PureLayoutComponent {
           .start-btn {
             transform: rotate(-1deg);
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 Intro.propTypes = {
-  frame: React.PropTypes.object.isRequired,
-  onShuffle: React.PropTypes.func.isRequired,
-  onStart: React.PropTypes.func.isRequired,
+  frame: PropTypes.object.isRequired,
+  onShuffle: PropTypes.func.isRequired,
+  onStart: PropTypes.func.isRequired,
 };
 
 Intro.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default Intro;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 /* eslint-env browser */
 
 import React from 'react';
@@ -36,9 +37,9 @@ export default ({
   }
 
   GlobalCSSProxy.propTypes = {
-    nextProxy: React.PropTypes.shape({
-      value: React.PropTypes.func,
-      next: React.PropTypes.func,
+    nextProxy: PropTypes.shape({
+      value: PropTypes.func,
+      next: PropTypes.func,
     }).isRequired,
   };
 

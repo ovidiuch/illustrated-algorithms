@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
@@ -33,21 +34,21 @@ class ListItem extends PureLayoutComponent {
         <EmojiBlock
           name={name}
           glow={glow}
-          />
+        />
       </div>
     );
   }
 }
 
 ListItem.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  glow: React.PropTypes.number.isRequired,
-  isSelectable: React.PropTypes.bool.isRequired,
-  onSelect: React.PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  glow: PropTypes.number.isRequired,
+  isSelectable: PropTypes.bool.isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
 ListItem.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 class List extends PureLayoutComponent {
@@ -70,7 +71,7 @@ class List extends PureLayoutComponent {
         style={{
           top: listTop,
         }}
-        >
+      >
         {items.map(({
           name,
           isGuess,
@@ -78,10 +79,10 @@ class List extends PureLayoutComponent {
           opacity,
           rotation,
           glow,
-        }, index) => {
+        }) => {
           return (
             <div
-              key={index}
+              key={name}
               className={classNames({
                 item: true,
                 'item-selectable': isSelectable,
@@ -94,13 +95,13 @@ class List extends PureLayoutComponent {
                 `,
                 zIndex: isGuess ? 1 : 0,
               }}
-              >
+            >
               <ListItem
                 name={name}
                 glow={glow}
                 isSelectable={isSelectable}
                 onSelect={onSelect}
-                />
+              />
             </div>
           );
         })}
@@ -115,19 +116,20 @@ class List extends PureLayoutComponent {
           .item-selectable {
             cursor: pointer;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 List.propTypes = {
-  frame: React.PropTypes.object.isRequired,
-  onSelect: React.PropTypes.func.isRequired,
+  frame: PropTypes.object.isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
 List.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default List;

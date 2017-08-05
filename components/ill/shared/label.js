@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Label = ({
@@ -21,13 +22,13 @@ const Label = ({
         fontSize: labelFontSize,
         lineHeight: `${labelHeight}px`,
       }}
-      >
+    >
       <div
         className="text"
         style={{
           padding: `0 ${padding * 2}px`,
         }}
-        >
+      >
         {text}
       </div>
       <style jsx>{`
@@ -43,17 +44,18 @@ const Label = ({
           color: black;
           text-transform: uppercase;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 };
 
 Label.propTypes = {
-  text: React.PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 Label.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default Label;

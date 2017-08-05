@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import PureLayoutComponent from '../utils/pure-layout-component';
 
@@ -10,7 +11,8 @@ const renderLineNum = num => (
       .line-num {
         opacity: 0.3;
       }
-    `}</style>
+    `}
+    </style>
   </span>
 );
 
@@ -43,7 +45,8 @@ const renderLine = (fnLine, lineStart, highlight, num) => {
               display: inline-block;
               background: rgba(255, 255, 255, 0.8);
             }
-          `}</style>
+          `}
+          </style>
         </div>
       );
     }
@@ -80,10 +83,10 @@ class SourceCode extends PureLayoutComponent {
           fontSize: codeFontSize,
           lineHeight: `${codeLineHeight}px`,
         }}
-        >
+      >
         {def.split('\n').map((fnLine, num) => {
           const lineEl = renderLine(fnLine, lineStart, highlight, num);
-          lineStart += fnLine.length + 1; // account for newlines removed
+          lineStart += fnLine.length + 1; // Account for newlines removed
 
           return lineEl;
         })}
@@ -94,22 +97,23 @@ class SourceCode extends PureLayoutComponent {
             padding: 0;
             text-align: left;
           }
-        `}</style>
+        `}
+        </style>
       </pre>
     );
   }
 }
 
 SourceCode.propTypes = {
-  def: React.PropTypes.string.isRequired,
-  highlight: React.PropTypes.shape({
-    start: React.PropTypes.number.isRequired,
-    end: React.PropTypes.number.isRequired,
+  def: PropTypes.string.isRequired,
+  highlight: PropTypes.shape({
+    start: PropTypes.number.isRequired,
+    end: PropTypes.number.isRequired,
   }),
 };
 
 SourceCode.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default SourceCode;

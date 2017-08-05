@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
 import EmojiBlock from '../shared/emoji-block';
@@ -67,7 +68,7 @@ class Quicksort extends PureLayoutComponent {
           width: innerWidth,
           height: illustrationHeight,
         }}
-        >
+      >
         <div
           className="pivot"
           style={{
@@ -77,7 +78,7 @@ class Quicksort extends PureLayoutComponent {
               scale(${pivot.scale})
             `,
           }}
-          >
+        >
           <Label text="pivot"/>
         </div>
         <div
@@ -89,7 +90,7 @@ class Quicksort extends PureLayoutComponent {
               scale(${less.scale})
             `,
           }}
-          >
+        >
           <Label text="less"/>
         </div>
         <div
@@ -101,7 +102,7 @@ class Quicksort extends PureLayoutComponent {
               scale(${greater.scale})
             `,
           }}
-          >
+        >
           <Label text="greater"/>
         </div>
         <div
@@ -114,10 +115,10 @@ class Quicksort extends PureLayoutComponent {
               scale(${less.scale})
             `,
           }}
-          >
+        >
           <EmojiBlock
             glow={lessEmpty.glow}
-            />
+          />
         </div>
         <div
           className="greater-empty"
@@ -129,10 +130,10 @@ class Quicksort extends PureLayoutComponent {
               scale(${greater.scale})
             `,
           }}
-          >
+        >
           <EmojiBlock
             glow={greaterEmpty.glow}
-            />
+          />
         </div>
         <div
           className="list-empty"
@@ -143,10 +144,10 @@ class Quicksort extends PureLayoutComponent {
               rotate(0.5deg)
             `,
           }}
-          >
+        >
           <EmojiBlock
             glow={0}
-            />
+          />
         </div>
         <div>
           {list.map(name => {
@@ -162,8 +163,8 @@ class Quicksort extends PureLayoutComponent {
 
             return (
               <div
-                className="item"
                 key={name}
+                className="item"
                 style={{
                   zIndex: index,
                   transform: `
@@ -171,11 +172,11 @@ class Quicksort extends PureLayoutComponent {
                     rotate(${relRotation}deg)
                   `,
                 }}
-                >
+              >
                 <EmojiBlock
                   name={name}
                   glow={glow}
-                  />
+                />
               </div>
             );
           })}
@@ -183,10 +184,10 @@ class Quicksort extends PureLayoutComponent {
             frame={frame}
             onShuffle={this.handleShuffle}
             onStart={this.handleStart}
-            />
+          />
           <Outro
             frame={frame}
-            />
+          />
         </div>
         <style jsx>{`
           .quicksort {
@@ -203,18 +204,19 @@ class Quicksort extends PureLayoutComponent {
             position: absolute;
             will-change: transform, opacity;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 Quicksort.propTypes = {
-  actions: React.PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 Quicksort.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default Quicksort;

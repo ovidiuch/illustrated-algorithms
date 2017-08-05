@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
 import EmojiIcon from './emoji-icon';
@@ -33,13 +34,13 @@ class EmojiBlock extends PureLayoutComponent {
           borderWidth,
           background: color,
         }}
-        >
+      >
         <div
           className="glow"
           style={{
             background: `rgba(255, 255, 255, ${glow})`,
           }}
-          />
+        />
         <div
           className="icon"
           style={{
@@ -48,12 +49,12 @@ class EmojiBlock extends PureLayoutComponent {
             top: blockWidth * 0.125,
             left: blockWidth * 0.1,
           }}
-          >
+        >
           <EmojiIcon
             name={name || 'no entry'}
             width={iconSize}
             height={iconSize}
-            />
+          />
         </div>
         <div
           className="label"
@@ -62,7 +63,7 @@ class EmojiBlock extends PureLayoutComponent {
             fontSize: blockLabelFontSize,
             lineHeight: `${blockLabelHeight}px`,
           }}
-          >
+        >
           {name ? name : 'empty'}
         </div>
         <style jsx>{`
@@ -103,15 +104,16 @@ class EmojiBlock extends PureLayoutComponent {
           .empty .label {
             color: rgba(0, 0, 0, 0.5);
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 EmojiBlock.propTypes = {
-  name: React.PropTypes.string,
-  glow: React.PropTypes.number,
+  name: PropTypes.string,
+  glow: PropTypes.number,
 };
 
 EmojiBlock.defaultProps = {
@@ -120,7 +122,7 @@ EmojiBlock.defaultProps = {
 };
 
 EmojiBlock.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default EmojiBlock;

@@ -11,6 +11,7 @@ import Avocado from 'emojione/assets/svg/1f951.svg';
 import Peach from 'emojione/assets/svg/1f351.svg';
 import Pineapple from 'emojione/assets/svg/1f34d.svg';
 import NoEntry from 'emojione/assets/svg/1f6ab.svg';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const emojis = {
@@ -42,7 +43,7 @@ export default class EmojiIcon extends React.PureComponent {
 }
 
 EmojiIcon.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  width: React.PropTypes.number.isRequired,
-  height: React.PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 };

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 /* global window, document */
 
 import React from 'react';
@@ -8,7 +9,7 @@ import Menu from './menu';
 import Player from './player';
 
 const getWindowSize = () => ({
-  width: document.body.clientWidth || window.innerWidth, // fallback for jsdom
+  width: document.body.clientWidth || window.innerWidth, // Fallback for jsdom
   height: window.innerHeight,
 });
 
@@ -34,7 +35,7 @@ class Page extends React.Component {
 
     this.state = {
       renderedOnClient: false,
-      // iPhone 6 portrait resolution
+      // IPhone 6 portrait resolution
       width: 375,
       height: 667,
     };
@@ -106,12 +107,14 @@ class Page extends React.Component {
             .code {
               font-family: 'FiraCode-Light', monospace;
             }
-          `}</style>
+          `}
+          </style>
           <style>{`
             body {
               background: ${color};
             }
-          `}</style>
+          `}
+          </style>
         </Head>
         <div className="body" style={{ opacity: renderedOnClient ? 1 : 0 }}>
           <div className="header">
@@ -124,7 +127,7 @@ class Page extends React.Component {
               computeFrame={computeFrame}
               steps={steps}
               actions={actions}
-              />
+            />
           </div>
           <style jsx>{`
             .body {
@@ -139,7 +142,8 @@ class Page extends React.Component {
               position: absolute;
               z-index: 1;
             }
-          `}</style>
+          `}
+          </style>
         </div>
       </div>
     );
@@ -147,19 +151,19 @@ class Page extends React.Component {
 }
 
 Page.propTypes = {
-  currentPath: React.PropTypes.string.isRequired,
-  algorithm: React.PropTypes.func.isRequired,
-  illustration: React.PropTypes.func.isRequired,
+  currentPath: PropTypes.string.isRequired,
+  algorithm: PropTypes.func.isRequired,
+  illustration: PropTypes.func.isRequired,
   // ESLint plugin bug
   // eslint-disable-next-line react/no-unused-prop-types
-  computeLayout: React.PropTypes.func.isRequired,
-  computeFrame: React.PropTypes.func.isRequired,
-  steps: React.PropTypes.array.isRequired,
-  actions: React.PropTypes.object.isRequired,
+  computeLayout: PropTypes.func.isRequired,
+  computeFrame: PropTypes.func.isRequired,
+  steps: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 Page.childContextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default Page;

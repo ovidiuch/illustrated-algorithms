@@ -1,4 +1,7 @@
 {
-  "presets": ["next/babel"],
-  "plugins": ["@skidding/babel-plugin-inline-react-svg"]
+  "presets": [
+    ["env", { "modules": "commonjs" }],
+    "next/babel"
+  ],
+  "plugins": ["babel-plugin-inline-react-svg"]
 }

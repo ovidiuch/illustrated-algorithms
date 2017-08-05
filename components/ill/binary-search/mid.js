@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import NumberVar from '../shared/number-var';
 
@@ -20,25 +21,26 @@ export default function Mid({ frame }) {
         opacity,
         transform: `translate(${left}px, ${top}px)`
       }}
-      >
+    >
       <NumberVar
         value={value}
         label="mid"
-        />
+      />
       <style jsx>{`
         .mid {
           position: absolute;
           will-change: opacity, transform;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
 
 Mid.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 Mid.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };

@@ -38,7 +38,7 @@ export default class BinarySearchPage extends React.Component {
         actions={{
           generateSteps: this.handleGenerateSteps,
         }}
-        />
+      />
     );
   }
 

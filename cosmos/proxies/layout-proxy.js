@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import binarySearch from '../../algorithms/binary-search';
@@ -60,11 +61,11 @@ class LayoutProxy extends React.Component {
 }
 
 LayoutProxy.propTypes = {
-  nextProxy: React.PropTypes.shape({
-    value: React.PropTypes.func,
-    next: React.PropTypes.func,
+  nextProxy: PropTypes.shape({
+    value: PropTypes.func,
+    next: PropTypes.func,
   }).isRequired,
-  fixture: React.PropTypes.object.isRequired,
+  fixture: PropTypes.object.isRequired,
 };
 
 export default () => LayoutProxy;

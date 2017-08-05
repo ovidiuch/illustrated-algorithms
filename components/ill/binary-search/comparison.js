@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function Comparison({ frame }, { layout }) {
@@ -27,7 +28,7 @@ export default function Comparison({ frame }, { layout }) {
         fontSize: blockLabelFontSize * 1.5,
         opacity,
       }}
-      >
+    >
       {value}
       <style jsx>{`
         .comparison {
@@ -38,15 +39,16 @@ export default function Comparison({ frame }, { layout }) {
           text-align: center;
           will-change: opacity;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
 
 Comparison.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 Comparison.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };

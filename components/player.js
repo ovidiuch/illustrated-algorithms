@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import raf from 'raf';
 import range from 'lodash.range';
 import getStack from '../utils/stack';
@@ -178,7 +179,7 @@ class Player extends React.Component {
             padding: `${headerHeight}px 0 ${footerHeight}px 0`,
             transform: `translate(0, ${stack.top}px)`,
           }}
-          >
+        >
           {entries.map(entry => {
             const {
               entryId,
@@ -187,19 +188,19 @@ class Player extends React.Component {
 
             return (
               <div
-                className="stack-entry-outer"
                 key={entryId}
+                className="stack-entry-outer"
                 style={{
                   height: entryHeight,
                   opacity,
                 }}
-                >
+              >
                 <StackEntry
                   illustration={illustration}
                   code={algorithm.code}
                   frame={entry.frame}
                   actions={this.actions}
-                  />
+                />
               </div>
             );
           })}
@@ -211,7 +212,7 @@ class Player extends React.Component {
               height: footerHeight,
               backgroundColor: color,
             }}
-            >
+          >
             <PlaybackControls
               isPlaying={isPlaying}
               pos={pos}
@@ -219,7 +220,7 @@ class Player extends React.Component {
               onPlay={this.handlePlay}
               onPause={this.handlePause}
               onScrollTo={this.handleScrollTo}
-              />
+            />
           </div>
         )}
         <style jsx>{`
@@ -241,22 +242,23 @@ class Player extends React.Component {
             50% { transform: translate(0, 100%); }
             100% { transform: translate(0, 0); }
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 Player.propTypes = {
-  algorithm: React.PropTypes.func.isRequired,
-  illustration: React.PropTypes.func.isRequired,
-  computeFrame: React.PropTypes.func.isRequired,
-  steps: React.PropTypes.array.isRequired,
-  actions: React.PropTypes.object.isRequired,
+  algorithm: PropTypes.func.isRequired,
+  illustration: PropTypes.func.isRequired,
+  computeFrame: PropTypes.func.isRequired,
+  steps: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired,
 };
 
 Player.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default Player;

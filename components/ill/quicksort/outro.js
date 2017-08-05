@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import PureLayoutComponent from '../../../utils/pure-layout-component';
 
@@ -21,7 +22,7 @@ class Outro extends PureLayoutComponent {
         style={{
           opacity,
         }}
-        >
+      >
         <h1
           className="title"
           style={{
@@ -29,14 +30,16 @@ class Outro extends PureLayoutComponent {
             fontSize: titleFontSize,
             lineHeight: `${titleLineHeight}px`,
           }}
-          >Sorted by name – <em>phew!</em></h1>
+        >Sorted by name – <em>phew!</em>
+        </h1>
         <p
           className="subtext"
           style={{
             top: subtextTop,
             fontSize: subtextFontSize,
           }}
-          >rewind & scroll for close examination</p>
+        >rewind & scroll for close examination
+        </p>
         <style jsx>{`
           .outro {
             position: relative;
@@ -56,18 +59,19 @@ class Outro extends PureLayoutComponent {
             line-height: 1.2em;
             opacity: 0.5;
           }
-        `}</style>
+        `}
+        </style>
       </div>
     );
   }
 }
 
 Outro.propTypes = {
-  frame: React.PropTypes.object.isRequired,
+  frame: PropTypes.object.isRequired,
 };
 
 Outro.contextTypes = {
-  layout: React.PropTypes.object,
+  layout: PropTypes.object,
 };
 
 export default Outro;
