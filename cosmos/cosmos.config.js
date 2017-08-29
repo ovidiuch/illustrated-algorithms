@@ -1,8 +1,6 @@
 export default {
   componentPaths: ['../components'],
-  ignore: [
-    /binary-search\/((?!binary-search).)/,
-  ],
+  ignore: [/binary-search\/((?!binary-search).)/],
   proxies: [
     './proxies/normalize-props-proxy',
     './proxies/layout-proxy',
@@ -12,4 +10,5 @@ export default {
     './proxies/bg-color-proxy',
   ],
   publicPath: '../static',
+  publicUrl: '/static/',
 };
