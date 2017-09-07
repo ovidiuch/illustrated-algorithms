@@ -4492,13 +4492,13 @@ react-addons-shallow-compare@^15.6.0:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
-react-cosmos-component-playground@^2.0.0-beta.24:
-  version "2.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/react-cosmos-component-playground/-/react-cosmos-component-playground-2.0.0-beta.24.tgz#01c6966041731a14d8e2e711404d66c22e2f4750"
+react-cosmos-component-playground@^2.0.0-beta.25:
+  version "2.0.0-beta.25"
+  resolved "https://registry.yarnpkg.com/react-cosmos-component-playground/-/react-cosmos-component-playground-2.0.0-beta.25.tgz#5e48feb4e70d9999a0281873c2f451a50f0fac29"
 
-react-cosmos-config@^2.0.0-beta.24:
-  version "2.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/react-cosmos-config/-/react-cosmos-config-2.0.0-beta.24.tgz#e6cbd8732d9ca4d27be845de29eb07488c6aab90"
+react-cosmos-config@^2.0.0-beta.25:
+  version "2.0.0-beta.25"
+  resolved "https://registry.yarnpkg.com/react-cosmos-config/-/react-cosmos-config-2.0.0-beta.25.tgz#60c2e432f900d6bdeee4b2f04dfc8b55a24007cc"
   dependencies:
     react-cosmos-utils "^2.0.0-beta.24"
 
@@ -4509,9 +4509,9 @@ react-cosmos-context-proxy@^2.0.0-beta.24:
     lodash.omit "^4.5.0"
     react-cosmos-utils "^2.0.0-beta.24"
 
-react-cosmos-loader@^2.0.0-beta.24:
-  version "2.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/react-cosmos-loader/-/react-cosmos-loader-2.0.0-beta.24.tgz#a210e41466424c28699f3b12eeeba49066acafe1"
+react-cosmos-loader@^2.0.0-beta.25:
+  version "2.0.0-beta.25"
+  resolved "https://registry.yarnpkg.com/react-cosmos-loader/-/react-cosmos-loader-2.0.0-beta.25.tgz#286edce6e68b029df37beb08c7e2664ac5a94b45"
   dependencies:
     lodash.merge "^4.6.0"
     prop-types "^15.5.10"
@@ -4536,13 +4536,14 @@ react-cosmos-state-proxy@^2.0.0-beta.24:
     prop-types "^15.5.10"
     react-cosmos-utils "^2.0.0-beta.24"
 
-react-cosmos-telescope@^2.0.0-beta.24:
-  version "2.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/react-cosmos-telescope/-/react-cosmos-telescope-2.0.0-beta.24.tgz#339b83ff58e0b44e645e260d547888039bf94de7"
+react-cosmos-telescope@^2.0.0-beta.26:
+  version "2.0.0-beta.26"
+  resolved "https://registry.yarnpkg.com/react-cosmos-telescope/-/react-cosmos-telescope-2.0.0-beta.26.tgz#739dcd437110b7fc4b0aade6c1d592419cd63e13"
   dependencies:
-    react-cosmos-config "^2.0.0-beta.24"
-    react-cosmos-loader "^2.0.0-beta.24"
+    react-cosmos-config "^2.0.0-beta.25"
+    react-cosmos-loader "^2.0.0-beta.25"
     react-cosmos-state-proxy "^2.0.0-beta.24"
+    react-cosmos-utils "^2.0.0-beta.24"
     react-cosmos-voyager "^2.0.0-beta.24"
     react-test-renderer "^15.4.2"
 
@@ -4561,9 +4562,9 @@ react-cosmos-voyager@^2.0.0-beta.24:
   dependencies:
     glob "^7.1.1"
 
-react-cosmos-webpack@^2.0.0-beta.24:
-  version "2.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/react-cosmos-webpack/-/react-cosmos-webpack-2.0.0-beta.24.tgz#4b82a87a1d965b157a0da143719f0d3ff70a11f0"
+react-cosmos-webpack@^2.0.0-beta.25:
+  version "2.0.0-beta.25"
+  resolved "https://registry.yarnpkg.com/react-cosmos-webpack/-/react-cosmos-webpack-2.0.0-beta.25.tgz#313b323f54971bcd2ebd7adc1defa2daef6f5aa7"
   dependencies:
     babel-register "^6.26.0"
     express "^4.15.4"
@@ -4572,9 +4573,9 @@ react-cosmos-webpack@^2.0.0-beta.24:
     import-from "^2.1.0"
     loader-utils "^1.1.0"
     lodash.omit "^4.5.0"
-    react-cosmos-component-playground "^2.0.0-beta.24"
-    react-cosmos-config "^2.0.0-beta.24"
-    react-cosmos-loader "^2.0.0-beta.24"
+    react-cosmos-component-playground "^2.0.0-beta.25"
+    react-cosmos-config "^2.0.0-beta.25"
+    react-cosmos-loader "^2.0.0-beta.25"
     react-cosmos-utils "^2.0.0-beta.24"
     react-cosmos-voyager "^2.0.0-beta.24"
     resolve-from "^3.0.0"

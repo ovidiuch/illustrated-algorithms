@@ -8,33 +8,22 @@ import computeRawDataFrame from '../../frame/raw-data';
 const frameComputers = {
   binarySearch: computeBinarySearchFrame,
   quicksort: computeQuicksortFrame,
-  bfs: computeRawDataFrame,
+  bfs: computeRawDataFrame
 };
 
 class FrameProxy extends React.Component {
   render() {
-    const {
-      nextProxy,
-      fixture,
-      layout,
-    } = this.props;
-    const {
-      _layoutFor,
-      _frameFrom,
-    } = fixture;
+    const { nextProxy, fixture, layout } = this.props;
+    const { _layoutFor, _frameFrom } = fixture;
 
     if (!_frameFrom) {
       return React.createElement(nextProxy.value, {
         ...this.props,
-        nextProxy: nextProxy.next(),
+        nextProxy: nextProxy.next()
       });
     }
 
-    const {
-      prevStep,
-      nextStep,
-      stepProgress
-    } = _frameFrom;
+    const { prevStep, nextStep, stepProgress } = _frameFrom;
     const stack = getStack([prevStep, nextStep], 0);
     const computer = frameComputers[_layoutFor];
     const frame = computer(layout, stack, stepProgress).entries[0].frame;
@@ -47,8 +36,8 @@ class FrameProxy extends React.Component {
         props: {
           ...fixture.props,
           frame
-        },
-      },
+        }
+      }
     });
   }
 }
@@ -56,14 +45,14 @@ class FrameProxy extends React.Component {
 FrameProxy.propTypes = {
   nextProxy: PropTypes.shape({
     value: PropTypes.func,
-    next: PropTypes.func,
+    next: PropTypes.func
   }).isRequired,
   fixture: PropTypes.object.isRequired,
-  layout: PropTypes.object,
+  layout: PropTypes.object
 };
 
 FrameProxy.defaultProps = {
   layout: {}
 };
 
-export default () => FrameProxy;
+export default FrameProxy;

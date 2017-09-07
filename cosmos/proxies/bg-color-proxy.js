@@ -1,15 +1,13 @@
 import createGlobalCssProxy from './global-css-proxy';
 
-export default () => createGlobalCssProxy({
+export default createGlobalCssProxy({
   getCss: ({ layout }) => {
     if (!layout) {
       return '';
     }
 
-    return (
-      `body {
-        background: ${layout.color};
-      }`
-    );
-  },
+    return `body {
+      background: ${layout.color};
+    }`;
+  }
 });

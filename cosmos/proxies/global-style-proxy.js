@@ -1,9 +1,8 @@
 import createGlobalCssProxy from './global-css-proxy';
 
-export default () =>
-  createGlobalCssProxy({
-    getCss: () =>
-      `body {
+export default createGlobalCssProxy({
+  getCss: () =>
+    `body {
       margin: 0;
       padding: 0;
       font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -16,4 +15,4 @@ export default () =>
     .code {
       font-family: 'FiraCode-Light';
     }`
-  });
+});

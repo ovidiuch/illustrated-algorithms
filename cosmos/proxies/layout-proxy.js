@@ -11,30 +11,27 @@ import computeBfsLayout from '../../layout/bfs';
 const layoutRefs = {
   binarySearch: {
     code: binarySearch.code,
-    computeLayout: computeBinaryBindingLayout,
+    computeLayout: computeBinaryBindingLayout
   },
   quicksort: {
     code: quicksort.code,
-    computeLayout: computeQuicksortLayout,
+    computeLayout: computeQuicksortLayout
   },
   bfs: {
     code: bfs.code,
-    computeLayout: computeBfsLayout,
-  },
+    computeLayout: computeBfsLayout
+  }
 };
 
 class LayoutProxy extends React.Component {
   render() {
-    const {
-      nextProxy,
-      fixture,
-    } = this.props;
+    const { nextProxy, fixture } = this.props;
     const { _layoutFor } = fixture;
 
     if (!_layoutFor) {
       return React.createElement(nextProxy.value, {
         ...this.props,
-        nextProxy: nextProxy.next(),
+        nextProxy: nextProxy.next()
       });
     }
 
@@ -42,7 +39,7 @@ class LayoutProxy extends React.Component {
     const layout = computeLayout({
       width: 1200,
       height: 600,
-      code,
+      code
     });
 
     return React.createElement(nextProxy.value, {
@@ -51,11 +48,11 @@ class LayoutProxy extends React.Component {
       fixture: {
         ...fixture,
         context: {
-          layout,
-        },
+          layout
+        }
       },
       // Let other proxies make use of the layout instance as well
-      layout,
+      layout
     });
   }
 }
@@ -63,9 +60,9 @@ class LayoutProxy extends React.Component {
 LayoutProxy.propTypes = {
   nextProxy: PropTypes.shape({
     value: PropTypes.func,
-    next: PropTypes.func,
+    next: PropTypes.func
   }).isRequired,
-  fixture: PropTypes.object.isRequired,
+  fixture: PropTypes.object.isRequired
 };
 
-export default () => LayoutProxy;
+export default LayoutProxy;

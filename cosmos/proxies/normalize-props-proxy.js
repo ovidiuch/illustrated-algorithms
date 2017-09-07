@@ -1,6 +1,12 @@
 import createNormalizePropsProxy from 'react-cosmos-normalize-props-proxy';
 
-export default () =>
-  createNormalizePropsProxy({
-    notProps: ['children', 'state', 'context', 'reduxState', '_layoutFor', '_frameFrom']
-  });
+export default createNormalizePropsProxy({
+  notProps: [
+    'children',
+    'state',
+    'context',
+    'reduxState',
+    '_layoutFor',
+    '_frameFrom'
+  ]
+});
