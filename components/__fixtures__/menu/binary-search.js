@@ -1,4 +1,6 @@
 export default {
-  _layoutFor: 'binarySearch',
-  currentPath: '/binary-search',
+  layoutFor: 'binarySearch',
+  props: {
+    currentPath: '/binary-search'
+  }
 };

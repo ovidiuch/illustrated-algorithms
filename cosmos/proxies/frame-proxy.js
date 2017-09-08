@@ -14,18 +14,18 @@ const frameComputers = {
 class FrameProxy extends React.Component {
   render() {
     const { nextProxy, fixture, layout } = this.props;
-    const { _layoutFor, _frameFrom } = fixture;
+    const { layoutFor, frameFrom } = fixture;
 
-    if (!_frameFrom) {
+    if (!frameFrom) {
       return React.createElement(nextProxy.value, {
         ...this.props,
         nextProxy: nextProxy.next()
       });
     }
 
-    const { prevStep, nextStep, stepProgress } = _frameFrom;
+    const { prevStep, nextStep, stepProgress } = frameFrom;
     const stack = getStack([prevStep, nextStep], 0);
-    const computer = frameComputers[_layoutFor];
+    const computer = frameComputers[layoutFor];
     const frame = computer(layout, stack, stepProgress).entries[0].frame;
 
     return React.createElement(nextProxy.value, {

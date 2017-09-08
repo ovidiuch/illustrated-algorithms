@@ -1,6 +1,8 @@
 import bfs from '../../../algorithms/bfs';
 
 export default {
-  _layoutFor: 'bfs',
-  def: bfs.code,
+  layoutFor: 'bfs',
+  props: {
+    def: bfs.code
+  }
 };

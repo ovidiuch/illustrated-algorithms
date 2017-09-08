@@ -3601,10 +3601,6 @@ lodash.omit@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
 
-lodash.pick@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
-
 lodash.range@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/lodash.range/-/lodash.range-3.2.0.tgz#f461e588f66683f7eadeade513e38a69a565a15d"
@@ -4516,14 +4512,6 @@ react-cosmos-loader@^2.0.0-beta.25:
     lodash.merge "^4.6.0"
     prop-types "^15.5.10"
     react-cosmos-state-proxy "^2.0.0-beta.24"
-    react-cosmos-utils "^2.0.0-beta.24"
-
-react-cosmos-normalize-props-proxy@^2.0.0-beta.24:
-  version "2.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/react-cosmos-normalize-props-proxy/-/react-cosmos-normalize-props-proxy-2.0.0-beta.24.tgz#d64638b83482c37beb04cc4e1f67db0a09373272"
-  dependencies:
-    lodash.omit "^4.5.0"
-    lodash.pick "^4.4.0"
     react-cosmos-utils "^2.0.0-beta.24"
 
 react-cosmos-state-proxy@^2.0.0-beta.24:

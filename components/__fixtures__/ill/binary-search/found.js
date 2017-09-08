@@ -1,6 +1,6 @@
 export default {
-  _layoutFor: 'binarySearch',
-  _frameFrom: {
+  layoutFor: 'binarySearch',
+  frameFrom: {
     prevStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
@@ -8,8 +8,8 @@ export default {
         low: 3,
         mid: 3,
         high: 3,
-        guess: 'panda',
-      },
+        guess: 'panda'
+      }
     },
     nextStep: {
       bindings: {
@@ -18,11 +18,13 @@ export default {
         low: 3,
         mid: 3,
         high: 3,
-        guess: 'panda',
+        guess: 'panda'
       },
-      returnValue: 4,
+      returnValue: 4
     },
-    stepProgress: 1,
+    stepProgress: 1
   },
-  actions: {},
+  props: {
+    actions: {}
+  }
 };

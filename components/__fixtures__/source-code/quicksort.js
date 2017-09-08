@@ -1,6 +1,8 @@
 import quicksort from '../../../algorithms/quicksort';
 
 export default {
-  _layoutFor: 'quicksort',
-  def: quicksort.code,
+  layoutFor: 'quicksort',
+  props: {
+    def: quicksort.code
+  }
 };

@@ -1,6 +1,6 @@
 export default {
-  _layoutFor: 'bfs',
-  _frameFrom: {
+  layoutFor: 'bfs',
+  frameFrom: {
     prevStep: {
       bindings: {
         graph: {

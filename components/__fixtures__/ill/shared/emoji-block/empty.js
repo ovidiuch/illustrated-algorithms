@@ -1,3 +1,3 @@
 export default {
-  _layoutFor: 'quicksort',
+  layoutFor: 'quicksort'
 };
