@@ -4,20 +4,22 @@ export default {
     prevStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
-        item: 'panda',
+        item: 'panda'
       },
-      intro: true,
+      intro: true
     },
     nextStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
-        item: 'panda',
+        item: 'panda'
       },
-      intro: true,
+      intro: true
     },
-    stepProgress: 0,
+    stepProgress: 0
   },
-  actions: {
-    generateSteps: steps => console.log('steps', steps),
-  },
+  props: {
+    actions: {
+      generateSteps: steps => console.log('steps', steps)
+    }
+  }
 };

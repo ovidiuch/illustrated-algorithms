@@ -1,5 +1,7 @@
 export default {
   _layoutFor: 'binarySearch',
-  value: 5,
-  label: 'max',
+  props: {
+    value: 5,
+    label: 'max'
+  }
 };

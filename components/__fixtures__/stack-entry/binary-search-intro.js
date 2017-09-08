@@ -9,22 +9,24 @@ export default {
     prevStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
-        item: 'panda',
+        item: 'panda'
       },
-      intro: true,
+      intro: true
     },
     nextStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
-        item: 'panda',
+        item: 'panda'
       },
-      intro: true,
+      intro: true
     },
-    stepProgress: 0,
+    stepProgress: 0
   },
-  code,
-  illustration: BinarySearch,
-  actions: {
-    generateSteps: steps => console.log('steps', steps),
-  },
+  props: {
+    code,
+    illustration: BinarySearch,
+    actions: {
+      generateSteps: steps => console.log('steps', steps)
+    }
+  }
 };

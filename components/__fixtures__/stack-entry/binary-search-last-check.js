@@ -13,12 +13,12 @@ export default {
         low: 0,
         high: 2,
         mid: 1,
-        guess: 'cat',
+        guess: 'cat'
       },
       highlight: {
         start: 156,
-        end: 180,
-      },
+        end: 180
+      }
     },
     nextStep: {
       bindings: {
@@ -27,19 +27,21 @@ export default {
         low: 0,
         high: 2,
         mid: 1,
-        guess: 'cat',
+        guess: 'cat'
       },
       highlight: {
         start: 190,
-        end: 204,
+        end: 204
       },
-      compared: ['guess', 'item'],
+      compared: ['guess', 'item']
     },
-    stepProgress: 0.65,
+    stepProgress: 0.65
   },
-  code,
-  illustration: BinarySearch,
-  actions: {
-    generateSteps: steps => console.log('steps', steps),
-  },
+  props: {
+    code,
+    illustration: BinarySearch,
+    actions: {
+      generateSteps: steps => console.log('steps', steps)
+    }
+  }
 };

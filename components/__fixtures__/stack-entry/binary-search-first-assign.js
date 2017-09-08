@@ -9,29 +9,31 @@ export default {
     prevStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
-        item: 'panda',
+        item: 'panda'
       },
       highlight: {
         start: 9,
-        end: 33,
-      },
+        end: 33
+      }
     },
     nextStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],
         item: 'panda',
-        low: 0,
+        low: 0
       },
       highlight: {
         start: 38,
-        end: 50,
-      },
+        end: 50
+      }
     },
-    stepProgress: 0.5,
+    stepProgress: 0.5
   },
-  code,
-  illustration: BinarySearch,
-  actions: {
-    generateSteps: steps => console.log('steps', steps),
-  },
+  props: {
+    code,
+    illustration: BinarySearch,
+    actions: {
+      generateSteps: steps => console.log('steps', steps)
+    }
+  }
 };

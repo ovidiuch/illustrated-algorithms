@@ -1,4 +1,6 @@
 export default {
   _layoutFor: 'quicksort',
-  text: 'pivot'
+  props: {
+    text: 'pivot'
+  }
 };

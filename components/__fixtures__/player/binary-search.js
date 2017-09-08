@@ -6,18 +6,22 @@ const list = ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'];
 
 export default {
   _layoutFor: 'binarySearch',
-  computeFrame: computeBinarySearchFrame,
-  algorithm: binarySearch,
-  illustration: BinarySearch,
-  steps: [{
-    intro: true,
-    bindings: {
-      list,
-    },
-  }],
-  actions: {
-    generateSteps: item => {
-      console.log('generate steps', item);
-    },
-  },
+  props: {
+    computeFrame: computeBinarySearchFrame,
+    algorithm: binarySearch,
+    illustration: BinarySearch,
+    steps: [
+      {
+        intro: true,
+        bindings: {
+          list
+        }
+      }
+    ],
+    actions: {
+      generateSteps: item => {
+        console.log('generate steps', item);
+      }
+    }
+  }
 };

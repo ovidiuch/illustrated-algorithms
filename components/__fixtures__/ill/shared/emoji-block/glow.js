@@ -1,5 +1,7 @@
 export default {
   _layoutFor: 'binarySearch',
-  name: 'panda',
-  glow: 0.8,
+  props: {
+    name: 'panda',
+    glow: 0.8
+  }
 };

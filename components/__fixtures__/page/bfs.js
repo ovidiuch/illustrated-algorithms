@@ -11,23 +11,28 @@ const graph = {
   anuj: [],
   peggy: [],
   thom: [],
-  jonny: [],
+  jonny: []
 };
 const name = 'you';
 const { steps } = bfs(graph, name);
 
 export default {
-  currentPath: '/bfs',
-  algorithm: bfs,
-  illustration: RawData,
-  computeLayout: computeBfsLayout,
-  computeFrame: computeRawDataFrame,
-  steps: [{
-    intro: true,
-    bindings: {
-      graph,
-      name,
-    }
-  }, ...steps],
-  actions: {},
+  props: {
+    currentPath: '/bfs',
+    algorithm: bfs,
+    illustration: RawData,
+    computeLayout: computeBfsLayout,
+    computeFrame: computeRawDataFrame,
+    steps: [
+      {
+        intro: true,
+        bindings: {
+          graph,
+          name
+        }
+      },
+      ...steps
+    ],
+    actions: {}
+  }
 };

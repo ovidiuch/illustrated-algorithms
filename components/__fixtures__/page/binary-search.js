@@ -6,18 +6,22 @@ import computeBinarySearchFrame from '../../../frame/binary-search';
 const list = ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'];
 
 export default {
-  currentPath: '/binary-search',
-  algorithm: binarySearch,
-  illustration: BinarySearch,
-  computeLayout: computeBinarySearchLayout,
-  computeFrame: computeBinarySearchFrame,
-  steps: [{
-    bindings: { list },
-    intro: true,
-  }],
-  actions: {
-    generateSteps: item => {
-      console.log('generate steps', item);
-    },
-  },
+  props: {
+    currentPath: '/binary-search',
+    algorithm: binarySearch,
+    illustration: BinarySearch,
+    computeLayout: computeBinarySearchLayout,
+    computeFrame: computeBinarySearchFrame,
+    steps: [
+      {
+        bindings: { list },
+        intro: true
+      }
+    ],
+    actions: {
+      generateSteps: item => {
+        console.log('generate steps', item);
+      }
+    }
+  }
 };

@@ -8,8 +8,8 @@ export default {
         low: 3,
         mid: 3,
         high: 3,
-        guess: 'panda',
-      },
+        guess: 'panda'
+      }
     },
     nextStep: {
       bindings: {
@@ -18,11 +18,13 @@ export default {
         low: 3,
         mid: 3,
         high: 3,
-        guess: 'panda',
+        guess: 'panda'
       },
-      returnValue: 4,
+      returnValue: 4
     },
-    stepProgress: 1,
+    stepProgress: 1
   },
-  actions: {},
+  props: {
+    actions: {}
+  }
 };
