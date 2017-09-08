@@ -4562,9 +4562,9 @@ react-cosmos-voyager@^2.0.0-beta.24:
   dependencies:
     glob "^7.1.1"
 
-react-cosmos-webpack@^2.0.0-beta.25:
-  version "2.0.0-beta.25"
-  resolved "https://registry.yarnpkg.com/react-cosmos-webpack/-/react-cosmos-webpack-2.0.0-beta.25.tgz#313b323f54971bcd2ebd7adc1defa2daef6f5aa7"
+react-cosmos-webpack@^2.0.0-beta.27:
+  version "2.0.0-beta.27"
+  resolved "https://registry.yarnpkg.com/react-cosmos-webpack/-/react-cosmos-webpack-2.0.0-beta.27.tgz#90d4389893721536706ec4cd548007dbf1119a38"
   dependencies:
     babel-register "^6.26.0"
     express "^4.15.4"
