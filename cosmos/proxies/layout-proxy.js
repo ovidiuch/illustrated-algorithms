@@ -26,16 +26,16 @@ const layoutRefs = {
 class LayoutProxy extends React.Component {
   render() {
     const { nextProxy, fixture } = this.props;
-    const { _layoutFor } = fixture;
+    const { layoutFor } = fixture;
 
-    if (!_layoutFor) {
+    if (!layoutFor) {
       return React.createElement(nextProxy.value, {
         ...this.props,
         nextProxy: nextProxy.next()
       });
     }
 
-    const { code, computeLayout } = layoutRefs[_layoutFor];
+    const { code, computeLayout } = layoutRefs[layoutFor];
     const layout = computeLayout({
       width: 1200,
       height: 600,

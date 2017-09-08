@@ -4,8 +4,8 @@ import BinarySearch from '../../../components/ill/binary-search/binary-search';
 const { code } = binarySearch;
 
 export default {
-  _layoutFor: 'binarySearch',
-  _frameFrom: {
+  layoutFor: 'binarySearch',
+  frameFrom: {
     prevStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],

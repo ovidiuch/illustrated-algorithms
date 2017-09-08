@@ -5,7 +5,7 @@ import computeBinarySearchFrame from '../../../frame/binary-search';
 const list = ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'];
 
 export default {
-  _layoutFor: 'binarySearch',
+  layoutFor: 'binarySearch',
   props: {
     computeFrame: computeBinarySearchFrame,
     algorithm: binarySearch,

@@ -4,7 +4,7 @@ import Quicksort from '../../../components/ill/quicksort/quicksort';
 import computeQuicksortFrame from '../../../frame/quicksort';
 
 export default {
-  _layoutFor: 'quicksort',
+  layoutFor: 'quicksort',
   props: {
     computeFrame: computeQuicksortFrame,
     algorithm: quicksort,

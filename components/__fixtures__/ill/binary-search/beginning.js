@@ -1,6 +1,6 @@
 export default {
-  _layoutFor: 'binarySearch',
-  _frameFrom: {
+  layoutFor: 'binarySearch',
+  frameFrom: {
     prevStep: {
       bindings: {
         list: ['bear', 'cat', 'dog', 'lion', 'panda', 'snail'],

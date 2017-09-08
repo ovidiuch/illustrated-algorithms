@@ -1,7 +1,7 @@
 import binarySearch from '../../../algorithms/binary-search';
 
 export default {
-  _layoutFor: 'binarySearch',
+  layoutFor: 'binarySearch',
   props: {
     def: binarySearch.code
   }

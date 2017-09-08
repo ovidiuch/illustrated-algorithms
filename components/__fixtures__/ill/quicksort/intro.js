@@ -1,6 +1,6 @@
 export default {
-  _layoutFor: 'quicksort',
-  _frameFrom: {
+  layoutFor: 'quicksort',
+  frameFrom: {
     prevStep: {
       bindings: {
         list: ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach']

@@ -1,5 +1,5 @@
 export default {
-  _layoutFor: 'binarySearch',
+  layoutFor: 'binarySearch',
   props: {
     isPlaying: false,
     pos: 0,
