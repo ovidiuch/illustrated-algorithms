@@ -54,9 +54,9 @@ exports[`ill/binary-search:beginning 1`] = `
       Object {
         "opacity": 0.5,
         "transform": "
-                translate(237.5px, 367px)
-                rotate(-1.5deg)
-              ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
       }
     }
   >
@@ -204,9 +204,9 @@ exports[`ill/binary-search:beginning 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(0px, 0px)
-                          rotate(-0.9deg)
-                        ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -324,9 +324,9 @@ exports[`ill/binary-search:beginning 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(95px, 0px)
-                          rotate(-0.4deg)
-                        ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -465,9 +465,9 @@ exports[`ill/binary-search:beginning 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(190px, 0px)
-                          rotate(1.4deg)
-                        ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -616,9 +616,9 @@ exports[`ill/binary-search:beginning 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(285px, 0px)
-                          rotate(0.5deg)
-                        ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -750,9 +750,9 @@ exports[`ill/binary-search:beginning 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(380px, 0px)
-                          rotate(-1.35deg)
-                        ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -896,9 +896,9 @@ exports[`ill/binary-search:beginning 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(475px, 0px)
-                          rotate(1deg)
-                        ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -1123,9 +1123,9 @@ exports[`ill/binary-search:comparing 1`] = `
       Object {
         "opacity": 1,
         "transform": "
-                translate(237.5px, 367px)
-                rotate(3.4699999999999998deg)
-              ",
+          translate(237.5px, 367px)
+          rotate(3.4699999999999998deg)
+        ",
       }
     }
   >
@@ -1264,9 +1264,9 @@ exports[`ill/binary-search:comparing 1`] = `
       Object {
         "opacity": 1,
         "transform": "
-                translate(0px, 16px)
-                rotate(0deg)
-              ",
+          translate(0px, 16px)
+          rotate(0deg)
+        ",
       }
     }
   >
@@ -1317,9 +1317,9 @@ exports[`ill/binary-search:comparing 1`] = `
       Object {
         "opacity": 1,
         "transform": "
-                translate(475px, 70px)
-                rotate(0deg)
-              ",
+          translate(475px, 70px)
+          rotate(0deg)
+        ",
       }
     }
   >
@@ -1429,9 +1429,9 @@ exports[`ill/binary-search:comparing 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(0px, 0px)
-                          rotate(-0.9deg)
-                        ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -1549,9 +1549,9 @@ exports[`ill/binary-search:comparing 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(95px, 0px)
-                          rotate(-0.4deg)
-                        ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -1690,9 +1690,9 @@ exports[`ill/binary-search:comparing 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(190px, 0px)
-                          rotate(1.4deg)
-                        ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -1841,9 +1841,9 @@ exports[`ill/binary-search:comparing 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(285px, 0px)
-                          rotate(5.47deg)
-                        ",
+                  translate(285px, 0px)
+                  rotate(5.47deg)
+                ",
           "zIndex": 1,
         }
       }
@@ -1975,9 +1975,9 @@ exports[`ill/binary-search:comparing 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(380px, 0px)
-                          rotate(-1.35deg)
-                        ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -2121,9 +2121,9 @@ exports[`ill/binary-search:comparing 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(475px, 0px)
-                          rotate(1deg)
-                        ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -2348,9 +2348,9 @@ exports[`ill/binary-search:found 1`] = `
       Object {
         "opacity": 1,
         "transform": "
-                translate(237.5px, 367px)
-                rotate(-1.5deg)
-              ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
       }
     }
   >
@@ -2489,9 +2489,9 @@ exports[`ill/binary-search:found 1`] = `
       Object {
         "opacity": 1,
         "transform": "
-                translate(285px, 16px)
-                rotate(0deg)
-              ",
+          translate(285px, 16px)
+          rotate(0deg)
+        ",
       }
     }
   >
@@ -2542,9 +2542,9 @@ exports[`ill/binary-search:found 1`] = `
       Object {
         "opacity": 1,
         "transform": "
-                translate(285px, 70px)
-                rotate(0deg)
-              ",
+          translate(285px, 70px)
+          rotate(0deg)
+        ",
       }
     }
   >
@@ -2654,9 +2654,9 @@ exports[`ill/binary-search:found 1`] = `
         Object {
           "opacity": 0.2,
           "transform": "
-                          translate(0px, 0px)
-                          rotate(-0.9deg)
-                        ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -2774,9 +2774,9 @@ exports[`ill/binary-search:found 1`] = `
         Object {
           "opacity": 0.2,
           "transform": "
-                          translate(95px, 0px)
-                          rotate(-0.4deg)
-                        ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -2915,9 +2915,9 @@ exports[`ill/binary-search:found 1`] = `
         Object {
           "opacity": 0.2,
           "transform": "
-                          translate(190px, 0px)
-                          rotate(1.4deg)
-                        ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -3066,9 +3066,9 @@ exports[`ill/binary-search:found 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(285px, 0px)
-                          rotate(0.5deg)
-                        ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -3200,9 +3200,9 @@ exports[`ill/binary-search:found 1`] = `
         Object {
           "opacity": 0.2,
           "transform": "
-                          translate(380px, 0px)
-                          rotate(-1.35deg)
-                        ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -3346,9 +3346,9 @@ exports[`ill/binary-search:found 1`] = `
         Object {
           "opacity": 0.2,
           "transform": "
-                          translate(475px, 0px)
-                          rotate(1deg)
-                        ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -3573,9 +3573,9 @@ exports[`ill/binary-search:intro 1`] = `
       Object {
         "opacity": 0,
         "transform": "
-                translate(237.5px, 367px)
-                rotate(-1.5deg)
-              ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
       }
     }
   >
@@ -3723,9 +3723,9 @@ exports[`ill/binary-search:intro 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(0px, 0px)
-                          rotate(-0.9deg)
-                        ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -3843,9 +3843,9 @@ exports[`ill/binary-search:intro 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(95px, 0px)
-                          rotate(-0.4deg)
-                        ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -3984,9 +3984,9 @@ exports[`ill/binary-search:intro 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(190px, 0px)
-                          rotate(1.4deg)
-                        ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -4135,9 +4135,9 @@ exports[`ill/binary-search:intro 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(285px, 0px)
-                          rotate(0.5deg)
-                        ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -4269,9 +4269,9 @@ exports[`ill/binary-search:intro 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(380px, 0px)
-                          rotate(-1.35deg)
-                        ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -4415,9 +4415,9 @@ exports[`ill/binary-search:intro 1`] = `
         Object {
           "opacity": 1,
           "transform": "
-                          translate(475px, 0px)
-                          rotate(1deg)
-                        ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
           "zIndex": 0,
         }
       }
@@ -4760,9 +4760,9 @@ exports[`ill/quicksort:intro 1`] = `
       Object {
         "opacity": 0,
         "transform": "
-                    translate(237.5px, 8px)
-                    scale(0.9)
-                  ",
+              translate(237.5px, 8px)
+              scale(0.9)
+            ",
       }
     }
   >
@@ -4798,9 +4798,9 @@ exports[`ill/quicksort:intro 1`] = `
       Object {
         "opacity": 0,
         "transform": "
-                    translate(47.5px, 8px)
-                    scale(0.9)
-                  ",
+              translate(47.5px, 8px)
+              scale(0.9)
+            ",
       }
     }
   >
@@ -4836,9 +4836,9 @@ exports[`ill/quicksort:intro 1`] = `
       Object {
         "opacity": 0,
         "transform": "
-                    translate(427.5px, 8px)
-                    scale(0.9)
-                  ",
+              translate(427.5px, 8px)
+              scale(0.9)
+            ",
       }
     }
   >
@@ -4874,10 +4874,10 @@ exports[`ill/quicksort:intro 1`] = `
       Object {
         "opacity": 0,
         "transform": "
-                    translate(47.5px, 62px)
-                    rotate(2.5deg)
-                    scale(0.9)
-                  ",
+              translate(47.5px, 62px)
+              rotate(2.5deg)
+              scale(0.9)
+            ",
       }
     }
   >
@@ -4950,10 +4950,10 @@ exports[`ill/quicksort:intro 1`] = `
       Object {
         "opacity": 0,
         "transform": "
-                    translate(427.5px, 62px)
-                    rotate(-1.9deg)
-                    scale(0.9)
-                  ",
+              translate(427.5px, 62px)
+              rotate(-1.9deg)
+              scale(0.9)
+            ",
       }
     }
   >
@@ -5026,9 +5026,9 @@ exports[`ill/quicksort:intro 1`] = `
       Object {
         "opacity": 0,
         "transform": "
-                    translate(237.5px, 102.5px)
-                    rotate(0.5deg)
-                  ",
+              translate(237.5px, 102.5px)
+              rotate(0.5deg)
+            ",
       }
     }
   >
@@ -5103,9 +5103,9 @@ exports[`ill/quicksort:intro 1`] = `
       style={
         Object {
           "transform": "
-                            translate(0px, 197px)
-                            rotate(0.5deg)
-                          ",
+                    translate(0px, 197px)
+                    rotate(0.5deg)
+                  ",
           "zIndex": 0,
         }
       }
@@ -5208,9 +5208,9 @@ exports[`ill/quicksort:intro 1`] = `
       style={
         Object {
           "transform": "
-                            translate(95px, 197px)
-                            rotate(1.4deg)
-                          ",
+                    translate(95px, 197px)
+                    rotate(1.4deg)
+                  ",
           "zIndex": 1,
         }
       }
@@ -5319,9 +5319,9 @@ exports[`ill/quicksort:intro 1`] = `
       style={
         Object {
           "transform": "
-                            translate(190px, 197px)
-                            rotate(-2.9deg)
-                          ",
+                    translate(190px, 197px)
+                    rotate(-2.9deg)
+                  ",
           "zIndex": 2,
         }
       }
@@ -5488,9 +5488,9 @@ exports[`ill/quicksort:intro 1`] = `
       style={
         Object {
           "transform": "
-                            translate(285px, 197px)
-                            rotate(1.9deg)
-                          ",
+                    translate(285px, 197px)
+                    rotate(1.9deg)
+                  ",
           "zIndex": 3,
         }
       }
@@ -5598,9 +5598,9 @@ exports[`ill/quicksort:intro 1`] = `
       style={
         Object {
           "transform": "
-                            translate(380px, 197px)
-                            rotate(-2.35deg)
-                          ",
+                    translate(380px, 197px)
+                    rotate(-2.35deg)
+                  ",
           "zIndex": 4,
         }
       }
@@ -5740,9 +5740,9 @@ exports[`ill/quicksort:intro 1`] = `
       style={
         Object {
           "transform": "
-                            translate(475px, 197px)
-                            rotate(-0.8deg)
-                          ",
+                    translate(475px, 197px)
+                    rotate(-0.8deg)
+                  ",
           "zIndex": 5,
         }
       }
@@ -7811,9 +7811,9 @@ exports[`page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(0px, 0px)
-                                          rotate(-0.9deg)
-                                        ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
                           "zIndex": 0,
                         }
                       }
@@ -7931,9 +7931,9 @@ exports[`page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(81px, 0px)
-                                          rotate(-0.4deg)
-                                        ",
+                  translate(81px, 0px)
+                  rotate(-0.4deg)
+                ",
                           "zIndex": 0,
                         }
                       }
@@ -8072,9 +8072,9 @@ exports[`page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(162px, 0px)
-                                          rotate(1.4deg)
-                                        ",
+                  translate(162px, 0px)
+                  rotate(1.4deg)
+                ",
                           "zIndex": 0,
                         }
                       }
@@ -8223,9 +8223,9 @@ exports[`page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(243px, 0px)
-                                          rotate(0.5deg)
-                                        ",
+                  translate(243px, 0px)
+                  rotate(0.5deg)
+                ",
                           "zIndex": 0,
                         }
                       }
@@ -8357,9 +8357,9 @@ exports[`page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(324px, 0px)
-                                          rotate(-1.35deg)
-                                        ",
+                  translate(324px, 0px)
+                  rotate(-1.35deg)
+                ",
                           "zIndex": 0,
                         }
                       }
@@ -8503,9 +8503,9 @@ exports[`page:binary-search 1`] = `
                         Object {
                           "opacity": 1,
                           "transform": "
-                                          translate(405px, 0px)
-                                          rotate(1deg)
-                                        ",
+                  translate(405px, 0px)
+                  rotate(1deg)
+                ",
                           "zIndex": 0,
                         }
                       }
@@ -9063,9 +9063,9 @@ exports[`page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(202.5px, 6px)
-                                    scale(0.9)
-                                  ",
+              translate(202.5px, 6px)
+              scale(0.9)
+            ",
                       }
                     }
                   >
@@ -9101,9 +9101,9 @@ exports[`page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(40.5px, 6px)
-                                    scale(0.9)
-                                  ",
+              translate(40.5px, 6px)
+              scale(0.9)
+            ",
                       }
                     }
                   >
@@ -9139,9 +9139,9 @@ exports[`page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(364.5px, 6px)
-                                    scale(0.9)
-                                  ",
+              translate(364.5px, 6px)
+              scale(0.9)
+            ",
                       }
                     }
                   >
@@ -9177,10 +9177,10 @@ exports[`page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(40.5px, 50px)
-                                    rotate(2.5deg)
-                                    scale(0.9)
-                                  ",
+              translate(40.5px, 50px)
+              rotate(2.5deg)
+              scale(0.9)
+            ",
                       }
                     }
                   >
@@ -9253,10 +9253,10 @@ exports[`page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(364.5px, 50px)
-                                    rotate(-1.9deg)
-                                    scale(0.9)
-                                  ",
+              translate(364.5px, 50px)
+              rotate(-1.9deg)
+              scale(0.9)
+            ",
                       }
                     }
                   >
@@ -9329,9 +9329,9 @@ exports[`page:quicksort 1`] = `
                       Object {
                         "opacity": 0,
                         "transform": "
-                                    translate(202.5px, 85.5px)
-                                    rotate(0.5deg)
-                                  ",
+              translate(202.5px, 85.5px)
+              rotate(0.5deg)
+            ",
                       }
                     }
                   >
@@ -9406,9 +9406,9 @@ exports[`page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(0px, 165px)
-                                            rotate(0.5deg)
-                                          ",
+                    translate(0px, 165px)
+                    rotate(0.5deg)
+                  ",
                           "zIndex": 0,
                         }
                       }
@@ -9511,9 +9511,9 @@ exports[`page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(81px, 165px)
-                                            rotate(1.4deg)
-                                          ",
+                    translate(81px, 165px)
+                    rotate(1.4deg)
+                  ",
                           "zIndex": 1,
                         }
                       }
@@ -9622,9 +9622,9 @@ exports[`page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(162px, 165px)
-                                            rotate(-2.9deg)
-                                          ",
+                    translate(162px, 165px)
+                    rotate(-2.9deg)
+                  ",
                           "zIndex": 2,
                         }
                       }
@@ -9791,9 +9791,9 @@ exports[`page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(243px, 165px)
-                                            rotate(1.9deg)
-                                          ",
+                    translate(243px, 165px)
+                    rotate(1.9deg)
+                  ",
                           "zIndex": 3,
                         }
                       }
@@ -9901,9 +9901,9 @@ exports[`page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(324px, 165px)
-                                            rotate(-2.35deg)
-                                          ",
+                    translate(324px, 165px)
+                    rotate(-2.35deg)
+                  ",
                           "zIndex": 4,
                         }
                       }
@@ -10043,9 +10043,9 @@ exports[`page:quicksort 1`] = `
                       style={
                         Object {
                           "transform": "
-                                            translate(405px, 165px)
-                                            rotate(-0.8deg)
-                                          ",
+                    translate(405px, 165px)
+                    rotate(-0.8deg)
+                  ",
                           "zIndex": 5,
                         }
                       }
@@ -10863,9 +10863,9 @@ exports[`player:binary-search 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(0px, 0px)
-                                    rotate(-0.9deg)
-                                  ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -10983,9 +10983,9 @@ exports[`player:binary-search 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(95px, 0px)
-                                    rotate(-0.4deg)
-                                  ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -11124,9 +11124,9 @@ exports[`player:binary-search 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(190px, 0px)
-                                    rotate(1.4deg)
-                                  ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -11275,9 +11275,9 @@ exports[`player:binary-search 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(285px, 0px)
-                                    rotate(0.5deg)
-                                  ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -11409,9 +11409,9 @@ exports[`player:binary-search 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(380px, 0px)
-                                    rotate(-1.35deg)
-                                  ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -11555,9 +11555,9 @@ exports[`player:binary-search 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(475px, 0px)
-                                    rotate(1deg)
-                                  ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -12042,9 +12042,9 @@ exports[`player:binary-search-mid-way 1`] = `
                 Object {
                   "opacity": 1,
                   "transform": "
-                          translate(237.5px, 367px)
-                          rotate(2.6399999999999997deg)
-                        ",
+          translate(237.5px, 367px)
+          rotate(2.6399999999999997deg)
+        ",
                 }
               }
             >
@@ -12188,9 +12188,9 @@ exports[`player:binary-search-mid-way 1`] = `
                 Object {
                   "opacity": 1,
                   "transform": "
-                          translate(0px, 16px)
-                          rotate(0deg)
-                        ",
+          translate(0px, 16px)
+          rotate(0deg)
+        ",
                 }
               }
             >
@@ -12241,9 +12241,9 @@ exports[`player:binary-search-mid-way 1`] = `
                 Object {
                   "opacity": 1,
                   "transform": "
-                          translate(475px, 70px)
-                          rotate(0deg)
-                        ",
+          translate(475px, 70px)
+          rotate(0deg)
+        ",
                 }
               }
             >
@@ -12353,9 +12353,9 @@ exports[`player:binary-search-mid-way 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(0px, 0px)
-                                    rotate(-0.9deg)
-                                  ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -12473,9 +12473,9 @@ exports[`player:binary-search-mid-way 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(95px, 0px)
-                                    rotate(-0.4deg)
-                                  ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -12614,9 +12614,9 @@ exports[`player:binary-search-mid-way 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(190px, 0px)
-                                    rotate(1.4deg)
-                                  ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -12765,9 +12765,9 @@ exports[`player:binary-search-mid-way 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(285px, 0px)
-                                    rotate(4.64deg)
-                                  ",
+                  translate(285px, 0px)
+                  rotate(4.64deg)
+                ",
                     "zIndex": 1,
                   }
                 }
@@ -12899,9 +12899,9 @@ exports[`player:binary-search-mid-way 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(380px, 0px)
-                                    rotate(-1.35deg)
-                                  ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -13045,9 +13045,9 @@ exports[`player:binary-search-mid-way 1`] = `
                   Object {
                     "opacity": 1,
                     "transform": "
-                                    translate(475px, 0px)
-                                    rotate(1deg)
-                                  ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
                     "zIndex": 0,
                   }
                 }
@@ -13591,9 +13591,9 @@ exports[`player:quicksort 1`] = `
                 Object {
                   "opacity": 0,
                   "transform": "
-                              translate(237.5px, 8px)
-                              scale(0.9)
-                            ",
+              translate(237.5px, 8px)
+              scale(0.9)
+            ",
                 }
               }
             >
@@ -13629,9 +13629,9 @@ exports[`player:quicksort 1`] = `
                 Object {
                   "opacity": 0,
                   "transform": "
-                              translate(47.5px, 8px)
-                              scale(0.9)
-                            ",
+              translate(47.5px, 8px)
+              scale(0.9)
+            ",
                 }
               }
             >
@@ -13667,9 +13667,9 @@ exports[`player:quicksort 1`] = `
                 Object {
                   "opacity": 0,
                   "transform": "
-                              translate(427.5px, 8px)
-                              scale(0.9)
-                            ",
+              translate(427.5px, 8px)
+              scale(0.9)
+            ",
                 }
               }
             >
@@ -13705,10 +13705,10 @@ exports[`player:quicksort 1`] = `
                 Object {
                   "opacity": 0,
                   "transform": "
-                              translate(47.5px, 62px)
-                              rotate(2.5deg)
-                              scale(0.9)
-                            ",
+              translate(47.5px, 62px)
+              rotate(2.5deg)
+              scale(0.9)
+            ",
                 }
               }
             >
@@ -13781,10 +13781,10 @@ exports[`player:quicksort 1`] = `
                 Object {
                   "opacity": 0,
                   "transform": "
-                              translate(427.5px, 62px)
-                              rotate(-1.9deg)
-                              scale(0.9)
-                            ",
+              translate(427.5px, 62px)
+              rotate(-1.9deg)
+              scale(0.9)
+            ",
                 }
               }
             >
@@ -13857,9 +13857,9 @@ exports[`player:quicksort 1`] = `
                 Object {
                   "opacity": 0,
                   "transform": "
-                              translate(237.5px, 102.5px)
-                              rotate(0.5deg)
-                            ",
+              translate(237.5px, 102.5px)
+              rotate(0.5deg)
+            ",
                 }
               }
             >
@@ -13934,9 +13934,9 @@ exports[`player:quicksort 1`] = `
                 style={
                   Object {
                     "transform": "
-                                      translate(0px, 197px)
-                                      rotate(0.5deg)
-                                    ",
+                    translate(0px, 197px)
+                    rotate(0.5deg)
+                  ",
                     "zIndex": 0,
                   }
                 }
@@ -14039,9 +14039,9 @@ exports[`player:quicksort 1`] = `
                 style={
                   Object {
                     "transform": "
-                                      translate(95px, 197px)
-                                      rotate(1.4deg)
-                                    ",
+                    translate(95px, 197px)
+                    rotate(1.4deg)
+                  ",
                     "zIndex": 1,
                   }
                 }
@@ -14150,9 +14150,9 @@ exports[`player:quicksort 1`] = `
                 style={
                   Object {
                     "transform": "
-                                      translate(190px, 197px)
-                                      rotate(-2.9deg)
-                                    ",
+                    translate(190px, 197px)
+                    rotate(-2.9deg)
+                  ",
                     "zIndex": 2,
                   }
                 }
@@ -14319,9 +14319,9 @@ exports[`player:quicksort 1`] = `
                 style={
                   Object {
                     "transform": "
-                                      translate(285px, 197px)
-                                      rotate(1.9deg)
-                                    ",
+                    translate(285px, 197px)
+                    rotate(1.9deg)
+                  ",
                     "zIndex": 3,
                   }
                 }
@@ -14429,9 +14429,9 @@ exports[`player:quicksort 1`] = `
                 style={
                   Object {
                     "transform": "
-                                      translate(380px, 197px)
-                                      rotate(-2.35deg)
-                                    ",
+                    translate(380px, 197px)
+                    rotate(-2.35deg)
+                  ",
                     "zIndex": 4,
                   }
                 }
@@ -14571,9 +14571,9 @@ exports[`player:quicksort 1`] = `
                 style={
                   Object {
                     "transform": "
-                                      translate(475px, 197px)
-                                      rotate(-0.8deg)
-                                    ",
+                    translate(475px, 197px)
+                    rotate(-0.8deg)
+                  ",
                     "zIndex": 5,
                   }
                 }
@@ -15718,9 +15718,9 @@ exports[`stack-entry:binary-search-beginning 1`] = `
           Object {
             "opacity": 0.5,
             "transform": "
-                    translate(237.5px, 367px)
-                    rotate(-1.5deg)
-                  ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
           }
         }
       >
@@ -15868,9 +15868,9 @@ exports[`stack-entry:binary-search-beginning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(0px, 0px)
-                              rotate(-0.9deg)
-                            ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -15988,9 +15988,9 @@ exports[`stack-entry:binary-search-beginning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(95px, 0px)
-                              rotate(-0.4deg)
-                            ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -16129,9 +16129,9 @@ exports[`stack-entry:binary-search-beginning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(190px, 0px)
-                              rotate(1.4deg)
-                            ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -16280,9 +16280,9 @@ exports[`stack-entry:binary-search-beginning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(285px, 0px)
-                              rotate(0.5deg)
-                            ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -16414,9 +16414,9 @@ exports[`stack-entry:binary-search-beginning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(380px, 0px)
-                              rotate(-1.35deg)
-                            ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -16560,9 +16560,9 @@ exports[`stack-entry:binary-search-beginning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(475px, 0px)
-                              rotate(1deg)
-                            ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -17042,9 +17042,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(237.5px, 367px)
-                    rotate(-1.5deg)
-                  ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
           }
         }
       >
@@ -17178,9 +17178,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(0px, 16px)
-                    rotate(0deg)
-                  ",
+          translate(0px, 16px)
+          rotate(0deg)
+        ",
           }
         }
       >
@@ -17231,9 +17231,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(190px, 70px)
-                    rotate(0deg)
-                  ",
+          translate(190px, 70px)
+          rotate(0deg)
+        ",
           }
         }
       >
@@ -17343,9 +17343,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(0px, 0px)
-                              rotate(-0.9deg)
-                            ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -17463,9 +17463,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(95px, 0px)
-                              rotate(-0.4deg)
-                            ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -17604,9 +17604,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(190px, 0px)
-                              rotate(1.4deg)
-                            ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -17755,9 +17755,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(285px, 0px)
-                              rotate(0.5deg)
-                            ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -17889,9 +17889,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(380px, 0px)
-                              rotate(-1.35deg)
-                            ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -18035,9 +18035,9 @@ exports[`stack-entry:binary-search-finished 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(475px, 0px)
-                              rotate(1deg)
-                            ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -18517,9 +18517,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(237.5px, 367px)
-                    rotate(-1.5deg)
-                  ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
           }
         }
       >
@@ -18658,9 +18658,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
           Object {
             "opacity": 0.5,
             "transform": "
-                    translate(0px, 16px)
-                    rotate(0deg)
-                  ",
+          translate(0px, 16px)
+          rotate(0deg)
+        ",
           }
         }
       >
@@ -18720,9 +18720,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(0px, 0px)
-                              rotate(-0.9deg)
-                            ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -18840,9 +18840,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(95px, 0px)
-                              rotate(-0.4deg)
-                            ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -18981,9 +18981,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(190px, 0px)
-                              rotate(1.4deg)
-                            ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -19132,9 +19132,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(285px, 0px)
-                              rotate(0.5deg)
-                            ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -19266,9 +19266,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(380px, 0px)
-                              rotate(-1.35deg)
-                            ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -19412,9 +19412,9 @@ exports[`stack-entry:binary-search-first-assign 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(475px, 0px)
-                              rotate(1deg)
-                            ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -19894,9 +19894,9 @@ exports[`stack-entry:binary-search-intro 1`] = `
           Object {
             "opacity": 0,
             "transform": "
-                    translate(237.5px, 367px)
-                    rotate(-1.5deg)
-                  ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
           }
         }
       >
@@ -20044,9 +20044,9 @@ exports[`stack-entry:binary-search-intro 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(0px, 0px)
-                              rotate(-0.9deg)
-                            ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -20164,9 +20164,9 @@ exports[`stack-entry:binary-search-intro 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(95px, 0px)
-                              rotate(-0.4deg)
-                            ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -20305,9 +20305,9 @@ exports[`stack-entry:binary-search-intro 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(190px, 0px)
-                              rotate(1.4deg)
-                            ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -20456,9 +20456,9 @@ exports[`stack-entry:binary-search-intro 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(285px, 0px)
-                              rotate(0.5deg)
-                            ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -20590,9 +20590,9 @@ exports[`stack-entry:binary-search-intro 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(380px, 0px)
-                              rotate(-1.35deg)
-                            ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -20736,9 +20736,9 @@ exports[`stack-entry:binary-search-intro 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(475px, 0px)
-                              rotate(1deg)
-                            ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -21196,9 +21196,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(237.5px, 367px)
-                    rotate(3.26deg)
-                  ",
+          translate(237.5px, 367px)
+          rotate(3.26deg)
+        ",
           }
         }
       >
@@ -21332,9 +21332,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(0px, 16px)
-                    rotate(0deg)
-                  ",
+          translate(0px, 16px)
+          rotate(0deg)
+        ",
           }
         }
       >
@@ -21385,9 +21385,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(190px, 70px)
-                    rotate(0deg)
-                  ",
+          translate(190px, 70px)
+          rotate(0deg)
+        ",
           }
         }
       >
@@ -21497,9 +21497,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(0px, 0px)
-                              rotate(-0.9deg)
-                            ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -21617,9 +21617,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(95px, 0px)
-                              rotate(4.359999999999999deg)
-                            ",
+                  translate(95px, 0px)
+                  rotate(4.359999999999999deg)
+                ",
               "zIndex": 1,
             }
           }
@@ -21758,9 +21758,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(190px, 0px)
-                              rotate(1.4deg)
-                            ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -21909,9 +21909,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(285px, 0px)
-                              rotate(0.5deg)
-                            ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -22043,9 +22043,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(380px, 0px)
-                              rotate(-1.35deg)
-                            ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -22189,9 +22189,9 @@ exports[`stack-entry:binary-search-last-check 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(475px, 0px)
-                              rotate(1deg)
-                            ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -22671,9 +22671,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(237.5px, 367px)
-                    rotate(-1.5deg)
-                  ",
+          translate(237.5px, 367px)
+          rotate(-1.5deg)
+        ",
           }
         }
       >
@@ -22807,9 +22807,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(0px, 16px)
-                    rotate(0deg)
-                  ",
+          translate(0px, 16px)
+          rotate(0deg)
+        ",
           }
         }
       >
@@ -22860,9 +22860,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
           Object {
             "opacity": 1,
             "transform": "
-                    translate(190px, 70px)
-                    rotate(0deg)
-                  ",
+          translate(190px, 70px)
+          rotate(0deg)
+        ",
           }
         }
       >
@@ -22972,9 +22972,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(0px, 0px)
-                              rotate(-0.9deg)
-                            ",
+                  translate(0px, 0px)
+                  rotate(-0.9deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -23092,9 +23092,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(95px, 0px)
-                              rotate(-0.4deg)
-                            ",
+                  translate(95px, 0px)
+                  rotate(-0.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -23233,9 +23233,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
             Object {
               "opacity": 1,
               "transform": "
-                              translate(190px, 0px)
-                              rotate(1.4deg)
-                            ",
+                  translate(190px, 0px)
+                  rotate(1.4deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -23384,9 +23384,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(285px, 0px)
-                              rotate(0.5deg)
-                            ",
+                  translate(285px, 0px)
+                  rotate(0.5deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -23518,9 +23518,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(380px, 0px)
-                              rotate(-1.35deg)
-                            ",
+                  translate(380px, 0px)
+                  rotate(-1.35deg)
+                ",
               "zIndex": 0,
             }
           }
@@ -23664,9 +23664,9 @@ exports[`stack-entry:binary-search-returning 1`] = `
             Object {
               "opacity": 0.2,
               "transform": "
-                              translate(475px, 0px)
-                              rotate(1deg)
-                            ",
+                  translate(475px, 0px)
+                  rotate(1deg)
+                ",
               "zIndex": 0,
             }
           }
