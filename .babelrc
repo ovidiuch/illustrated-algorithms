@@ -1,7 +1,4 @@
 {
-  "presets": [
-    ["env", { "modules": "commonjs" }],
-    "next/babel"
-  ],
+  "presets": [["env", { "modules": "commonjs" }], "next/babel"],
   "plugins": ["babel-plugin-inline-react-svg"]
 }

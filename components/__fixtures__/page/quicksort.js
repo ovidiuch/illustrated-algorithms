@@ -7,6 +7,7 @@ const list = ['cherries', 'kiwi', 'grapes', 'avocado', 'pineapple', 'peach'];
 const { steps } = quicksort(list);
 
 export default {
+  layoutFor: 'quicksort',
   props: {
     currentPath: '/quicksort',
     algorithm: quicksort,
