@@ -1,5 +1,9 @@
+import BinarySearch from '../../../ill/binary-search/binary-search';
+
 export default {
+  component: BinarySearch,
   layoutFor: 'binarySearch',
+
   frameFrom: {
     prevStep: {
       bindings: {
@@ -20,6 +24,7 @@ export default {
     },
     stepProgress: 0.5
   },
+
   props: {
     actions: {}
   }

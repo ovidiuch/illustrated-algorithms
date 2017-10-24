@@ -1,4 +1,8 @@
+import EmojiIcon from '../../../../ill/shared/emoji-icon';
+
 export default {
+  component: EmojiIcon,
+
   props: {
     name: 'dog',
     width: 100,

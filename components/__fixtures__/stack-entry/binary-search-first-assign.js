@@ -1,10 +1,13 @@
 import binarySearch from '../../../algorithms/binary-search';
 import BinarySearch from '../../../components/ill/binary-search/binary-search';
+import StackEntry from '../../stack-entry';
 
 const { code } = binarySearch;
 
 export default {
+  component: StackEntry,
   layoutFor: 'binarySearch',
+
   frameFrom: {
     prevStep: {
       bindings: {
@@ -29,6 +32,7 @@ export default {
     },
     stepProgress: 0.5
   },
+
   props: {
     code,
     illustration: BinarySearch,

@@ -1,5 +1,9 @@
+import PlaybackControls from '../../playback-controls';
+
 export default {
+  component: PlaybackControls,
   layoutFor: 'binarySearch',
+
   props: {
     isPlaying: false,
     pos: 1229,

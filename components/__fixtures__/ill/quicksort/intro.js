@@ -1,5 +1,9 @@
+import Quicksort from '../../../ill/quicksort/quicksort';
+
 export default {
+  component: Quicksort,
   layoutFor: 'quicksort',
+
   frameFrom: {
     prevStep: {
       bindings: {
@@ -14,6 +18,7 @@ export default {
     },
     stepProgress: 0
   },
+
   props: {
     actions: {
       shuffleInput: () => console.log('shuffle input'),

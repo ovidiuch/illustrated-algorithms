@@ -1,5 +1,9 @@
+import Outro from '../../../../ill/quicksort/outro';
+
 export default {
+  component: Outro,
   layoutFor: 'quicksort',
+
   props: {
     frame: {
       outro: {

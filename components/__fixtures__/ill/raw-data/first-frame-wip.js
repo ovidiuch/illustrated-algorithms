@@ -1,5 +1,9 @@
+import RawData from '../../../ill/raw-data';
+
 export default {
+  component: RawData,
   layoutFor: 'bfs',
+
   frameFrom: {
     prevStep: {
       bindings: {

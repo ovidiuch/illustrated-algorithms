@@ -1,5 +1,9 @@
+import Intro from '../../../../ill/quicksort/intro';
+
 export default {
+  component: Intro,
   layoutFor: 'quicksort',
+
   props: {
     frame: {
       intro: {

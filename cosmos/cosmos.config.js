@@ -1,6 +1,6 @@
 module.exports = {
-  componentPaths: ['../components'],
-  ignore: [/binary-search\/((?!binary-search).)/],
-  publicPath: '../static',
+  rootPath: '..',
+  proxiesPath: './cosmos/cosmos.proxies',
+  publicPath: 'static',
   publicUrl: '/static/'
 };
