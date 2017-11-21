@@ -2,7 +2,7 @@ import React from 'react';
 import offsetSteps from '../utils/offset-steps';
 import Page from '../components/page';
 import binarySearch from '../algorithms/binary-search';
-import BinarySearch from '../components/ill/binary-search/binary-search';
+import BinarySearch from '../components/illustrations/binary-search/binary-search';
 import computeBinarySearchLayout from '../layout/binary-search';
 import computeBinarySearchFrame from '../frame/binary-search';
 

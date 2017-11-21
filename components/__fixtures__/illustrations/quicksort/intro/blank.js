@@ -1,4 +1,4 @@
-import Intro from '../../../../ill/quicksort/intro';
+import Intro from '../../../../illustrations/quicksort/intro';
 
 export default {
   component: Intro,

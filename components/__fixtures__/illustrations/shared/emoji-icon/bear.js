@@ -1,10 +1,10 @@
-import EmojiIcon from '../../../../ill/shared/emoji-icon';
+import EmojiIcon from '../../../../illustrations/shared/emoji-icon';
 
 export default {
   component: EmojiIcon,
 
   props: {
-    name: 'no entry',
+    name: 'bear',
     width: 100,
     height: 100
   }

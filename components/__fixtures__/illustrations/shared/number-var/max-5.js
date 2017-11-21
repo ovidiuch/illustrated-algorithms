@@ -1,4 +1,4 @@
-import NumberVar from '../../../../ill/shared/number-var';
+import NumberVar from '../../../../illustrations/shared/number-var';
 
 export default {
   component: NumberVar,

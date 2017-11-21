@@ -1,4 +1,4 @@
-import Quicksort from '../../../ill/quicksort/quicksort';
+import Quicksort from '../../../illustrations/quicksort/quicksort';
 
 export default {
   component: Quicksort,

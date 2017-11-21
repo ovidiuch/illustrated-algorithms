@@ -3,7 +3,7 @@ import shuffle from 'shuffle-array';
 import offsetSteps from '../utils/offset-steps';
 import Page from '../components/page';
 import quicksort from '../algorithms/quicksort';
-import Quicksort from '../components/ill/quicksort/quicksort';
+import Quicksort from '../components/illustrations/quicksort/quicksort';
 import computeQuicksortLayout from '../layout/quicksort';
 import computeQuicksortFrame from '../frame/quicksort';
 

@@ -1,4 +1,4 @@
-import BinarySearch from '../../../ill/binary-search/binary-search';
+import BinarySearch from '../../../illustrations/binary-search/binary-search';
 
 export default {
   component: BinarySearch,

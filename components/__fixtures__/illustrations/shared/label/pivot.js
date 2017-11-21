@@ -1,4 +1,4 @@
-import Label from '../../../../ill/shared/label';
+import Label from '../../../../illustrations/shared/label';
 
 export default {
   component: Label,

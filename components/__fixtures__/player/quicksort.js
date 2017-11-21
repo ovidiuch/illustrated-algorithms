@@ -1,6 +1,6 @@
 import offsetSteps from '../../../utils/offset-steps';
 import quicksort from '../../../algorithms/quicksort';
-import Quicksort from '../../../components/ill/quicksort/quicksort';
+import Quicksort from '../../../components/illustrations/quicksort/quicksort';
 import computeQuicksortFrame from '../../../frame/quicksort';
 import Player from '../../player';
 

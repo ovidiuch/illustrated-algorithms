@@ -1,4 +1,4 @@
-import EmojiIcon from '../../../../ill/shared/emoji-icon';
+import EmojiIcon from '../../../../illustrations/shared/emoji-icon';
 
 export default {
   component: EmojiIcon,

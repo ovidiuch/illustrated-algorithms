@@ -1,4 +1,4 @@
-import EmojiBlock from '../../../../ill/shared/emoji-block';
+import EmojiBlock from '../../../../illustrations/shared/emoji-block';
 
 export default {
   component: EmojiBlock,

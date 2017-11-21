@@ -1,4 +1,4 @@
-import Outro from '../../../../ill/quicksort/outro';
+import Outro from '../../../../illustrations/quicksort/outro';
 
 export default {
   component: Outro,

@@ -1,4 +1,4 @@
-import RawData from '../../../ill/raw-data';
+import RawData from '../../../illustrations/raw-data';
 
 export default {
   component: RawData,

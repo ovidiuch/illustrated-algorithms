@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../components/page';
 import bfs from '../algorithms/bfs';
-import RawData from '../components/ill/raw-data';
+import RawData from '../components/illustrations/raw-data';
 import computeBfsLayout from '../layout/bfs';
 import computeRawDataFrame from '../frame/raw-data';
 
