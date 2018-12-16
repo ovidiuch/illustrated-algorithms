@@ -25,8 +25,8 @@
     "test:cosmos": "jest cosmos/cosmos.test.js",
     "test": "xo && npm run test:source && npm run test:cosmos",
     "dev": "next",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && next export -o .export",
+    "upload": "cd .export && now --name algorithms && cd -",
     "cosmos": "cosmos --config cosmos/cosmos.config.js",
     "cosmos:export": "cosmos-export --config cosmos/cosmos.config.js"
   },
